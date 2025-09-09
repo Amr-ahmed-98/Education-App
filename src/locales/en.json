@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "pages": "pages",
+    "home": "Home",
+    "courses": "Courses",
+    "course-details":"Course Details",
+    "blogs": "Blogs",
+    "blog-details" : "Blog Details",
+    "contact": "Contact",
+    "contact-me": "Contact Me",
+    "contact-us": "Contact Us",
+    "login": "Log in",
+    "sign-up": "Sign up"
+  },
+  "pages":{
+       "about": "About",
+    "instructor": "Instructor",
+    "event": "Event",
+    "event-details": "Event Details",
+    "faqs": "FAQs",
+    "cart": "Card",
+    "wishlist": "Wishlist",
+    "checkout": "Checkout"
+  },
+  "footer": {
+    "brand": "SkillBase",
+    "description": "Lorem ipsum is placeholder text commonly in the graphic, print, and publishing for previewing layouts and visual.",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn"
+    },
+    "servicesTitle": "Our Services:",
+    "services": {
+      "dataScience": "Data science",
+      "leadership": "Leadership",
+      "webDevelopment": "Web Development",
+      "communication": "Communication",
+      "marketing": "Marketing"
+    },
+    "linksTitle": "Quick Links:",
+    "links": {
+      "pages": "Pages",
+      "blogs": "Blogs",
+      "events": "Events",
+      "courses": "Courses",
+      "faqs": "FAQs"
+    },
+    "copyright": "Copyright © 2025 Team 1. All rights reserved."
+  }
+}

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #3972FF;
+  --color-secondary:#EE4A62;
+   --color-light-primary: #ffffff;   /* أبيض خالص */
+    --color-light-secondary: #f3f4f6; /* رمادي فاتح */
+    --color-dark-primary: #111827;    /* خلفية داكنة أساسية */
+    --color-dark-secondary: #1f2937;  /* خلفية داكنة أفتح شوي */
+}
+
+@layer base {
+  .dark {
+       --color-light-primary: #f9fafb;   /* لون نص فاتح */
+    --color-light-secondary: #e5e7eb; /* رمادي فاتح */
+    --color-dark-primary: #111822;    /* نفس الأساسي */
+    --color-dark-secondary: #1C242F;  /* نفس الثانوي */
+  }
+}
+
+html.dark{
+  background-color: var(--color-dark-primary);
+  color: var(--color-light-primary);
+}
+html.light{
+  background-color: var(--color-light-primary);
+    color: var(--color-dark-primary);
+
+}

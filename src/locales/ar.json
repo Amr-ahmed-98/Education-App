@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "pages": "الصفحات",
+    "home": "الرئيسية",
+    "courses": "الكورسات",
+    "course-details":"تفاصيل الكورس",
+    "blogs": "المدونات",
+    "blog-details" : "تفاصيل المدونه",
+    "contact": "التواصل",
+    "contact-me": "تواصل معي",
+    "contact-us": "تواصل معانا",
+    "login": "تسجيل الدخول ",
+    "sign-up": "التسجيل"
+  },
+    "pages":{
+       "about": "حول",
+    "instructor": "المدرب",
+    "event": "الايفنت",
+    "event-details": "تفاصيل الايفنت",
+    "faqs": "الاسئلة",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "checkout": "الدفع"
+  }
+}
