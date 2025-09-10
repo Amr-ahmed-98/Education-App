@@ -1,5 +1,5 @@
-import * as icons from './../../assets/icons/icons';
-import * as images from './../../assets/images/images';
+import IconDetails from "../molecules/IconDetails";
+import * as icon from "../../assets/icons/icons";
 function About() {
    const message: string = "Hello TypeScript 🚀";
 
@@ -7,9 +7,18 @@ function About() {
   return (
     <div>
       
-      <h1>{message}</h1>
-      <icons.Facebook />
-      <img src={images.intructor1} alt="intructor1 " />
+      <h1>
+        {/* this Example to how to use this component */}
+        <IconDetails
+          icon={icon.Angry}
+          title="About Us"
+          description="Learn more about our mission and values."
+          isCircle={true}
+          iconColor="text-green-500"
+          bgColor="bg-green-100"
+          size="md"
+        />
+      </h1>
     </div>
   )
 }
