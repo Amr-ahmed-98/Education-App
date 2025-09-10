@@ -6,8 +6,6 @@ function About() {
   console.log(message); // يطبع في الـ console
   return (
     <div>
-      
-      <h1>
         {/* this Example to how to use this component */}
         <IconDetails
           icon={icon.Angry}
@@ -18,7 +16,6 @@ function About() {
           bgColor="bg-green-100"
           size="md"
         />
-      </h1>
     </div>
   )
 }
