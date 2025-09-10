@@ -1,7 +1,7 @@
 // src/guards/authGuards.tsx
 import { Navigate, Outlet } from "react-router-dom";
 
-const ENABLE_AUTH_GUARD = false;
+const ENABLE_AUTH_GUARD = true;
 
 export default function AuthGuard() {
    if (!ENABLE_AUTH_GUARD) {

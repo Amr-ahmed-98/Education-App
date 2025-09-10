@@ -48,5 +48,12 @@
       "faqs": "FAQs"
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
+  },
+  "Testimonials": {
+    "Btn1": "Testimonials",
+    "Title": "What Our Students Say About Us",
+    "Description":"Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "Btn2":"Contact Us",
+    "Btn3":"Explore Courses"
   }
 }

@@ -41,8 +41,8 @@ useEffect(()=>{
     flex items-center justify-between bg-light  md:px-16 sm:px-10 px-4 fixed top-0 
     transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 dark:border-dark-secondary
     ${isScrolled ? 
-    'bg-sky-50/30 border-b border-sky-200' : 
-    'bg-transparent'}`}>
+    'bg-light-primary border-b border-sky-200' : 
+    'bg-light-primary'}`}>
       
       {/*Logo Section */}
       <div className="flex items-center gap-2 pr-0">
