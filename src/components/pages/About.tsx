@@ -10,6 +10,7 @@ function About() {
 
   console.log(message); // يطبع في الـ console
   return (
+
     <div className="container">
              <HeroText
           title={t("HeroTextAbout.title")}
@@ -21,6 +22,9 @@ function About() {
   variant="button"
   button= {t("HeroTextAbout.btn")} />
       <h1>
+
+    <div>
+
         {/* this Example to how to use this component */}
         <IconDetails
           icon={icon.Angry}
@@ -31,8 +35,9 @@ function About() {
           bgColor="bg-green-100"
           size="md"
         />
+
       </h1>
- 
+
     </div>
   )
 }
