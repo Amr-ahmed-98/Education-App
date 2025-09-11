@@ -1,5 +1,5 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
-import { AlignLeft , X , Moon ,SunMedium , Facebook , Angry  } from 'lucide-react';
+import { AlignLeft , X , Moon ,SunMedium , Facebook , Angry, Clock, BookOpen, Star, Users  } from 'lucide-react';
 
 export{
     GlobeAltIcon,
@@ -8,6 +8,10 @@ export{
     SunMedium,
     Moon,
     Facebook,
-    Angry
+    Angry,
+    Star,
+    Clock,
+    BookOpen,
+    Users
     
 }
