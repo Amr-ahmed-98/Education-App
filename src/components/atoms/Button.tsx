@@ -26,8 +26,8 @@ const Button =  ({
   const variants = {
     primary: "bg-[#3972FF] text-white hover:bg-[#3972FF]  capitalize focus:ring-blue-500 cursor-pointer",
     secondary: "bg-[#EE4A62] text-[#ffffff] hover:bg-[#EE4A62] capitalize hover:text-white focus:white cursor-pointer",
-    outline1: "border-2 border-[#3972FF] text-[#3972FF] hover:bg-[#3972FF] capitalize hover:text-white focus:ring-blue-500 cursor-pointer" ,
-    outline2: "border-2 border-[#EE4A62] text-[#EE4A62] hover:bg-[#EE4A62] capitalize hover:text-white focus:ring-blue-500 cursor-pointer" ,
+    outline1: "border-2 border-[#3972FF] text-[#3972FF]  capitalize focus:ring-blue-500 cursor-pointer" ,
+    outline2: "border-2 border-[#EE4A62] text-[#EE4A62]  capitalize focus:ring-blue-500 cursor-pointer" ,
     ghost: "text-[#00B7C1] hover:bg-blue-50 focus:ring-blue-500 capitalize cursor-pointer",
   };
   const sizes = {
