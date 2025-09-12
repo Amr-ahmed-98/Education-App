@@ -3,27 +3,26 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: #3972FF;
-  --color-secondary:#EE4A62;
-   --color-light-primary: #ffffff;   /* أبيض خالص */
-    --color-light-secondary: #F0F4F5; /* رمادي فاتح */
-    --color-dark-primary: #111827;    /* خلفية داكنة أساسية */
-    --color-dark-secondary: #1f2937;  /* خلفية داكنة أفتح شوي */
-
+  --color-primary: #3972ff;
+  --color-secondary: #ee4a62;
+  --color-light-primary: #ffffff; /* أبيض خالص */
+  --color-light-secondary: #f0f4f5; /* رمادي فاتح */
+  --color-dark-primary: #111827; /* خلفية داكنة أساسية */
+  --color-dark-secondary: #1f2937; /* خلفية داكنة أفتح شوي */
 }
 @layer base {
   .dark {
-    --color-dark-primary: #111822;    /* نفس الأساسي */
-    --color-dark-secondary: #1C242F;  /* نفس الثانوي */
+    --color-dark-primary: #111822; /* نفس الأساسي */
+    --color-dark-secondary: #1c242f; /* نفس الثانوي */
   }
 }
 
-html.dark{
+html.dark {
   background-color: var(--color-dark-primary);
   color: var(--color-light-primary);
 }
-html.light{
+html.light {
   background-color: var(--color-light-secondary);
-    color: var(--color-dark-primary);
-
+  color: var(--color-dark-primary);
 }
+
