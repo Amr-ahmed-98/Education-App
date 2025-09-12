@@ -11,6 +11,7 @@
   );
 }
 @theme {
+ 
   --color-primary: #3972FF;
   --color-secondary:#EE4A62;
   --color-light-primary: #ffffff;   /* أبيض خالص */
@@ -27,24 +28,26 @@
     #AECDFD 70%, 
     #5184D5 100%
   );
+ 
 }
 @layer base {
   .dark {
-    --color-dark-primary: #111822;    /* نفس الأساسي */
-    --color-dark-secondary: #1C242F;  /* نفس الثانوي */
+    --color-dark-primary: #111822; /* نفس الأساسي */
+    --color-dark-secondary: #1c242f; /* نفس الثانوي */
   }
 }
 
-html.dark{
+html.dark {
   background-color: var(--color-dark-primary);
   color: var(--color-light-primary);
 }
-html.light{
+html.light {
   background-color: var(--color-light-secondary);
-    color: var(--color-dark-primary);
-
+  color: var(--color-dark-primary);
 }
+ 
 .container{
   width:90%;
   margin: 0 auto;
 }
+ 

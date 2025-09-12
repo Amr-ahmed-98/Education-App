@@ -56,6 +56,27 @@
     "Btn2":"Contact Us",
     "Btn3":"Explore Courses"
   },
+ 
+ 
+  "EventDetailsDesc": {
+    "date": "Thursday, July 25, 2025",
+    "time": "7:00 AM - 10:00 AM",
+    "location": " 20 Hassan Assem St., Zamalek, Cairo",
+    "eventInfo": {
+      "cost": "cost",
+      "totalCost": "total cost",
+      "bookedSlot": "booked slot"
+    },
+    "bookNow": "Book Now",
+    "eventHeadline": "From Basics to Confidence – <span class='text-secondary'>Your</span> <span class='text-primary'>English Journey</span> Starts Here",
+    "eventHeadlineContent": "Learn from experts in just 2 hours",
+"eventDescription": "Event <span class='text-secondary'>Description</span>",
+     "eventDescriptionContent": "Get ready for an unforgettable experience! This event brings together curious minds, creative thinkers, and passionate learners for a day of inspiration, discovery, and connection. Expect interactive sessions, engaging discussions, and valuable insights you can take with you. Whether you're coming to learn, network, or just be inspired—you'll leave with fresh ideas and new connections. Reserve your spot now—we can’t wait to see you there!"
+  },
+  "EventDetailsSpeaker": {
+    "EventDetailsSpeaker": "Event <span class='text-secondary'>Speakers</span>"
+ 
+ 
   "HomeCard": {
     "Duration": "6 Weeks",
     "Level": "Advanced",
@@ -63,6 +84,7 @@
     "Rating": "4.8/2.3k Rating",
     "Price": "$49.99",
     "Title": "Learn Python: The Complete Python Programming Course"
+ 
   "HeroText":{
     "title":"Contact Us",
     "subTitle1":"Learn",
@@ -88,5 +110,6 @@
     "title4":"Courses From  Website",
     "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn":"Scroll Course"
+ 
   }
 }

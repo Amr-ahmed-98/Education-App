@@ -1,7 +1,14 @@
+import EventDetailsDesc from "../organisms/EventDetailsDesc"
+import EventDetailsHero from "../organisms/EventDetailsHero"
+import EventDetailsSpeakers from "../organisms/EventDetailsSpeakers"
 
 function EventDetails() {
   return (
-    <div>EventDetails</div>
+    <>c
+      <EventDetailsHero />
+      <EventDetailsDesc />
+      <EventDetailsSpeakers />
+    </>
   )
 }
 
