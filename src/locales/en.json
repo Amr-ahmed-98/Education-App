@@ -56,6 +56,13 @@
     "Btn2":"Contact Us",
     "Btn3":"Explore Courses"
   },
+  "HomeCard": {
+    "Duration": "6 Weeks",
+    "Level": "Advanced",
+    "Lessons": "12 Lessons",
+    "Rating": "4.8/2.3k Rating",
+    "Price": "$49.99",
+    "Title": "Learn Python: The Complete Python Programming Course"
   "HeroText":{
     "title":"Contact Us",
     "subTitle1":"Learn",
