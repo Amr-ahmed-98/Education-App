@@ -63,5 +63,30 @@
     "Rating": "4.8/2.3k Rating",
     "Price": "$49.99",
     "Title": "Learn Python: The Complete Python Programming Course"
+  "HeroText":{
+    "title":"Contact Us",
+    "subTitle1":"Learn",
+    "subTitle2":"And Develop Your Skills",
+    "subTitle3":"Anywhere",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print Lorem ipsum is placeholder text commonly used in the graphic, print ipsum is placeholder text commonly used in the graphic",
+    "iconTitle1":"Expert Trainers",
+    "iconTitle2":"Online Remote Learing ",
+    "iconTitle3":"Lifetime Access"
+  },
+  "HeroTextAbout":{
+    "title":"Our Story",
+    "subTitle1":"Our Journey: ",
+    "subTitle2":"Cultivating Minds, Building",
+    "subTitle3":"Futures",
+    "description":"Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
+    "btn":"Join Us"
+  },
+  "HeroHome":{
+    "title1":"Get",
+    "title2":"350+",
+    "title3":"Best and Simple Online",
+    "title4":"Courses From  Website",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn":"Scroll Course"
   }
 }
