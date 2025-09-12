@@ -9,7 +9,7 @@ const ContactSection = () => {
         <div>
           <h2>
             We're Always
-            <span className='text-[var(--color-dark-secondary)]'>Eager to</span>
+            <span className='text-[var(--color-secondary)]'>Eager to</span>
             <span className='text-[var(--color-primary)]'>Hear From You!</span>
           </h2>
         </div>
@@ -37,7 +37,9 @@ const ContactSection = () => {
         </div>
       </div>
       {/* Contact Form */}
-      <div></div>
+      <div>
+        
+      </div>
     </div>
   );
 };

@@ -3,17 +3,17 @@
     "pages": "pages",
     "home": "Home",
     "courses": "Courses",
-    "course-details":"Course Details",
+    "course-details": "Course Details",
     "blogs": "Blogs",
-    "blog-details" : "Blog Details",
+    "blog-details": "Blog Details",
     "contact": "Contact",
     "contact-me": "Contact Me",
     "contact-us": "Contact Us",
     "login": "Log in",
     "sign-up": "Sign up"
   },
-  "pages":{
-       "about": "About",
+  "pages": {
+    "about": "About",
     "instructor": "Instructor",
     "event": "Event",
     "event-details": "Event Details",
@@ -52,12 +52,75 @@
   "Testimonials": {
     "Btn1": "Testimonials",
     "Title": "What Our Students Say About Us",
-    "Description":"Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "Btn2":"Contact Us",
-    "Btn3":"Explore Courses"
+    "Description": "Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "Btn2": "Contact Us",
+    "Btn3": "Explore Courses"
   },
- 
- 
+
+  "Blogs": {
+    "Section1": {
+      "Title": "Unlock Your Full Potential",
+      "Description": "Discover hundreds of expert-led courses on development, design, business,and more. Start your learning journey today.",
+      "Btn": "Get Started For Free"
+    },
+
+    "Section2": {
+      "Title": "Why Choose Learnify?",
+      "Description": "We provide a complete learning environment to help you achieve your goals efficiently."
+    },
+
+    "Section3": {
+      "Title": "Explore Our Most Popular Courses",
+      "Description": "Join thousands of students who have started their journey with these featured courses."
+    }
+  },
+
+  "SectionTitle": {
+    "Home": {
+      "Title": [
+        { "text": "Earn Your Quality Skills" },
+        { "text": "Certificate", "color": "#EE4A62" },
+        { "text": "with" },
+        { "text": "  SkillBase", "color": "#3972FF" }
+      ],
+      "Btn": "Get Started Now"
+    },
+    "About": {
+      "Title": [
+        { "text": "Ready to Transform Your" },
+        { "text": "Learning", "color": "#EE4A62" },
+        { "text": "Journey", "color": "#3972FF" }
+      ],
+      "Description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+      "Btn": "Start Learning Today"
+    },
+    "Event": {
+      "Title": [{ "text": "Event" }, { "text": "Page", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Event Page"]
+    },
+    "Course": {
+      "Title": [{ "text": "Course" }, { "text": "Page", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Course"]
+    },
+    "ContactMe": {
+      "Title": [{ "text": "Contact" }, { "text": "Me", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Contact me"]
+    },
+    "ContactUs": {
+      "Title": [{ "text": "Contact" }, { "text": "Us", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Contact Us"]
+    },
+    "FAQS": {
+      "Title": [
+        { "text": "Your Questions," },
+        { "text": "Answered", "color": "#EE4A62" }
+      ],
+
+      "Description": "Answers to common questions about courses, registration, and more.",
+      "Trail": ["Home", "Pages", "Frequently Asked Questions"]
+    }
+  },
+
   "EventDetailsDesc": {
     "date": "Thursday, July 25, 2025",
     "time": "7:00 AM - 10:00 AM",
@@ -70,12 +133,11 @@
     "bookNow": "Book Now",
     "eventHeadline": "From Basics to Confidence – <span class='text-secondary'>Your</span> <span class='text-primary'>English Journey</span> Starts Here",
     "eventHeadlineContent": "Learn from experts in just 2 hours",
-"eventDescription": "Event <span class='text-secondary'>Description</span>",
-     "eventDescriptionContent": "Get ready for an unforgettable experience! This event brings together curious minds, creative thinkers, and passionate learners for a day of inspiration, discovery, and connection. Expect interactive sessions, engaging discussions, and valuable insights you can take with you. Whether you're coming to learn, network, or just be inspired—you'll leave with fresh ideas and new connections. Reserve your spot now—we can’t wait to see you there!"
+    "eventDescription": "Event <span class='text-secondary'>Description</span>",
+    "eventDescriptionContent": "Get ready for an unforgettable experience! This event brings together curious minds, creative thinkers, and passionate learners for a day of inspiration, discovery, and connection. Expect interactive sessions, engaging discussions, and valuable insights you can take with you. Whether you're coming to learn, network, or just be inspired—you'll leave with fresh ideas and new connections. Reserve your spot now—we can’t wait to see you there!"
   },
   "EventDetailsSpeaker": {
     "EventDetailsSpeaker": "Event <span class='text-secondary'>Speakers</span>"
- 
   },
   "HomeCard": {
     "Duration": "6 Weeks",
@@ -85,31 +147,30 @@
     "Price": "$49.99",
     "Title": "Learn Python: The Complete Python Programming Course"
   },
-  "HeroText":{
-    "title":"Contact Us",
-    "subTitle1":"Learn",
-    "subTitle2":"And Develop Your Skills",
-    "subTitle3":"Anywhere",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print Lorem ipsum is placeholder text commonly used in the graphic, print ipsum is placeholder text commonly used in the graphic",
-    "iconTitle1":"Expert Trainers",
-    "iconTitle2":"Online Remote Learing ",
-    "iconTitle3":"Lifetime Access"
+  "HeroText": {
+    "title": "Contact Us",
+    "subTitle1": "Learn",
+    "subTitle2": "And Develop Your Skills",
+    "subTitle3": "Anywhere",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print Lorem ipsum is placeholder text commonly used in the graphic, print ipsum is placeholder text commonly used in the graphic",
+    "iconTitle1": "Expert Trainers",
+    "iconTitle2": "Online Remote Learing ",
+    "iconTitle3": "Lifetime Access"
   },
-  "HeroTextAbout":{
-    "title":"Our Story",
-    "subTitle1":"Our Journey: ",
-    "subTitle2":"Cultivating Minds, Building",
-    "subTitle3":"Futures",
-    "description":"Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
-    "btn":"Join Us"
+  "HeroTextAbout": {
+    "title": "Our Story",
+    "subTitle1": "Our Journey: ",
+    "subTitle2": "Cultivating Minds, Building",
+    "subTitle3": "Futures",
+    "description": "Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
+    "btn": "Join Us"
   },
-  "HeroHome":{
-    "title1":"Get",
-    "title2":"350+",
-    "title3":"Best and Simple Online",
-    "title4":"Courses From  Website",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn":"Scroll Course"
- 
+  "HeroHome": {
+    "title1": "Get",
+    "title2": "350+",
+    "title3": "Best and Simple Online",
+    "title4": "Courses From  Website",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn": "Scroll Course"
   }
 }
