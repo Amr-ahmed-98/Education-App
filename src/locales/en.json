@@ -3,17 +3,17 @@
     "pages": "pages",
     "home": "Home",
     "courses": "Courses",
-    "course-details":"Course Details",
+    "course-details": "Course Details",
     "blogs": "Blogs",
-    "blog-details" : "Blog Details",
+    "blog-details": "Blog Details",
     "contact": "Contact",
     "contact-me": "Contact Me",
     "contact-us": "Contact Us",
     "login": "Log in",
     "sign-up": "Sign up"
   },
-  "pages":{
-       "about": "About",
+  "pages": {
+    "about": "About",
     "instructor": "Instructor",
     "event": "Event",
     "event-details": "Event Details",
@@ -52,8 +52,72 @@
   "Testimonials": {
     "Btn1": "Testimonials",
     "Title": "What Our Students Say About Us",
-    "Description":"Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "Btn2":"Contact Us",
-    "Btn3":"Explore Courses"
+    "Description": "Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "Btn2": "Contact Us",
+    "Btn3": "Explore Courses"
+  },
+
+  "Blogs": {
+    "Section1": {
+      "Title": "Unlock Your Full Potential",
+      "Description": "Discover hundreds of expert-led courses on development, design, business,and more. Start your learning journey today.",
+      "Btn": "Get Started For Free"
+    },
+
+    "Section2": {
+      "Title": "Why Choose Learnify?",
+      "Description": "We provide a complete learning environment to help you achieve your goals efficiently."
+    },
+
+    "Section3": {
+      "Title": "Explore Our Most Popular Courses",
+      "Description": "Join thousands of students who have started their journey with these featured courses."
+    }
+  },
+
+  "SectionTitle": {
+    "Home": {
+      "Title": [
+        { "text": "Earn Your Quality Skills" },
+        { "text": "Certificate", "color": "#EE4A62" },
+        { "text": "with" },
+        { "text": "  SkillBase", "color": "#3972FF" }
+      ],
+      "Btn": "Get Started Now"
+    },
+    "About": {
+      "Title": [
+        { "text": "Ready to Transform Your" },
+        { "text": "Learning", "color": "#EE4A62" },
+        { "text": "Journey", "color": "#3972FF" }
+      ],
+      "Description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+      "Btn": "Start Learning Today"
+    },
+    "Event": {
+      "Title": [{ "text": "Event" }, { "text": "Page", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Event Page"]
+    },
+    "Course": {
+      "Title": [{ "text": "Course" }, { "text": "Page", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Course"]
+    },
+    "ContactMe": {
+      "Title": [{ "text": "Contact" }, { "text": "Me", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Contact me"]
+    },
+    "ContactUs": {
+      "Title": [{ "text": "Contact" }, { "text": "Us", "color": "#EE4A62" }],
+      "Trail": ["Home", "Pages", "Contact Us"]
+    },
+    "FAQS": {
+      "Title": [
+        { "text": "Your Questions," },
+        { "text": "Answered", "color": "#EE4A62" }
+      ],
+
+      "Description": "Answers to common questions about courses, registration, and more.",
+      "Trail": ["Home", "Pages", "Frequently Asked Questions"]
+    }
   }
 }

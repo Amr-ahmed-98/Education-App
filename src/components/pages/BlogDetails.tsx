@@ -1,8 +1,5 @@
-
 function BlogDetails() {
-  return (
-    <div>BlogList</div>
-  )
+  return <div>BlogList</div>;
 }
 
 export default BlogDetails;
