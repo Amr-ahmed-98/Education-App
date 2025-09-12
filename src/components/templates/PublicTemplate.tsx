@@ -6,7 +6,9 @@ export default function PublicTemplate() {
     <div>
    
       <Navbar />
-      <main className=" pt-20">
+ 
+      <main className="pt-20">
+ 
         <Outlet /> {/* هنا بيتغير المحتوي: Home , About , ... */}
         <Footer />
       </main>
