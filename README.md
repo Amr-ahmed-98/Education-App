@@ -1,69 +1,107 @@
-# React + TypeScript + Vite
+Education App (Frontend)
+A modern, modular education platform frontend built with React.js, TypeScript, and Tailwind CSS.
+This app provides an interactive UI for managing courses, lessons, users, progress tracking, and more.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#
+✨ Features
+- User enrollment and authentication
+- Course, lesson, and level management
+- Progress and completion tracking
+- Media and certificate handling
+- Add courses to Cart or Wishlist
+- Modern UI with responsive design
+- Modular architecture for easy extension
 
-Currently, two official plugins are available:
+#
+🛠️ Core Frontend Technologies
+- React.js
+- TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 
+📚 Frameworks & Libraries
+- React Router DOM (routing)
+- Framer Motion (animations)
 
-## Expanding the ESLint configuration
+# 
+🔑 State Management & Authentication
+- React Query (server state)
+- Zustand (global state)
+- Axios (API requests)
+#
+🎨 Styling & UI Systems
+- Tailwind CSS
+-Ready-made UI components with variants
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+#
+📝 Forms & Validation
+- React Hook Form
+- Zod
+# 
+🎭 Icons & Animations
+- Heroicons
+- Lucide React
+- Lottie Files
+- React Icons
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/education-app-one.git
+   cd Education-app-one
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+3. Configure environment variables:
+   - Copy `.env.example` to `.env` and update values as needed.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Running the App
+- Development mode (with hot reload):
+  ```sh
+  npm run dev
+  ```
+- Production build:
+  ```sh
+  npm run build
+  npm start
+  ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 
+⚙️ Project Structure- `src/controllers/` – API controllers
+- `src/assets/` – Static assets (images, fonts, icons, etc.)
+- `src/components/` – Reusable UI components
+- `src/config/` – App configuration (constants, env setup)
+- `src/contexts/` – React Context Providers
+- `src/features/` – Feature-based modules (auth, courses, etc.)
+- `src/guards/` – Route guards (auth protection)
+- `src/hooks/` – Mongoose models and schemas
+- `src/lib/` – Helper libraries (API clients, etc.)
+- `src/locales/` – i18n translations
+- `src/routes/` – Application routes
+- `src/services/` – API calls & external services
+- `src/styles/` – Global styles & Tailwind setup
+- - `src/utils/` – Utility functions
+- `src/App.tsx/` – Root App component
+- `src/main.tsx/` – App entry point
+- `src/i18n.ts/` – i18n initialization
+- `src/vite-env.d.ts/` –  Vite TypeScript types
+#
+
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+#
+## 📄 License
+- ISC
+
