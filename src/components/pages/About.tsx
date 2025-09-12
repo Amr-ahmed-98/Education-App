@@ -5,9 +5,7 @@ import * as image from './../../assets/images/images';
 import HeroText from "../molecules/HeroText";
 function About() {
         const { t } = useTranslation(); 
-  
    const message: string = "Hello TypeScript 🚀";
-
   console.log(message); // يطبع في الـ console
   return (
 
@@ -21,7 +19,7 @@ function About() {
   image={image.HomeAbout}
   variant="button"
   button= {t("HeroTextAbout.btn")} />
-      <h1>
+      
 
     <div>
 
@@ -36,7 +34,7 @@ function About() {
           size="md"
         />
 
-      </h1>
+      </div>
 
     </div>
   )

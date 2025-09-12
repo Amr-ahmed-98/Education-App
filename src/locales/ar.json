@@ -48,10 +48,8 @@
   },
   "EventDetailsSpeaker": {
     "EventDetailsSpeaker": "<span class='text-secondary'>المتحدثون</span> في الايفنت"
- }
+ },
  
- 
-
   "HomeCard": {
     "Duration": "6 أسابيع",
     "Level": "متقدم",
@@ -59,7 +57,7 @@
     "Rating": "4.8/2.3k تقييمات",
     "Price": "$49.99",
     "Title": "تعلم بايثون: دورة برمجة بايثون كاملة"
-
+  },
  
   "HeroText":{
     "title":"تواصل معانا",
@@ -88,5 +86,4 @@
     "btn":"تمرير الكورس "
 
   }
- 
 }

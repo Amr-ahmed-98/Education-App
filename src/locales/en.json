@@ -76,7 +76,7 @@
   "EventDetailsSpeaker": {
     "EventDetailsSpeaker": "Event <span class='text-secondary'>Speakers</span>"
  
- 
+  },
   "HomeCard": {
     "Duration": "6 Weeks",
     "Level": "Advanced",
@@ -84,7 +84,7 @@
     "Rating": "4.8/2.3k Rating",
     "Price": "$49.99",
     "Title": "Learn Python: The Complete Python Programming Course"
- 
+  },
   "HeroText":{
     "title":"Contact Us",
     "subTitle1":"Learn",

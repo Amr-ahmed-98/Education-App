@@ -4,7 +4,7 @@ import EventDetailsSpeakers from "../organisms/EventDetailsSpeakers"
 
 function EventDetails() {
   return (
-    <>c
+    <>
       <EventDetailsHero />
       <EventDetailsDesc />
       <EventDetailsSpeakers />
