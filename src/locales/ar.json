@@ -22,6 +22,36 @@
     "wishlist": "المفضلة",
     "checkout": "الدفع"
   },
+
+  "footer": {
+    "brand": "SkillBase",
+    "description": "لوريم إيبسوم هو نص عنصر نائب يشيع استخدامه في الرسم والطباعة لوريم إيبسوم هو نص عنصر نائب يشيع استخدامه في الرسم والطباعة",
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn"
+    },
+    "servicesTitle": "خدماتنا:",
+    "services": {
+      "dataScience": "علم البيانات",
+      "leadership": "القيادة",
+      "webDevelopment": "تطوير الويب",
+      "communication": "التواصل",
+      "marketing": "التسويق"
+    },
+    "linksTitle": "روابط سريعة:",
+    "links": {
+      "pages": "الصفحات",
+      "blogs": "المدونات",
+      "events": "الفعاليات",
+      "courses": "الدورات",
+      "faqs": "الأسئلة الشائعة"
+    },
+    "copyright": "جميع الحقوق محفوظة © 2025 فريق 1."
+  },
+    "Testimonials": {
+
   "Testimonials": {
     "Btn1": "شهادات العملاء",
     "Title": "ماذا يقول طلابنا عنا",
@@ -29,6 +59,7 @@
     "Btn2": "اتصل بنا",
     "Btn3": "استكشاف الدورات"
   },
+ 
 
   "Blogs": {
     "Section1": {

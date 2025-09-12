@@ -25,13 +25,31 @@ function About() {
 
         {/* this Example to how to use this component */}
         <IconDetails
-          icon={icon.Angry}
+          icon={icon.Check}
           title={"About Us"}
           description="Learn more about our mission and values."
           isCircle={true}
           iconColor="text-green-500"
           bgColor="bg-green-100"
-          size="md"
+          size="lg"
+        />
+           <IconDetails
+          icon={icon.Check}
+          title={"About Us"}
+          description="Learn more about our mission and values."
+          isCircle={true}
+          iconColor="text-green-500"
+          bgColor="bg-green-100"
+          size="lg"
+        />
+           <IconDetails
+          icon={icon.Check}
+          title={"About Us"}
+          description="Learn more about our mission and values."
+          isCircle={true}
+          iconColor="text-green-500"
+          bgColor="bg-green-100"
+          size="lg"
         />
 
       </div>
