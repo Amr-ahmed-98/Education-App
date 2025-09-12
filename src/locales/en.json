@@ -57,6 +57,7 @@
     "Btn3":"Explore Courses"
   },
  
+ 
   "EventDetailsDesc": {
     "date": "Thursday, July 25, 2025",
     "time": "7:00 AM - 10:00 AM",
@@ -74,6 +75,15 @@
   },
   "EventDetailsSpeaker": {
     "EventDetailsSpeaker": "Event <span class='text-secondary'>Speakers</span>"
+ 
+ 
+  "HomeCard": {
+    "Duration": "6 Weeks",
+    "Level": "Advanced",
+    "Lessons": "12 Lessons",
+    "Rating": "4.8/2.3k Rating",
+    "Price": "$49.99",
+    "Title": "Learn Python: The Complete Python Programming Course"
  
   "HeroText":{
     "title":"Contact Us",
