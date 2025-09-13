@@ -192,7 +192,7 @@
     "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
     "btn1":"Contact Us",
     "btn2":"Explore Courses"
-=======
+   },
   "HeroHome": {
     "title1": "Get",
     "title2": "350+",
@@ -200,6 +200,12 @@
     "title4": "Courses From  Website",
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
-
-  }
+  },
+ "certificate":{
+  "title1":"Earn Your Quality Skills",
+  "title2":"Certificate",
+  "title3":"with",
+  "title4":"SkillBase",
+  "btn1":"Get Started Now"
+ }
 }
