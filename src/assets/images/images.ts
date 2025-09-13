@@ -12,7 +12,6 @@ export {
   HomeHero,
   HomeAbout,
   intructor1,
-  AboutImg,
   EventDetailsHero,
   EventDetailsSpeaker1,
   EventDetailsSpeaker2,
