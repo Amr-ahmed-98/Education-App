@@ -200,6 +200,12 @@
     "title4": "Courses From  Website",
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
-
-  }
+  },
+ "certificate":{
+  "title1":"Earn Your Quality Skills",
+  "title2":"Certificate",
+  "title3":"with",
+  "title4":"SkillBase",
+  "btn1":"Get Started Now"
+ }
 }

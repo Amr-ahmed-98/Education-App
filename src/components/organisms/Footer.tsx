@@ -10,10 +10,10 @@ function Footer() {
         <Link to="/" className="text-primary text-[30px]">Skill<span className="text-secondary">Base</span></Link>
         <p className=" text-light-primary mt-[20px] text-[18px]">{t("footer.description")}</p>
         <div className="flex flex-row mt-[20px]">
-          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaLinkedinIn size={24} /></Link>
-          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaInstagram size={24} /></Link>
-          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaWhatsapp size={24} /></Link>
-          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaFacebookF size={24} /></Link>
+          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaLinkedinIn className="text-light-primary" size={24} /></Link>
+          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaInstagram className="text-light-primary" size={24} /></Link>
+          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaWhatsapp className="text-light-primary" size={24} /></Link>
+          <Link className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]" to="/"><icon.FaFacebookF className="text-light-primary" size={24} /></Link>
 
         </div>
        </div>

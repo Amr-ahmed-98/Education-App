@@ -6,6 +6,7 @@ import HeroText from "../molecules/HeroText";
 import Cart from '../molecules/Card';
 import intructor1 from '../../assets/images/instructor1.png';
 import Instructor from "./../organisms/Home/InstructorSection";
+import CertificateSection from "../organisms/Home/certificateSection";
 function Home() {
       const { t } = useTranslation(); 
   return (
@@ -39,7 +40,8 @@ function Home() {
   </div>
     <Cart course={{ id: "1", title: "Python Course", level: "Advanced", duration: "6 Weeks", image: intructor1, rating: 4, totalRatings: 21, price: 120, lessons: 48 }} className="" />
     <Instructor />
-   </div>
+    <CertificateSection />
+    </div>
 
   )
 }

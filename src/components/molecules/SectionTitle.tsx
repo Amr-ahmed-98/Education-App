@@ -4,18 +4,23 @@ import { themes } from "@/contexts/Theme";
 import { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useTranslation } from "react-i18next";
-
+import Button from "../atoms/Button";
 interface TitlePart {
   text: string;
   color?: string;
 }
 
 interface SectionTitleProps {
-  title: string | TitlePart[];
+  title?: string | TitlePart[];
   description?: string;
   trail?: string[];
   children?: React.ReactNode;
   className?: string;
+  button?:string;
+  heading1?:string;
+  heading2?:string;
+  heading3?:string;
+  heading4?:string;
 }
 
 function SectionTitle({
@@ -24,6 +29,11 @@ function SectionTitle({
   className,
   children,
   description,
+  button,
+  heading1,
+  heading2,
+  heading3,
+  heading4
 }: SectionTitleProps) {
   const { theme } = useContext(ThemeContext)!;
   const { i18n } = useTranslation();
@@ -37,13 +47,13 @@ function SectionTitle({
     >
       {/* Ellipse */}
       <div
-        className={`absolute top-18 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full bg-[#B1CAF2] scale-400
-          ${theme === themes.dark && "opacity-5"}
+        className={`absolute top-18 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full z-10 dark:opacity-5 bg-[#B1CAF2] scale-400
+          ${theme === themes.dark && ""}
         `}
       ></div>
 
       {/* Title */}
-      <h1 className="text-4xl relative z-10 max-w-2xl text-center leading-[60px]">
+      <h1 className="text-4xl relative z-10 btn1max-w-2xl text-center leading-[60px]">
         {Array.isArray(title)
           ? title.map((part, index) => (
               <span key={index} style={{ color: part.color || "inherit" }}>
@@ -96,6 +106,10 @@ function SectionTitle({
       <div className="absolute left-5 bottom-2">
         <img src={dots2} alt="dots2" />
       </div>
+     <h2 className="text-[20px]  z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center">{heading1} <span className="text-secondary">{heading2}</span> <br/>{heading3} <span className="text-primary">{heading4}</span></h2>
+     
+     {button && <Button className="mt-[20px]  z-10 " variant="primary" size="lg">{button}</Button>}
+      
     </div>
   );
 }
