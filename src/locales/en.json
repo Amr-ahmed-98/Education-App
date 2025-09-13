@@ -165,6 +165,34 @@
     "description": "Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
     "btn": "Join Us"
   },
+
+  "HeroHome":{
+    "title1":"Get",
+    "title2":"350+",
+    "title3":"Best and Simple Online",
+    "title4":"Courses From  Website",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn":"Scroll Course"
+ 
+  },
+  "InstructorHome":{
+    "title":"Our Instructor",
+    "subTitle1":"Meet Our",
+    "subTitle2":"Expert",
+    "subTitle3":"Instructor",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1":"Contact Us",
+    "btn2":"Explore Courses"
+  },
+   "TestimonialsSection":{
+    "title":"Testimonials",
+    "subTitle1":"What Our",
+    "subTitle2":"Say About Us",
+    "subTitle3":"Instructor",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1":"Contact Us",
+    "btn2":"Explore Courses"
+=======
   "HeroHome": {
     "title1": "Get",
     "title2": "350+",
@@ -172,5 +200,6 @@
     "title4": "Courses From  Website",
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
+
   }
 }
