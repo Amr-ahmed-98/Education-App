@@ -111,5 +111,23 @@
     "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn":"Scroll Course"
  
+  },
+  "InstructorHome":{
+    "title":"Our Instructor",
+    "subTitle1":"Meet Our",
+    "subTitle2":"Expert",
+    "subTitle3":"Instructor",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1":"Contact Us",
+    "btn2":"Explore Courses"
+  },
+   "TestimonialsSection":{
+    "title":"Testimonials",
+    "subTitle1":"What Our",
+    "subTitle2":"Say About Us",
+    "subTitle3":"Instructor",
+    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1":"Contact Us",
+    "btn2":"Explore Courses"
   }
 }

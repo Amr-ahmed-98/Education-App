@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
 import Button from "../atoms/Button";
 import * as img from '../../assets/images/images';
 interface HeroSectionProps {
@@ -34,12 +33,12 @@ const HeroSection : React.FC<HeroSectionProps> = ({
 })=> {
   
   return(
-       <section className={`py-16 lg:py-5 bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#112238_0%,#18304E_0%,#1D3B60_40%,#0D234E_70%)] ${className}`}>
-      <div className="max-w-7xl mx-auto px-5 sm:px-9 lg:px-10">
+       <section className={`py-16 h-[90vh] lg:py-5 bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#112238_0%,#18304E_0%,#1D3B60_40%,#0D234E_70%)] ${className}`}>
+      <div className="max-w-7xl  container">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center `}>
           {/* Content */}
           <div >
-            <h1 className="text-3xl  lg:text-5xl font-bold text-primary leading-tight mb-6">
+            <h1 className="text-3xl mt-[120px] lg:text-5xl font-bold text-primary leading-tight mb-6">
               {title1} <span className="text-secondary"> {title2}</span> <br/> <span className="text-dark-secondary dark:text-light-secondary">{title3}</span><br/> {title4}
             </h1>
          
