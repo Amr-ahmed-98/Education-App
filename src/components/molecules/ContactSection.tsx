@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { FaInstagramSquare, FaWhatsappSquare, FaLinkedin, IoLogoFacebook } from '../../assets/icons/icons';
+import { FaInstagramSquare, FaWhatsappSquare, FaLinkedin, IoLogoFacebook , FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
 
 interface FormData {
   name: string;
@@ -39,21 +39,21 @@ const ContactSection: React.FC = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white leading-tight">
                 {isRTL ? (
                   <>
-                    نحن دائماً{' '}
-                    <span className="text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
+                    نحن دائماً
+                    <span className="text-[var(--color-secondary)] pl-5">
                       متحمسون للتواصل
-                    </span>{' '}
-                    <span className="text-[var(--color-primary)] dark:text-[var(--color-dark-primary)]">
+                    </span>
+                    <span className="text-[var(--color-primary)] ">
                       معك!
                     </span>
                   </>
                 ) : (
                   <>
-                    We're Always{' '}
-                    <span className="text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
+                    We're Always
+                    <span className="text-[var(--color-secondary)] px-2">
                       Eager to
-                    </span>{' '}
-                    <span className="text-[var(--color-primary)] dark:text-[var(--color-dark-primary)]">
+                    </span>
+                    <span className="text-[var(--color-primary)] ">
                       Hear From You!
                     </span>
                   </>
@@ -83,7 +83,7 @@ const ContactSection: React.FC = () => {
                 </h3>
                 <a 
                   href="mailto:edublink@example.com"
-                  className="text-[var(--color-primary)] dark:text-[var(--color-dark-primary)] hover:underline transition-colors"
+                  className=" underline dark:text-white hover:underline transition-colors"
                 >
                   edublink@example.com
                 </a>
@@ -96,7 +96,7 @@ const ContactSection: React.FC = () => {
                 </h3>
                 <a 
                   href="tel:+0914135548598"
-                  className="text-[var(--color-primary)] dark:text-[var(--color-dark-primary)] hover:underline transition-colors"
+                  className=" underline dark:text-white hover:underline transition-colors"
                 >
                   (+091) 413 554 8598
                 </a>
@@ -105,16 +105,16 @@ const ContactSection: React.FC = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark:text-[var(--color-dark-primary)] hover:opacity-80 transition-opacity">
+              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
                 <IoLogoFacebook size={40} />
               </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark:text-[var(--color-dark-primary)] hover:opacity-80 transition-opacity">
+              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
                 <FaInstagramSquare size={40} />
               </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark:text-[var(--color-dark-primary)] hover:opacity-80 transition-opacity">
+              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
                 <FaWhatsappSquare size={40} />
               </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark:text-[var(--color-dark-primary)] hover:opacity-80 transition-opacity">
+              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
                 <FaLinkedin size={40} />
               </a>
             </div>
@@ -217,9 +217,10 @@ const ContactSection: React.FC = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-[var(--color-primary)] dark:bg-[var(--color-dark-primary)] text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
+                  className="flex items-center justify-center gap-2 w-full bg-[var(--color-primary)] dark:bg-[var(--color-dark-primary)] text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
                 >
-                  {t('submitMessage', isRTL ? 'أرسل الرسالة ✈' : 'Submit Message ✈')}
+                  {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
+                  {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}
                 </button>
               </form>
             </div>

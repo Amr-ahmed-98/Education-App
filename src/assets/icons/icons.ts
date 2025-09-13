@@ -1,7 +1,7 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
    
 import { IoLogoFacebook } from "react-icons/io5";
-import {FaInstagramSquare,FaWhatsappSquare,FaLinkedin,FaWhatsapp ,FaInstagram ,FaFacebookF ,FaLinkedinIn     } from "react-icons/fa";
+import {FaInstagramSquare,FaWhatsappSquare,FaLinkedin,FaWhatsapp ,FaInstagram ,FaFacebookF ,FaLinkedinIn , FaLongArrowAltRight , FaLongArrowAltLeft     } from "react-icons/fa";
 import { CiCalendarDate  ,CiLocationOn} from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
 
@@ -30,6 +30,8 @@ export {
   FaInstagramSquare,
   FaWhatsappSquare,
   FaLinkedin,
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
   CiCalendarDate,
   TbClockHour4,
   CiLocationOn,
