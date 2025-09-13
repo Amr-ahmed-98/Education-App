@@ -44,8 +44,8 @@ const Test = () => {
             color?: string;
           }[]
         }
-        trail={
-          t("SectionTitle.Event.Trail", {
+        breadcrumbs={
+          t("SectionTitle.Event.Breadcrumbs", {
             returnObjects: true,
           }) as string[]
         }
@@ -60,8 +60,8 @@ const Test = () => {
             color?: string;
           }[]
         }
-        trail={
-          t("SectionTitle.Course.Trail", {
+        breadcrumbs={
+          t("SectionTitle.Course.Breadcrumbs", {
             returnObjects: true,
           }) as string[]
         }
@@ -76,8 +76,8 @@ const Test = () => {
             color?: string;
           }[]
         }
-        trail={
-          t("SectionTitle.ContactMe.Trail", {
+        breadcrumbs={
+          t("SectionTitle.ContactMe.Breadcrumbs", {
             returnObjects: true,
           }) as string[]
         }
@@ -92,8 +92,8 @@ const Test = () => {
             color?: string;
           }[]
         }
-        trail={
-          t("SectionTitle.ContactUs.Trail", {
+        breadcrumbs={
+          t("SectionTitle.ContactUs.Breadcrumbs", {
             returnObjects: true,
           }) as string[]
         }
@@ -108,8 +108,8 @@ const Test = () => {
             color?: string;
           }[]
         }
-        trail={
-          t("SectionTitle.FAQS.Trail", {
+        breadcrumbs={
+          t("SectionTitle.FAQS.Breadcrumbs", {
             returnObjects: true,
           }) as string[]
         }

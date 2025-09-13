@@ -96,19 +96,19 @@
     },
     "Event": {
       "Title": [{ "text": "Event" }, { "text": "Page", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Event Page"]
+      "Breadcrumbs": ["Home", "Pages", "Event Page"]
     },
     "Course": {
       "Title": [{ "text": "Course" }, { "text": "Page", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Course"]
+      "Breadcrumbs": ["Home", "Pages", "Course"]
     },
     "ContactMe": {
       "Title": [{ "text": "Contact" }, { "text": "Me", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Contact me"]
+      "Breadcrumbs": ["Home", "Pages", "Contact me"]
     },
     "ContactUs": {
       "Title": [{ "text": "Contact" }, { "text": "Us", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Contact Us"]
+      "Breadcrumbs": ["Home", "Pages", "Contact Us"]
     },
     "FAQS": {
       "Title": [
