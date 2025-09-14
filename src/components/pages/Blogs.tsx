@@ -3,7 +3,7 @@ import Button from "../atoms/Button";
 import IconDetails from "../molecules/IconDetails";
 import * as icons from "@/assets/icons/icons";
 import * as images from "@/assets/images/images";
-import Test from "../molecules/test";
+// import Test from "../molecules/test";
 
 const iconDetailsProps = [
   {
@@ -37,7 +37,7 @@ function Blogs() {
 
   return (
     <div className="w-full flex flex-col gap-50 pt-0 mb-10">
-      <Test />
+      {/* <Test /> */}
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
         <h1 className="font-bold text-[60px] leading-[75px] tracking-[-1.5px] text-center">

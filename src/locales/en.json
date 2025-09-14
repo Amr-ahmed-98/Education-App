@@ -117,7 +117,7 @@
       ],
 
       "Description": "Answers to common questions about courses, registration, and more.",
-      "Trail": ["Home", "Pages", "Frequently Asked Questions"]
+      "Breadcrumbs": ["Home", "Pages", "Frequently Asked Questions"]
     }
   },
 
@@ -166,33 +166,6 @@
     "btn": "Join Us"
   },
 
-  "HeroHome":{
-    "title1":"Get",
-    "title2":"350+",
-    "title3":"Best and Simple Online",
-    "title4":"Courses From  Website",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn":"Scroll Course"
- 
-  },
-  "InstructorHome":{
-    "title":"Our Instructor",
-    "subTitle1":"Meet Our",
-    "subTitle2":"Expert",
-    "subTitle3":"Instructor",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1":"Contact Us",
-    "btn2":"Explore Courses"
-  },
-   "TestimonialsSection":{
-    "title":"Testimonials",
-    "subTitle1":"What Our",
-    "subTitle2":"Say About Us",
-    "subTitle3":"Instructor",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1":"Contact Us",
-    "btn2":"Explore Courses"
-   },
   "HeroHome": {
     "title1": "Get",
     "title2": "350+",
@@ -201,11 +174,37 @@
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
   },
- "certificate":{
-  "title1":"Earn Your Quality Skills",
-  "title2":"Certificate",
-  "title3":"with",
-  "title4":"SkillBase",
-  "btn1":"Get Started Now"
- }
+  "InstructorHome": {
+    "title": "Our Instructor",
+    "subTitle1": "Meet Our",
+    "subTitle2": "Expert",
+    "subTitle3": "Instructor",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
+  },
+  "TestimonialsSection": {
+    "title": "Testimonials",
+    "subTitle1": "What Our",
+    "subTitle2": "Say About Us",
+    "subTitle3": "Instructor",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
+  },
+  "HeroHome": {
+    "title1": "Get",
+    "title2": "350+",
+    "title3": "Best and Simple Online",
+    "title4": "Courses From  Website",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn": "Scroll Course"
+  },
+  "certificate": {
+    "title1": "Earn Your Quality Skills",
+    "title2": "Certificate",
+    "title3": "with",
+    "title4": "SkillBase",
+    "btn1": "Get Started Now"
+  }
 }
