@@ -390,5 +390,11 @@
     "title4": "SkillBase",
     "btn1": "ابدا الان معانا "
 
+  },
+  "EventGrid":{
+    "eventGrid":"شبكه",
+    "eventList":"قائمه",
+        "featuredEvents":"<span class='text-secondary'>الأحداث</span> المميزة"
+
   }
 }

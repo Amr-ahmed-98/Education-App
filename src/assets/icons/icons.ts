@@ -1,4 +1,15 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
+ 
+
+
+
+ 
+ 
+import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
+import { TbClockHour4 } from "react-icons/tb";
+import { BsGrid3X3 } from "react-icons/bs";
+import { FaBars } from "react-icons/fa6";
+ 
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -35,6 +46,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+ 
 export {
   LucideInfinity,
   GlobeAltIcon,
@@ -58,6 +70,10 @@ export {
   Clock,
   BookOpen,
   Users,
+ 
+  BsGrid3X3,
+  FaBars,
+ 
   FaWhatsapp,
   FaInstagram,
   FaFacebookF,
@@ -66,4 +82,5 @@ export {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
+ 
 };
