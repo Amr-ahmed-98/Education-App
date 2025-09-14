@@ -14,6 +14,9 @@ import EventDetailsSpeaker1 from "./event-details-speaker(1).png";
 import EventDetailsSpeaker2 from "./event-details-speaker(2).png";
 import EventDetailsSpeaker3 from "./event-details-speaker(3).png";
 import EventDetailsSpeaker4 from "./event-details-speaker(4).png";
+ 
+import EventGridCard from "./events-grid-card.png";
+ 
 import Ellipse from "./Ellipse.png";
 import laptop from "@/assets/images/blog-laptop.png";
 import tablet from "@/assets/images/blog-tablet.png";
@@ -22,6 +25,7 @@ import ideas from "@/assets/images/blog-ideas.png";
 import red_Dots from "@/assets/images/sectionTitle-Red dots.png";
 import green_Dots from "@/assets/images/sectionTitle-Green dots.png";
 
+ 
 export {
   HomeHero,
   HomeAbout,
@@ -35,6 +39,9 @@ export {
   EventDetailsSpeaker2,
   EventDetailsSpeaker3,
   EventDetailsSpeaker4,
+ 
+  EventGridCard,
+ 
   Ellipse,
   laptop,
   tablet,
@@ -42,4 +49,5 @@ export {
   ideas,
   red_Dots,
   green_Dots,
+ 
 };
