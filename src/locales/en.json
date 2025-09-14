@@ -172,5 +172,189 @@
     "title4": "Courses From  Website",
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
+  },
+  
+  "faqTitle": "Frequently Asked Questions",
+  "general": {
+    "title": "General Questions",
+    "platform-basics": {
+      "title": "Platform Basics",
+      "q1": {
+        "question": "What is this platform and how does it work?",
+        "answer": "This platform is an online learning management system that provides comprehensive courses and educational resources. It works by offering structured learning paths, interactive content, assessments, and progress tracking to help users achieve their learning goals."
+      },
+      "q2": {
+        "question": "Can I access the courses from my phone or tablet?",
+        "answer": "Yes, our platform is fully responsive and optimized for all devices including smartphones, tablets, and desktop computers. You can seamlessly switch between devices and your progress will be synchronized.",
+        "q2-1": {
+          "question": "How do I download the mobile app?",
+          "answer": "You can download our mobile app from the App Store for iOS devices or Google Play Store for Android devices. Search for our platform name and look for the official app."
+        },
+        "q2-2": {
+          "question": "Does the mobile app have all features?",
+          "answer": "Yes, the mobile app includes all the core features available on the web platform, including course access, video playback, quizzes, progress tracking, and community features."
+        }
+      }
+    },
+    "course-access": {
+      "title": "Course Access & Navigation",
+      "q3": {
+        "question": "Can I retake courses from my phone or tablet?",
+        "answer": "Yes, you can retake any course from any device. Simply navigate to your course library and select the course you want to retake. Your previous progress will be saved, and you can choose to start fresh or continue from where you left off."
+      },
+      "q4": {
+        "question": "Can I retake quizzes if I don't pass the first time?",
+        "answer": "Yes, you can retake quizzes after a 24-hour cooling period. This allows you time to review the material and better prepare for your next attempt. Most courses allow up to 3 attempts per quiz."
+      }
+    }
+  },
+  "account-management": {
+    "title": "Account Management",
+    "registration-login": {
+      "title": "Registration & Login",
+      "q5": {
+        "question": "How do I create an account?",
+        "answer": "To create an account, click on the \"Sign Up\" button on our homepage. Fill in your personal information, choose a secure password, and verify your email address. Once verified, you can start exploring our courses immediately."
+      },
+      "q6": {
+        "question": "I forgot my password. How can I reset it?",
+        "answer": "Click on \"Forgot Password\" on the login page, enter your registered email address, and we'll send you a password reset link. Follow the instructions in the email to create a new password."
+      },
+      "q7": {
+        "question": "How do I change my account information?",
+        "answer": "Log into your account and go to \"Profile Settings\" or \"Account Settings\" in your dashboard. Here you can update your personal information, change your password, and modify your learning preferences."
+      }
+    },
+    "profile-management": {
+      "title": "Profile Management",
+      "q8": {
+        "question": "Can I change my username after registration?",
+        "answer": "Username changes are limited and may require contacting customer support. However, you can always update your display name and other profile information in your account settings."
+      }
+    }
+  },
+  "technical-support": {
+    "title": "Technical Support",
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "q9": {
+        "question": "The course videos are not loading. What should I do?",
+        "answer": "First, check your internet connection and try refreshing the page. If the problem persists, try clearing your browser cache, disabling browser extensions, or switching to a different browser. Contact our technical support if issues continue.",
+        "q9-1": {
+          "question": "What browsers are supported?",
+          "answer": "We support the latest versions of Chrome, Firefox, Safari, and Edge. For the best experience, we recommend using Chrome or Firefox with hardware acceleration enabled."
+        }
+      },
+      "q10": {
+        "question": "Why is my course progress not saving?",
+        "answer": "Progress saving issues can occur due to browser cookies being disabled, poor internet connection, or browser compatibility issues. Ensure cookies are enabled and try logging out and back in. Contact support if the problem persists."
+      }
+    },
+    "system-requirements": {
+      "title": "System Requirements",
+      "q11": {
+        "question": "What are the minimum system requirements?",
+        "answer": "For optimal performance, we recommend: Internet speed of at least 5 Mbps, 4GB RAM, updated browser, and speakers or headphones. Mobile devices should be running iOS 12+ or Android 8+."
+      }
+    }
+  },
+  "payment-billing": {
+    "title": "Payment & Billing",
+    "payment-options": {
+      "title": "Payment Options",
+      "q12": {
+        "question": "Can I pay in installments?",
+        "answer": "Yes, we offer flexible payment plans for most courses. You can choose from monthly, quarterly, or semester-based payment options. Payment plans are available at checkout or can be set up by contacting our billing department."
+      },
+      "q13": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, bank transfers, and in some regions, local payment methods like mobile money or digital wallets."
+      }
+    },
+    "billing-support": {
+      "title": "Billing Support",
+      "q14": {
+        "question": "How do I get a receipt for my payment?",
+        "answer": "Receipts are automatically sent to your registered email address after each successful payment. You can also download receipts from your account dashboard under \"Billing History\" or \"Payment Records\"."
+      },
+      "q15": {
+        "question": "Can I get a refund if I'm not satisfied?",
+        "answer": "Yes, we offer a 30-day money-back guarantee for most courses. If you're not satisfied within the first 30 days and have completed less than 30% of the course, you can request a full refund through our support system."
+      }
+    }
+  },
+  "certificates-credentials": {
+    "title": "Certificates & Credentials",
+    "certificate-issuance": {
+      "title": "Certificate Issuance",
+      "q16": {
+        "question": "Do you provide completion certificates?",
+        "answer": "Yes, we provide digital certificates of completion for all paid courses. Certificates are automatically generated once you complete all course requirements, including assignments and final assessments."
+      },
+      "q17": {
+        "question": "Are your certificates recognized by employers?",
+        "answer": "Our certificates are widely recognized in the industry and include verification features. Many of our courses are designed in partnership with industry professionals and align with current job market requirements."
+      }
+    },
+    "credential-verification": {
+      "title": "Credential Verification",
+      "q18": {
+        "question": "How can employers verify my certificate?",
+        "answer": "Each certificate includes a unique verification code and QR code that employers can use to verify authenticity on our verification portal. Certificates also include completion dates and course details."
+      }
+    }
+  },
+  "policies-legal": {
+    "title": "Policies & Legal",
+    "terms-conditions": {
+      "title": "Terms & Conditions",
+      "q19": {
+        "question": "What happens if the platform updates its terms?",
+        "answer": "We will notify all users via email and through in-platform notifications at least 30 days before any significant changes to our terms and conditions take effect. Continued use of the platform after the effective date constitutes acceptance of the new terms."
+      },
+      "q20": {
+        "question": "What is your refund policy?",
+        "answer": "We offer a 30-day money-back guarantee for paid courses. Refunds are processed within 5-7 business days to the original payment method. Certain restrictions may apply for heavily discounted courses or bundle deals."
+      }
+    },
+    "privacy-data": {
+      "title": "Privacy & Data Protection",
+      "q21": {
+        "question": "How is my personal data protected?",
+        "answer": "We use industry-standard encryption and security measures to protect your personal data. We comply with GDPR and other applicable privacy regulations. Your data is never sold to third parties, and you have full control over your privacy settings."
+      },
+      "q22": {
+        "question": "Can I delete my account and data?",
+        "answer": "Yes, you can request account deletion through your account settings or by contacting our support team. We will permanently delete your personal data within 30 days, though some information may be retained for legal or billing purposes as required by law."
+      }
+    }
+  },
+  "learning-support": {
+    "title": "Learning Support",
+    "academic-support": {
+      "title": "Academic Support",
+      "q23": {
+        "question": "Do you offer academic support or tutoring?",
+        "answer": "Yes, we provide various forms of academic support including discussion forums, live Q&A sessions, email support from instructors, and in some courses, one-on-one tutoring sessions. Premium students get priority access to these services."
+      },
+      "q24": {
+        "question": "How do I contact my instructor?",
+        "answer": "You can contact instructors through the course messaging system, participate in live Q&A sessions, or join course-specific discussion forums. Response times vary by instructor but typically range from 24-48 hours."
+      }
+    },
+    "community-features": {
+      "title": "Community Features",
+      "q25": {
+        "question": "Is there a community forum for students?",
+        "answer": "Yes, we have active community forums where students can interact, share experiences, ask questions, and collaborate on projects. Forums are moderated to ensure a positive and productive learning environment."
+      },
+      "q26": {
+        "question": "Can I connect with other students taking the same course?",
+        "answer": "Absolutely! Each course has its own community space where you can connect with fellow students, form study groups, share resources, and collaborate on assignments. You can also join our general student community."
+      }
+    }
   }
 }
+
+
+
