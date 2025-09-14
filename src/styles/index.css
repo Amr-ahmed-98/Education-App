@@ -11,7 +11,6 @@
   );
 }
 @theme {
- 
   --color-primary: #3972FF;
   --color-secondary:#EE4A62;
   --color-light-primary: #ffffff;   /* أبيض خالص */
@@ -21,7 +20,8 @@
   --color-text-grayDark:#606060;     
   --color-text-grayLight:#BBBBBB;     
   --color-hero-blue:#4775C1;
- --gradient-hero: linear-gradient(
+  --color-social-icons:#1C4281;
+   --gradient-hero: linear-gradient(
     90deg, 
     #4775C1 0%, 
     #5184D5 30%, 

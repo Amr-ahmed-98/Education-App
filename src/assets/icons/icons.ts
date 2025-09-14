@@ -1,4 +1,29 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
+ 
+
+
+
+ 
+ 
+import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
+import { TbClockHour4 } from "react-icons/tb";
+import { BsGrid3X3 } from "react-icons/bs";
+import { FaBars } from "react-icons/fa6";
+ 
+import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
+import { TbClockHour4 } from "react-icons/tb";
+import { IoLogoFacebook } from "react-icons/io5";
+import {
+  FaInstagramSquare,
+  FaWhatsappSquare,
+  FaLinkedin,
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
+} from "react-icons/fa";
 
 import {
   AlignLeft,
@@ -12,19 +37,18 @@ import {
   Star,
   Users,
   Check,
+  Linkedin,
+  Instagram,
+  Infinity as LucideInfinity,
+  Award,
+  ShieldCheck,
+  ArrowRight,
+  ChevronRight,
 } from "lucide-react";
 
-import { IoLogoFacebook } from "react-icons/io5";
-import {
-  FaInstagramSquare,
-  FaWhatsappSquare,
-  FaLinkedin,
-} from "react-icons/fa";
-import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
-import { TbClockHour4 } from "react-icons/tb";
-import { BsGrid3X3 } from "react-icons/bs";
-import { FaBars } from "react-icons/fa6";
+ 
 export {
+  LucideInfinity,
   GlobeAltIcon,
   AlignLeft,
   X,
@@ -36,6 +60,8 @@ export {
   FaInstagramSquare,
   FaWhatsappSquare,
   FaLinkedin,
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
   CiCalendarDate,
   TbClockHour4,
   CiLocationOn,
@@ -44,6 +70,17 @@ export {
   Clock,
   BookOpen,
   Users,
+ 
   BsGrid3X3,
   FaBars,
+ 
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  Award,
+  ShieldCheck,
+  ArrowRight,
+  ChevronRight,
+ 
 };

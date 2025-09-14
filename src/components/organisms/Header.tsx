@@ -1,9 +1,5 @@
-
 function Header() {
-  return (
-   <header className=" sticky">
-   </header>
-  )
+  return <header className=" sticky"></header>;
 }
 
-export default Header
+export default Header;
