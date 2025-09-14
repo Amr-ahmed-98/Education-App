@@ -85,5 +85,11 @@
     "description":"لوريم إيبسوم هو نص عنصر نائب يشيع استخدامه في الرسم والطباعة",
     "btn":"تمرير الكورس "
 
+  },
+  "EventGrid":{
+    "eventGrid":"شبكه",
+    "eventList":"قائمه",
+        "featuredEvents":"<span class='text-secondary'>الأحداث</span> المميزة"
+
   }
 }

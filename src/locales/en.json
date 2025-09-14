@@ -111,5 +111,11 @@
     "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn":"Scroll Course"
  
+  },
+  "EventGrid":{
+    "eventGrid":"Grid",
+    "eventList":"List",
+    "featuredEvents":"Featured <span class='text-secondary'>Events</span>"
   }
+
 }

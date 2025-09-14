@@ -1,8 +1,10 @@
+import EventGrid from "../organisms/EventGrid"
 
 function Event() {
   return (
     <>
-    
+    {/* < /> */}
+    <EventGrid />
     </>
   )
 }
