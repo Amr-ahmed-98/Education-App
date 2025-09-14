@@ -33,7 +33,7 @@ const EventGrid = () => {
     return (
         <>
             <section className='py-16'>
-                <div className='containerr'>
+                <div className='container'>
                     <div className="text-center mb-14">
                         <h1 className="text-[32px]  font-medium" dangerouslySetInnerHTML={{ __html: t(`EventGrid.featuredEvents`) }} />
                     </div>

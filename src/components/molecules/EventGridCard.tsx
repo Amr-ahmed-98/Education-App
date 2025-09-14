@@ -1,5 +1,5 @@
-import Button from "../atoms/Button"
 import * as Icons from "../../assets/icons/icons"
+import { Link } from "react-router-dom";
 type Event = {
     id: number;
     time: string;
@@ -24,7 +24,7 @@ const EventGridCard = ({ event, show }: { event: Event, show: string }) => {
                     </ul>
                     <h2 className="text-[#002B5B] dark:text-white text-2xl font-bold">{event?.title}</h2>
                     <p className="dark:text-[#A4A4A4]">{event?.desc}</p>
-                    <Button className="mt-2">View Details</Button>
+                    <Link to={`/events/${event?.id}`} className="mt-3 bg-primary p-3 text-center text-white rounded-xl font-medium">View Details</Link>
                 </div>
             </div>
         </>

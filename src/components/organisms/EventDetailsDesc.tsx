@@ -1,13 +1,14 @@
 import Button from "../atoms/Button";
 import * as Icons from "../../assets/icons/icons";
 import { useTranslation } from "react-i18next";
+// import { useParams } from "react-router-dom";
 const EventDetailsDesc = () => {
   const { t } = useTranslation();
-
+// const {id} = useParams();
   return (
     <>
       <section className="py-10">
-        <div className="md:px-16 sm:px-10 px-4">
+        <div className="container">
           <ul className="flex flex-col gap-3">
             <li className="flex gap-2 items-center">
               <Icons.CiCalendarDate className="text-secondary" />
