@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom";
 import Button from "../atoms/Button";
 interface HeroTextProps{
     title?: string,
@@ -37,7 +36,7 @@ const HeroText : React.FC<HeroTextProps> = ({
         <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
        {/* icons variant */}
         {variant === "icons" && icons && (
-          <div className="flex gap-3 flex flex-col">
+          <div className="flex gap-3  flex-col">
             {icons.map((icon, i) => (
               <div key={i} className="flex flex-row  gap-2">
               <>

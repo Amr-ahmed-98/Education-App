@@ -1,21 +1,39 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
-   
-import { IoLogoFacebook } from "react-icons/io5";
-import {FaInstagramSquare,FaWhatsappSquare,FaLinkedin,FaWhatsapp ,FaInstagram ,FaFacebookF ,FaLinkedinIn , FaLongArrowAltRight , FaLongArrowAltLeft     } from "react-icons/fa";
-import { CiCalendarDate  ,CiLocationOn} from "react-icons/ci";
+import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
+import { IoLogoFacebook } from "react-icons/io5";
+import {
+  FaInstagramSquare,
+  FaWhatsappSquare,
+  FaLinkedin,
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaLongArrowAltRight,
+  FaLongArrowAltLeft,
+} from "react-icons/fa";
 
-
-import {AlignLeft , X , Moon , SunMedium , Facebook, Angry , Clock, BookOpen, Star,Users,Check,Linkedin,Instagram ,
-        
+import {
+  AlignLeft,
+  X,
+  Moon,
+  SunMedium,
+  Facebook,
+  Angry,
+  Clock,
+  BookOpen,
+  Star,
+  Users,
+  Check,
+  Linkedin,
+  Instagram,
   Infinity as LucideInfinity,
   Award,
   ShieldCheck,
   ArrowRight,
   ChevronRight,
-  // Blogs end ---
 } from "lucide-react";
-
 
 export {
   LucideInfinity,
