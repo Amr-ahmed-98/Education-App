@@ -7,7 +7,7 @@ import * as images from "@/assets/images/images";
 import { themes } from "@/contexts/Theme";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useContext } from "react";
-import Test from "../molecules/test";
+// import Test from "../molecules/test";
 
 const iconDetailsProps = [
   {
@@ -42,7 +42,7 @@ function Blogs() {
 
   return (
     <div className="w-full flex flex-col gap-50 pt-0 mb-10">
-      <Test />
+      {/* <Test /> */}
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
         <h1 className="font-bold text-6xl leading-[75px] tracking-[-1.5px] text-center">
