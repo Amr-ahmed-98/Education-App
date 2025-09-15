@@ -478,8 +478,15 @@
       "description": "Gain skills that boost your career prospects and professional growth."
     }
   
-  }
+  },
+  "certificates": {
+    "title1": "Ready to Transform Your",
+    "title2" :"Learning",
+    "title3" :"Journey?",
+    "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+    "btn": "Start Journey Today"
 }
+  }
 }
 
 

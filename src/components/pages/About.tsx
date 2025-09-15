@@ -158,7 +158,7 @@ function About() {
 
 
 
- <div>
+      <div>
       <h1 className="text-4xl font-bold text-center pt-16 mb-20">
       {t("about.offers.title")}
       <span className="text-red-500 px-2">
@@ -197,15 +197,52 @@ function About() {
           </div>
       </div>
 
-
-
-
-
-
-
-
-
         <CertificateSection/>
+
+
+      {/*    <div>
+      <h1 className="text-4xl font-bold text-center pt-16 mb-20">
+      {t("about.offers.title")}
+      <span className="text-red-500 px-2">
+        {t("about.offers.offersText")}
+      </span>
+      </h1>
+      <div className="container  my-20 py-[40px] flex gap-12 justify-center">
+      <IconDetails
+      icon={icon.FaBookOpen}
+      title={t("about.offers.feature1.title")}
+      description={t("about.offers.feature1.description")}
+      isCircle={false}
+      iconColor="text-blue-500"
+      bgColor="bg-blue-100"
+      size="lg"
+    />
+    <IconDetails
+      icon={icon.IoCheckmarkCircleOutline}
+       title={t("about.offers.feature2.title")}
+      description={t("about.offers.feature2.description")}
+      isCircle={false}
+      iconColor="text-yellow-500"
+      bgColor="bg-yellow-100"
+      size="lg"
+    />
+     </div>
+
+     <div className="container  my-20 py-[40px] flex gap-12 justify-center">
+         <IconDetails
+      icon={icon.FaChartLine}
+      title={t("about.offers.feature3.title")}
+      description={t("about.offers.feature3.description")}
+    isCircle={false}
+      iconColor="text-red-500"
+      bgColor="bg-red-100"
+      size="lg"
+    />
+      </div>
+ 
+ 
+         
+      </div> */}
       
     </div>
   );
