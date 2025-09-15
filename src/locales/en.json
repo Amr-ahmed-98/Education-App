@@ -59,7 +59,8 @@
 
   "Blogs": {
     "Section1": {
-      "Title": "Unlock Your Full Potential",
+      "title1": "Unlock Your Full",
+      "title2": "Potential",
       "Description": "Discover hundreds of expert-led courses on development, design, business,and more. Start your learning journey today.",
       "Btn": "Get Started For Free"
     },
@@ -77,47 +78,55 @@
 
   "SectionTitle": {
     "Home": {
-      "Title": [
-        { "text": "Earn Your Quality Skills" },
-        { "text": "Certificate", "color": "#EE4A62" },
-        { "text": "with" },
-        { "text": "  SkillBase", "color": "#3972FF" }
-      ],
-      "Btn": "Get Started Now"
+      "title1": "Earn Your Quality Skills",
+      "title2": "Certificate",
+      "title3": "with",
+      "title4": "SkillBase",
+      "btn": "Get Started Now"
     },
     "About": {
-      "Title": [
-        { "text": "Ready to Transform Your" },
-        { "text": "Learning", "color": "#EE4A62" },
-        { "text": "Journey", "color": "#3972FF" }
-      ],
-      "Description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
-      "Btn": "Start Learning Today"
+      "title1": "Ready to Transform Your",
+      "title2": "Learning",
+      "title3": "Journey",
+      "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+      "btn": "Start Learning Today"
     },
     "Event": {
-      "Title": [{ "text": "Event" }, { "text": "Page", "color": "#EE4A62" }],
-      "Breadcrumbs": ["Home", "Pages", "Event Page"]
+      "title1": "Event",
+      "title2": "Page",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Event Page"
     },
     "Course": {
-      "Title": [{ "text": "Course" }, { "text": "Page", "color": "#EE4A62" }],
-      "Breadcrumbs": ["Home", "Pages", "Course"]
+      "title1": "Course",
+      "title2": "Page",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Course Page"
     },
     "ContactMe": {
-      "Title": [{ "text": "Contact" }, { "text": "Me", "color": "#EE4A62" }],
-      "Breadcrumbs": ["Home", "Pages", "Contact me"]
+      "title1": "Contact",
+      "title2": "Me",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Contact me"
     },
     "ContactUs": {
-      "Title": [{ "text": "Contact" }, { "text": "Us", "color": "#EE4A62" }],
-      "Breadcrumbs": ["Home", "Pages", "Contact Us"]
+      "title1": "Contact",
+      "title2": "Us",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Contact Us"
     },
     "FAQS": {
-      "Title": [
-        { "text": "Your Questions," },
-        { "text": "Answered", "color": "#EE4A62" }
-      ],
-
-      "Description": "Answers to common questions about courses, registration, and more.",
-      "Breadcrumbs": ["Home", "Pages", "Frequently Asked Questions"]
+      "title1": "Your Questions,",
+      "title2": "Answered",
+      "description1": "Answers to common questions about courses, registration, and more.",
+      "description2": "registration, and more.",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Frequently Asked Questions"
     }
   },
 

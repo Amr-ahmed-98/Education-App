@@ -17,7 +17,8 @@ import student from "@/assets/images/blog-student.png";
 import ideas from "@/assets/images/blog-ideas.png";
 import red_Dots from "@/assets/images/sectionTitle-Red dots.png";
 import green_Dots from "@/assets/images/sectionTitle-Green dots.png";
-
+import janeDoe from "@/assets/images/blog-jane doe.png";
+import jandoe2 from "@/assets/images/blog-jane doe2.png";
 export {
   HomeHero,
   HomeAbout,
@@ -38,4 +39,6 @@ export {
   ideas,
   red_Dots,
   green_Dots,
+  janeDoe,
+  jandoe2,
 };

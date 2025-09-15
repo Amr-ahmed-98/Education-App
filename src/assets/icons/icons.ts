@@ -33,6 +33,10 @@ import {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
+  Twitter,
+  Globe,
+  Calendar,
+  Search,
 } from "lucide-react";
 
 export {
@@ -66,4 +70,8 @@ export {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
+  Twitter,
+  Globe,
+  Calendar,
+  Search,
 };

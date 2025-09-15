@@ -4,6 +4,10 @@ import IconDetails from "../molecules/IconDetails";
 import * as icons from "@/assets/icons/icons";
 import * as images from "@/assets/images/images";
 // import Test from "../molecules/test";
+import { themes } from "@/contexts/Theme";
+import { ThemeContext } from "@/contexts/ThemeContextDefinition";
+import { useContext } from "react";
+import Test from "../molecules/test";
 
 const iconDetailsProps = [
   {
@@ -34,26 +38,18 @@ const iconDetailsProps = [
 
 function Blogs() {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext)!;
 
   return (
     <div className="w-full flex flex-col gap-50 pt-0 mb-10">
-      {/* <Test /> */}
+      <Test />
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
-        <h1 className="font-bold text-[60px] leading-[75px] tracking-[-1.5px] text-center">
-          {Array.isArray(t("Blogs.Section1.Title", { returnObjects: true }))
-            ? // if title is an Array
-              (
-                t("Blogs.Section1.Title", { returnObjects: true }) as {
-                  text: string;
-                  color?: string;
-                }[]
-              ).map((part, index) => (
-                <span key={index} style={{ color: part.color || "inherit" }}>
-                  {part.text}
-                </span>
-              ))
-            : t("Blogs.Section1.Title")}{" "}
+        <h1 className="font-bold text-6xl leading-[75px] tracking-[-1.5px] text-center">
+          {t("Blogs.Section1.title1")}{" "}
+          <span className={`${theme === themes.dark && "text-[#EE4A62]"}`}>
+            {t("Blogs.Section1.title2")}
+          </span>
         </h1>
 
         <p className="w-[34rem] text-[#45556C]">
