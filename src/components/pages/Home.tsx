@@ -6,7 +6,9 @@ import HeroText from "../molecules/HeroText";
 import Cart from "../molecules/Card";
 import intructor1 from "../../assets/images/instructor1.png";
 import Instructor from "./../organisms/Home/InstructorSection";
-import CertificateSection from "../organisms/Home/certificateSection";
+import CertificateSection from "../../components/organisms/Home/CertificateSection";
+import BannerCard from "../organisms/Home/BannerCard";
+import {ItemCard} from '../../utils/Data';
 function Home() {
   const { t } = useTranslation();
   return (
@@ -22,7 +24,18 @@ function Home() {
         imageRight={true} // لو خليتها true هتبدل مكان النص مع الصورة
         className="bg-gray-50"
       />
-
+    <div className=" bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)]">
+      <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+  {ItemCard.map((item)=>(
+        <BannerCard 
+            key={item.id}
+          icon={item.icon}
+          value={item.value}
+          label={t(item.labelKey)}
+        />
+      ))}
+      </div>
+    </div>
       <div className="md:px-16 sm:px-10 px-4">
         <HeroText
           title={t("HeroText.title")}
@@ -54,7 +67,8 @@ function Home() {
           ]}
         />
       </div>
-      <Cart
+    <div className="flex flex-row container gap-4">
+        <Cart 
         course={{
           id: "1",
           title: "Python Course",
@@ -68,6 +82,36 @@ function Home() {
         }}
         className=""
       />
+        <Cart
+        course={{
+          id: "1",
+          title: "Python Course",
+          level: "Advanced",
+          duration: "6 Weeks",
+          image: intructor1,
+          rating: 4,
+          totalRatings: 21,
+          price: 120,
+          lessons: 48,
+        }}
+        className=""
+      />
+        <Cart
+        course={{
+          id: "1",
+          title: "Python Course",
+          level: "Advanced",
+          duration: "6 Weeks",
+          image: intructor1,
+          rating: 4,
+          totalRatings: 21,
+          price: 120,
+          lessons: 48,
+        }}
+        className=""
+      />
+    </div>
+      
       <Instructor />
       <CertificateSection />
     </div>

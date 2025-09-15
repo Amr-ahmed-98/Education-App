@@ -6,7 +6,7 @@ const EventDetailsSpeakers = () => {
   return (
     <>
       <section className="py-10">
-        <div className="md:px-16 sm:px-10 px-4">
+        <div className="container">
           <div
             className="flex justify-center md:justify-normal  text-4xl pb-8"
             dangerouslySetInnerHTML={{

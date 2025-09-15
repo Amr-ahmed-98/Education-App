@@ -47,18 +47,18 @@ const Card: React.FC<CourseCardProps> = ({ course, className = '' }) => {
   const getLevelColor = (level: string) => {
     switch (level) {
       case 'Beginner':
-        return 'bg-green-100 text-green-700';
+        return 'bg-green-100 text-dark-primary';
       case 'Intermediate':
-        return 'bg-blue-100 text-blue-700';
+        return 'bg-blue-100 text-dark-primary';
       case 'Advanced':
-        return 'bg-purple-100 text-purple-700';
+        return 'bg-[#CCDDFF] text-dark-primary';
       default:
-        return 'bg-gray-100 text-gray-700';
+        return 'bg-gray-100 text-dark-primary';
     }
   };
 
   return (
-    <div className={`group rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden max-w-sm mx-auto transform hover:-translate-y-1 ${classes} ${className}`}>
+    <div className={`group rounded-2xl dark:bg-dark-secondary shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden max-w-sm mx-auto transform hover:-translate-y-1 ${classes} ${className}`}>
       {/* Header Image with Badge */}
       <div className="relative h-48 overflow-hidden">
         <img 
