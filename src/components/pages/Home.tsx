@@ -67,7 +67,8 @@ function Home() {
           ]}
         />
       </div>
-      <Cart
+    <div className="flex flex-row container gap-4">
+        <Cart 
         course={{
           id: "1",
           title: "Python Course",
@@ -81,6 +82,36 @@ function Home() {
         }}
         className=""
       />
+        <Cart
+        course={{
+          id: "1",
+          title: "Python Course",
+          level: "Advanced",
+          duration: "6 Weeks",
+          image: intructor1,
+          rating: 4,
+          totalRatings: 21,
+          price: 120,
+          lessons: 48,
+        }}
+        className=""
+      />
+        <Cart
+        course={{
+          id: "1",
+          title: "Python Course",
+          level: "Advanced",
+          duration: "6 Weeks",
+          image: intructor1,
+          rating: 4,
+          totalRatings: 21,
+          price: 120,
+          lessons: 48,
+        }}
+        className=""
+      />
+    </div>
+      
       <Instructor />
       <CertificateSection />
     </div>

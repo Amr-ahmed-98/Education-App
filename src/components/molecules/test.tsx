@@ -1,118 +1,115 @@
 import { useTranslation } from "react-i18next";
 import SectionTitle from "./SectionTitle";
-import Button from "../atoms/Button";
+import { ThemeContext } from "@/contexts/ThemeContextDefinition";
+import { useContext } from "react";
+import { themes } from "@/contexts/Theme";
 
 const Test = () => {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext)!;
+  const { i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
 
   return (
     <div className="flex flex-col gap-5">
       {/* Home */}
       <SectionTitle
-        title={
-          t("SectionTitle.Home.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
+        heading1={t("SectionTitle.Home.title1")}
+        heading2={t("SectionTitle.Home.title2")}
+        heading3={t("SectionTitle.Home.title3")}
+        heading4={t("SectionTitle.Home.title4")}
+        button={t("SectionTitle.Home.btn")}
         className="" // Change Style if Needed
-      >
-        <Button>{t("SectionTitle.Home.Btn")}</Button>
-      </SectionTitle>
+      ></SectionTitle>
 
       {/* About */}
       <SectionTitle
-        title={
-          t("SectionTitle.About.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
+        heading1={t("SectionTitle.About.title1")}
+        heading2={
+          <span className="text-[#EE4A62]">
+            {t("SectionTitle.About.title2")}
+          </span>
         }
-        description={t("SectionTitle.About.Description")}
-        className="" // Change Style if Needed
-      >
-        <button className="px-6 py-2 mt-4 rounded-lg bg-[#3972FF] text-white font-semibold">
-          {t("SectionTitle.Home.Btn")}
-        </button>
-      </SectionTitle>
+        heading3={
+          isArabic && theme === themes.dark ? (
+            <span className="text-[#FFFFFF]">
+              {t("SectionTitle.About.title3")}
+            </span>
+          ) : isArabic && theme === themes.light ? (
+            <span className="text-[#272626]">
+              {t("SectionTitle.About.title3")}
+            </span>
+          ) : !isArabic && theme === themes.dark ? (
+            <span className="text-[#3972FF]">
+              {t("SectionTitle.About.title3")}
+            </span>
+          ) : theme === themes.light ? (
+            <span className="text-[#3972FF]">
+              {t("SectionTitle.About.title3")}
+            </span>
+          ) : null
+        }
+        heading4={
+          isArabic ? (
+            <span className="text-[#3972FF]">
+              {t("SectionTitle.About.title4")}
+            </span>
+          ) : null
+        }
+        description={t("SectionTitle.About.description")}
+        button={t("SectionTitle.About.btn")}
+        className="h-[450px]" // Change Style if Needed
+      ></SectionTitle>
 
       {/* Event */}
       <SectionTitle
-        title={
-          t("SectionTitle.Event.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
-        breadcrumbs={
-          t("SectionTitle.Event.Breadcrumbs", {
-            returnObjects: true,
-          }) as string[]
-        }
+        heading1={t("SectionTitle.Event.title1")}
+        heading2={t("SectionTitle.Event.title2")}
+        breadcrumbs1={t("SectionTitle.Event.breadcrumbs1")}
+        breadcrumbs2={t("SectionTitle.Event.breadcrumbs2")}
+        breadcrumbs3={t("SectionTitle.Event.breadcrumbs3")}
         className="" // Change Style if Needed
       ></SectionTitle>
 
       {/* Course */}
       <SectionTitle
-        title={
-          t("SectionTitle.Course.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
-        breadcrumbs={
-          t("SectionTitle.Course.Breadcrumbs", {
-            returnObjects: true,
-          }) as string[]
-        }
+        heading1={t("SectionTitle.Course.title1")}
+        heading2={t("SectionTitle.Course.title2")}
+        breadcrumbs1={t("SectionTitle.Course.breadcrumbs1")}
+        breadcrumbs2={t("SectionTitle.Course.breadcrumbs2")}
+        breadcrumbs3={t("SectionTitle.Course.breadcrumbs3")}
         className="" // Change Style if Needed
       ></SectionTitle>
 
       {/* Contact Me */}
       <SectionTitle
-        title={
-          t("SectionTitle.ContactMe.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
-        breadcrumbs={
-          t("SectionTitle.ContactMe.Breadcrumbs", {
-            returnObjects: true,
-          }) as string[]
-        }
+        heading1={t("SectionTitle.ContactMe.title1")}
+        heading2={t("SectionTitle.ContactMe.title2")}
+        breadcrumbs1={t("SectionTitle.ContactMe.breadcrumbs1")}
+        breadcrumbs2={t("SectionTitle.ContactMe.breadcrumbs2")}
+        breadcrumbs3={t("SectionTitle.ContactMe.breadcrumbs3")}
         className="" // Change Style if Needed
       ></SectionTitle>
 
       {/* Contact Us */}
       <SectionTitle
-        title={
-          t("SectionTitle.ContactUs.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
-        breadcrumbs={
-          t("SectionTitle.ContactUs.Breadcrumbs", {
-            returnObjects: true,
-          }) as string[]
-        }
+        heading1={t("SectionTitle.ContactUs.title1")}
+        heading2={t("SectionTitle.ContactUs.title2")}
+        breadcrumbs1={t("SectionTitle.ContactUs.breadcrumbs1")}
+        breadcrumbs2={t("SectionTitle.ContactUs.breadcrumbs2")}
+        breadcrumbs3={t("SectionTitle.ContactUs.breadcrumbs3")}
         className="" // Change Style if Needed
       ></SectionTitle>
 
       {/* FAQS */}
       <SectionTitle
-        title={
-          t("SectionTitle.FAQS.Title", { returnObjects: true }) as {
-            text: string;
-            color?: string;
-          }[]
-        }
-        breadcrumbs={
-          t("SectionTitle.FAQS.Breadcrumbs", {
-            returnObjects: true,
-          }) as string[]
-        }
+        heading1={t("SectionTitle.FAQS.title1")}
+        heading2={t("SectionTitle.FAQS.title2")}
+        breadcrumbs1={t("SectionTitle.FAQS.breadcrumbs1")}
+        breadcrumbs2={t("SectionTitle.FAQS.breadcrumbs2")}
+        breadcrumbs3={t("SectionTitle.FAQS.breadcrumbs3")}
+        description1={t("SectionTitle.FAQS.description1")}
+        description2={t("SectionTitle.FAQS.description2")}
         className="" // Change Style if Needed
       ></SectionTitle>
     </div>

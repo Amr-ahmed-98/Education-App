@@ -6,35 +6,45 @@ import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useTranslation } from "react-i18next";
 import Button from "../atoms/Button";
 
-interface TitlePart {
-  text: string;
-  color?: string;
-}
+// interface TitlePart {
+//   text: string;
+//   color?: string;
+// }
 
 interface SectionTitleProps {
-  title?: string | TitlePart[];
+  // title?: string | TitlePart[];
+  // breadcrumbs?: string[];
+  heading1?: string | React.ReactNode;
+  heading2?: string | React.ReactNode;
+  heading3?: string | React.ReactNode;
+  heading4?: string | React.ReactNode;
   description?: string;
-  breadcrumbs?: string[];
-  children?: React.ReactNode;
-  className?: string;
+  description1?: string;
+  description2?: string;
+  breadcrumbs1?: string;
+  breadcrumbs2?: string;
+  breadcrumbs3?: string;
   button?: string;
-  heading1?: string;
-  heading2?: string;
-  heading3?: string;
-  heading4?: string;
+  className?: string;
+  children?: React.ReactNode;
 }
 
 function SectionTitle({
-  title,
-  breadcrumbs = [],
+  // title,
+  // breadcrumbs = [],
   className,
   children,
   description,
+  description1,
+  description2,
   button,
   heading1,
   heading2,
   heading3,
   heading4,
+  breadcrumbs1,
+  breadcrumbs2,
+  breadcrumbs3,
 }: SectionTitleProps) {
   const { theme } = useContext(ThemeContext)!;
   const { i18n } = useTranslation();
@@ -54,45 +64,42 @@ function SectionTitle({
       ></div>
 
       {/* Title */}
-      <h1 className="text-4xl relative z-10 btn1max-w-2xl text-center leading-[60px]">
-        {Array.isArray(title)
-          ? title.map((part, index) => (
-              <span key={index} style={{ color: part.color || "inherit" }}>
-                {part.text + " "}
-              </span>
-            ))
-          : title}
-      </h1>
+      {(heading1 || heading2 || heading3 || heading4) && (
+        <h2 className="text-[20px]  z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center">
+          {heading1} <span className="text-secondary">{heading2}</span> <br />
+          {heading3} <span className="text-primary">{heading4}</span>
+        </h2>
+      )}
 
       {/* Description */}
-      {description && (
-        <p className="relative z-10 text-xl max-w-3xl text-center">
-          {description}
+      {(description || description1 || description2) && (
+        <p
+          className={`relative z-10 text-xl max-w-3xl text-center ${
+            theme === themes.dark ? "text-[#777777]" : "text-[#4A4A4A]"
+          }`}
+        >
+          {description} {description1} {description2}
         </p>
       )}
 
       {/* Breadcrumbs */}
-      {Array.isArray(breadcrumbs) && breadcrumbs.length > 0 && (
-        <div className="flex items-center gap-1 relative z-10">
-          {breadcrumbs.map((item, index) => {
-            const isLast = index === breadcrumbs.length - 1;
-            return (
-              <span
-                key={index}
-                className={`flex items-center gap-1 font-semibold ${
-                  isLast && theme === themes.dark && "text-[#3972FF]"
-                }`}
-              >
-                {item}
-                {!isLast &&
-                  (isArabic ? (
-                    <ChevronLeft size={20} />
-                  ) : (
-                    <ChevronRight size={20} />
-                  ))}
-              </span>
-            );
-          })}
+      {breadcrumbs1 && breadcrumbs2 && breadcrumbs3 && (
+        <div className="flex text-[20px] z-10 gap-3">
+          <span>{breadcrumbs1}</span>
+          {isArabic ? (
+            <ChevronLeft size={20} className="mt-1.5" />
+          ) : (
+            <ChevronRight size={20} className="mt-1.5" />
+          )}
+          <span>{breadcrumbs2}</span>
+          {isArabic ? (
+            <ChevronLeft size={20} className="mt-1.5" />
+          ) : (
+            <ChevronRight size={20} className="mt-1.5" />
+          )}
+          <span className={`${theme === themes.dark && "text-[#3972FF]"}`}>
+            {breadcrumbs3}
+          </span>
         </div>
       )}
 
@@ -107,10 +114,6 @@ function SectionTitle({
       <div className="absolute left-5 bottom-2">
         <img src={images.red_Dots} alt="dots2" />
       </div>
-      <h2 className="text-[20px]  z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center">
-        {heading1} <span className="text-secondary">{heading2}</span> <br />
-        {heading3} <span className="text-primary">{heading4}</span>
-      </h2>
 
       {button && (
         <Button className="mt-[20px]  z-10 " variant="primary" size="lg">

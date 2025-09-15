@@ -59,7 +59,8 @@
 
   "Blogs": {
     "Section1": {
-      "Title": "Unlock Your Full Potential",
+      "title1": "Unlock Your Full",
+      "title2": "Potential",
       "Description": "Discover hundreds of expert-led courses on development, design, business,and more. Start your learning journey today.",
       "Btn": "Get Started For Free"
     },
@@ -77,47 +78,55 @@
 
   "SectionTitle": {
     "Home": {
-      "Title": [
-        { "text": "Earn Your Quality Skills" },
-        { "text": "Certificate", "color": "#EE4A62" },
-        { "text": "with" },
-        { "text": "  SkillBase", "color": "#3972FF" }
-      ],
-      "Btn": "Get Started Now"
+      "title1": "Earn Your Quality Skills",
+      "title2": "Certificate",
+      "title3": "with",
+      "title4": "SkillBase",
+      "btn": "Get Started Now"
     },
     "About": {
-      "Title": [
-        { "text": "Ready to Transform Your" },
-        { "text": "Learning", "color": "#EE4A62" },
-        { "text": "Journey", "color": "#3972FF" }
-      ],
-      "Description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
-      "Btn": "Start Learning Today"
+      "title1": "Ready to Transform Your",
+      "title2": "Learning",
+      "title3": "Journey",
+      "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+      "btn": "Start Learning Today"
     },
     "Event": {
-      "Title": [{ "text": "Event" }, { "text": "Page", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Event Page"]
+      "title1": "Event",
+      "title2": "Page",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Event Page"
     },
     "Course": {
-      "Title": [{ "text": "Course" }, { "text": "Page", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Course"]
+      "title1": "Course",
+      "title2": "Page",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Course Page"
     },
     "ContactMe": {
-      "Title": [{ "text": "Contact" }, { "text": "Me", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Contact me"]
+      "title1": "Contact",
+      "title2": "Me",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Contact me"
     },
     "ContactUs": {
-      "Title": [{ "text": "Contact" }, { "text": "Us", "color": "#EE4A62" }],
-      "Trail": ["Home", "Pages", "Contact Us"]
+      "title1": "Contact",
+      "title2": "Us",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Contact Us"
     },
     "FAQS": {
-      "Title": [
-        { "text": "Your Questions," },
-        { "text": "Answered", "color": "#EE4A62" }
-      ],
-
-      "Description": "Answers to common questions about courses, registration, and more.",
-      "Trail": ["Home", "Pages", "Frequently Asked Questions"]
+      "title1": "Your Questions,",
+      "title2": "Answered",
+      "description1": "Answers to common questions about courses, registration, and more.",
+      "description2": "registration, and more.",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Frequently Asked Questions"
     }
   },
 
@@ -147,38 +156,37 @@
     "Price": "$49.99",
     "Title": "Learn Python: The Complete Python Programming Course"
   },
- 
-  "HeroText":{
-    "title":"Contact Us",
-    "subTitle1":"Learn",
-    "subTitle2":"And Develop Your Skills",
-    "subTitle3":"Anywhere",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print Lorem ipsum is placeholder text commonly used in the graphic, print ipsum is placeholder text commonly used in the graphic",
-    "iconTitle1":"Expert Trainers",
-    "iconTitle2":"Online Remote Learing ",
-    "iconTitle3":"Lifetime Access"
+
+  "HeroText": {
+    "title": "Contact Us",
+    "subTitle1": "Learn",
+    "subTitle2": "And Develop Your Skills",
+    "subTitle3": "Anywhere",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print Lorem ipsum is placeholder text commonly used in the graphic, print ipsum is placeholder text commonly used in the graphic",
+    "iconTitle1": "Expert Trainers",
+    "iconTitle2": "Online Remote Learing ",
+    "iconTitle3": "Lifetime Access"
   },
-  "HeroTextAbout":{
-    "title":"Our Story",
-    "subTitle1":"Our Journey: ",
-    "subTitle2":"Cultivating Minds, Building",
-    "subTitle3":"Futures",
-    "description":"Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
-    "btn":"Join Us"
+  "HeroTextAbout": {
+    "title": "Our Story",
+    "subTitle1": "Our Journey: ",
+    "subTitle2": "Cultivating Minds, Building",
+    "subTitle3": "Futures",
+    "description": "Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
+    "btn": "Join Us"
   },
-  "HeroHome":{
-    "title1":"Get",
-    "title2":"350+",
-    "title3":"Best and Simple Online",
-    "title4":"Courses From  Website",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn":"Scroll Course"
- 
+  "HeroHome": {
+    "title1": "Get",
+    "title2": "350+",
+    "title3": "Best and Simple Online",
+    "title4": "Courses From  Website",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn": "Scroll Course"
   },
-  "EventGrid":{
-    "eventGrid":"Grid",
-    "eventList":"List",
-    "featuredEvents":"Featured <span class='text-secondary'>Events</span>"
+  "EventGrid": {
+    "eventGrid": "Grid",
+    "eventList": "List",
+    "featuredEvents": "Featured <span class='text-secondary'>Events</span>"
   },
   "HeroText": {
     "title": "Contact Us",
@@ -198,33 +206,6 @@
     "description": "Founded in 2020, E-Learn Hub began with a simple yet powerful vision: to democratize education. We believe that knowledge should be accessible to everyone, everywhere. From humble beginnings, we've grown into a thriving global community, connecting learners with expert instructors and cutting-edge courses. ",
     "btn": "Join Us"
   },
-  "HeroHome":{
-    "title1":"Get",
-    "title2":"350+",
-    "title3":"Best and Simple Online",
-    "title4":"Courses From  Website",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn":"Scroll Course"
-
-  },
-  "InstructorHome":{
-    "title":"Our Instructor",
-    "subTitle1":"Meet Our",
-    "subTitle2":"Expert",
-    "subTitle3":"Instructor",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1":"Contact Us",
-    "btn2":"Explore Courses"
-  },
-   "TestimonialsSection":{
-    "title":"Testimonials",
-    "subTitle1":"What Our",
-    "subTitle2":"Say About Us",
-    "subTitle3":"Instructor",
-    "description":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1":"Contact Us",
-    "btn2":"Explore Courses"
-   },
   "HeroHome": {
     "title1": "Get",
     "title2": "350+",
@@ -233,13 +214,39 @@
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
     "btn": "Scroll Course"
   },
- "certificate":{
-  "title1":"Earn Your Quality Skills",
-  "title2":"Certificate",
-  "title3":"with",
-  "title4":"SkillBase",
-  "btn1":"Get Started Now"
- },
+  "InstructorHome": {
+    "title": "Our Instructor",
+    "subTitle1": "Meet Our",
+    "subTitle2": "Expert",
+    "subTitle3": "Instructor",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
+  },
+  "TestimonialsSection": {
+    "title": "Testimonials",
+    "subTitle1": "What Our",
+    "subTitle2": "Say About Us",
+    "subTitle3": "Instructor",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
+  },
+  "HeroHome": {
+    "title1": "Get",
+    "title2": "350+",
+    "title3": "Best and Simple Online",
+    "title4": "Courses From  Website",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
+    "btn": "Scroll Course"
+  },
+  "certificate": {
+    "title1": "Earn Your Quality Skills",
+    "title2": "Certificate",
+    "title3": "with",
+    "title4": "SkillBase",
+    "btn1": "Get Started Now"
+  },
   "InstructorHome": {
     "title": "Our Instructor",
     "subTitle1": "Meet Our",
@@ -325,7 +332,7 @@
       }
     }
   },
-  "technical-support":{
+  "technical-support": {
     "title": "Technical Support",
     "troubleshooting": {
       "title": "Troubleshooting",
@@ -447,12 +454,12 @@
     }
 
   },
-   "ItemCard": {
+     "ItemCard": {
     "courses": "Online Courses",
     "instructors": "Top Instructors",
     "freeCourses": "Free Courses",
     "members": "Members"
   }
 
+  }
 
-}
