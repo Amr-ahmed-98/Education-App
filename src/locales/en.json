@@ -232,47 +232,7 @@
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
   },
-  "HeroHome": {
-    "title1": "Get",
-    "title2": "350+",
-    "title3": "Best and Simple Online",
-    "title4": "Courses From  Website",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn": "Scroll Course"
-  },
-  "certificate": {
-    "title1": "Earn Your Quality Skills",
-    "title2": "Certificate",
-    "title3": "with",
-    "title4": "SkillBase",
-    "btn1": "Get Started Now"
-  },
-  "InstructorHome": {
-    "title": "Our Instructor",
-    "subTitle1": "Meet Our",
-    "subTitle2": "Expert",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-  "TestimonialsSection": {
-    "title": "Testimonials",
-    "subTitle1": "What Our",
-    "subTitle2": "Say About Us",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-  "HeroHome": {
-    "title1": "Get",
-    "title2": "350+",
-    "title3": "Best and Simple Online",
-    "title4": "Courses From  Website",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn": "Scroll Course"
-  },
+
   "faqTitle": "Frequently Asked Questions",
   "general": {
     "title": "General Questions",
@@ -452,7 +412,6 @@
         "answer": "Absolutely! Each course has its own community space where you can connect with fellow students, form study groups, share resources, and collaborate on assignments. You can also join our general student community."
       }
     }
-
   },
      "ItemCard": {
     "courses": "Online Courses",
@@ -487,4 +446,5 @@
   }
 
   }
+
 

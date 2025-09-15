@@ -375,7 +375,11 @@
       }
     }
   },
+
+"InstructorHome": {
+
     "InstructorHome": {
+
     "title": "مدربنا ",
     "subTitle1": "تعرف على",
     "subTitle2": "مدربنا",
@@ -440,3 +444,7 @@
   }
  
 }
+}
+
+
+  
