@@ -418,6 +418,31 @@
     "instructors": "Top Instructors",
     "freeCourses": "Free Courses",
     "members": "Members"
+  },
+  "FilterSidebar": {
+    "searchPlaceholder": "Search courses...",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "priceRange": "Price Range",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "applyFilters": "Apply Filters",
+    "clearFilters": "Clear Filters",
+    "loadMore": "Load More",
+    "filters": "Filters",
+    "reset": "Reset",
+    "level": "Level",
+    "next": "Next",
+    "previous": "Previous",
+    "noCoursesFound": "No courses found.",
+    "showingResults": "Showing {{count}} results",
+    "tryAdjustingFilters": "Try adjusting your filters or search term.",
+    "grid": "Grid",
+    "list": "List",
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "courses": "Courses"
   }
 
   }
