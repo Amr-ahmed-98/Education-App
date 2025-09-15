@@ -396,5 +396,12 @@
     "eventList":"قائمه",
         "featuredEvents":"<span class='text-secondary'>الأحداث</span> المميزة"
 
+  },
+  "ItemCard": {
+    "courses": "كورسات أونلاين",
+    "instructors": "أفضل المدرسين",
+    "freeCourses": "كورسات مجانية",
+    "members": "الأعضاء"
   }
+ 
 }

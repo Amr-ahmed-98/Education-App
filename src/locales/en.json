@@ -446,6 +446,13 @@
       }
     }
 
+  },
+   "ItemCard": {
+    "courses": "Online Courses",
+    "instructors": "Top Instructors",
+    "freeCourses": "Free Courses",
+    "members": "Members"
   }
+
 
 }

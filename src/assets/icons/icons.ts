@@ -1,11 +1,10 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
- 
-
+import { PiCertificateBold } from "react-icons/pi";
+import { MdGroups } from "react-icons/md";
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
 import { BsGrid3X3 } from "react-icons/bs";
 import { FaBars } from "react-icons/fa6";
- 
 import { IoLogoFacebook } from "react-icons/io5";
 import {
   FaInstagramSquare,
@@ -17,6 +16,7 @@ import {
   FaLinkedinIn,
   FaLongArrowAltRight,
   FaLongArrowAltLeft,
+  FaUser 
 } from "react-icons/fa";
 
 import {
@@ -38,6 +38,7 @@ import {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
+  Laptop 
 } from "lucide-react";
 
  
@@ -64,10 +65,8 @@ export {
   Clock,
   BookOpen,
   Users,
- 
   BsGrid3X3,
   FaBars,
- 
   FaWhatsapp,
   FaInstagram,
   FaFacebookF,
@@ -76,5 +75,8 @@ export {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
- 
+  MdGroups,
+  FaUser,
+  PiCertificateBold,
+  Laptop,
 };

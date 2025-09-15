@@ -1,4 +1,5 @@
-import * as img from "./../assets/images/images";
+import * as img from "../assets/images/images";
+import * as icon from '../assets/icons/icons';
 export const NavbarList = [
   {
     list: "Home",
@@ -135,4 +136,32 @@ export const eventsListAr = [
     desc: "المحادثات المهنية عبارة عن جلسة مباشرة يشارك فيها الخبراء قصصهم المهنية ونصائحهم لمساعدتك على النمو والحصول على الإلهام.",
     img: img.EventGridCard,
   },
+
+];
+
+export const ItemCard = [
+ {
+    id: 1,
+    value: 350,
+    labelKey: "ItemCard.courses",
+    icon: <icon.Laptop size={32} />
+  },
+  {
+    id: 2,
+    value: "",
+    labelKey: "ItemCard.instructors",
+    icon: <icon.FaUser size={32} />
+  },
+  {
+    id: 3,
+    value: "",
+    labelKey: "ItemCard.freeCourses",
+    icon: <icon.PiCertificateBold size={32} />
+  },
+  {
+    id: 4,
+    value: 500,
+    labelKey: "ItemCard.members",
+    icon: <icon.Users size={32} />
+  }
 ];
