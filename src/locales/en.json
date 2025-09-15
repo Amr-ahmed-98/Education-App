@@ -192,16 +192,6 @@
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
   },
-  "HeroHome": {
-    "title1": "Get",
-    "title2": "350+",
-    "title3": "Best and Simple Online",
-    "title4": "Courses From  Website",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn": "Scroll Course"
-  },
-
-  
   "faqTitle": "Frequently Asked Questions",
   "general": {
     "title": "General Questions",
@@ -380,7 +370,7 @@
         "question": "Can I connect with other students taking the same course?",
         "answer": "Absolutely! Each course has its own community space where you can connect with fellow students, form study groups, share resources, and collaborate on assignments. You can also join our general student community."
       }
-    }
+    },
 
   "certificate": {
     "title1": "Earn Your Quality Skills",
@@ -390,6 +380,7 @@
     "btn1": "Get Started Now"
 
   }
+}
 }
 
 
