@@ -1,35 +1,51 @@
 
-import Button from "../atoms/Button";
-interface HeroTextProps{
+import Button from "../../atoms/Button";
+import CardSec from './CardSec';
+import { useTranslation } from "react-i18next";
+import { Students } from "../../../utils/Data";
+interface TestimonialsSecProps{
     title?: string,
     subtitle1?: string ,
     subtitle2?: string ,
     subtitle3?: string ,
     description?:string,
-    image?:string,
     variant: "icons" | "button";
     icons?: { src: React.ReactNode; label: string }[];
-    button?: string;
+    button1?: string;
+    button2?: string;
+    
 }
 
-const HeroText : React.FC<HeroTextProps> = ({
+const TestimonialsSec : React.FC<TestimonialsSecProps> = ({
+    
     title = "Default Title",
- variant,
+    variant,
     subtitle1,
     subtitle2,
     subtitle3,
     description,
-    image,
     icons,
-    button,
-}) =>{
+    button1,
+    button2,
+}
+
+) =>{
+
+    const { t } = useTranslation();
     return(
-        <section className="grid py-[100px] grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* الصورة */}
-      <div>
-        <img src={image} alt={title} className="rounded-lg shadow-2xl w-[75%]" />
-      </div>
-      {/* النص */}
+        
+        <section className="grid container py-[100px] grid-cols-1 lg:grid-cols-3 gap-7 items-center">
+            {Students.map((student)=>(
+         <CardSec 
+         key={student.id}
+        description={t(student.description)}
+        image={t(student.img)}
+        icons={student.icons}
+        name={t(student.name)}
+        track={t(student.track)}
+          
+        />
+          ))}
       <div >
         <Button variant="outline1" size="lg">{title}</Button>
         <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]"><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3} </span></h1>
@@ -54,8 +70,12 @@ const HeroText : React.FC<HeroTextProps> = ({
         )}
 
   {/* button variant */}
-        {variant === "button" && button && (
-            <Button variant="primary" size="lg">{button}</Button>
+        {variant === "button" && button1 && (
+    <div className="flex gap-5">
+             <Button variant="primary" size="lg">{button1}</Button>
+            <Button variant="secondary" size="lg">{button2}</Button>
+         
+    </div>
         )}
       </div>
 
@@ -64,4 +84,4 @@ const HeroText : React.FC<HeroTextProps> = ({
     )
 }
 
-export default HeroText;
+export default TestimonialsSec;
