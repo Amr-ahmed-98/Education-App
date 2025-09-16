@@ -111,6 +111,73 @@
       "breadcrumbs2": "Pages",
       "breadcrumbs3": "Course Page"
     },
+    "CourseDetails": {
+      "title1": "The Complete 2025 Web Development Bootcamp",
+      "description": "Become a Full-Stack Web Developer with just ONE course. Covers HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps.",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Course Details",
+      "button": "Bestseller",
+      "rating": "ratings",
+      "students": "students",
+      "instructors": "Created by Dr. Angela Yu"
+    },
+    "CourseDetailsContent": {
+      "tabs": {
+        "overview": "Overview",
+        "curriculum": "Carriculam",
+        "instructor": "Instructor",
+        "reviews": "Reviews"
+      },
+      "description": {
+        "title": "Course Description",
+        "p1": "This comprehensive web development bootcamp is designed to take you from a complete beginner to a confident full-stack developer. Whether you're looking to start a new career, enhance your skills, or build your own projects, this course has everything you need.",
+        "p2": "You'll learn the fundamentals of web development, including HTML, CSS, and JavaScript, before diving into more advanced topics like backend development with Node.js, frontend frameworks like React, and database management with MongoDB. The course also covers modern web technologies such as Web3 and decentralized applications (DApps)."
+      },
+      "learning": {
+        "title": "What You'll Learn",
+        "p1": "Learn to use Python professionally, learning both Python 2 & Python 3!",
+        "p2": "Build 6 beautiful real-world projects for your portfolio (not boring toy apps)",
+        "p3": "Understand the Theory behind Vue.js and use it in Real Projects"
+      },
+      "sidebar": {
+        "courseDetails": "Course Details",
+        "price": {
+          "label": "Price",
+          "value": "$49.99"
+        },
+        "details": {
+          "instructor": {
+            "label": "Instructor",
+            "value": "Dr. Angela Yu"
+          }
+        },
+        "duration": {
+          "label": "Duration",
+          "value": "6 weeks"
+        },
+        "lessons": {
+          "label": "Lessons",
+          "value": "12 lessons"
+        },
+        "enrolled": {
+          "label": "Enrolled",
+          "value": "2.3k students"
+        },
+        "language": {
+          "label": "Language",
+          "value": "English"
+        },
+        "certificate": {
+          "label": "Certificate",
+          "value": "Yes"
+        },
+        "actions": {
+          "addToCart": "add to cart",
+          "buyNow": "buy now"
+        }
+      }
+    },
     "ContactMe": {
       "title1": "Contact",
       "title2": "Me",
