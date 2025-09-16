@@ -45,6 +45,8 @@ import {
   Globe,
   Calendar,
   Search,
+  User,
+  ShoppingCart,
 } from "lucide-react";
 
 export {
@@ -88,5 +90,7 @@ export {
   Globe,
   Calendar,
   Search,
-  FaStar
+  FaStar,
+  User,
+  ShoppingCart
 };
