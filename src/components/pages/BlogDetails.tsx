@@ -1,11 +1,18 @@
 import * as icons from "@/assets/icons/icons";
 import * as images from "@/assets/images/images";
-// import { themes } from "@/contexts/Theme";
+import { themes } from "@/contexts/Theme";
+import { ThemeContext } from "@/contexts/ThemeContextDefinition";
+import { useContext } from "react";
+// import { useTranslation } from "react-i18next";
 
 function BlogDetails() {
+  // const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext)!;
+  const isDark = theme === themes.dark;
+
   return (
     <div className="w-full mx-auto">
-      <div className="w-5/6 mx-auto  py-10 flex gap-4">
+      <div className="w-5/6 mx-auto py-10 flex gap-2">
         {/* Left Content bg-[#1C242F] in dark*/}
         <section className="w-full space-y-6 rounded-lg p-4">
           {/*                   */}
@@ -25,11 +32,18 @@ function BlogDetails() {
               Become a Better Blogger...
             </span>
           </div>
-          <div className="flex flex-col gap-10 shadow-md py-8 px-4 rounded-lg">
+          <div
+            className={`flex flex-col gap-10 shadow-md py-8 px-4 rounded-2xl ${
+              isDark ? `bg-[#1C242F]` : `bg-[#ffffff]`
+            }`}
+          >
             {/* title 1st div 111111111111111111*/}
-            <div className="-mb-5">
-              <div className="my-5 bg-[#DFF2FE] rounded-full w-fit">
-                <span className="my-5 bg-[#DFF2FE]  w-fitpy-1 px-2 rounded-full text-[#0069A8] font-semibold">
+            <div className="">
+              <div className="mb-5 rounded-full w-fit">
+                <span
+                  className={`w-fit py-1 px-2 rounded-full text-[#0069A8] font-bold text-sm
+                    ${isDark ? `bg-[#21324B]` : `bg-[#DFF2FE]`}`}
+                >
                   DEVELOPER
                 </span>
               </div>
@@ -44,7 +58,9 @@ function BlogDetails() {
               </h1>
               <div className="flex items-center gap-4 text-sm text-gray-400 mt-8">
                 <img src={images.jandoe2} alt="About Jane Doe" />
-                <span className="text-gray-900">Jane Doe</span>
+                <span className={isDark ? `text-[#64748B]` : `text-[#314158]`}>
+                  Jane Doe
+                </span>
 
                 <p className="flex items-center gap-2">
                   <icons.Calendar size={15} color="#62748E" /> Nov 10, 2023
@@ -146,23 +162,39 @@ function BlogDetails() {
                 is to find a system that works for you and stick to it.
               </p>
             </div>
-
             {/* Tags */}
-            <div className="flex flex-col gap-3 mt-15">
+            <div className="flex flex-col gap-3 mt-0">
+              <hr className="mb-5" />
               <h2 className="text-[#62748E] font-bold tracking-[.15em]">
                 TAGS
               </h2>
               <div className="flex gap-2">
-                <span className="px-3 rounded-full text-sm text-[#45556C]">
+                <span
+                  className={`px-3 rounded-full text-md text-[#45556C] ${
+                    isDark && "py-1 bg-[#F1F5F9] text-[#45556C]"
+                  }`}
+                >
                   Technology
                 </span>
-                <span className="px-3 rounded-full text-sm text-[#45556C]">
+                <span
+                  className={`px-3 rounded-full text-md text-[#45556C] ${
+                    isDark && "py-1 bg-[#F1F5F9] text-[#45556C]"
+                  }`}
+                >
                   Planning
                 </span>
-                <span className="px-3 rounded-full text-sm text-[#45556C]">
+                <span
+                  className={`px-3 rounded-full text-md text-[#45556C] ${
+                    isDark && "py-1 bg-[#F1F5F9] text-[#45556C]"
+                  }`}
+                >
                   SEO
                 </span>
-                <span className="px-3 rounded-full text-sm text-[#45556C]">
+                <span
+                  className={`px-3 rounded-full text-md text-[#45556C] ${
+                    isDark && "py-1 bg-[#F1F5F9] text-[#45556C]"
+                  }`}
+                >
                   Marketing
                 </span>
               </div>
@@ -171,7 +203,11 @@ function BlogDetails() {
           {/* ///////////////////////////////////////////////////////// */}
 
           {/* Author Box */}
-          <div className="flex p-4 rounded-lg shadow-md gap-4">
+          <div
+            className={`flex p-4 rounded-lg shadow-md gap-4 ${
+              isDark && "bg-[#1C242F]"
+            }`}
+          >
             <img
               src={images.janeDoe}
               alt="About Jane Doe"
@@ -179,15 +215,15 @@ function BlogDetails() {
             />
             <div>
               <h3 className="font-bold text-lg mb-2">About Jane Doe</h3>
-              <p className="text-sm ">
+              <p className={`text-sm ${isDark && "text-[#BBBBBB]"}`}>
                 Jane is a senior content strategist at EduHub with over 10 years
                 of experience in digital marketing and education technology. She
                 is passionate about helping creators build impactful online
                 platforms.
               </p>
               <span className="flex gap-10 mt-4">
-                <icons.Twitter style={{ color: "gray" }} />
-                <icons.Globe style={{ color: "gray" }} />
+                <icons.Twitter style={{ color: "#62748E" }} />
+                <icons.Globe style={{ color: "#62748E" }} />
               </span>
             </div>
           </div>
@@ -195,61 +231,131 @@ function BlogDetails() {
 
         {/* ///////////////////////////////////////////////////////// */}
         {/* Sidebar */}
-        <section className="hidden lg:block space-y-6">
+        <section className="hidden lg:block space-y-6 mt-25">
           {/* Search */}
-          <div className="p-4 rounded-lg shadow-md">
-            <h3 className="font-bold mb-3">Search Blog</h3>
+          <div
+            className={`py-4 px-6 rounded-2xl shadow-md ${
+              isDark && `bg-[#1C242F]`
+            }`}
+          >
+            <h3 className="font-semibold mb-3 text-xl">
+              Search{" "}
+              <span className={`${isDark && "text-[#EE4A62]"}`}>Blog</span>
+            </h3>
             <div className="relative w-72">
               <input
                 type="text"
                 placeholder="Keywords..."
-                className="w-full px-4 py-2 pr-10 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 pr-10 border border-[#CAD5E2] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
               <icons.Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#90A1B9]" />
             </div>
           </div>
 
           {/* Categories */}
-          <div className="p-4 rounded-lg shadow-md">
-            <h3 className="font-bold mb-3">Categories</h3>
+          <div
+            className={`py-4 px-6 rounded-2xl shadow-md ${
+              isDark ? `bg-[#1C242F]` : `bg-[#ffffff]`
+            } `}
+          >
+            <h3 className="font-semibold mb-3 text-xl">Categories</h3>
             <ul className="space-y-2 text-sm text-[#64748B]">
-              <li className="flex justify-between">
-                Business Studies <span>12</span>
+              <li className="flex justify-between text-center">
+                Business Studies
+                <span
+                  className={`${
+                    isDark && `rounded-full font-bold px-2 bg-[#21324B]`
+                  }`}
+                >
+                  12
+                </span>
               </li>
 
               <li className="flex justify-between">
-                Computer & IT<span>8</span>
+                Computer & IT
+                <span
+                  className={`${
+                    isDark && `rounded-full font-bold px-2 bg-[#21324B]`
+                  }`}
+                >
+                  8
+                </span>
               </li>
               <li className="flex justify-between text-[#3972FF]">
-                Developer<span>21</span>
+                Developer
+                <span
+                  className={`${
+                    isDark &&
+                    `rounded-full px-2 font-bold bg-[#CCDDFF] text-[#3972FF]`
+                  }`}
+                >
+                  21
+                </span>
               </li>
               <li className="flex justify-between">
-                Marketing<span>5</span>
+                Marketing
+                <span
+                  className={`${
+                    isDark && `rounded-full font-bold px-2 bg-[#21324B]`
+                  }`}
+                >
+                  5
+                </span>
               </li>
               <li className="flex justify-between">
-                Uncategorized<span>2</span>
+                Uncategorized
+                <span
+                  className={`${
+                    isDark && `rounded-full font-bold px-2 bg-[#21324B]`
+                  }`}
+                >
+                  2
+                </span>
               </li>
             </ul>
           </div>
 
           {/* Related Courses */}
-          <div className="p-4 rounded-lg shadow-md">
-            <h3 className="font-bold mb-3">Related Courses</h3>
-            <ul className="space-y-2 text-sm">
-              <p className="text-[#314158] font-semibold">
-                SEO & Content Marketing
-              </p>
-              <li>Masterclass</li>
-              <li className="text-[#62748E]">with John Smith</li>
-            </ul>
-            <br />
-            <ul className="space-y-2 text-sm">
-              <p className="text-[#314158] font-semibold">
-                The Complete Copywriting
-              </p>
-              <li>Course</li>
-              <li className="text-[#62748E]">with Emily White</li>
-            </ul>
+          <div
+            className={`py-4 px-6 rounded-2xl shadow-md ${
+              isDark ? `bg-[#1C242F]` : `bg-[#ffffff]`
+            }`}
+          >
+            <h3 className="font-semibold text-xl mb-3">
+              Related{" "}
+              <span
+                className={`text-xl ${
+                  isDark ? `text-[#EE4A62]` : `text-[#1D293D]`
+                }`}
+              >
+                Courses
+              </span>
+            </h3>
+            <div>
+              <div className="flex gap-3">
+                <img src={images.seo} alt="SEO" />
+                <ul className="space-y-0 text-sm">
+                  <p className="text-[#314158] font-semibold">
+                    SEO & Content Marketing
+                  </p>
+                  <li className={`${isDark && `text-[#314158]`}`}>
+                    Masterclass
+                  </li>
+                  <li className="text-[#62748E]">with John Smith</li>
+                </ul>
+              </div>
+              <br />
+              <div className="flex gap-3">
+                <img src={images.copywrite} alt="Copy-Write" />
+                <ul className="space-y-0 text-sm">
+                  <p className="text-[#314158] font-semibold">
+                    The Complete Copywriting
+                  </p>
+                  <li className={`${isDark && `text-[#314158]`}`}>Course</li>
+                  <li className="text-[#62748E]">with Emily White</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </div>
