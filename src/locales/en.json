@@ -49,12 +49,18 @@
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
   },
-  "Testimonials": {
-    "Btn1": "Testimonials",
-    "Title": "What Our Students Say About Us",
-    "Description": "Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "Btn2": "Contact Us",
-    "Btn3": "Explore Courses"
+ 
+  "students":{
+    "student1":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Tamer Mohamed",
+      "track":"Front-End"
+    },
+    "student2":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Hany Ali",
+      "track":"Back-End"
+    }
   },
 
   "Blogs": {
@@ -223,16 +229,6 @@
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
   },
-  "TestimonialsSection": {
-    "title": "Testimonials",
-    "subTitle1": "What Our",
-    "subTitle2": "Say About Us",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-
   "faqTitle": "Frequently Asked Questions",
   "general": {
     "title": "General Questions",
@@ -419,6 +415,14 @@
     "freeCourses": "Free Courses",
     "members": "Members"
   },
+    "certificate": {
+    "title1": " Earn Your Quality Skills ",
+    "title2": "Certificate ",
+    "title3": "with",
+    "title4": "SkillBase",
+    "btn1": "Get Started Now"
+
+  },
   "FilterSidebar": {
     "searchPlaceholder": "Search courses...",
     "categories": "Categories",
@@ -443,8 +447,14 @@
     "of": "of",
     "showing": "Showing",
     "courses": "Courses"
+  },
+    "TestimonialsSection": {
+    "title": "Testimonials",
+    "subTitle1": "What Our",
+    "subTitle2": "Students",
+    "subTitle3": "Say About Us",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
   }
-
   }
-
-

@@ -9,6 +9,7 @@ import Instructor from "./../organisms/Home/InstructorSection";
 import CertificateSection from "../../components/organisms/Home/CertificateSection";
 import BannerCard from "../organisms/Home/BannerCard";
 import {ItemCard} from '../../utils/Data';
+import TestimonialsSec from '../organisms/Home/TestimonialsSection';
 function Home() {
   const { t } = useTranslation();
   return (
@@ -36,7 +37,7 @@ function Home() {
       ))}
       </div>
     </div>
-      <div className="md:px-16 sm:px-10 px-4">
+      <div className="container">
         <HeroText
           title={t("HeroText.title")}
           subtitle1={t("HeroText.subTitle1")}
@@ -114,6 +115,17 @@ function Home() {
       
       <Instructor />
       <CertificateSection />
+      <TestimonialsSec
+       title={t("TestimonialsSection.title")}
+          subtitle1={t("TestimonialsSection.subTitle1")}
+          subtitle2={t("TestimonialsSection.subTitle2")}
+          subtitle3={t("TestimonialsSection.subTitle3")}
+          description={t("TestimonialsSection.description")}
+          variant="button"
+           button1={t("TestimonialsSection.btn1")}
+           button2={t("TestimonialsSection.btn2")}
+
+          />
     </div>
   );
 }
