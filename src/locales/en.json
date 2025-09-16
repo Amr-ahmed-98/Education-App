@@ -49,12 +49,18 @@
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
   },
-  "Testimonials": {
-    "Btn1": "Testimonials",
-    "Title": "What Our Students Say About Us",
-    "Description": "Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "Btn2": "Contact Us",
-    "Btn3": "Explore Courses"
+ 
+  "students":{
+    "student1":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Tamer Mohamed",
+      "track":"Front-End"
+    },
+    "student2":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Hany Ali",
+      "track":"Back-End"
+    }
   },
 
   "Blogs": {
@@ -222,56 +228,6 @@
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
-  },
-  "TestimonialsSection": {
-    "title": "Testimonials",
-    "subTitle1": "What Our",
-    "subTitle2": "Say About Us",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-  "HeroHome": {
-    "title1": "Get",
-    "title2": "350+",
-    "title3": "Best and Simple Online",
-    "title4": "Courses From  Website",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn": "Scroll Course"
-  },
-  "certificate": {
-    "title1": "Earn Your Quality Skills",
-    "title2": "Certificate",
-    "title3": "with",
-    "title4": "SkillBase",
-    "btn1": "Get Started Now"
-  },
-  "InstructorHome": {
-    "title": "Our Instructor",
-    "subTitle1": "Meet Our",
-    "subTitle2": "Expert",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-  "TestimonialsSection": {
-    "title": "Testimonials",
-    "subTitle1": "What Our",
-    "subTitle2": "Say About Us",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-  "HeroHome": {
-    "title1": "Get",
-    "title2": "350+",
-    "title3": "Best and Simple Online",
-    "title4": "Courses From  Website",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print",
-    "btn": "Scroll Course"
   },
   "faqTitle": "Frequently Asked Questions",
   "general": {
@@ -452,14 +408,53 @@
         "answer": "Absolutely! Each course has its own community space where you can connect with fellow students, form study groups, share resources, and collaborate on assignments. You can also join our general student community."
       }
     }
-
   },
      "ItemCard": {
     "courses": "Online Courses",
     "instructors": "Top Instructors",
     "freeCourses": "Free Courses",
     "members": "Members"
-  }
+  },
+    "certificate": {
+    "title1": " Earn Your Quality Skills ",
+    "title2": "Certificate ",
+    "title3": "with",
+    "title4": "SkillBase",
+    "btn1": "Get Started Now"
 
+  },
+  "FilterSidebar": {
+    "searchPlaceholder": "Search courses...",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "priceRange": "Price Range",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "applyFilters": "Apply Filters",
+    "clearFilters": "Clear Filters",
+    "loadMore": "Load More",
+    "filters": "Filters",
+    "reset": "Reset",
+    "level": "Level",
+    "next": "Next",
+    "previous": "Previous",
+    "noCoursesFound": "No courses found.",
+    "showingResults": "Showing {{count}} results",
+    "tryAdjustingFilters": "Try adjusting your filters or search term.",
+    "grid": "Grid",
+    "list": "List",
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "courses": "Courses"
+  },
+    "TestimonialsSection": {
+    "title": "Testimonials",
+    "subTitle1": "What Our",
+    "subTitle2": "Students",
+    "subTitle3": "Say About Us",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
   }
-
+  }
