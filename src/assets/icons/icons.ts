@@ -2,7 +2,7 @@ import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { PiCertificateBold } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
 
-=======
+
 import { FaStar } from "react-icons/fa";
 
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
@@ -117,8 +117,7 @@ export {
   SiNextra,
   FaBookOpen,
   IoCheckmarkCircleOutline
-  ,FaChartLine
-
+  ,FaChartLine,
   FaStar,
   User,
   ShoppingCart
