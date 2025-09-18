@@ -3,16 +3,16 @@ import { Clock, BookOpen, Star, Users } from "../../assets/icons/icons";
 import { t } from "i18next";
 import { useTheme } from "@/hooks/useTheme";
 
-interface Course {
+export interface Course {
   id: string;
   title: string;
   level: "Beginner" | "Intermediate" | "Advanced";
-  duration: string;
+  duration?: string;
   image: string;
   rating: number;
   price: number;
   originalPrice?: number;
-  lessons: number;
+  lessons?: number;
   instructor?: string;
   description?: string;
   category?: string;
@@ -20,7 +20,7 @@ interface Course {
   totalRatings?: number;
 }
 
-interface CourseCardProps {
+export interface CourseCardProps {
   course: Course;
   className?: string;
   viewMode?: "grid" | "list";
@@ -101,7 +101,6 @@ const Card: React.FC<CourseCardProps> = ({
       </div>
 
       {/* Card Content */}
-
       <div
         className={`${
           viewMode === "list"
@@ -115,13 +114,15 @@ const Card: React.FC<CourseCardProps> = ({
             <div className="flex-grow">
               {/* Level Badge */}
               <div className="flex items-start justify-start mb-2 md:mb-3">
-                <span
-                  className={`py-1 md:py-2 px-3 md:px-4 text-xs md:text-sm font-medium ${t(
-                    getLevelColor(course.level)
-                  )} rounded-full`}
-                >
-                  {t("HomeCard.Level", { level: course.level })}
-                </span>
+                {course.level && (
+                  <span
+                    className={`py-1 md:py-2 px-3 md:px-4 text-xs md:text-sm font-medium ${t(
+                      getLevelColor(course.level)
+                    )} rounded-full`}
+                  >
+                    {t("HomeCard.Level", { level: course.level })}
+                  </span>
+                )}
               </div>
 
               {/* Title */}

@@ -12,8 +12,8 @@ function BlogDetails() {
 
   return (
     <div className="w-full mx-auto">
-      <div className="w-5/6 mx-auto py-10 flex gap-2">
-        {/* Left Content bg-[#1C242F] in dark*/}
+      <div className="w-5/6 mx-auto py-10 flex flex-col md:flex-row gap-2">
+        {/* Main Content */}
         <section className="w-full space-y-6 rounded-lg p-4">
           {/*                   */}
           {/* Blog Title & Info */}
@@ -229,9 +229,8 @@ function BlogDetails() {
           </div>
         </section>
 
-        {/* ///////////////////////////////////////////////////////// */}
         {/* Sidebar */}
-        <section className="hidden lg:block space-y-6 mt-25">
+        <section className="space-y-6 mt-25 max-md:flex max-md:flex-col max-md:w-full max-md:text-center max-md:justify-center">
           {/* Search */}
           <div
             className={`py-4 px-6 rounded-2xl shadow-md ${
@@ -242,7 +241,7 @@ function BlogDetails() {
               Search{" "}
               <span className={`${isDark && "text-[#EE4A62]"}`}>Blog</span>
             </h3>
-            <div className="relative w-72">
+            <div className="relative w-72 max-md:w-full">
               <input
                 type="text"
                 placeholder="Keywords..."
