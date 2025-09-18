@@ -482,6 +482,79 @@
     "freeCourses": "Free Courses",
     "members": "Members"
   },
+
+  "about": {
+    "hero": {
+      "titleStart": "Unlock Your Potential",
+      "highlight": " with Education app",
+      "description": "Empowering minds through accessible, high-quality online education. Join our community and embark on a journey of continuous learning and growth."
+    },
+      "visionMission": {
+      "ourText": "Our",
+      "title": "Vision &",
+      "missionText": "Mission"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading platform for transformative learning experiences, continuously innovating to meet the evolving needs of learners and industries worldwide"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower individuals globally through accessible, high-quality online education, fostering a community where curiosity thrives and potential is realized"
+    }
+    ,
+    "coreValues": {
+      "title": "Our Core",
+      "valuesText": "Values",
+      "value1": {
+        "title": "Community & Collaboration"
+      },
+      "value2": {
+        "title": "Innovation & Creativity"
+      },
+      "value3": {
+        "title": "Quality & Excellence"
+      },
+      "value4": {
+        "title": "User-Centric Design"
+      },
+      "value5": {
+        "title": "Growth & Impact"
+      },
+      "value6": {
+        "title": "Passion for Learning"
+      }
+     
+  },
+  "offers": {
+    "title": "What We",
+    "offersText": "Offer",
+    "feature1": {
+      "title": "Curated Courses",
+      "description": "Access a diverse catalog of courses crafted by industry experts."
+    },
+    "feature2": {
+      "title": "Flexible Learning",
+      "description": "Learn at your own pace, anytime, anywhere, on any device."
+    },
+    "feature3": {
+      "title": "Career Advancement",
+      "description": "Gain skills that boost your career prospects and professional growth."
+    }
+  
+  },
+  "certificates": {
+    "title1": "Ready to Transform Your",
+    "title2" :"Learning",
+    "title3" :"Journey?",
+    "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+    "btn": "Start Journey Today"
+}
+  }
+}
+
+
+
     "certificate": {
     "title1": " Earn Your Quality Skills ",
     "title2": "Certificate ",
@@ -525,3 +598,4 @@
     "btn2": "Explore Courses"
   }
   }
+
