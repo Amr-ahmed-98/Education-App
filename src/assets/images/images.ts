@@ -22,7 +22,10 @@ import janeDoe from "@/assets/images/blog-jane doe.png";
 import jandoe2 from "@/assets/images/blog-jane doe2.png";
 import seo from "@/assets/images/Blog-Copy-SEO.png";
 import copywrite from "@/assets/images/Blog-Copy-Writing.png";
-
+import card1 from "@/assets/images/blog-card-1.png";
+import card2 from "@/assets/images/blog-card-2.png";
+import card3 from "@/assets/images/blog-card-3.png";
+import card4 from "@/assets/images/blog-card-4.png";
 export {
   HomeHero,
   HomeAbout,
@@ -48,4 +51,8 @@ export {
   jandoe2,
   seo,
   copywrite,
+  card1,
+  card2,
+  card3,
+  card4,
 };
