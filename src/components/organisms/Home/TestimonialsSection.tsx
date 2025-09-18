@@ -16,72 +16,66 @@ interface TestimonialsSecProps{
     
 }
 
-const TestimonialsSec : React.FC<TestimonialsSecProps> = ({
-    
-    title = "Default Title",
-    variant,
-    subtitle1,
-    subtitle2,
-    subtitle3,
-    description,
-    icons,
-    button1,
-    button2,
-}
 
-) =>{
-
+const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
+  title = "Default Title",
+  variant,
+  subtitle1,
+  subtitle2,
+  subtitle3,
+  description,
+  icons,
+  button1,
+  button2,
+}) => {
     const { t } = useTranslation();
-    return(
-        
-        <section className="grid container py-[100px] grid-cols-1 lg:grid-cols-3 gap-7 items-center">
-            {Students.map((student)=>(
-         <CardSec 
-         key={student.id}
-        description={t(student.description)}
-        image={t(student.img)}
-        icons={student.icons}
-        name={t(student.name)}
-        track={t(student.track)}
-          
-        />
-          ))}
-      <div >
-        <Button variant="outline1" size="lg">{title}</Button>
-        <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]"><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3} </span></h1>
-        <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
-       {/* icons variant */}
-        {variant === "icons" && icons && (
-          <div className="flex gap-3  flex-col">
-            {icons.map((icon, i) => (
-              <div key={i} className="flex flex-row  gap-2">
-              <>
-                  {typeof icon.src === "string" ? (
-                   
-                 <img src={icon.src} alt={icon.label} className="w-10 h-10 bg-white" />
-                ) : (
-               icon.src
-                )}
-                <span>{icon.label}</span>
-              </>
-              </div>
-            ))}
-          </div>
-        )}
-
-  {/* button variant */}
-        {variant === "button" && button1 && (
-    <div className="flex gap-5">
-             <Button variant="primary" size="lg">{button1}</Button>
-            <Button variant="secondary" size="lg">{button2}</Button>
-         
-    </div>
-        )}
-      </div>
-
-    
-    </section>
-    )
+    return (
+      <section className="grid container py-[100px] grid-cols-1 lg:grid-cols-3 gap-7 items-center">
+        {/* Student Cards */}
+        {Students.map((student) => (
+          <CardSec
+            key={student.id}
+            description={t(student.description)}
+            image={t(student.img)}
+            icons={student.icons}
+            name={t(student.name)}
+            track={t(student.track)}
+          />
+        ))}
+        {/* Right Side Content */}
+        <div>
+          <Button variant="outline1" size="lg">{title}</Button>
+          <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]">
+            <span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3}</span>
+          </h1>
+          <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
+          {/* icons variant */}
+          {variant === "icons" && icons && (
+            <div className="flex gap-3 flex-col">
+              {icons.map((icon, i) => (
+                <div key={i} className="flex flex-row gap-2">
+                  <>
+                    {typeof icon.src === "string" ? (
+                      <img src={icon.src} alt={icon.label} className="w-10 h-10 bg-white" />
+                    ) : (
+                      icon.src
+                    )}
+                    <span>{icon.label}</span>
+                  </>
+                </div>
+              ))}
+            </div>
+          )}
+          {/* button variant */}
+          {variant === "button" && button1 && (
+            <div className="flex gap-5">
+              <Button variant="primary" size="lg">{button1}</Button>
+              <Button variant="secondary" size="lg">{button2}</Button>
+            </div>
+          )}
+        </div>
+      </section>
+    );
 }
 
 export default TestimonialsSec;
