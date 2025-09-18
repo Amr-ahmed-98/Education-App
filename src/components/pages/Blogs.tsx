@@ -40,7 +40,7 @@ function Blogs() {
   const isDark = theme === themes.dark;
 
   return (
-    <div className="w-full flex flex-col gap-30 pt-0 mb-10">
+    <div className="container flex flex-col gap-30 pt-0 mb-10">
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
         <h1 className="font-bold text-6xl leading-[75px] tracking-[-1.5px] text-center">
@@ -50,7 +50,7 @@ function Blogs() {
           </span>
         </h1>
 
-        <p className="w-[34rem] text-[#45556C]">
+        <p className="text-center text-[#45556C]">
           {t("Blogs.Section1.Description")}
         </p>
 
@@ -61,48 +61,58 @@ function Blogs() {
           className="rounded-lg max-w-[80%]"
         />
       </div>
+
       {/* Section 2 */}
       <div
-        className={`flex flex-col w-full mx-auto gap-20 py-20 ${
+        className={`flex flex-col gap-20 py-20 w-full ${
           isDark && `bg-[#1C242F]`
         }`}
       >
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-3xl font-bold"> {t("Blogs.Section2.Title")}</h1>
-          <p className="flex flex-col text-center text-[#45556C]">
+        {/* text */}
+        <div className="flex flex-col items-center justify-center text-center gap-4">
+          <h1 className="text-3xl font-bold flex text-center">
+            {" "}
+            {t("Blogs.Section2.Title")}
+          </h1>
+          <p className="text-center text-[#45556C]">
             {t("Blogs.Section2.Description")}
           </p>
         </div>
-
-        <div className={`flex items-center ${isDark && `bg-[#1C242F]`}`}>
-          <div className="flex flex-col md:flex-row mx-auto justify-around gap-12">
-            {iconDetailsProps.map((data) => (
-              <div key={data.title}>
-                <IconDetails
-                  icon={data.icon}
-                  title={data.title}
-                  description={data.description}
-                  iconColor={data.iconColor}
-                  bgColor={data.bgColor}
-                  isCircle={true}
-                  size="lg"
-                />
-              </div>
-            ))}
-          </div>
+        {/* 3 cards */}
+        <div
+          className={`flex justify-between max-lg:flex-col max-lg:items-center max-lg:gap-8`}
+        >
+          {/* <div className={`flex flex-col md:flex-row`}> */}
+          {iconDetailsProps.map((data) => (
+            <div key={data.title}>
+              <IconDetails
+                icon={data.icon}
+                title={data.title}
+                description={data.description}
+                iconColor={data.iconColor}
+                bgColor={data.bgColor}
+                isCircle={true}
+                // size="lg"
+              />
+            </div>
+          ))}
+          {/* </div> */}
         </div>
       </div>
+
       {/*  Section 3 */}
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <h1 className="text-3xl font-bold">{t("Blogs.Section3.Title")}</h1>
+          <h1 className="text-3xl font-bold flex text-center">
+            {t("Blogs.Section3.Title")}
+          </h1>
           <p className="flex flex-col text-center text-[#45556C]">
             {t("Blogs.Section3.Description")}
           </p>
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col md:flex-row  gap-4">
+        <div className="flex justify-between flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
           {/* CARD 1 */}
           <div
             className={`w-[280px] h-[368px] rounded-2xl shadow-lg overflow-hidden 
