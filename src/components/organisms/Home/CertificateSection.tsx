@@ -5,12 +5,12 @@ function CertificateSection() {
   const { t } = useTranslation();
   return (
     <div>
-      <SectionTitle
-        heading1={t("certificate.title1")}
-        heading2={t("certificate.title2")}
-        heading3={t("certificate.title3")}
-        heading4={t("certificate.title4")}
-        button={t("certificate.btn1")}
+      <SectionTitle className=" text-4xl"
+        heading1={t("about.certificates.title1")}
+        heading2={t("about.certificates.title2")}
+        heading4={t("about.certificates.title3")}
+        description={t("about.certificates.description")}
+        button={t("about.certificates.btn")}
       />
     </div>
   );
