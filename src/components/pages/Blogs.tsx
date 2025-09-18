@@ -3,11 +3,9 @@ import Button from "../atoms/Button";
 import IconDetails from "../molecules/IconDetails";
 import * as icons from "@/assets/icons/icons";
 import * as images from "@/assets/images/images";
-// import Test from "../molecules/test";
 import { themes } from "@/contexts/Theme";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useContext } from "react";
-// import Test from "../molecules/test";
 
 const iconDetailsProps = [
   {
@@ -39,10 +37,10 @@ const iconDetailsProps = [
 function Blogs() {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext)!;
+  const isDark = theme === themes.dark;
 
   return (
-    <div className="w-full flex flex-col gap-50 pt-0 mb-10">
-      {/* <Test /> */}
+    <div className="w-full flex flex-col gap-30 pt-0 mb-10">
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
         <h1 className="font-bold text-6xl leading-[75px] tracking-[-1.5px] text-center">
@@ -64,7 +62,11 @@ function Blogs() {
         />
       </div>
       {/* Section 2 */}
-      <div className="flex flex-col w-full mx-auto gap-20">
+      <div
+        className={`flex flex-col w-full mx-auto gap-20 py-20 ${
+          isDark && `bg-[#1C242F]`
+        }`}
+      >
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-3xl font-bold"> {t("Blogs.Section2.Title")}</h1>
           <p className="flex flex-col text-center text-[#45556C]">
@@ -72,34 +74,172 @@ function Blogs() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row mx-auto justify-around gap-2">
-          {iconDetailsProps.map((data) => (
-            <div key={data.title} className="">
-              <IconDetails
-                icon={data.icon}
-                title={data.title}
-                description={data.description}
-                iconColor={data.iconColor}
-                bgColor={data.bgColor}
-                isCircle={true}
-                size="lg"
-              />
-            </div>
-          ))}
+        <div className={`flex items-center ${isDark && `bg-[#1C242F]`}`}>
+          <div className="flex flex-col md:flex-row mx-auto justify-around gap-12">
+            {iconDetailsProps.map((data) => (
+              <div key={data.title}>
+                <IconDetails
+                  icon={data.icon}
+                  title={data.title}
+                  description={data.description}
+                  iconColor={data.iconColor}
+                  bgColor={data.bgColor}
+                  isCircle={true}
+                  size="lg"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/*  */}
       </div>
       {/*  Section 3 */}
       <div className="flex flex-col items-center justify-center gap-10">
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center gap-4 mb-4">
           <h1 className="text-3xl font-bold">{t("Blogs.Section3.Title")}</h1>
           <p className="flex flex-col text-center text-[#45556C]">
             {t("Blogs.Section3.Description")}
           </p>
         </div>
 
-        {/* 4 cards here w8 the re-usable comp */}
+        {/* Cards */}
+        <div className="flex flex-col md:flex-row  gap-4">
+          {/* CARD 1 */}
+          <div
+            className={`w-[280px] h-[368px] rounded-2xl shadow-lg overflow-hidden 
+            ${isDark && `bg-[#1C242F] text-white`}`}
+          >
+            {/* image */}
+            <div className="w-full h-48">
+              <img
+                src={images.card1}
+                alt="Data Science with Python A-Z"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Course Details */}
+            <div className="flex flex-col justify-center h-[176px] py-4 px-6">
+              <h3 className="text-lg font-bold">
+                Modern Web <p className="font-semibold">Development Bootcamp</p>
+              </h3>
+              <p className="text-sm text-[#62748E] mt-2">Angela Yu</p>
+
+              {/* Rating + Price */}
+              <div className="flex items-center justify-between mt-3">
+                <div className="flex items-center gap-1 text-sm">
+                  <icons.Star className="w-4 h-4 text-[#FD9A00] fill-[#FD9A00]" />
+                  <span className="font-medium text-[#FD9A00]">4.9</span>
+                  <span className="text-[#A4A4A4] ">(2,250)</span>
+                </div>
+
+                <span className="text-lg font-bold text-[#2B7FFF]">$79.99</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 2 */}
+          <div
+            className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
+            ${isDark && `bg-[#1C242F] text-white`}`}
+          >
+            {/* image */}
+            <div className="w-full h-48">
+              <img
+                src={images.card2}
+                alt="Data Science with Python A-Z"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Course Details */}
+            <div className="flex flex-col justify-center h-[176px] py-4 px-6">
+              <h3 className="text-lg font-bold">
+                Data Science with Python <p className="font-semibold">A-Z</p>
+              </h3>
+              <p className="text-sm text-[#62748E] mt-2">Jose Portilla</p>
+
+              {/* Rating + Price */}
+              <div className="flex items-center justify-between mt-3">
+                <div className="flex items-center gap-1 text-sm">
+                  <icons.Star className="w-4 h-4 text-[#FD9A00] fill-[#FD9A00]" />
+                  <span className="font-medium text-[#FD9A00]">4.9</span>
+                  <span className="text-[#A4A4A4] ">(2,250)</span>
+                </div>
+
+                <span className="text-lg font-bold text-[#2B7FFF]">$79.99</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 3 */}
+          <div
+            className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
+            ${isDark && `bg-[#1C242F] text-white`}`}
+          >
+            {/* image */}
+            <div className="w-full h-48">
+              <img
+                src={images.card3}
+                alt="Data Science with Python A-Z"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Course Details */}
+            <div className="flex flex-col justify-center h-[176px] py-4 px-6">
+              <h3 className="text-lg font-bold">
+                The Complete Graphic
+                <p className="font-semibold">Design Theory</p>
+              </h3>
+              <p className="text-sm text-[#62748E] mt-2">Lindsay Marsh</p>
+
+              {/* Rating + Price */}
+              <div className="flex items-center justify-between mt-3">
+                <div className="flex items-center gap-1 text-sm">
+                  <icons.Star className="w-4 h-4 text-[#FD9A00] fill-[#FD9A00]" />
+                  <span className="font-medium text-[#FD9A00]">4.9</span>
+                  <span className="text-[#A4A4A4] ">(2,250)</span>
+                </div>
+
+                <span className="text-lg font-bold text-[#2B7FFF]">$79.99</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+          <div
+            className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
+            ${isDark && `bg-[#1C242F] text-white`}`}
+          >
+            {/* image */}
+            <div className="w-full h-48">
+              <img
+                src={images.card4}
+                alt="Data Science with Python A-Z"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Course Details */}
+            <div className="flex flex-col justify-center h-[176px] py-4 px-6">
+              <h3 className="text-lg font-bold">
+                Modern Web <p className="font-semibold">The Complete Digital</p>
+              </h3>
+              <p className="text-sm text-[#62748E] mt-2">Rob Percival</p>
+
+              {/* Rating + Price */}
+              <div className="flex items-center justify-between mt-3">
+                <div className="flex items-center gap-1 text-sm">
+                  <icons.Star className="w-4 h-4 text-[#FD9A00] fill-[#FD9A00]" />
+                  <span className="font-medium text-[#FD9A00]">4.9</span>
+                  <span className="text-[#A4A4A4] ">(2,250)</span>
+                </div>
+
+                <span className="text-lg font-bold text-[#2B7FFF]">$79.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="flex gap-2 items-center justify-center font-bold text-[#2B7FFF]">
           <a href="#">Browse All Courses</a>

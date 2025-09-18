@@ -2,6 +2,9 @@ import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { PiCertificateBold } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
 
+=======
+import { FaStar } from "react-icons/fa";
+
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
 import { BsGrid3X3 } from "react-icons/bs";
@@ -60,6 +63,8 @@ import {
   Globe,
   Calendar,
   Search,
+  User,
+  ShoppingCart,
 } from "lucide-react";
 
 export {
@@ -105,6 +110,7 @@ export {
   Globe,
   Calendar,
   Search,
+
   IoShieldCheckmarkSharp,
   BiSmile,
   IoMdTrendingUp,
@@ -112,4 +118,9 @@ export {
   FaBookOpen,
   IoCheckmarkCircleOutline
   ,FaChartLine
+
+  FaStar,
+  User,
+  ShoppingCart
+
 };

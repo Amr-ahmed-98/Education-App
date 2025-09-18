@@ -1,5 +1,6 @@
 import * as img from "../assets/images/images";
 import * as icon from '../assets/icons/icons';
+import { Images } from "lucide-react";
 export const NavbarList = [
   {
     list: "Home",
@@ -165,3 +166,22 @@ export const ItemCard = [
     icon: <icon.Users size={32} />
   }
 ];
+
+export const Students = [
+  {
+    id:1,
+    img: img.Instructor2,
+    description :"students.student1.text",
+    icons: <icon.FaStar size={22} className="text-amber-400 my-[10px]" />,
+    name: "students.student1.name",
+    track:"students.student1.track"
+  },
+    {
+    id:2,
+    img: img.Instructor3,
+    description :"students.student2.text",
+    icons: <icon.FaStar size={22} className="text-amber-400 my-[10px]" />,
+    name: "students.student2.name",
+    track:"students.student2.track"
+  },
+]

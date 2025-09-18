@@ -1,4 +1,4 @@
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft, Star } from "lucide-react";
 import * as images from "@/assets/images/images";
 import { themes } from "@/contexts/Theme";
 import { useContext } from "react";
@@ -14,6 +14,8 @@ import Button from "../atoms/Button";
 interface SectionTitleProps {
   // title?: string | TitlePart[];
   // breadcrumbs?: string[];
+  detailsHeader?: string | React.ReactNode;
+  detailsDescription?: string;
   heading1?: string | React.ReactNode;
   heading2?: string | React.ReactNode;
   heading3?: string | React.ReactNode;
@@ -27,11 +29,18 @@ interface SectionTitleProps {
   button?: string;
   className?: string;
   children?: React.ReactNode;
+  rating?: number;
+  ratingCount?: number;
+  studentCount?: number;
+  ratingsText?: string;
+  studentsText?: string;
 }
 
 function SectionTitle({
   // title,
   // breadcrumbs = [],
+  detailsHeader,
+  detailsDescription,
   className,
   children,
   description,
@@ -45,14 +54,33 @@ function SectionTitle({
   breadcrumbs1,
   breadcrumbs2,
   breadcrumbs3,
+  rating,
+  ratingCount,
+  studentCount,
+  ratingsText,
+  studentsText,
 }: SectionTitleProps) {
   const { theme } = useContext(ThemeContext)!;
   const { i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
 
+  // Helper function to format numbers with commas
+  const formatNumber = (num: number) => {
+    return num.toLocaleString();
+  };
+
+  let breadcrumbsClass: string = "";
+  let buttonClass: string = "";
+  if (!className) {
+    breadcrumbsClass = "items-center justify-center"
+    buttonClass = "items-center justify-center"
+  };
+
+
+
   return (
     <div
-      className={`relative flex w-full flex-col items-center gap-4 py-30 overflow-hidden ${className}
+      className={`relative flex w-full flex-col gap-4 py-30 px-4 md:px-30 overflow-hidden ${className}
         ${theme === themes.dark ? "bg-[#020B17]" : "bg-[#BDD3F6]"}
       `}
     >
@@ -84,7 +112,7 @@ function SectionTitle({
 
       {/* Breadcrumbs */}
       {breadcrumbs1 && breadcrumbs2 && breadcrumbs3 && (
-        <div className="flex text-[20px] z-10 gap-3">
+        <div className={`flex text-[20px] z-10 gap-3 ${breadcrumbsClass}`}>
           <span>{breadcrumbs1}</span>
           {isArabic ? (
             <ChevronLeft size={20} className="mt-1.5" />
@@ -115,11 +143,74 @@ function SectionTitle({
         <img src={images.red_Dots} alt="dots2" />
       </div>
 
-      {button && (
-        <Button className="mt-[20px]  z-10 " variant="primary" size="lg">
-          {button}
-        </Button>
+      {/* Details Header & Description */}
+      {/* Title */}
+      {(detailsHeader) && (
+        <h2 className="text-[25px] z-10 sm:text-[25px] md:text-[30px] lg:text-[40px] font-bold">
+          {detailsHeader}
+        </h2>
       )}
+      {/* Description */}
+      {(detailsDescription) && (
+        <p
+          className={`relative z-10 text-xl max-w-5xl ${
+            theme === themes.dark ? "text-gray-100" : "text-gray-900"
+          }`}
+        >
+          {detailsDescription}
+        </p>
+      )}
+
+      {/* Button and Rating Section */}
+      <div className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 z-10 mt-6 ${buttonClass}`}>
+        {/* Button */}
+        {button && (
+          <Button variant="primary" size="md" className="w-28">
+            {button}
+          </Button>
+        )}
+
+        {/* Rating Section */}
+        {rating && ratingCount !== undefined && studentCount !== undefined && (
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6">
+            {/* Rating with Stars */}
+            <div className="flex items-center gap-2">
+              <span className="text-base md:text-lg font-semibold text-yellow-500">
+                {rating}
+              </span>
+              <div className="flex items-center gap-1">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star
+                    key={star}
+                    size={14}
+                    className={`sm:w-4 sm:h-4 ${
+                      star <= rating
+                        ? "text-yellow-400 fill-yellow-400"
+                        : theme === themes.dark
+                        ? "text-gray-600"
+                        : "text-gray-300"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Ratings Count */}
+            <div
+              className={`text-md sm:text-md text-blue-500`}
+            >
+              ({formatNumber(ratingCount)} {ratingsText})
+            </div>
+
+            {/* Students Count */}
+            <div
+              className={`text-md sm:text-md text-gray-500`}
+            >
+              {formatNumber(studentCount)} {studentsText}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

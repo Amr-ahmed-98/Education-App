@@ -49,12 +49,18 @@
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
   },
-  "Testimonials": {
-    "Btn1": "Testimonials",
-    "Title": "What Our Students Say About Us",
-    "Description": "Lorem ipsum is placeholder text commonly usedin the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "Btn2": "Contact Us",
-    "Btn3": "Explore Courses"
+ 
+  "students":{
+    "student1":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Tamer Mohamed",
+      "track":"Front-End"
+    },
+    "student2":{
+      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name":"Hany Ali",
+      "track":"Back-End"
+    }
   },
 
   "Blogs": {
@@ -104,6 +110,73 @@
       "breadcrumbs1": "Home",
       "breadcrumbs2": "Pages",
       "breadcrumbs3": "Course Page"
+    },
+    "CourseDetails": {
+      "title1": "The Complete 2025 Web Development Bootcamp",
+      "description": "Become a Full-Stack Web Developer with just ONE course. Covers HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps.",
+      "breadcrumbs1": "Home",
+      "breadcrumbs2": "Pages",
+      "breadcrumbs3": "Course Details",
+      "button": "Bestseller",
+      "rating": "ratings",
+      "students": "students",
+      "instructors": "Created by Dr. Angela Yu"
+    },
+    "CourseDetailsContent": {
+      "tabs": {
+        "overview": "Overview",
+        "curriculum": "Carriculam",
+        "instructor": "Instructor",
+        "reviews": "Reviews"
+      },
+      "description": {
+        "title": "Course Description",
+        "p1": "This comprehensive web development bootcamp is designed to take you from a complete beginner to a confident full-stack developer. Whether you're looking to start a new career, enhance your skills, or build your own projects, this course has everything you need.",
+        "p2": "You'll learn the fundamentals of web development, including HTML, CSS, and JavaScript, before diving into more advanced topics like backend development with Node.js, frontend frameworks like React, and database management with MongoDB. The course also covers modern web technologies such as Web3 and decentralized applications (DApps)."
+      },
+      "learning": {
+        "title": "What You'll Learn",
+        "p1": "Learn to use Python professionally, learning both Python 2 & Python 3!",
+        "p2": "Build 6 beautiful real-world projects for your portfolio (not boring toy apps)",
+        "p3": "Understand the Theory behind Vue.js and use it in Real Projects"
+      },
+      "sidebar": {
+        "courseDetails": "Course Details",
+        "price": {
+          "label": "Price",
+          "value": "$49.99"
+        },
+        "details": {
+          "instructor": {
+            "label": "Instructor",
+            "value": "Dr. Angela Yu"
+          }
+        },
+        "duration": {
+          "label": "Duration",
+          "value": "6 weeks"
+        },
+        "lessons": {
+          "label": "Lessons",
+          "value": "12 lessons"
+        },
+        "enrolled": {
+          "label": "Enrolled",
+          "value": "2.3k students"
+        },
+        "language": {
+          "label": "Language",
+          "value": "English"
+        },
+        "certificate": {
+          "label": "Certificate",
+          "value": "Yes"
+        },
+        "actions": {
+          "addToCart": "add to cart",
+          "buyNow": "buy now"
+        }
+      }
     },
     "ContactMe": {
       "title1": "Contact",
@@ -223,16 +296,6 @@
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
   },
-  "TestimonialsSection": {
-    "title": "Testimonials",
-    "subTitle1": "What Our",
-    "subTitle2": "Say About Us",
-    "subTitle3": "Instructor",
-    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
-    "btn1": "Contact Us",
-    "btn2": "Explore Courses"
-  },
-
   "faqTitle": "Frequently Asked Questions",
   "general": {
     "title": "General Questions",
@@ -419,6 +482,7 @@
     "freeCourses": "Free Courses",
     "members": "Members"
   },
+
   "about": {
     "hero": {
       "titleStart": "Unlock Your Potential",
@@ -489,4 +553,49 @@
   }
 }
 
+
+
+    "certificate": {
+    "title1": " Earn Your Quality Skills ",
+    "title2": "Certificate ",
+    "title3": "with",
+    "title4": "SkillBase",
+    "btn1": "Get Started Now"
+
+  },
+  "FilterSidebar": {
+    "searchPlaceholder": "Search courses...",
+    "categories": "Categories",
+    "allCategories": "All Categories",
+    "priceRange": "Price Range",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "applyFilters": "Apply Filters",
+    "clearFilters": "Clear Filters",
+    "loadMore": "Load More",
+    "filters": "Filters",
+    "reset": "Reset",
+    "level": "Level",
+    "next": "Next",
+    "previous": "Previous",
+    "noCoursesFound": "No courses found.",
+    "showingResults": "Showing {{count}} results",
+    "tryAdjustingFilters": "Try adjusting your filters or search term.",
+    "grid": "Grid",
+    "list": "List",
+    "page": "Page",
+    "of": "of",
+    "showing": "Showing",
+    "courses": "Courses"
+  },
+    "TestimonialsSection": {
+    "title": "Testimonials",
+    "subTitle1": "What Our",
+    "subTitle2": "Students",
+    "subTitle3": "Say About Us",
+    "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    "btn1": "Contact Us",
+    "btn2": "Explore Courses"
+  }
+  }
 
