@@ -197,8 +197,6 @@ function BlogDetails() {
           </div>
         </div>
 
-        {/* ///////////////////////////////////////////////////////// */}
-
         {/* Author Box */}
         <div
           className={`flex p-4 rounded-lg shadow-md gap-4 ${
