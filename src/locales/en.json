@@ -227,7 +227,10 @@
     "Lessons": "12 Lessons",
     "Rating": "4.8/2.3k Rating",
     "Price": "$49.99",
-    "Title": "Learn Python: The Complete Python Programming Course"
+    "Title": "Learn Python: The Complete Python Programming Course",
+    "BuyNow": "Buy Now",
+    "AddToCart": "Add to Cart",
+    "Wishlist": "Add to Wishlist"
   },
 
   "HeroText": {
