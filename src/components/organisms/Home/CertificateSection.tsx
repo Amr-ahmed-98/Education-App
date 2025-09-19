@@ -4,8 +4,9 @@ import { useTranslation } from "react-i18next";
 function CertificateSection() {
   const { t } = useTranslation();
   return (
-    <div>
-      <SectionTitle className=" text-4xl"
+    <div className="flex justify-center items-center">
+      <SectionTitle 
+        className="text-4xl text-center"
         heading1={t("about.certificates.title1")}
         heading2={t("about.certificates.title2")}
         heading4={t("about.certificates.title3")}

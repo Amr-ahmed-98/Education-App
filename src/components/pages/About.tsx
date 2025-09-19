@@ -98,7 +98,7 @@ function About() {
         {t("about.coreValues.valuesText")}
       </span>
       </h1>
-      <div className="container  my-20 py-[40px] flex gap-12 justify-center">
+      <div className="container  my-20 py-[40px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 justify-center">
       <IconDetails
       icon={icon.IoPeople}
       title=""
@@ -165,7 +165,7 @@ function About() {
         {t("about.offers.offersText")}
       </span>
       </h1>
-      <div className="container  my-20 py-[40px] flex gap-12 justify-center">
+      <div className="container  my-20 py-[40px] grid grid-cols-1 md:grid-cols-3 gap-12 justify-center items-center">
       <IconDetails
       icon={icon.FaBookOpen}
       title={t("about.offers.feature1.title")}

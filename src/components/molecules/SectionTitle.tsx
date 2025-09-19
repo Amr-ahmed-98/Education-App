@@ -84,26 +84,25 @@ function SectionTitle({
     >
       {/* Ellipse */}
       <div
-        className={`absolute top-18 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full z-10 dark:opacity-5 bg-[#B1CAF2] scale-400
+        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full z-0 dark:opacity-5 bg-[#B1CAF2] scale-400
           ${theme === themes.dark && ""}
         `}
       ></div>
 
       {/* Title */}
       {(heading1 || heading2 || heading3 || heading4) && (
-        <h2 className="text-[20px]  z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center">
-          {heading1} <span className="text-secondary">{heading2}</span> <br />
+        <h2 className="text-[20px] z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center mx-auto max-w-4xl">
+          {heading1} <span className="text-secondary">{heading2}</span> 
+          {(heading3 || heading4) && <br />}
           {heading3} <span className="text-primary">{heading4}</span>
         </h2>
       )}
 
       {/* Description */}
-      {(description || description1 || description2) && (
-        <p
-          className={`relative z-10 text-xl max-w-3xl text-center ${
-            theme === themes.dark ? "text-[#777777]" : "text-[#4A4A4A]"
-          }`}
-        >
+     {(description || description1 || description2) && (
+        <p className={`relative z-10 text-xl max-w-3xl text-center mx-auto ${
+          theme === themes.dark ? "text-[#777777]" : "text-[#4A4A4A]"
+        }`}>
           {description} {description1} {description2}
         </p>
       )}
@@ -164,8 +163,8 @@ function SectionTitle({
         className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 z-10 mt-6 ${buttonClass}`}
       >
         {/* Button */}
-        {button && (
-          <Button variant="primary" size="md" className="w-28">
+       {button && (
+          <Button variant="primary" size="md" className="w-fit px-8 mx-auto">
             {button}
           </Button>
         )}
