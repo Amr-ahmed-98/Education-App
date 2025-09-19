@@ -17,12 +17,20 @@ function BlogDetails() {
       <section className="space-y-6 rounded-lg p-4 max-md:p-0">
         {/* Blog Title & Info */}
         <div className="flex gap-4 relative left-0 mt-5 mb-10">
-          <span className="text-[#62748E]">Home</span>
+          <a href="/">
+            <span className="text-[#62748E] hover:text-primary hover:font-bold">
+              Home
+            </span>
+          </a>
           <icons.ChevronRight
             className="text-[#62748E] relative top-1"
             size={20}
           />
-          <span className="text-[#62748E]">Blog</span>
+          <a href="blogs">
+            <span className="text-[#62748E] hover:text-primary hover:font-bold">
+              Blogs
+            </span>
+          </a>
           <icons.ChevronRight
             className="text-[#62748E] relative top-1"
             size={20}
@@ -233,7 +241,7 @@ function BlogDetails() {
           }`}
         >
           <h3 className="font-semibold mb-3 text-xl">
-            Search <span className={`${isDark && "text-[#EE4A62]"}`}>Blog</span>
+            Search <span className={`${isDark && "text-secondary"}`}>Blog</span>
           </h3>
           <div className="relative w-72 max-lg:w-full">
             <input
@@ -318,7 +326,7 @@ function BlogDetails() {
             Related{" "}
             <span
               className={`text-xl ${
-                isDark ? `text-[#EE4A62]` : `text-[#1D293D]`
+                isDark ? `text-secondary` : `text-[#1D293D]`
               }`}
             >
               Courses

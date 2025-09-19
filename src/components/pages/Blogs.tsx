@@ -112,7 +112,7 @@ function Blogs() {
         </div>
 
         {/* Cards */}
-        <div className="flex justify-between flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
+        <div className="flex gap-4 max-lg:flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
           {/* CARD 1 */}
           <div
             className={`w-[280px] h-[368px] rounded-2xl shadow-lg overflow-hidden 
