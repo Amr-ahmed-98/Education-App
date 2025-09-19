@@ -6,7 +6,14 @@ import { themes } from "@/contexts/Theme";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useContext } from "react";
 import { useState } from "react";
-import { Clock, BookOpen, Users, Globe, Award, User } from "@/assets/icons/icons";
+import {
+  Clock,
+  BookOpen,
+  Users,
+  Globe,
+  Award,
+  User,
+} from "@/assets/icons/icons";
 
 function CourseDetails() {
   const { t, i18n } = useTranslation();
@@ -24,6 +31,9 @@ function CourseDetails() {
         breadcrumbs1={t("SectionTitle.CourseDetails.breadcrumbs1")}
         breadcrumbs2={t("SectionTitle.CourseDetails.breadcrumbs2")}
         breadcrumbs3={t("SectionTitle.CourseDetails.breadcrumbs3")}
+        breadcrumbs1Path="/"
+        breadcrumbs2Path="/course"
+        breadcrumbs3Path="/course-details"
         detailsHeader={t("SectionTitle.CourseDetails.title1")}
         detailsDescription={t("SectionTitle.CourseDetails.description")}
         button={t("SectionTitle.CourseDetails.button")}
@@ -68,7 +78,9 @@ function CourseDetails() {
               ]}
             />
             <CourseDetailsSidebar
-              courseDetails={t("SectionTitle.CourseDetailsContent.sidebar.courseDetails")}
+              courseDetails={t(
+                "SectionTitle.CourseDetailsContent.sidebar.courseDetails"
+              )}
               priceLabel={t(
                 "SectionTitle.CourseDetailsContent.sidebar.price.label"
               )}

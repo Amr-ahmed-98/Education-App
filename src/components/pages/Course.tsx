@@ -14,11 +14,11 @@ function Course() {
         breadcrumbs1={t("SectionTitle.Course.breadcrumbs1")}
         breadcrumbs2={t("SectionTitle.Course.breadcrumbs2")}
         breadcrumbs3={t("SectionTitle.Course.breadcrumbs3")}
+        breadcrumbs1Path="/"
+        breadcrumbs2Path="/course"
+        breadcrumbs3Path="/course"
       />
-      <CourseList
-        courses={sampleCourses}
-        className=""
-      />
+      <CourseList courses={sampleCourses} className="" />
       <div>{t("nav.course")}</div>
     </>
   );

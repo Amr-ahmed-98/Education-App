@@ -1,5 +1,13 @@
 import React from "react";
-import { Clock, BookOpen, Star, Users } from "../../assets/icons/icons";
+import {
+  Clock,
+  BookOpen,
+  Star,
+  Users,
+  ShoppingCart,
+  Heart,
+  CreditCard,
+} from "../../assets/icons/icons";
 import { t } from "i18next";
 import { useTheme } from "@/hooks/useTheme";
 
@@ -165,6 +173,58 @@ const Card: React.FC<CourseCardProps> = ({
                 </div>
               </div>
 
+              {/* Action Buttons */}
+              <div className="flex items-center gap-2 md:gap-3 pt-2 group/buttons">
+                <button
+                  onClick={() => console.log("Buy Now:", course.id)}
+                  className={`group/buy flex-1 p-2 md:p-3 lg:p-3.5 rounded-lg text-sm md:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/buy:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-blue-400 hover:text-blue-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-blue-500 hover:text-blue-600"
+                  }`}
+                >
+                  <CreditCard
+                    size={16}
+                    className="md:w-5 md:h-5 flex-shrink-0 me-2 group-hover/buy:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/buy:w-auto group-hover/buy:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden">
+                    {t("HomeCard.BuyNow")}
+                  </span>
+                </button>
+                <button
+                  onClick={() => console.log("Add to Cart:", course.id)}
+                  className={`group/cart flex-1 p-2 md:p-3 lg:p-3.5 rounded-lg text-sm md:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/cart:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-green-400 hover:text-green-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-green-500 hover:text-green-600"
+                  }`}
+                >
+                  <ShoppingCart
+                    size={16}
+                    className="md:w-5 md:h-5 flex-shrink-0 me-2 group-hover/cart:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/cart:w-auto group-hover/cart:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden">
+                    {t("HomeCard.AddToCart")}
+                  </span>
+                </button>
+                <button
+                  onClick={() => console.log("Add to Wishlist:", course.id)}
+                  className={`group/wishlist flex-1 p-2 md:p-3 lg:p-3.5 rounded-lg text-sm md:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/wishlist:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-red-400 hover:text-red-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-red-500 hover:text-red-500"
+                  }`}
+                >
+                  <Heart
+                    size={16}
+                    className="md:w-5 md:h-5 flex-shrink-0 me-2 group-hover/wishlist:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/wishlist:w-auto group-hover/wishlist:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden">
+                    {t("HomeCard.Wishlist")}
+                  </span>
+                </button>
+              </div>
+
               {/* Course Details */}
               <div className="flex items-center gap-4 pt-2 border-t border-gray-100 dark:border-gray-700">
                 <div className="flex items-center gap-1">
@@ -229,6 +289,60 @@ const Card: React.FC<CourseCardProps> = ({
                       ${course.originalPrice.toFixed(2)}
                     </span>
                   )}
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="mb-3 sm:mb-4 px-2 sm:px-3">
+              <div className="flex items-center gap-1.5 sm:gap-2 lg:gap-3 group/buttons">
+                <button
+                  onClick={() => console.log("Buy Now:", course.id)}
+                  className={`group/buy flex-1 p-1.5 sm:p-2 lg:p-2.5 rounded-lg text-xs sm:text-sm lg:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/buy:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-blue-400 hover:text-blue-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-blue-500 hover:text-blue-600"
+                  }`}
+                >
+                  <CreditCard
+                    size={14}
+                    className="sm:w-4 sm:h-4 lg:w-5 lg:h-5 flex-shrink-0 me-2 group-hover/buy:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/buy:w-auto group-hover/buy:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden text-xs sm:text-sm lg:text-base">
+                    {t("HomeCard.BuyNow")}
+                  </span>
+                </button>
+                <button
+                  onClick={() => console.log("Add to Cart:", course.id)}
+                  className={`group/cart flex-1 p-1.5 sm:p-2 lg:p-2.5 rounded-lg text-xs sm:text-sm lg:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/cart:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-green-400 hover:text-green-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-green-500 hover:text-green-600"
+                  }`}
+                >
+                  <ShoppingCart
+                    size={14}
+                    className="sm:w-4 sm:h-4 lg:w-5 lg:h-5 flex-shrink-0 me-2 group-hover/cart:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/cart:w-auto group-hover/cart:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden text-xs sm:text-sm lg:text-base">
+                    {t("HomeCard.AddToCart")}
+                  </span>
+                </button>
+                <button
+                  onClick={() => console.log("Add to Wishlist:", course.id)}
+                  className={`group/wishlist flex-1 p-1.5 sm:p-2 lg:p-2.5 rounded-lg text-xs sm:text-sm lg:text-base font-medium transition-all duration-[2000ms] ease-in-out flex items-center justify-center shadow-sm hover:shadow-lg group-hover/buttons:flex-[0.5] group-hover/wishlist:flex-[2] ${
+                    theme === "dark"
+                      ? "bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-red-400 hover:text-red-400"
+                      : "bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-200 hover:border-red-500 hover:text-red-500"
+                  }`}
+                >
+                  <Heart
+                    size={14}
+                    className="sm:w-4 sm:h-4 lg:w-5 lg:h-5 flex-shrink-0 me-2 group-hover/wishlist:scale-125 transition-transform duration-[1500ms] ease-in-out"
+                  />
+                  <span className="w-0 opacity-0 group-hover/wishlist:w-auto group-hover/wishlist:opacity-100 transition-all duration-[1800ms] ease-in-out whitespace-nowrap overflow-hidden text-xs sm:text-sm lg:text-base">
+                    {t("HomeCard.Wishlist")}
+                  </span>
+                </button>
               </div>
             </div>
 

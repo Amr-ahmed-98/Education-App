@@ -2,7 +2,6 @@ import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { PiCertificateBold } from "react-icons/pi";
 import { MdGroups } from "react-icons/md";
 
-
 import { FaStar } from "react-icons/fa";
 
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
@@ -19,11 +18,6 @@ import { FaChartLine } from "react-icons/fa6";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { FaBookOpen } from "react-icons/fa";
 
-
-
-
-
-
 import { IoLogoFacebook } from "react-icons/io5";
 import {
   FaInstagramSquare,
@@ -35,8 +29,7 @@ import {
   FaLinkedinIn,
   FaLongArrowAltRight,
   FaLongArrowAltLeft,
-  FaUser 
-  
+  FaUser,
 } from "react-icons/fa";
 
 import {
@@ -58,13 +51,15 @@ import {
   ShieldCheck,
   ArrowRight,
   ChevronRight,
-  Laptop ,
+  Laptop,
   Twitter,
   Globe,
   Calendar,
   Search,
   User,
   ShoppingCart,
+  Heart,
+  CreditCard,
 } from "lucide-react";
 
 export {
@@ -110,16 +105,16 @@ export {
   Globe,
   Calendar,
   Search,
-
   IoShieldCheckmarkSharp,
   BiSmile,
   IoMdTrendingUp,
   SiNextra,
   FaBookOpen,
-  IoCheckmarkCircleOutline
-  ,FaChartLine,
+  IoCheckmarkCircleOutline,
+  FaChartLine,
   FaStar,
   User,
-  ShoppingCart
-
+  ShoppingCart,
+  Heart,
+  CreditCard,
 };
