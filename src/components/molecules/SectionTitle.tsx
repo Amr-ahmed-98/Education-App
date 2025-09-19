@@ -72,11 +72,9 @@ function SectionTitle({
   let breadcrumbsClass: string = "";
   let buttonClass: string = "";
   if (!className) {
-    breadcrumbsClass = "items-center justify-center"
-    buttonClass = "items-center justify-center"
-  };
-
-
+    breadcrumbsClass = "items-center justify-center";
+    buttonClass = "items-center justify-center";
+  }
 
   return (
     <div
@@ -125,7 +123,7 @@ function SectionTitle({
           ) : (
             <ChevronRight size={20} className="mt-1.5" />
           )}
-          <span className={`${theme === themes.dark && "text-[#3972FF]"}`}>
+          <span className={`${theme === themes.dark && "text-primary"}`}>
             {breadcrumbs3}
           </span>
         </div>
@@ -145,13 +143,13 @@ function SectionTitle({
 
       {/* Details Header & Description */}
       {/* Title */}
-      {(detailsHeader) && (
+      {detailsHeader && (
         <h2 className="text-[25px] z-10 sm:text-[25px] md:text-[30px] lg:text-[40px] font-bold">
           {detailsHeader}
         </h2>
       )}
       {/* Description */}
-      {(detailsDescription) && (
+      {detailsDescription && (
         <p
           className={`relative z-10 text-xl max-w-5xl ${
             theme === themes.dark ? "text-gray-100" : "text-gray-900"
@@ -162,7 +160,9 @@ function SectionTitle({
       )}
 
       {/* Button and Rating Section */}
-      <div className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 z-10 mt-6 ${buttonClass}`}>
+      <div
+        className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 z-10 mt-6 ${buttonClass}`}
+      >
         {/* Button */}
         {button && (
           <Button variant="primary" size="md" className="w-28">
@@ -196,16 +196,12 @@ function SectionTitle({
             </div>
 
             {/* Ratings Count */}
-            <div
-              className={`text-md sm:text-md text-blue-500`}
-            >
+            <div className={`text-md sm:text-md text-blue-500`}>
               ({formatNumber(ratingCount)} {ratingsText})
             </div>
 
             {/* Students Count */}
-            <div
-              className={`text-md sm:text-md text-gray-500`}
-            >
+            <div className={`text-md sm:text-md text-gray-500`}>
               {formatNumber(studentCount)} {studentsText}
             </div>
           </div>
