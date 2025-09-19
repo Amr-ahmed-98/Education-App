@@ -18,25 +18,25 @@ function Footer() {
               className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
               to="/"
             >
-              <icon.FaLinkedinIn size={24} />
+              <icon.FaLinkedinIn size={24} className="text-amber-50" />
             </Link>
             <Link
               className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
               to="/"
             >
-              <icon.FaInstagram size={24} />
+              <icon.FaInstagram size={24}  className="text-amber-50" />
             </Link>
             <Link
               className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
               to="/"
             >
-              <icon.FaWhatsapp size={24} />
+              <icon.FaWhatsapp size={24}  className="text-amber-50" />
             </Link>
             <Link
               className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
               to="/"
             >
-              <icon.FaFacebookF size={24} />
+              <icon.FaFacebookF size={24} className="text-amber-50" />
             </Link>
           </div>
         </div>
