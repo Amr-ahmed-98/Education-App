@@ -97,6 +97,80 @@
     }
   },
 
+  "BlogDetails": {
+    "breadcrumbs": {
+      "home": "Home",
+      "blogs": "Blogs",
+      "current": "Become a Better Blogger..."
+    },
+    "search": {
+      "title": "Search",
+      "blogTitle": "Blog",
+      "placeholder": "Keywords...",
+      "clearSearch": "Clear search",
+      "searchButton": "Search",
+      "charactersCount": "chars"
+    },
+    "categories": {
+      "title": "Categories",
+      "clearFilter": "Clear filter",
+      "businessStudies": "Business Studies",
+      "computerIT": "Computer & IT",
+      "developer": "Developer",
+      "marketing": "Marketing",
+      "uncategorized": "Uncategorized"
+    },
+    "blog": {
+      "category": "DEVELOPER",
+      "title": "Become a Better Blogger: The",
+      "subtitle": "Ultimate Guide to Content Planning",
+      "author": "Jane Doe",
+      "date": "Nov 10, 2023",
+      "readTime": "8 min read",
+      "tags": "TAGS",
+      "tagsList": ["Technology", "Planning", "SEO", "Marketing"]
+    },
+    "content": {
+      "intro": "In the sprawling universe of the internet, content is king. But without a strategic plan, even the most brilliant ideas can get lost in the noise. This guide will walk you through the art and science of content planning, helping you create a roadmap to consistent, high-quality, and engaging blog posts that resonate with your audience.",
+      "curriculum": {
+        "title": "The Complete Curricula",
+        "p1": "A well-structured content plan is much like a course curriculum. It needs a logical flow, clear objectives, and modules that build upon each other. Think of your blog as an educational journey for your reader. What do you want them to learn, and in what order? Breaking down your core topics into smaller, digestible posts is the first step toward building a content empire.",
+        "p2": "Effective content planning transforms your blog from a simple collection of posts into a powerful resource and a magnet for your target audience."
+      },
+      "motivation": {
+        "title": "Finding Your Intrinsic Motivation",
+        "content": "Before diving into calendars and keyword tools, it's crucial to connect with your 'why'. What drives you to share your knowledge? Authentic passion is palpable and will sustain you through the inevitable creative lulls. Understanding your motivation also helps in defining your unique voice and perspective, which are your greatest assets in a crowded digital landscape."
+      },
+      "calendar": {
+        "title": "Crafting the Content Calendar",
+        "p1": "Your content calendar is your command center. It's where strategy meets execution. Here's a simple framework to get started:",
+        "monthlyThemes": "Monthly Themes: Assign a broad topic for each month.",
+        "weeklyTopics": "Weekly Sub-Topics: Break down the monthly theme into specific blog post ideas.",
+        "keyDetails": "Key Details: For each post, note the target keyword, CTA, required visuals, and publication",
+        "promotionChecklist": "Promotion Checklist: Plan how you'll distribute the content (social media, newsletter, etc.).",
+        "p2": "Tools like Trello, Asana, Notion, or even a simple Google Sheet can be incredibly effective for managing your calendar. The key is to find a system that works for you and stick to it."
+      }
+    },
+    "author": {
+      "aboutTitle": "About Jane Doe",
+      "description": "Jane is a senior content strategist at EduHub with over 10 years of experience in digital marketing and education technology. She is passionate about helping creators build impactful online platforms."
+    },
+    "relatedCourses": {
+      "title": "Related",
+      "courses": "Courses",
+      "course1": {
+        "title": "SEO & Content Marketing",
+        "type": "Masterclass",
+        "instructor": "with John Smith"
+      },
+      "course2": {
+        "title": "The Complete Copywriting",
+        "type": "Course",
+        "instructor": "with Emily White"
+      }
+    }
+  },
+
   "SectionTitle": {
     "Home": {
       "title1": "Earn Your Quality Skills",
