@@ -49,17 +49,17 @@
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
   },
- 
-  "students":{
-    "student1":{
-      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
-      "name":"Tamer Mohamed",
-      "track":"Front-End"
+
+  "students": {
+    "student1": {
+      "text": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name": "Tamer Mohamed",
+      "track": "Front-End"
     },
-    "student2":{
-      "text":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
-      "name":"Hany Ali",
-      "track":"Back-End"
+    "student2": {
+      "text": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
+      "name": "Hany Ali",
+      "track": "Back-End"
     }
   },
 
@@ -79,6 +79,21 @@
     "Section3": {
       "Title": "Explore Our Most Popular Courses",
       "Description": "Join thousands of students who have started their journey with these featured courses."
+    },
+
+    "IconDetails": {
+      "expertInstructors": {
+        "title": "Expert Instructors",
+        "description": "Learn from the best industry professionals and get top-quality education"
+      },
+      "lifetimeAccess": {
+        "title": "Lifetime Access",
+        "description": "Enroll once and get unlimited lifetime access to the course materials."
+      },
+      "verifiedCertificates": {
+        "title": "Verified Certificates",
+        "description": "Earn a certificate upon completion to boost your professional profile."
+      }
     }
   },
 
@@ -479,7 +494,7 @@
       }
     }
   },
-     "ItemCard": {
+  "ItemCard": {
     "courses": "Online Courses",
     "instructors": "Top Instructors",
     "freeCourses": "Free Courses",
@@ -492,7 +507,7 @@
       "highlight": " with Education app",
       "description": "Empowering minds through accessible, high-quality online education. Join our community and embark on a journey of continuous learning and growth."
     },
-      "visionMission": {
+    "visionMission": {
       "ourText": "Our",
       "title": "Vision &",
       "missionText": "Mission"
@@ -504,8 +519,7 @@
     "mission": {
       "title": "Our Mission",
       "description": "To empower individuals globally through accessible, high-quality online education, fostering a community where curiosity thrives and potential is realized"
-    }
-    ,
+    },
     "coreValues": {
       "title": "Our Core",
       "valuesText": "Values",
@@ -527,40 +541,37 @@
       "value6": {
         "title": "Passion for Learning"
       }
-     
-  },
-  "offers": {
-    "title": "What We",
-    "offersText": "Offer",
-    "feature1": {
-      "title": "Curated Courses",
-      "description": "Access a diverse catalog of courses crafted by industry experts."
     },
-    "feature2": {
-      "title": "Flexible Learning",
-      "description": "Learn at your own pace, anytime, anywhere, on any device."
+    "offers": {
+      "title": "What We",
+      "offersText": "Offer",
+      "feature1": {
+        "title": "Curated Courses",
+        "description": "Access a diverse catalog of courses crafted by industry experts."
+      },
+      "feature2": {
+        "title": "Flexible Learning",
+        "description": "Learn at your own pace, anytime, anywhere, on any device."
+      },
+      "feature3": {
+        "title": "Career Advancement",
+        "description": "Gain skills that boost your career prospects and professional growth."
+      }
     },
-    "feature3": {
-      "title": "Career Advancement",
-      "description": "Gain skills that boost your career prospects and professional growth."
+    "certificates": {
+      "title1": "Ready to Transform Your",
+      "title2": "Learning",
+      "title3": "Journey?",
+      "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
+      "btn": "Start Journey Today"
     }
-  
   },
-  "certificates": {
-    "title1": "Ready to Transform Your",
-    "title2" :"Learning",
-    "title3" :"Journey?",
-    "description": "Join Education App today and become part of a vibrant community dedicated to lifelong learning. Explore a world of knowledge at your fingertips.",
-    "btn": "Start Journey Today"
-}
-  },
-    "certificate": {
+  "certificate": {
     "title1": " Earn Your Quality Skills ",
     "title2": "Certificate ",
     "title3": "with",
     "title4": "SkillBase",
     "btn1": "Get Started Now"
-
   },
   "FilterSidebar": {
     "searchPlaceholder": "Search courses...",
@@ -587,7 +598,7 @@
     "showing": "Showing",
     "courses": "Courses"
   },
-    "TestimonialsSection": {
+  "TestimonialsSection": {
     "title": "Testimonials",
     "subTitle1": "What Our",
     "subTitle2": "Students",
@@ -596,5 +607,4 @@
     "btn1": "Contact Us",
     "btn2": "Explore Courses"
   }
-  }
-
+}

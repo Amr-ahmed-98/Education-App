@@ -7,37 +7,34 @@ import { themes } from "@/contexts/Theme";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useContext } from "react";
 
-const iconDetailsProps = [
-  {
-    icon: icons.Award,
-    title: "Expert Instructors",
-    description:
-      "Learn from the best industry professionals and get top-quality education",
-    iconColor: "text-[#4F39F6]",
-    bgColor: "bg-[#FFE4E1]",
-  },
-  {
-    icon: icons.LucideInfinity,
-    title: "Lifetime Access",
-    description:
-      "Enroll once and get unlimited lifetime access to the course materials.",
-    iconColor: "text-[#9810FA]",
-    bgColor: "bg-[#FFE4E1]",
-  },
-  {
-    icon: icons.ShieldCheck,
-    title: "Verified Certificates",
-    description:
-      "Earn a certificate upon completion to boost your professional profile.",
-    iconColor: "text-[#E60076]",
-    bgColor: "bg-[#FFE4E1]",
-  },
-];
-
 function Blogs() {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext)!;
   const isDark = theme === themes.dark;
+
+  const iconDetailsProps = [
+    {
+      icon: icons.Award,
+      title: t("Blogs.IconDetails.expertInstructors.title"),
+      description: t("Blogs.IconDetails.expertInstructors.description"),
+      iconColor: "text-[#4F39F6]",
+      bgColor: "bg-[#FFE4E1]",
+    },
+    {
+      icon: icons.LucideInfinity,
+      title: t("Blogs.IconDetails.lifetimeAccess.title"),
+      description: t("Blogs.IconDetails.lifetimeAccess.description"),
+      iconColor: "text-[#9810FA]",
+      bgColor: "bg-[#FFE4E1]",
+    },
+    {
+      icon: icons.ShieldCheck,
+      title: t("Blogs.IconDetails.verifiedCertificates.title"),
+      description: t("Blogs.IconDetails.verifiedCertificates.description"),
+      iconColor: "text-[#E60076]",
+      bgColor: "bg-[#FFE4E1]",
+    },
+  ];
 
   return (
     <div className="container flex flex-col gap-30 pt-0 mb-10">
@@ -80,7 +77,7 @@ function Blogs() {
         </div>
         {/* 3 cards */}
         <div
-          className={`flex justify-between max-lg:flex-col max-lg:items-center max-lg:gap-8`}
+          className={`flex justify-center gap-8 max-lg:flex-col max-lg:items-center max-lg:gap-8`}
         >
           {/* <div className={`flex flex-col md:flex-row`}> */}
           {iconDetailsProps.map((data) => (
@@ -92,7 +89,7 @@ function Blogs() {
                 iconColor={data.iconColor}
                 bgColor={data.bgColor}
                 isCircle={true}
-                // size="lg"
+                size="lg"
               />
             </div>
           ))}
@@ -112,7 +109,7 @@ function Blogs() {
         </div>
 
         {/* Cards */}
-        <div className="flex gap-4 max-lg:flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
+        <div className="flex gap-6 max-lg:flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
           {/* CARD 1 */}
           <div
             className={`w-[280px] h-[368px] rounded-2xl shadow-lg overflow-hidden 
