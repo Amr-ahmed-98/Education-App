@@ -6,10 +6,15 @@ function ContactUs() {
   const { t } = useTranslation();
   return (
     <div>
-      <SectionTitle title={t("SectionTitle.ContactUs.Title", { returnObjects: true }) as {
-        text: string;
-        color?: string;
-      }[]} trail={t("SectionTitle.ContactUs.Trail", { returnObjects: true }) as string[]} />
+      <SectionTitle
+        heading1={t('SectionTitle.ContactUs.heading1')}
+        heading2={t('SectionTitle.ContactUs.heading2')}
+        breadcrumbs1={t('SectionTitle.ContactUs.breadcrumbs1')}
+        breadcrumbs2={t('SectionTitle.ContactUs.breadcrumbs2')}
+        breadcrumbs3={t('SectionTitle.ContactUs.breadcrumbs3')}
+        breadcrumbs1Path='/'
+        breadcrumbs2Path='/pages'
+      />
       <ContactSection />
     </div>
   );

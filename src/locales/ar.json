@@ -282,8 +282,8 @@
     },
 
     "ContactUs": {
-      "title1": "اتصل",
-      "title2": "بنا",
+      "heading1": "اتصل",
+      "heading2": "بنا",
       "breadcrumbs1": "الرئيسية",
       "breadcrumbs2": "الصفحات",
       "breadcrumbs3": "اتصل بنا"
