@@ -1,24 +1,15 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import { PiCertificateBold } from "react-icons/pi";
-import { MdGroups } from "react-icons/md";
-
-import { FaStar } from "react-icons/fa";
-
+import { MdGroups ,MdLightbulbOutline } from "react-icons/md";
 import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
 import { TbClockHour4 } from "react-icons/tb";
 import { BsGrid3X3 } from "react-icons/bs";
-import { FaBars } from "react-icons/fa6";
-import { IoPeople } from "react-icons/io5";
-import { MdLightbulbOutline } from "react-icons/md";
-import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { FaBars ,FaChartLine } from "react-icons/fa6";
+import { IoPeople , IoShieldCheckmarkSharp  ,IoCheckmarkCircleOutline ,IoLogoFacebook} from "react-icons/io5";
 import { BiSmile } from "react-icons/bi";
 import { IoMdTrendingUp } from "react-icons/io";
 import { SiNextra } from "react-icons/si";
-import { FaChartLine } from "react-icons/fa6";
-import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import { FaBookOpen } from "react-icons/fa";
 
-import { IoLogoFacebook } from "react-icons/io5";
 import {
   FaInstagramSquare,
   FaWhatsappSquare,
@@ -30,6 +21,8 @@ import {
   FaLongArrowAltRight,
   FaLongArrowAltLeft,
   FaUser,
+  FaStar,
+  FaBookOpen
 } from "react-icons/fa";
 
 import {
