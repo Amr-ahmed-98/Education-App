@@ -187,8 +187,8 @@
       "btn": "Start Learning Today"
     },
     "Event": {
-      "title1": "Event",
-      "title2": "Page",
+      "heading1": "Event",
+      "heading2": "Page",
       "breadcrumbs1": "Home",
       "breadcrumbs2": "Pages",
       "breadcrumbs3": "Event Page"
@@ -282,10 +282,9 @@
       "breadcrumbs3": "Contact Us"
     },
     "FAQS": {
-      "title1": "Your Questions,",
-      "title2": "Answered",
-      "description1": "Answers to common questions about courses, registration, and more.",
-      "description2": "registration, and more.",
+      "heading1": "Your Questions,",
+      "heading2": "Answered",
+      "description": "Answers to common questions about courses, registration, and more.",
       "breadcrumbs1": "Home",
       "breadcrumbs2": "Pages",
       "breadcrumbs3": "Frequently Asked Questions"

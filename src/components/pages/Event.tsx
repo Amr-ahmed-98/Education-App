@@ -7,10 +7,15 @@ function Event() {
 
   return (
     <>
-      <SectionTitle title={t("SectionTitle.Event.Title", { returnObjects: true }) as {
-        text: string;
-        color?: string;
-      }[]} trail={t("SectionTitle.Event.Trail", { returnObjects: true }) as string[]} />
+        <SectionTitle
+        heading1={t('SectionTitle.Event.heading1')}
+        heading2={t('SectionTitle.Event.heading2')}
+        breadcrumbs1={t('SectionTitle.Event.breadcrumbs1')}
+        breadcrumbs2={t('SectionTitle.Event.breadcrumbs2')}
+        breadcrumbs3={t('SectionTitle.Event.breadcrumbs3')}
+        breadcrumbs1Path='/'
+        breadcrumbs2Path='/pages'
+      />
     <EventGrid />
     </>
   )
