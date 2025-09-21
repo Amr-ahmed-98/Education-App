@@ -4,7 +4,7 @@ import intructor1 from "./instructor1.png";
 import Instructor2 from "./instructor2.png";
 import Instructor3 from "./instructor3.png";
 import Instructor4 from "./instructor4.png";
-import AboutImg from "./front-view-smiley-man-holding-paper 1.png";
+import AboutImg from "./aboutImg.png";
 import EventDetailsHero from "./event-details-hero.png";
 import EventDetailsSpeaker1 from "./event-details-speaker(1).png";
 import EventDetailsSpeaker2 from "./event-details-speaker(2).png";
@@ -12,23 +12,25 @@ import EventDetailsSpeaker3 from "./event-details-speaker(3).png";
 import EventDetailsSpeaker4 from "./event-details-speaker(4).png";
 import EventGridCard from "./events-grid-card.png";
 import Ellipse from "./Ellipse.png";
-import laptop from "@/assets/images/blog-laptop.png";
-import tablet from "@/assets/images/blog-tablet.png";
-import student from "@/assets/images/blog-student.png";
-import ideas from "@/assets/images/blog-ideas.png";
-import red_Dots from "@/assets/images/sectionTitle-Red dots.png";
-import green_Dots from "@/assets/images/sectionTitle-Green dots.png";
-import janeDoe from "@/assets/images/blog-jane doe.png";
-import jandoe2 from "@/assets/images/blog-jane doe2.png";
-import seo from "@/assets/images/Blog-Copy-SEO.png";
-import copywrite from "@/assets/images/Blog-Copy-Writing.png";
-import card1 from "@/assets/images/blog-card-1.png";
-import card2 from "@/assets/images/blog-card-2.png";
-import card3 from "@/assets/images/blog-card-3.png";
-import card4 from "@/assets/images/blog-card-4.png";
-import course1 from "@/assets/images/course-1.png";
-import course2 from "@/assets/images/course-2.png";
-import course3 from "@/assets/images/course-3.png";
+import laptop from "./blog-laptop.png";
+import tablet from "./blog-tablet.png";
+import student from "./blog-student.png";
+import ideas from "./blog-ideas.png";
+import red_Dots from "./sectionTitle-Red-dots.png";
+import green_Dots from "./sectionTitle-Green-dots.png";
+import janeDoe from "./blog-jane-doe.png";
+import jandoe2 from "./blog-jane-doe2.png";
+import seo from "./blog-copy-Writing.png";
+import copywrite from "./blog-copy-Writing.png";
+import card1 from "./blog-card-1.png";
+import card2 from "./blog-card-2.png";
+import card3 from "./blog-card-3.png";
+import card4 from "./blog-card-4.png";
+import course1 from "./course-1.png";
+import course2 from "./course-2.png";
+import course3 from "./course-3.png";
+import Aboutpic from "./about2.jpg";
+import AboutHero from './about.jpg';
 export {
   HomeHero,
   HomeAbout,
@@ -60,5 +62,7 @@ export {
   card4,
   course1,
   course2,
-  course3
+  course3,
+  Aboutpic,
+  AboutHero
 };

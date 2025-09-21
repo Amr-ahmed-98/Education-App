@@ -208,7 +208,7 @@ function BlogDetails() {
               {t("BlogDetails.blog.tags")}
             </h2>
             <div className="flex flex-wrap gap-2">
-              {t("BlogDetails.blog.tagsList", { returnObjects: true }).map(
+              {(t("BlogDetails.blog.tagsList", { returnObjects: true })as string[]).map(
                 (tag: string, index: number) => (
                   <span
                     key={index}
