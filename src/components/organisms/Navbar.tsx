@@ -123,7 +123,7 @@ function Navbar() {
                     </span>
                     <ul
                       className="absolute left-0 mt-2 w-48 bg-white dark:bg-dark-primary shadow-lg rounded-lg 
-          opacity-0 group-hover:opacity-100 invisible group-hover:visible 
+          opacity-0 group-hover:opacity-100 group-active:opacity-100 invisible group-hover:visible group-active:visible 
           transition-all duration-300 z-50"
                     >
                       {item.subRoutes.map((sub) => (
