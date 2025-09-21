@@ -687,5 +687,54 @@
     "title4":"all in one place",
      "btn":"Browse all courses"
 
+  },
+  "eventList": {
+   "eventList1": {
+  "time": "9:00 AM - 11:00 AM",
+  "date": "Sunday, November 10, 2025",
+  "location": "Conference Hall - Cairo",
+  "title": "The First Tech Forum for Software Development",
+  "desc": "An event that brings together developers and technology enthusiasts to discuss the latest trends in software development, exchange experiences, and explore modern tools that help build more efficient and effective applications."
+},
+"eventList2": {
+  "time": "1:00 PM - 3:00 PM",
+  "date": "Monday, November 11, 2025",
+  "location": "American University - Cairo",
+  "title": "Advanced Workshop on Artificial Intelligence and Machine Learning",
+  "desc": "A hands-on workshop focusing on the fundamentals of artificial intelligence and machine learning algorithms with practical examples, along with a discussion about the future of this technology in industries such as healthcare, education, and business."
+},
+"eventList3": {
+  "time": "10:00 AM - 12:00 PM",
+  "date": "Tuesday, November 12, 2025",
+  "location": "Public Library - Alexandria",
+  "title": "Comprehensive Seminar on Entrepreneurship and Innovation",
+  "desc": "An open session featuring successful entrepreneurs sharing their real-life experiences in building startups, the challenges they faced, and how they turned ideas into scalable and sustainable business ventures."
+},
+"eventList4": {
+  "time": "5:00 PM - 7:00 PM",
+  "date": "Wednesday, November 13, 2025",
+  "location": "Cultural Theater - Giza",
+  "title": "Cultural and Artistic Evening under the Theme: Creativity Unites Us",
+  "desc": "A special evening combining poetry, music, and fine arts aimed at promoting cultural exchange and showcasing young artistic talents, with opportunities for the audience to interact directly with the artists."
+},
+"eventList5": {
+  "time": "11:00 AM - 2:00 PM",
+  "date": "Thursday, November 14, 2025",
+  "location": "Art Hall - Mansoura",
+  "title": "Youth Fine Arts Exhibition of Egypt",
+  "desc": "An exhibition featuring a variety of artworks that reflect the creativity and innovation of the younger generation, including oil paintings and digital illustrations, with an opportunity for participants to present their work to the public and critics."
+},
+"eventList6": {
+  "time": "6:00 PM - 9:00 PM",
+  "date": "Friday, November 15, 2025",
+  "location": "Conference Center - Aswan",
+  "title": "Closing Ceremony of the Annual Cultural and Educational Festival",
+  "desc": "The festival finale includes awarding outstanding participants, presenting diverse musical and artistic performances, along with thank-you speeches and acknowledgments for the organizers and supporters of this remarkable event."
+}
+,
+    "viewBtn":"View Details"
+
+    
   }
+
 }

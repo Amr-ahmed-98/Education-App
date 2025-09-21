@@ -13,33 +13,33 @@ const EventDetailsSpeakers = () => {
               __html: t(`EventDetailsSpeaker.EventDetailsSpeaker`),
             }}
           />{" "}
-          <div className="items flex md:flex-row flex-col gap-6 md:gap-0 items-center md:justify-between">
-            <div className="w-[264px] h-[400px]">
+          <div className="items flex md:flex-row flex-col gap-6  items-center md:justify-between">
+            <div className="flex-1 h-[400px]">
               <img
                 src={Imgs.EventDetailsSpeaker1}
                 alt=""
-                className="rounded-xl w-full h-full object-fill"
+                className="rounded-xl  h-full object-fill w-[345px] md:w-full"
               />
             </div>
-            <div className="w-[264px] h-[400px]">
+            <div className="flex-1 h-[400px]">
               <img
                 src={Imgs.EventDetailsSpeaker2}
                 alt=""
-                className="rounded-xl w-full h-full object-fill"
+                className="rounded-xl  h-full object-fill w-[345px] md:w-full"
               />
             </div>
-            <div className="w-[264px] h-[400px]">
+            <div className="flex-1 h-[400px]">
               <img
                 src={Imgs.EventDetailsSpeaker3}
                 alt=""
-                className="rounded-xl w-full h-full object-fill"
+                className="rounded-xl  h-full object-fill w-[345px] md:w-full"
               />
             </div>
-            <div className="w-[264px] h-[400px]">
+            <div className="flex-1 h-[400px]">
               <img
                 src={Imgs.EventDetailsSpeaker4}
                 alt=""
-                className="rounded-xl w-full h-full object-fill"
+                className="rounded-xl  h-full object-fill w-[345px] md:w-full"
               />
             </div>
           </div>
