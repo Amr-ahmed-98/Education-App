@@ -69,8 +69,8 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
           {/* button variant */}
           {variant === "button" && button1 && (
             <div className="flex gap-5">
-              <Button variant="primary" size="lg">{button1}</Button>
-              <Button variant="secondary" size="lg">{button2}</Button>
+              <Button variant="primary" size="lg" path="/contact-us">{button1}</Button>
+              <Button variant="secondary" size="lg" path="/course">{button2}</Button>
             </div>
           )}
         </div>

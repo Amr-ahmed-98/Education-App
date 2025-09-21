@@ -26,8 +26,8 @@ const SideText : React.FC<SideTextProps> = ({
         <h1 className="mb-6 mt-[10px] text-b text-[48px] leading-[70px]"><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary"><br/>{subtitle3} </span></h1>
         <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
         <div className="flex gap-5">
-                    <Button variant="primary" size="lg">{button1}</Button>
-                    <Button variant="secondary" size="lg">{button2}</Button>
+                    <Button variant="primary" size="lg" path="/contact-us">{button1}</Button>
+                    <Button variant="secondary" path="/Instructor" size="lg">{button2}</Button>
         </div>
      
     </div>

@@ -386,7 +386,7 @@
     "subTitle3": "Instructor",
     "description": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
     "btn1": "Contact Us",
-    "btn2": "Explore Courses"
+    "btn2": "Instructors"
   },
   "faqTitle": "Frequently Asked Questions",
   "general": {
@@ -685,7 +685,8 @@
     "title1":"Top",    
     "title2":"Categories",    
     "title3":"Everything you need to learn,",    
-    "title4":"all in one place"
+    "title4":"all in one place",
+     "btn":"Browse all courses"
 
   }
 }

@@ -10,6 +10,7 @@ import BannerCard from "../organisms/Home/BannerCard";
 import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
 import TitleCourse from "./../molecules/TitleCourse";
+import Button from "../atoms/Button";
 function Home() {
   const { t } = useTranslation();
   return (
@@ -79,49 +80,55 @@ function Home() {
         />
       <div className="flex flex-row container gap-4">
      
-        <Cart
+        <Cart className="dark:bg-[#1C242F]"
           course={{
             id: "1",
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: img.intructor1,
+            image: img.course1,
             rating: 4,
             totalRatings: 21,
             price: 120,
             lessons: 48,
           }}
-          className=""
         />
-        <Cart
+        <Cart className="dark:bg-[#1C242F]"
           course={{
             id: "1",
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: img.intructor1,
+            image: img.course2,
             rating: 4,
             totalRatings: 21,
             price: 120,
             lessons: 48,
           }}
-          className=""
+        
         />
-        <Cart
+        <Cart className="dark:bg-[#1C242F]"
           course={{
             id: "1",
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: img.intructor1,
+            image: img.course3,
             rating: 4,
             totalRatings: 21,
             price: 120,
             lessons: 48,
           }}
-          className=""
         />
+      
       </div>
+        <Button className="my-[50px]"    
+            path="/course"
+            size="lg"
+            center={true}
+        >
+          {t("titleCard.btn")}
+        </Button>
 </div>
       <Instructor />
       <CertificateSection />

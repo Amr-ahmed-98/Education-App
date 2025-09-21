@@ -16,7 +16,6 @@ function Course() {
         breadcrumbs3={t("SectionTitle.Course.breadcrumbs3")}
         breadcrumbs1Path="/"
         breadcrumbs2Path="/course"
-        breadcrumbs3Path="/course"
       />
       <CourseList courses={sampleCourses} className="" />
     

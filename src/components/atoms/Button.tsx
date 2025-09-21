@@ -1,11 +1,14 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
-
+import { Link } from "react-router-dom";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant?: "primary" | "secondary" | "outline1" | "outline2" | "ghost";
   size?: "sm" | "md" | "lg" | "xl";
   loading?: boolean;
   fullWidth?: boolean;
+  path?: string;
+  center?: boolean;
+  
 }
 
 const Button = ({
@@ -18,7 +21,8 @@ const Button = ({
   onClick,
   type = "button",
   className = "",
-
+  path,
+  center = false,
   ...props
 }: ButtonProps) => {
   const baseClasses =
@@ -48,36 +52,19 @@ const Button = ({
   const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${widthClass} ${className}`;
 
   return (
-    <button
-      type={type}
-      className={classes}
-      disabled={disabled || loading}
-      onClick={onClick}
-      {...props}
-    >
-      {loading && (
-        <svg
-          className="animate-spin -ml-1 mr-2 h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
+     <div className={center ? "flex justify-center" : ""}>
+      <Link to={path || "#"}>
+        <button
+          type={type}
+          className={classes}
+          disabled={disabled || loading}
+          onClick={onClick}
+          {...props}
         >
-          <circle
-            className="opacity-25"
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="currentColor"
-            strokeWidth="4"
-          ></circle>
-          <path
-            className="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-          ></path>
-        </svg>
-      )}
-      {children}
-    </button>
+          {children}
+        </button>
+      </Link>
+    </div>
   );
 };
 

@@ -26,6 +26,9 @@ import card1 from "@/assets/images/blog-card-1.png";
 import card2 from "@/assets/images/blog-card-2.png";
 import card3 from "@/assets/images/blog-card-3.png";
 import card4 from "@/assets/images/blog-card-4.png";
+import course1 from "@/assets/images/course-1.png";
+import course2 from "@/assets/images/course-2.png";
+import course3 from "@/assets/images/course-3.png";
 export {
   HomeHero,
   HomeAbout,
@@ -55,4 +58,7 @@ export {
   card2,
   card3,
   card4,
+  course1,
+  course2,
+  course3
 };

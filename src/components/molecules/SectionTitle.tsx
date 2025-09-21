@@ -105,7 +105,9 @@ function SectionTitle({
   }
 
   return (
+    
     <div
+    
       className={`relative flex w-full flex-col gap-4 py-30 px-4 md:px-30 overflow-hidden ${className}
         ${theme === themes.dark ? "bg-[#020B17]" : "bg-[#BDD3F6]"}
       `}
@@ -137,6 +139,7 @@ function SectionTitle({
         </p>
       )}
 
+ 
       {/* Breadcrumbs */}
       {breadcrumbs1 && breadcrumbs2 && breadcrumbs3 && (
         <div
@@ -264,16 +267,19 @@ function SectionTitle({
       <div
         className={`flex flex-col md:flex-row items-center gap-4 md:gap-6 z-10 mt-6 ${buttonClass}`}
       >
-        {/* Button */}
-        {button && (
+       {/* Button */}
+       <div className=" w-full mx-auto">
+         {button && (
           <Button
             variant="primary"
-            size="md"
-            className={`w-fit px-8 ${isCourseDetailsUsage ? "" : "mx-auto"}`}
+            className={`w-fit px-8 my-[20px] ${isCourseDetailsUsage ? "" : "mx-auto"}`}
+            path="/sign-in"
+            size="lg"
           >
             {button}
           </Button>
         )}
+       </div>
 
         {/* Rating Section */}
         {rating && ratingCount !== undefined && studentCount !== undefined && (
@@ -286,6 +292,7 @@ function SectionTitle({
                 : "items-center"
             }`}
           >
+            
             {isArabic && isCourseDetailsUsage ? (
               // Arabic RTL order: Students Count - Ratings Count - Rating with Stars
               <>
@@ -359,6 +366,7 @@ function SectionTitle({
             )}
           </div>
         )}
+        
       </div>
     </div>
   );
