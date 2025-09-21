@@ -9,7 +9,7 @@ import CertificateSection from "../../components/organisms/Home/CertificateSecti
 import BannerCard from "../organisms/Home/BannerCard";
 import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
-
+import TitleCourse from "./../molecules/TitleCourse";
 function Home() {
   const { t } = useTranslation();
   return (
@@ -70,7 +70,15 @@ function Home() {
           ]}
         />
       </div>
+      <div className="bg-[#C4DBFF] dark:bg-[#020B17] py-[70px]">
+         <TitleCourse
+        title1={t("titleCard.title1")} 
+        title2={t("titleCard.title2")} 
+        title3={t("titleCard.title3")} 
+        title4={t("titleCard.title4")} 
+        />
       <div className="flex flex-row container gap-4">
+     
         <Cart
           course={{
             id: "1",
@@ -114,7 +122,7 @@ function Home() {
           className=""
         />
       </div>
-
+</div>
       <Instructor />
       <CertificateSection />
       <TestimonialsSec
