@@ -1,6 +1,6 @@
 import Button from "../atoms/Button"
 import * as Icons from "../../assets/icons/icons"
-import { eventsListEn, eventsListAr } from "@/utils/Data"
+import { eventsListEn } from "@/utils/Data"
 import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import EventGridCard from "../molecules/EventGridCard"
@@ -23,12 +23,10 @@ const EventGrid = () => {
 
     const [data, setData] = useState<Event[]>([]);
 
-    const lang: string | null = localStorage.getItem("lang")
+    
     useEffect(() => {
-        const langData = lang === "en" ? eventsListEn : eventsListAr
-        setData(langData)
-
-    }, [lang])
+        setData(eventsListEn)
+    }, [])
 
     return (
         <>
@@ -41,7 +39,7 @@ const EventGrid = () => {
                         <Button onClick={() => handleShowItems("grid")} className="px-4 md:px-8 flex gap-2"><Icons.BsGrid3X3 /> <span className="hidden md:flex">{t(`EventGrid.eventGrid`)}</span></Button>
                         <Button onClick={() => handleShowItems("list")} className="px-4 md:px-8 flex gap-2" variant="outline1"><Icons.FaBars /> <span className="hidden md:flex">{t(`EventGrid.eventList`)}</span></Button>
                     </div>
-                    <div className={`items ${show == "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" : "grid grid-cols-1 gap-8"}   `}>
+                    <div className={`items ${show == "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  " : "grid grid-cols-1 gap-8"}   `}>
                         {data.map(event => (
                             <EventGridCard event={event} show={show} />))}
                     </div>
