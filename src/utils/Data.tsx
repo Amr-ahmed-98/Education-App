@@ -1,6 +1,5 @@
 import * as img from "../assets/images/images";
 import * as icon from '../assets/icons/icons';
-import { Images } from "lucide-react";
 export const NavbarList = [
   {
     list: "Home",

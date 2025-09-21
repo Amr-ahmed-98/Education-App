@@ -8,7 +8,6 @@ interface TestimonialsSecProps{
     subtitle1?: string ,
     subtitle2?: string ,
     subtitle3?: string ,
-    description?:string,
     variant: "icons" | "button";
     icons?: { src: React.ReactNode; label: string }[];
     button1?: string;
@@ -23,7 +22,6 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
   subtitle1,
   subtitle2,
   subtitle3,
-  description,
   icons,
   button1,
   button2,
@@ -35,7 +33,6 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
         {Students.map((student) => (
           <CardSec
             key={student.id}
-            description={t(student.description)}
             image={t(student.img)}
             icons={student.icons}
             name={t(student.name)}
@@ -48,7 +45,6 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
           <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]">
             <span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3}</span>
           </h1>
-          <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
           {/* icons variant */}
           {variant === "icons" && icons && (
             <div className="flex gap-3 flex-col">

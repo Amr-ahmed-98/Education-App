@@ -121,7 +121,7 @@ function SectionTitle({
 
       {/* Title */}
       {(heading1 || heading2 || heading3 || heading4) && (
-        <h2 className="text-[20px] z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center mx-auto max-w-4xl">
+        <h2 className="text-[25px] z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center mx-auto max-w-4xl">
           {heading1} <span className="text-secondary">{heading2}</span>
           {(heading3 || heading4) && <br />}
           {heading3} <span className="text-primary">{heading4}</span>
@@ -237,11 +237,11 @@ function SectionTitle({
       {children && <div className="relative z-10">{children}</div>}
 
       {/* Shapes */}
-      <div className="absolute right-4 top-2">
+      <div className="absolute  right-5 top-2 w-[20%]">
         <img src={images.green_Dots} alt="dots1" />
       </div>
 
-      <div className="absolute left-5 bottom-2">
+      <div className="absolute left-5 bottom-2 w-[24%]">
         <img src={images.red_Dots} alt="dots2" />
       </div>
 
