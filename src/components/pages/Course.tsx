@@ -19,7 +19,7 @@ function Course() {
         breadcrumbs3Path="/course"
       />
       <CourseList courses={sampleCourses} className="" />
-      <div>{t("nav.course")}</div>
+    
     </>
   );
 }

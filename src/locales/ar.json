@@ -665,5 +665,12 @@
       "description": "انضم إلى تطبيق التعليم اليوم وكن جزءًا من مجتمع نابض بالحياة مكرس للتعلم مدى الحياة. اكتشف عالماً من المعرفة في متناول يديك.",
       "btn": "ابدأ رحلتك اليوم"
     }
+  },
+  "titleCard":{
+    "title1":"Top",    
+    "title2":"Categories",    
+    "title3":"Everything you need to learn,",    
+    "title4":"all in one place"
+
   }
 }

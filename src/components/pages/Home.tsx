@@ -4,11 +4,9 @@ import * as img from "./../../assets/images/images";
 import * as icons from "./../../assets/icons/icons";
 import HeroText from "../molecules/HeroText";
 import Cart from "../molecules/Card";
-import intructor1 from "../../assets/images/instructor1.png";
 import Instructor from "./../organisms/Home/InstructorSection";
 import CertificateSection from "../../components/organisms/Home/CertificateSection";
 import BannerCard from "../organisms/Home/BannerCard";
-
 import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
 
@@ -79,7 +77,7 @@ function Home() {
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: intructor1,
+            image: img.intructor1,
             rating: 4,
             totalRatings: 21,
             price: 120,
@@ -93,7 +91,7 @@ function Home() {
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: intructor1,
+            image: img.intructor1,
             rating: 4,
             totalRatings: 21,
             price: 120,
@@ -107,7 +105,7 @@ function Home() {
             title: "Python Course",
             level: "Advanced",
             duration: "6 Weeks",
-            image: intructor1,
+            image: img.intructor1,
             rating: 4,
             totalRatings: 21,
             price: 120,
