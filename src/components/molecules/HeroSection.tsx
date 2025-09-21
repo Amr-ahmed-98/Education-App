@@ -17,7 +17,6 @@ interface HeroSectionProps {
   };
   image?: string;
   imageRight?: boolean;
-  className?: string;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -29,7 +28,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   primaryButton = { text: "Get Started", href: "/register" },
   image,
   imageRight = true,
-  className = "",
 }) => {
   return (
     <section

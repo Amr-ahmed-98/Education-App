@@ -2,13 +2,11 @@ import  React  from "react";
 interface BannerCardProbs {
   label?: string;
   icon?: React.ReactNode;
-  value?:string | number;
 }
 
 const BannerCard: React.FC<BannerCardProbs> = ({ 
     label, 
     icon,
-    value
 }) => {
   return (
     <div className=" py-[20px] ">
