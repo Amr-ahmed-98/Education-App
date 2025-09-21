@@ -14,7 +14,7 @@ interface HeroTextProps{
 
 const HeroText : React.FC<HeroTextProps> = ({
     title = "Default Title",
- variant,
+    variant,
     subtitle1,
     subtitle2,
     subtitle3,
@@ -27,7 +27,7 @@ const HeroText : React.FC<HeroTextProps> = ({
         <section className="grid py-[100px] grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* الصورة */}
       <div>
-        <img src={image} alt={title} className="rounded-lg shadow-2xl w-[75%]" />
+        <img src={image} alt={title} className="rounded-lg shadow-2xl w-[100%] sm:w-[100%] lg:w-[85%]" />
       </div>
       {/* النص */}
       <div >
