@@ -36,7 +36,6 @@ function Home() {
               <BannerCard
                 key={item.id}
                 icon={item.icon}
-                value={item.value}
                 label={t(item.labelKey)}
               />
             ))}
@@ -74,14 +73,16 @@ function Home() {
           ]}
         />
       </div>
-      <div className="bg-[#C4DBFF] dark:bg-[#020B17] py-[70px]">
+      <div className="bg-[#C4DBFF]  dark:bg-[#020B17] py-[70px]">
+        <div className="container">
          <TitleCourse
         title1={t("titleCard.title1")} 
         title2={t("titleCard.title2")} 
         title3={t("titleCard.title3")} 
         title4={t("titleCard.title4")} 
         />
-      <div className="flex flex-row container gap-4">
+        </div>
+      <div className="flex flex-col sm:flex-col lg:flex-row container gap-5">
      
         <Cart className="dark:bg-[#1C242F]"
           course={{

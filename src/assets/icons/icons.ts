@@ -37,8 +37,6 @@ import {
   Star,
   Users,
   Check,
-  Linkedin,
-  Instagram,
   Infinity as LucideInfinity,
   Award,
   ShieldCheck,
