@@ -12,6 +12,7 @@ interface TestimonialsSecProps{
     icons?: { src: React.ReactNode; label: string }[];
     button1?: string;
     button2?: string;
+    description?: string;
     
 }
 
@@ -25,6 +26,7 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
   icons,
   button1,
   button2,
+  description
 }) => {
     const { t } = useTranslation();
     return (
@@ -37,6 +39,7 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
             icons={student.icons}
             name={t(student.name)}
             track={t(student.track)}
+            description={t(student.description)}
           />
         ))}
         {/* Right Side Content */}
@@ -45,6 +48,7 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
           <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]">
             <span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3}</span>
           </h1>
+          <p className="mb-[30px]"> {description}</p>
           {/* icons variant */}
           {variant === "icons" && icons && (
             <div className="flex gap-3 flex-col">

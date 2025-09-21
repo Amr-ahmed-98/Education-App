@@ -25,7 +25,7 @@ function Home() {
           primaryButton={{ text: t("HeroHome.btn"), href: "/register" }}
           image={img.HomeHero}
           imageRight={true} // لو خليتها true هتبدل مكان النص مع الصورة
-          className="bg-gray-50"
+        
         />
         <div className=" bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
           <div className="

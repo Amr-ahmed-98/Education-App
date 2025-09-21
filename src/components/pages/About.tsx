@@ -3,11 +3,8 @@ import IconDetails from "../molecules/IconDetails";
 import * as icon from "../../assets/icons/icons";
 import HeroText from "../molecules/HeroText";
 import CertificateSection from "../organisms/Home/CertificateSection";
-import AboutHero  from "../../assets/images/about.jpg"
-import Aboutpic from"../../assets/images/about2.jpg"
-import redDots from "../../assets/images/sectionTitle-Red dots.png";
-import greenDots from "../../assets/images/sectionTitle-Green dots.png";
-
+import AboutHero from "../../assets/images/about.jpg";
+import * as img from "./../../assets/images/images";
 function About() {
   const { t } = useTranslation();
   const message: string = "Hello TypeScript 🚀";
@@ -42,7 +39,7 @@ function About() {
         subtitle2={t("HeroTextAbout.subTitle2")}
         subtitle3={t("HeroTextAbout.subTitle3")}
         description={t("HeroTextAbout.description")}
-        image= {Aboutpic} 
+        image= {img.Aboutpic} 
         variant="button"
         button={t("HeroTextAbout.btn")}
       />
@@ -52,7 +49,7 @@ function About() {
      <div className="bg-blue-100 dark:bg-black relative ">
       
         <img 
-    src={greenDots} 
+    src={img.green_Dots} 
     alt="decoration" 
     className="absolute top-10 left-10 w-32 opacity-50"
   />
@@ -83,7 +80,7 @@ function About() {
     />
   </div>
     <img 
-    src={redDots} 
+    src={img.red_Dots} 
     alt="decoration" 
     className="absolute bottom-10 right-10 w-32 opacity-50"
   />
