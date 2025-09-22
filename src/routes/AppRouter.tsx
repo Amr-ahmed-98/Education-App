@@ -1,5 +1,4 @@
 import {createBrowserRouter } from 'react-router-dom';
-
 import Home from '../components/pages/Home';
 import Course from '../components/pages/Course';
 import Pages from '../components/pages/Pages';
@@ -34,6 +33,9 @@ import AccountTemplate from '../components/templates/AccountTemplate';
 import PublicTemplate from '../components/templates/PublicTemplate';
 import AuthGuard from '../guards/AuthGuard';
 import Checkout from '../components/pages/Checkout';
+import NotFound from './../components/Errors/NotFound'
+import  ErrorHandler  from '../components/Errors/ErrorHandler';
+
 const AppRouter = createBrowserRouter([
   
     // Public Template
@@ -110,7 +112,7 @@ const AppRouter = createBrowserRouter([
  /// Page Not Page
   { 
         path: "*",
-         element: <div>Page Not Found</div>
+         element: <NotFound /> 
   }
 ]);
 

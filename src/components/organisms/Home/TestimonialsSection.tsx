@@ -3,6 +3,8 @@ import Button from "../../atoms/Button";
 import CardSec from './CardSec';
 import { useTranslation } from "react-i18next";
 import { Students } from "../../../utils/Data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../animation/FadeIn";
 interface TestimonialsSecProps{
     title?: string,
     subtitle1?: string ,
@@ -32,7 +34,15 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
     return (
       <section className="grid container py-[100px] grid-cols-1 lg:grid-cols-3 gap-7 items-center">
         {/* Student Cards */}
+
         {Students.map((student) => (
+
+          <motion.div
+            variants={fadeIn({ direction: "down", delay: 0.4 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+        >
           <CardSec
             key={student.id}
             image={t(student.img)}
@@ -41,9 +51,15 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
             track={t(student.track)}
             description={t(student.description)}
           />
+          </motion.div>
         ))}
-        {/* Right Side Content */}
-        <div>
+      
+        <motion.div
+        variants={fadeIn({ direction: "up", delay: 0.4 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+        >
           <Button variant="outline1" size="lg">{title}</Button>
           <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]">
             <span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3}</span>
@@ -73,7 +89,7 @@ const TestimonialsSec: React.FC<TestimonialsSecProps> = ({
               <Button variant="secondary" size="lg" path="/course">{button2}</Button>
             </div>
           )}
-        </div>
+        </motion.div>
       </section>
     );
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import Button from "../atoms/Button";
 import * as img from "../../assets/images/images";
+import {motion} from "framer-motion";
+import { fadeIn } from "./../../animation/FadeIn";
+
 interface HeroSectionProps {
   title1?: string;
   title2?: string;
@@ -34,7 +37,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       className={`  bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#112238_0%,#18304E_0%,#1D3B60_40%,#0D234E_70%)] `}
     >
       <div className="">
-        <div className="flex justify-center items-center flex-wrap sm:flex-col md:flex-col lg:flex-row">
+        <motion.div 
+         variants={fadeIn({ direction: "up", delay: 0.2 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.7 }}
+        className="flex justify-center items-center flex-wrap sm:flex-col md:flex-col lg:flex-row">
           {/* Content */}
           <div className="mb-[50px] pt-[30px] text-center sm:text-center lg:text-left">
             <h1 className="text-[30px]  lg:text-5xl  font-bold text-primary leading-tight mb-6">
@@ -78,7 +86,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

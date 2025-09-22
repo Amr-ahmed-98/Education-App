@@ -11,10 +11,13 @@ import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
 import TitleCourse from "./../molecules/TitleCourse";
 import Button from "../atoms/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "./../../animation/FadeIn";
 function Home() {
   const { t } = useTranslation();
   return (
     <>
+
       <div>
         <HeroSection
           title1={t("HeroHome.title1")}
@@ -28,10 +31,14 @@ function Home() {
         
         />
         <div className=" bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
-          <div className="
+          <motion.div className="
           container flex overflow-x-auto space-x-4 px-4 py-2 
-    lg:grid lg:grid-cols-4 lg:space-x-0 lg:overflow-visible
-          ">
+    lg:grid lg:grid-cols-4 lg:space-x-0 lg:overflow-visible"
+     variants={fadeIn({ direction: "down", delay: 0.3 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+    >
             {ItemCard.map((item) => (
               <BannerCard
                 key={item.id}
@@ -39,10 +46,16 @@ function Home() {
                 label={t(item.labelKey)}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className="container">
+      <motion.div 
+      className="container"
+       variants={fadeIn({ direction: "up", delay: 0.4 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+      >
         <HeroText
           title={t("HeroText.title")}
           subtitle1={t("HeroText.subTitle1")}
@@ -72,17 +85,27 @@ function Home() {
             },
           ]}
         />
-      </div>
+      </motion.div>
       <div className="bg-[#C4DBFF]  dark:bg-[#020B17] py-[70px]">
-        <div className="container">
+        <motion.div className="container"
+         variants={fadeIn({ direction: "down", delay: 0.4 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.5 }}
+        >
          <TitleCourse
         title1={t("titleCard.title1")} 
         title2={t("titleCard.title2")} 
         title3={t("titleCard.title3")} 
         title4={t("titleCard.title4")} 
         />
-        </div>
-      <div className="flex flex-col sm:flex-col lg:flex-row container gap-5">
+        </motion.div>
+      <motion.div className="flex flex-col sm:flex-col lg:flex-row container gap-5"
+       variants={fadeIn({ direction: "up", delay: 0.5 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.5}}
+      >
      
         <Cart className="dark:bg-[#1C242F]"
           course={{
@@ -125,7 +148,7 @@ function Home() {
           }}
         />
       
-      </div>
+      </motion.div>
         <Button className="my-[50px]"    
             path="/course"
             size="lg"

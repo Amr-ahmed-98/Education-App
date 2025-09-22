@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
@@ -6,13 +6,34 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import "./styles/index.css";
 import "./i18n";
+import LoadingScreen from "./components/Errors/Loading";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <LanguageProvider>
+
+function Root(){
+  const [loading , setLoading] = useState(() =>{
+    return !sessionStorage.getItem("alreadyLoaded");
+  });
+
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      setLoading(false);
+      sessionStorage.setItem("alreadyLoaded","true");
+    },1500);
+    return () => clearTimeout(timer);
+  },[])
+ if(loading){
+  return <LoadingScreen />
+ }
+ return(
+<LanguageProvider>
       <ThemeProvider>
         <RouterProvider router={AppRouter} />
       </ThemeProvider>
     </LanguageProvider>
+ )
+}
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+     <Root />
   </StrictMode>
 );
