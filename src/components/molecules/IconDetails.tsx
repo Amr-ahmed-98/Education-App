@@ -20,7 +20,7 @@ const IconDetails: React.FC<iconDetailsProps> = ({
   size = 'md',
 }) => {
   const sizeClasses = {
-    sm: 'p-4 text-sm w-48',
+    sm: 'p-4 text-sm w-38',
     md: 'p-6 text-base w-64',
     lg: 'p-8 text-lg w-80',
   }[size];

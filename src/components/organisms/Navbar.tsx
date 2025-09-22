@@ -35,7 +35,7 @@ function Navbar() {
     <div
       id="navbar"
       className={`w-full h-[80px] bg-light-primary dark:bg-dark-primary
-    flex items-center justify-between bg-light  md:px-16 sm:px-10 px- fixed top-0 
+    flex items-center justify-between bg-light  md:px-16 sm:px-10 px-4 fixed top-0 
     transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 dark:border-dark-secondary
     ${
       isScrolled

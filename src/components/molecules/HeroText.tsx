@@ -55,7 +55,7 @@ const HeroText : React.FC<HeroTextProps> = ({
 
   {/* button variant */}
         {variant === "button" && button && (
-            <Button variant="primary" size="lg">{button}</Button>
+            <Button variant="primary" size="lg" path="/contact-us">{button}</Button>
         )}
       </div>
 
