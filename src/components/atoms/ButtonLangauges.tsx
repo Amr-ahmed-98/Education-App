@@ -14,7 +14,7 @@ function ButtonLanguages(): JSX.Element {
   return (
     <button
       onClick={toggleLang}
-      className="flex items-center text-primary gap-2 px-4 py-2 rounded-lg bg-light-secondary border-1 border-primary dark:bg-dark-primary text-light cursor-pointer text-sm"
+      className="flex items-center text-primary gap-1 px-3 py-2 rounded-lg bg-light-secondary border-1 border-primary dark:bg-dark-primary text-light cursor-pointer text-sm"
     >
       <Icons.GlobeAltIcon className="w-5 h-5" />
       {i18n.language === "en" ? "Ar" : "En"}

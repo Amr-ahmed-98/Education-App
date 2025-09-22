@@ -54,6 +54,7 @@ const AppRouter = createBrowserRouter([
       {path:"/course-details", element: <CourseDetails />},
       {path:"/event", element: <Event />},
       {path:"/event-details/:id", element: <EventDetails />},
+      {path:"/event-details", element: <EventDetails />},
       {path:"/faqs", element: <FAQ />},
       {path:"/instructor", element: <Instructor />},
       {path:"/blogs", element: <Blogs />},

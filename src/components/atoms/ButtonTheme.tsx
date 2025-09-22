@@ -7,7 +7,7 @@ function ButtonTheme(): JSX.Element {
   return (
     <button
       onClick={toggleTheme}
-      className='px-6 py-2 rounded-lg border-primary border-1 bg-light-secondary dark:bg-dark-primary text-white  transition'
+      className='gap-1 px-4 py-2 rounded-lg border-primary border-1 bg-light-secondary dark:bg-dark-primary text-white cursor-pointer transition'
     >
       {theme === 'dark' ? (
         <Icons.Moon className='w-5 h-5 text-primary' />

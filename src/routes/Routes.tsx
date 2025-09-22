@@ -8,10 +8,7 @@ const Routes = [
       { id: 2, key: "pages.instructor", path: "/instructor" },
       { id: 3, key: "pages.event", path: "/event" },
       { id: 4, key: "pages.event-details", path: "/event-details" },
-      { id: 5, key: "pages.faqs", path: "/faqs" },
-      { id: 6, key: "pages.cart", path: "/cart" },
-      { id: 7, key: "pages.wishlist", path: "/wishlist" },
-      { id: 8, key: "pages.checkout", path: "/checkout" },
+      { id: 5, key: "pages.faqs", path: "/faqs" }
     ],
   },
   {

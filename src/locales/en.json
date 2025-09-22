@@ -17,10 +17,8 @@
     "instructor": "Instructor",
     "event": "Event",
     "event-details": "Event Details",
-    "faqs": "FAQs",
-    "cart": "Card",
-    "wishlist": "Wishlist",
-    "checkout": "Checkout"
+    "faqs": "FAQs"
+
   },
   "footer": {
     "brand": "SkillBase",

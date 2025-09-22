@@ -35,7 +35,7 @@ function Navbar() {
     <div
       id="navbar"
       className={`w-full h-[80px] bg-light-primary dark:bg-dark-primary
-    flex items-center justify-between bg-light  md:px-16 sm:px-10 px-4 fixed top-0 
+    flex items-center justify-between bg-light  md:px-16 sm:px-10 px- fixed top-0 
     transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 dark:border-dark-secondary
     ${
       isScrolled
@@ -102,8 +102,8 @@ function Navbar() {
         <div className="flex-1 flex items-center  flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-0">
           {/* Navbar Items */}
           <ul
-            className="flex flex-col md:flex-row items-center mx-[100px]
- md:gap-7 gap-4 md:text-base text-lg text-neutral-700
+            className="flex flex-col md:flex-row items-center mx-auto 
+ md:gap-4 gap- md:text-base text-lg text-neutral-700
  md:font-normal font-medium "
           >
             {Routes.map((item) => (
@@ -131,15 +131,19 @@ function Navbar() {
                           key={sub.id}
                           className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
-                          <Link to={sub.path}>{t(sub.key)}</Link>
+                          <Link 
+                          to={sub.path}
+                          onClick={closeNavbar} 
+                          >{t(sub.key)}
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </>
                 ) : (
-                  /* لو مفيش subRoutes يبقى لينك عادي */
                   <Link
                     to={item.path}
+                      onClick={closeNavbar}
                     className={`hover:text-primary duration-300 ${
                       location.pathname === item.path ? "text-primary" : ""
                     }`}
@@ -150,21 +154,30 @@ function Navbar() {
               </li>
             ))}
           </ul>
+        
           {/*Nabar buttons*/}
           <div className="flex flex-col md:flex-row items-center gap-4">
             <ButtonTheme />
             <ButtonLanguages />
+            <Link 
+            to="cart"
+            >  <Icons.ShoppingCart />
+            </Link>
+                    <Link 
+            to="wishlist"
+            >  <Icons.Heart />
+            </Link>
             <Link
               to="/sign-in"
               className="text-lg font-semibold text-primary flex items-center gap-x-2"
             >
-              <Button variant="outline1">{t(`nav.login`)}</Button>
+              <Button variant="outline1" path="/sign-in">{t(`nav.login`)}</Button>
             </Link>
-            <Link
-              to="/sign-up"
+    <Link
+              to="/sign-in"
               className="text-lg font-semibold text-primary flex items-center gap-x-2"
             >
-              <Button variant="primary">{t(`nav.sign-up`)}</Button>
+              <Button variant="outline1" path="/sign-up">{t(`nav.sign-up`)}</Button>
             </Link>
           </div>
         </div>
