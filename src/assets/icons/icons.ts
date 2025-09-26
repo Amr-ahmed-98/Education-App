@@ -1,14 +1,19 @@
-import { GlobeAltIcon } from "@heroicons/react/24/outline";
-import { PiCertificateBold } from "react-icons/pi";
-import { MdGroups ,MdLightbulbOutline } from "react-icons/md";
-import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
-import { TbClockHour4 } from "react-icons/tb";
-import { BsGrid3X3 } from "react-icons/bs";
-import { FaBars ,FaChartLine } from "react-icons/fa6";
-import { IoPeople , IoShieldCheckmarkSharp  ,IoCheckmarkCircleOutline ,IoLogoFacebook} from "react-icons/io5";
-import { BiSmile } from "react-icons/bi";
-import { IoMdTrendingUp } from "react-icons/io";
-import { SiNextra } from "react-icons/si";
+import { GlobeAltIcon } from '@heroicons/react/24/outline';
+import { PiCertificateBold } from 'react-icons/pi';
+import { MdGroups, MdLightbulbOutline } from 'react-icons/md';
+import { CiCalendarDate, CiLocationOn } from 'react-icons/ci';
+import { TbClockHour4 } from 'react-icons/tb';
+import { BsGrid3X3 } from 'react-icons/bs';
+import { FaBars, FaChartLine } from 'react-icons/fa6';
+import {
+  IoPeople,
+  IoShieldCheckmarkSharp,
+  IoCheckmarkCircleOutline,
+  IoLogoFacebook,
+} from 'react-icons/io5';
+import { BiSmile } from 'react-icons/bi';
+import { IoMdTrendingUp } from 'react-icons/io';
+import { SiNextra } from 'react-icons/si';
 
 import {
   FaInstagramSquare,
@@ -22,8 +27,8 @@ import {
   FaLongArrowAltLeft,
   FaUser,
   FaStar,
-  FaBookOpen
-} from "react-icons/fa";
+  FaBookOpen,
+} from 'react-icons/fa';
 
 import {
   AlignLeft,
@@ -51,8 +56,9 @@ import {
   ShoppingCart,
   Heart,
   CreditCard,
-  
-} from "lucide-react";
+  FileVideoCamera,
+  LockKeyhole,
+} from 'lucide-react';
 
 export {
   LucideInfinity,
@@ -63,6 +69,7 @@ export {
   Moon,
   Facebook,
   Angry,
+  LockKeyhole,
   IoLogoFacebook,
   FaInstagramSquare,
   FaWhatsappSquare,
@@ -72,6 +79,7 @@ export {
   CiCalendarDate,
   TbClockHour4,
   CiLocationOn,
+  FileVideoCamera,
   Check,
   Star,
   IoPeople,
