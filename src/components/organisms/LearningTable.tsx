@@ -1,4 +1,3 @@
-import React from 'react';
 import { FileVideoCamera, LockKeyhole } from 'lucide-react';
 interface WeekLearning {
   weekLearn: string[];

@@ -15,7 +15,7 @@ type ErrorHandlerProps = {
   message?: string | ReactNode;
 };
 
-const ErrorHandler = ({ status, message }: ErrorHandlerProps) => {
+const ErrorHandler = ({ status }: ErrorHandlerProps) => {
   switch (status) {
     case 401:
     case 403:

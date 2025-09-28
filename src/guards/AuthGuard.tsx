@@ -8,8 +8,8 @@ export default function AuthGuard() {
     // لو الحماية متقفلة → يدي الـ Outlet علطول
     return <Outlet />;
   }
-  const token = localStorage.getItem("token");
-  const isAuthenticated = token && token.trim() !== "";  // ✅ يتأكد إنه مش فاضي
+  const token = localStorage.getItem("accessToken");
+  const isAuthenticated = token && token.trim() !== "";  //  يتأكد إنه مش فاضي
 
   console.log("isAuthenticated:", isAuthenticated);
 

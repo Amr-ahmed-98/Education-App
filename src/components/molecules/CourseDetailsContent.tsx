@@ -2,7 +2,7 @@ import React from 'react';
 import { Check } from '@/assets/icons/icons';
 import { useTheme } from '@/hooks/useTheme';
 import LearningTable from '../organisms/LearningTable';
-import { Instructor4, Instructor3, student } from '@/assets/images/images';
+import { Instructor4, Instructor3 } from '@/assets/images/images';
 import { Link } from 'react-router-dom';
 import {
   FaLinkedinIn,
