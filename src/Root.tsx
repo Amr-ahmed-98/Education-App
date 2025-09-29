@@ -2,7 +2,7 @@ import { RouterProvider } from 'react-router-dom';
 import AppRouter from './routes/AppRouter';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
-import {  useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import LoadingScreen from './components/Errors/Loading';
 
 const Root = () => {
