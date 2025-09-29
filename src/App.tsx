@@ -1,11 +1,7 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import Root from './main';
-import './styles/index.css';
-import './i18n';
+import "./styles/App.css";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Root />
-  </StrictMode>
-);
+function App() {
+  return <></>;
+}
+
+export default App;

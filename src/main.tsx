@@ -1,4 +1,5 @@
-import {  useEffect, useState } from 'react';
+import {  StrictMode,useEffect, useState } from 'react';
+import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import AppRouter from './routes/AppRouter';
 import { LanguageProvider } from './contexts/LanguageContext';
@@ -30,4 +31,8 @@ const Root = () => {
   );
 };
 
-export default Root;
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <Root />
+  </StrictMode>
+);
