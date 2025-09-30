@@ -5,7 +5,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { useEffect, useState } from 'react';
 import LoadingScreen from './components/Errors/Loading';
 
-const Root = () => {
+const Root = () => { 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

@@ -54,10 +54,11 @@ export default useCookie;
 // const [theme, setTheme, removeTheme] = useCookie('theme', 'light');
 // ----- usage with options ----
 /*
- const [token, setToken, removeToken] = useCookie('auth_token', '', {
+const [token, setToken, removeToken] = useCookie('auth_token', '', {
     expires: 7,
     secure: true,
     sameSite: 'strict'
+    path:"/login"
   });
 */
 
