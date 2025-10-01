@@ -4,10 +4,11 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { useEffect, useState } from 'react';
 import LoadingScreen from './components/Errors/Loading';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-const Root = () => { 
+const Root = () => {
   const [loading, setLoading] = useState(true);
-
+  const queryClient = new QueryClient();
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -22,7 +23,9 @@ const Root = () => {
   return (
     <LanguageProvider>
       <ThemeProvider>
-        <RouterProvider router={AppRouter} />
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={AppRouter} />
+        </QueryClientProvider>
       </ThemeProvider>
     </LanguageProvider>
   );
