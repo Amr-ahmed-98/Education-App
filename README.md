@@ -27,6 +27,7 @@ This app provides an interactive UI for managing courses, lessons, users, progre
 - React Query (server state)
 - Zustand (global state)
 - Axios (API requests)
+- JS-Cookie (Save Cookies)
 #
 🎨 Styling & UI Systems
 - Tailwind CSS
@@ -42,6 +43,12 @@ This app provides an interactive UI for managing courses, lessons, users, progre
 - Lucide React
 - Lottie Files
 - React Icons
+#
+🎞 Animations
+- framer-motion
+#
+🛎 Notifications & Alerts
+- SweetAlert2
 
 #
 ## 🚀 Getting Started
