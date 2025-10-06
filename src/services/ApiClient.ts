@@ -1,10 +1,17 @@
-// import ApiClient from "./Axios.Config"; 
+import axiosInstance from "./AxiosConfig";
 
-// const api = {
-//   get: (url: string, params?: Record<string, unknown>) => ApiClient.get(url, { params }),
-//   post: (url: string, data: unknown) => ApiClient.post(url, data),
-//   put: (url: string, data: unknown) => ApiClient.put(url, data),
-//   delete: (url: string) => ApiClient.delete(url),
-// };
-
-// export default api;
+class ApiClient {
+  get<T>(url: string, params?: Record<string, any>): Promise<T> {
+    return axiosInstance.get<T>(url, { params }).then(res => res.data);
+  }
+  post<T>(url: string, data?: any) : Promise<T>{
+    return axiosInstance.post<T>(url, data).then(res => res.data);
+  }
+  put<T>(url: string, data?: any): Promise<T> {
+    return axiosInstance.put<T>(url, data).then(res => res.data);
+  }
+  delete<T>(url: string): Promise<T> {
+    return axiosInstance.delete<T>(url ).then(res => res.data);
+  }
+}
+export default new ApiClient();

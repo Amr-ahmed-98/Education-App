@@ -30,7 +30,7 @@ function useCookie(
 
   // Update cookie when value changes
   useEffect(() => {
-    if (value) {
+    if (value !== undefined) {
       Cookies.set(key, value, options);
     } else {
       Cookies.remove(key, { path: options?.path });
@@ -54,12 +54,15 @@ export default useCookie;
 // const [theme, setTheme, removeTheme] = useCookie('theme', 'light');
 // ----- usage with options ----
 /*
-const [token, setToken, removeToken] = useCookie('auth_token', '', {
-    expires: 7,
-    secure: true,
-    sameSite: 'strict'
-    path:"/login"
-  });
+
+// const [token, setToken, removeToken] = useCookie('auth_token', '', {
+//     expires: 7,       
+//     secure: true,     
+//     sameSite: 'strict',
+//     path: '/'   
+// });
+
+
 */
 
 // ---- Options Can be -------

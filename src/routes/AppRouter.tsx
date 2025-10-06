@@ -20,7 +20,7 @@ import FAQ from '../components/pages/FAQs';
 import Forget from '../features/auth/pages/Forget';
 import Instructor from '../components/pages/Instructor';
 import ManageCourse from '../features/Dashboard/pages/ManageCourse';
-import NewPassword from '../features/auth/pages/NewPassword';
+import ResetPassword from '../features/auth/pages/ResetPassword';
 import OTP from '../features/auth/pages/OTP';
 import SignIn from '../features/auth/pages/SignIn';
 import SignUp from '../features/auth/pages/SignUp';
@@ -84,7 +84,7 @@ const AppRouter = createBrowserRouter([
       { path: "sign-up", element: <SignUp /> },
       { path: "otp", element: <OTP /> },
       { path: "forget", element: <Forget /> },
-      { path: "new-password", element: <NewPassword /> },
+      { path: "reset-password", element: <ResetPassword /> },
     ],
   },
     // Dashboard Template
