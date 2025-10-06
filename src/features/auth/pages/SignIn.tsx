@@ -1,11 +1,12 @@
 // http://localhost:3000/users
-import useApi from '../hooks/useApi'
+import { useNavigate } from "react-router-dom";
+import LoginForm from "../components/LoginForm";
+
 function SignIn() {
-  const {data, isPending, isError} = useApi({url: 'http://localhost:3000/users' , method: 'get' , enabled: true})
-  console.log(data, isPending, isError)
+  const navigate = useNavigate();
   return (
-    <div>
-      SignIn Page
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+     <LoginForm onSuccess={() => navigate("/dashboard")} />
     </div>
   )
 }
