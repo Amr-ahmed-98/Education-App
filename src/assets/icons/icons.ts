@@ -58,6 +58,8 @@ import {
   CreditCard,
   FileVideoCamera,
   LockKeyhole,
+  EyeOff ,
+  Eye  
 } from 'lucide-react';
 
 export {
@@ -117,4 +119,6 @@ export {
   ShoppingCart,
   Heart,
   CreditCard,
+  EyeOff ,
+  Eye  
 };
