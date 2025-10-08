@@ -797,5 +797,13 @@
       "desc": "The festival finale includes awarding outstanding participants, presenting diverse musical and artistic performances, along with thank-you speeches and acknowledgments for the organizers and supporters of this remarkable event."
     },
     "viewBtn": "View Details"
+  },
+  "resetPassword":{
+     "title":"Create New Password",
+     "subtitle":"Please enter your new password below. Make sure it’s strong and secure",
+     "input1":"Enter your password",
+     "input2":"Confirm Password",
+     "text":"password must be least 8 characters, include an uppercase letter and a number ",
+     "btn":"Reset Password"
   }
 }
