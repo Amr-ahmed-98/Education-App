@@ -34,6 +34,7 @@ import AuthGuard from '../guards/AuthGuard';
 import NotFound from './../components/Errors/NotFound'
 import Notification from '@/features/myAccount/pages/Notification';
 import MyCourses from '../features/myAccount/pages/myCourses';
+import Done from '@/features/auth/pages/Done';
 const AppRouter = createBrowserRouter([
   
     // Public Template
@@ -85,6 +86,7 @@ const AppRouter = createBrowserRouter([
       { path: "otp", element: <OTP /> },
       { path: "forget", element: <Forget /> },
       { path: "reset-password", element: <ResetPassword /> },
+      { path: "done", element: <Done /> },
     ],
   },
     // Dashboard Template
