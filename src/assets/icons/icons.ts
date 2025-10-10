@@ -59,7 +59,9 @@ import {
   FileVideoCamera,
   LockKeyhole,
   EyeOff ,
-  Eye  
+  Eye  ,
+  Mail ,
+  ArrowLeft 
 } from 'lucide-react';
 
 export {
@@ -120,5 +122,7 @@ export {
   Heart,
   CreditCard,
   EyeOff ,
-  Eye  
+  Eye  ,
+  Mail,
+  ArrowLeft 
 };

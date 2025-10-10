@@ -810,5 +810,12 @@
     "title":"DONE",
     "subTitle":"Password reset complete! Use the button below to log in",
     "btn":"Return to Login"
+  },
+  "forgetpassword":{
+    "title":"Forget  Password?",
+    "subtitle":"Don't worry, we'll help you reset it.",
+    "placeholder":"Enter your email",
+    "btn":"Send",
+    "backforward":"Back to Sign In"
   }
 }

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function OTP() {
   const email = "kqhdbnm26t@wyoxafp.com";
-  const otp_code = "325828";
+  const otp_code = "979992";
   const navigate = useNavigate();
 
   useEffect(() => {
