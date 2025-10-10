@@ -1,9 +1,9 @@
 import ApiClient from "@/services/ApiClient";
 
 export interface ResetpasswordPayload{
-
-  newPassword: string;
-  confirmPassword :string;
+  otp_code:string | number,
+  email:string;
+  password: string;
 }
 
 export interface ResetPasswordResponse{

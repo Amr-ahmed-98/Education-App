@@ -53,18 +53,37 @@ import { useState } from 'react';
 import * as icons from '../../../assets/icons/icons';
 import { useReset } from '../hooks/useReset';
 
-export function ResetPasswordForm() {
+interface Props {
+  onSuccess: () => void;
+}
+
+
+export function ResetPasswordForm({ onSuccess }: Props) {
   const { t } = useTranslation();
    const [show, setShow] = useState(false);
    const [shows, setShows] = useState(false);
-   const {mutate , isPending , isSuccess, error} = useReset();
+   const {mutate , isPending , isSuccess, error} = useReset(onSuccess);
    const [newPassword, setNewPassword] = useState("");
    const [confirmPassword, setConfirmPassword] = useState("");
    
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    mutate({  newPassword, confirmPassword });
+
+    const email = localStorage.getItem("resetEmail");
+    const otp = localStorage.getItem("resetOtp");
+
+     if (!email || !otp) {
+    alert("Missing email or OTP. Please go back and verify again.");
+    return;
+  }
+   if (newPassword !== confirmPassword) {
+    alert("Passwords do not match!");
+    return;
+  }
+  console.log("Form submitted ✅", { newPassword, confirmPassword });
+console.log("🚀 Sending payload:", { email, otp_code : otp, password : newPassword });
+    mutate({ email, otp_code : otp, password :newPassword }as any);
   };
   return (
     <div className='flex flex-col justify-center items-center w-[35%] py-[20px]'>
@@ -105,7 +124,13 @@ export function ResetPasswordForm() {
       </button>
     </div>
      <p className='mt-[25px] mb-[20px]  text-center text-gray-700 dark:text-gray-500'>{t("resetPassword.text")}</p>
-      <Button type='submit' disabled={isPending} className='w-[100%] h-[45px] !text-[18px] !rounded-[25px]'>{isPending ? "Resetting..." : t("resetPassword.btn")}</Button>
+      
+
+      <button type="submit"
+      disabled={isPending}
+      className="bg-blue-500 rounded-[25px] text-white py-2 ">
+  {isPending ? "Resetting..." : t("resetPassword.btn")}
+      </button>
 {isSuccess && <p className="text-green-500">Password reset successfully </p>}
       {error && <p>{error.message}</p>}
       </form>
