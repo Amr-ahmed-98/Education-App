@@ -1,7 +1,9 @@
-
+import { DoneForm } from "../components/DoneFroms"
 function Done() {
   return (
-    <div>done</div>
+    <div>
+      <DoneForm/>
+    </div>
   )
 }
 

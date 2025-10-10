@@ -48,7 +48,6 @@
 // }
 
 import { useTranslation } from 'react-i18next';
-import Button from '@/components/atoms/Button';
 import { useState } from 'react';
 import * as icons from '../../../assets/icons/icons';
 import { useReset } from '../hooks/useReset';

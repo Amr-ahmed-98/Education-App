@@ -805,5 +805,10 @@
      "input2":"Confirm Password",
      "text":"password must be least 8 characters, include an uppercase letter and a number ",
      "btn":"Reset Password"
+  },
+  "donePage":{
+    "title":"DONE",
+    "subTitle":"Password reset complete! Use the button below to log in",
+    "btn":"Return to Login"
   }
 }
