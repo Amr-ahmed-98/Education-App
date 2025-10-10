@@ -51,19 +51,22 @@ const Button = ({
 
   const classes = `${baseClasses} rounded-lg ${variants[variant]} ${sizes[size]} ${widthClass} ${className}`;
 
+  const content = (
+    <button
+      type={type}
+      className={classes}
+      disabled={disabled || loading}
+      onClick={onClick}
+      {...props}
+      >
+        {children}
+    </button>
+  );
+
+
   return (
      <div className={center ? "flex justify-center" : ""}>
-      <Link to={path || "#"}>
-        <button
-          type={type}
-          className={classes}
-          disabled={disabled || loading}
-          onClick={onClick}
-          {...props}
-        >
-          {children}
-        </button>
-      </Link>
+     {path ? <Link to={path}>{content}</Link> : content }
     </div>
   );
 };
