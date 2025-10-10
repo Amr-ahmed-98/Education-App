@@ -7,9 +7,9 @@ function ResetPassword() {
   return (
     <div className="flex justify-center items-center h-screen">
       
-      <ResetPasswordForm onSuccess={() => navigate("/sign-in")} />
+      <ResetPasswordForm onSuccess={() => navigate("/done")} />
     </div>
   )
 }
 
-export default ResetPassword
+export default ResetPassword;
