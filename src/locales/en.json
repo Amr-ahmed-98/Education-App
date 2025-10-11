@@ -817,5 +817,25 @@
     "placeholder":"Enter your email",
     "btn":"Send",
     "backforward":"Back to Sign In"
+  },
+  "Login":{
+    "left":{
+      "title":"Hello, Friend!",
+      "subtitle":"Enter Your Personal Details and start journey with Us",
+      "btn":"Sign up"
+    },
+    "right":{
+      "title":"Sign In",
+      "input1":"Enter your email",
+      "input2":"Enter your password",
+      "checkbox":"Remember Me",
+      "forget":"Forget Password?",
+      "btn":"Login",
+      "or":"OR",
+      "method1":"Log in with google",
+      "method2":"Log in with X",
+      "link1":"Don’t have an account ?",
+      "link2":"Sign up"
+    }
   }
 }
