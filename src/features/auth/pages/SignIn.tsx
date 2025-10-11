@@ -5,7 +5,7 @@ import LoginForm from "../components/LoginForm";
 function SignIn() {
   const navigate = useNavigate();
   return (
-    <div className="flex justify-center bg-gray-100">
+    <div className="flex justify-center ">
      <LoginForm onSuccess={() => navigate("/dashboard")} />
     </div>
   )
