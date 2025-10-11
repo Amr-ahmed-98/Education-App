@@ -3,7 +3,7 @@ import RegisterForm from "../components/RegisterForm";
 function SignUp() {
   const navigate = useNavigate();
   return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="flex justify-center">
       <RegisterForm onSuccess={() => navigate("/sign-in")} />
     </div>
   )

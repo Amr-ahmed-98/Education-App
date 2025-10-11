@@ -820,7 +820,8 @@
   },
   "Login":{
     "left":{
-      "title":"Hello, Friend!",
+      "title1":"Hello,",
+      "title2":" Friend!",
       "subtitle":"Enter Your Personal Details and start journey with Us",
       "btn":"Sign up"
     },
@@ -836,6 +837,31 @@
       "method2":"Log in with X",
       "link1":"Don’t have an account ?",
       "link2":"Sign up"
+    }
+  },
+  "register":{
+    "left":{
+      "title1":"Hello,",
+      "title2":" Friend!",
+      "subtitle":"Enter Your Personal Details and start journey with Us",
+      "btn":"Sign In"
+    },
+    "right":{
+      "title1":"Sign up",
+      "btn1":"Student",
+      "btn2":" Instructor!",
+      "input1":"Enter your Name",
+      "input2":"Enter your  email",
+      "input3":"Enter your  password",
+      "agree":"I agree to the processing of Personal data",
+      "submit":"sign up",
+      "text":"sign up with",
+      "method1":"sign up with google",
+      "method2":"sign up with X",
+      "span1":"Already have an account?",
+      "span2":" Sign in"
+      
+
     }
   }
 }

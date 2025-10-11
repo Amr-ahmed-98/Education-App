@@ -4,7 +4,7 @@ import { MdGroups, MdLightbulbOutline } from 'react-icons/md';
 import { CiCalendarDate, CiLocationOn } from 'react-icons/ci';
 import { TbClockHour4 } from 'react-icons/tb';
 import { BsGrid3X3 } from 'react-icons/bs';
-import { FaBars, FaChartLine } from 'react-icons/fa6';
+import { FaBars, FaChartLine ,FaXTwitter } from 'react-icons/fa6';
 import {
   IoPeople,
   IoShieldCheckmarkSharp,
@@ -28,6 +28,8 @@ import {
   FaUser,
   FaStar,
   FaBookOpen,
+  FaGoogle,
+  
 } from 'react-icons/fa';
 
 import {
@@ -124,5 +126,7 @@ export {
   EyeOff ,
   Eye  ,
   Mail,
-  ArrowLeft 
+  ArrowLeft ,
+  FaGoogle,
+  FaXTwitter 
 };
