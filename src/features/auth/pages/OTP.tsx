@@ -1,20 +1,31 @@
 
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 
+
+// function OTP() {
+//   const email = "kqhdbnm26t@wyoxafp.com";
+//   const otp_code = "979992";
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     localStorage.setItem("resetEmail", email);
+//     localStorage.setItem("resetOtp", otp_code);
+//     navigate("/reset-password");
+//   }, [navigate]);
+
+//   return null
+// }
+
+// export default OTP
+import { VerifyOtpForm } from "../components/VerifyOtpForm"
 
 function OTP() {
-  const email = "kqhdbnm26t@wyoxafp.com";
-  const otp_code = "979992";
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    localStorage.setItem("resetEmail", email);
-    localStorage.setItem("resetOtp", otp_code);
-    navigate("/reset-password");
-  }, [navigate]);
-
-  return null
+  return (
+    <div className="flex justify-center items-center">
+      <VerifyOtpForm />
+    </div>
+  )
 }
 
 export default OTP
