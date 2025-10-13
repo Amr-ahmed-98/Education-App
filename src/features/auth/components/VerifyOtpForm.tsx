@@ -1,5 +1,4 @@
 import React, {useEffect , useRef, useState} from 'react';
-import { useVerifyOtp } from '../hooks/useVerifyOtp';
 import { useTranslation } from 'react-i18next';
 
 interface Props{
@@ -11,11 +10,6 @@ export function VerifyOtpForm({ onSuccess }: Props){
    const [otp, setOtp] = useState<string[]>(["", "", "", "", "" , ""]);
    const inputsRef  = useRef<HTMLInputElement[]>([]);
    const [timer, setTimer] = useState(30);
-  const { mutate, isPending } = useVerifyOtp(() => {
-     // Save OTP  in localStorage
-         localStorage.setItem("resetOtp", otp.join(""));
-         onSuccess();
-   })
 
    useEffect(()=>{
     if(timer <= 0) return;
@@ -43,8 +37,8 @@ export function VerifyOtpForm({ onSuccess }: Props){
         e.preventDefault();
         const otpCode = otp.join("");
         if(otpCode.length !== 6) return;
-        mutate({otp_code:otpCode, password:"TEMP1234"});
-        
+        localStorage.setItem("resetOtp", otpCode);
+        onSuccess();
     }
     const handleResend = ()=>{
         setOtp(["", "" ,"" ,"" ,"" ,""]);
@@ -81,10 +75,9 @@ export function VerifyOtpForm({ onSuccess }: Props){
             <div className="flex flex-col gap-4">
           <button
             type="submit"
-            disabled={isPending}
             className="bg-primary w-full text-white py-2 px-4 rounded-lg"
           >
-            {isPending ? "جارٍ التحقق..." : "تحقق"}
+            {t("otp.btn1")}
           </button>
           <button
             type="button"
@@ -92,7 +85,7 @@ export function VerifyOtpForm({ onSuccess }: Props){
             onClick={handleResend}
             className="bg-gray-300 w-full text-gray-700 py-2 px-4 rounded-lg"
           >
-            أرسل مرة أخرى
+          {t("otp.btn2")}
           </button>
        
         </div>

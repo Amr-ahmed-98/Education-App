@@ -10,6 +10,7 @@ export function useLogin(onSuccess?: () => void) {
   return useMutation({
     mutationFn: loginUser,
     onSuccess: (data) => {
+      console.log("Login Response:", data);
       // خزن التوكن في الكوكيز
       Cookies.set(ENV.ACCESS_TOKEN_KEY, data.accessToken, {
         expires: 7,       // أسبوع
@@ -20,7 +21,7 @@ export function useLogin(onSuccess?: () => void) {
       
  successAlert("تم بنجاح!", "تم تسجيل الدخول بنجاح"); 
       console.log("Saved token:", data.accessToken);
-
+console.log("Login Response:", data);
       if (onSuccess) onSuccess();
     },
     onError: (error) => {

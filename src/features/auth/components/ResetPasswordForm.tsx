@@ -31,18 +31,12 @@ export function ResetPasswordForm({ onSuccess }: Props) {
     alert("Passwords do not match!");
     return;
   }
-  console.log("🚀 FINAL PAYLOAD SENT TO API:", {
-    email,
-    otp_code: otp,
-    typeOfOtp: typeof otp,
-    password: newPassword
-  });
-
-  mutate({
-    email: email.trim(),
-    otp_code: Number(otp),
-    password: newPassword
-  } as any);
+  console.log("Form submitted ✅", { newPassword, confirmPassword });
+console.log("🚀 Sending payload:", { email, otp_code : otp, password : newPassword });
+    mutate({ 
+      email,
+       otp_code : Number(otp),
+        password :newPassword }as any);
 
     
   };

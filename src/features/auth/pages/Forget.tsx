@@ -1,5 +1,4 @@
 
-import UserCard from "../components/UserCard"
 import { ForgetPasswordForm } from "../components/ForgetFroms"
 import { useNavigate } from "react-router-dom"
 function Forget() {

@@ -10,9 +10,9 @@ const axiosInstance = axios.create({
 
 // Interceptor يضيف توكن الـ Bearer من الكوكيز لكل request
 axiosInstance.interceptors.request.use((config) => {
-  const token = Cookies.get(ENV.ACCESS_TOKEN_KEY);
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+  const accessToken = Cookies.get(ENV.ACCESS_TOKEN_KEY);
+  if (accessToken) {
+    config.headers.Authorization = `Bearer ${accessToken}`;
   }
   return config;
 });

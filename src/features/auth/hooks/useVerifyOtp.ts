@@ -8,9 +8,9 @@ export function useVerifyOtp(onSuccess?: ()=> void){
       mutationFn:(payload) => {
         const email = localStorage.getItem("resetEmail") as string;
         return verifyOtp({ 
-            email,
-             ...payload,
-            }); // يحتوي: otp_code + password
+          email, otp_code: payload.otp_code,
+          password: "TEMP1234"
+}); // يحتوي: otp_code + password
     },
       onSuccess:(data)=>{
         successAlert("نجاح", data.message);
