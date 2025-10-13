@@ -167,18 +167,14 @@ function Navbar() {
             to="wishlist"
             >  <Icons.Heart />
             </Link>
-            <Link
-              to="/sign-in"
-              className="text-lg font-semibold text-primary flex items-center gap-x-2"
-            >
-              <Button variant="outline1" path="/sign-in">{t(`nav.login`)}</Button>
-            </Link>
-    <Link
-              to="/sign-in"
-              className="text-lg font-semibold text-primary flex items-center gap-x-2"
-            >
-              <Button variant="outline1" path="/sign-up">{t(`nav.sign-up`)}</Button>
-            </Link>
+      
+<Button variant="outline1" path="/sign-in">
+  {t(`nav.login`)}
+</Button>
+
+<Button variant="outline1" path="/sign-up">
+  {t(`nav.sign-up`)}
+</Button>
           </div>
         </div>
       </div>
