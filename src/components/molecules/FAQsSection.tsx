@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import GetX from '../../animation/GetX';
 interface Question {
   id: string;
   question: string;
@@ -263,6 +263,7 @@ const SectionItem = React.memo<{
 
     return (
       <div className='bg-white dark:bg-dark-primary rounded-lg shadow-md overflow-hidden'>
+        <GetX>
         <button
           className='w-full p-4 md:p-5 text-left flex justify-between items-center bg-gray-100 dark:bg-dark-secondary hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors cursor-pointer'
           onClick={() => onToggle(section.id)}
@@ -273,7 +274,7 @@ const SectionItem = React.memo<{
           </h2>
           <ChevronIcon isExpanded={isExpanded} />
         </button>
-
+</GetX>
         {isExpanded && (
           <div className='p-4 md:p-5 space-y-4'>
             {section.categories.map((category) => (
