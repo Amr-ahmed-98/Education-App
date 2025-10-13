@@ -22,14 +22,14 @@ function About() {
         <div className="container relative z-10 h-full flex flex-col justify-center items-center text-white"> 
          <div className="text-center max-w-4xl">
  <h1 className="text-4xl font-bold mb-6 flex ">
-  <SlideUpSplitTextMotion>
- {t("about.hero.titleStart")}</SlideUpSplitTextMotion><span className="text-red-400"><SlideUpSplitTextMotion>{t("about.hero.highlight")}</SlideUpSplitTextMotion></span>
+  <SplitTextMotion>
+ {t("about.hero.titleStart")}</SplitTextMotion><span className="text-red-400"><SplitTextMotion>{t("about.hero.highlight")}</SplitTextMotion></span>
   </h1>
   
   <p className="text-xl max-w-2xl mx-auto leading-relaxed">
-<SplitTextMotion >
+<SlideUpSplitTextMotion >
 {t("about.hero.description")}
-</SplitTextMotion>
+</SlideUpSplitTextMotion>
 
   </p>
 </div>

@@ -36,6 +36,9 @@
     --color-dark-secondary: #1c242f; /* نفس الثانوي */
   }
 }
+html, body {
+  overflow-x: hidden;
+}
 
 html.dark {
   background-color: var(--color-dark-primary);

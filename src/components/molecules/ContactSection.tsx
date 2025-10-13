@@ -1,7 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { FaInstagramSquare, FaWhatsappSquare, FaLinkedin, IoLogoFacebook , FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
+import { FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
+import * as icon from '../../assets/icons/icons';
+import { Link } from "react-router-dom";
+import { fadeIn } from "./../../animation/FadeIn";
+import { GetX } from "./../../animation/GetX";
 
 interface FormData {
   name: string;
@@ -9,7 +13,7 @@ interface FormData {
   phone: string;
   message: string;
 }
-
+   
 const ContactSection: React.FC = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
@@ -28,20 +32,20 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4 ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen bg-gray-50 dark:bg-dark-primary py-12 px-4 ${isRTL ? 'rtl' : 'ltr'}`}>
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           
           {/* Contact Details */}
-          <div className="lg:w-1/2 space-y-8">
+          <div className="lg:w-1/2 space-y-8 flex flex-col justify-center ">
             {/* Main Title */}
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white leading-tight">
                 {isRTL ? (
                   <>
                     نحن دائماً
-                    <span className="text-[var(--color-secondary)] pl-5">
-                      متحمسون للتواصل
+                    <span className="text-[var(--color-secondary)] pl-5"> 
+                      متحمسون للتواصل 
                     </span>
                     <span className="text-[var(--color-primary)] ">
                       معك!
@@ -104,25 +108,37 @@ const ContactSection: React.FC = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-4">
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
-                <IoLogoFacebook size={40} />
-              </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
-                <FaInstagramSquare size={40} />
-              </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
-                <FaWhatsappSquare size={40} />
-              </a>
-              <a href="#" className="text-[var(--color-social-icons)] rounded-full dark: hover:opacity-80 transition-opacity">
-                <FaLinkedin size={40} />
-              </a>
-            </div>
+                  <div className="flex flex-row mt-[20px]">
+            <Link
+              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+              to="/"
+            >
+              <icon.FaLinkedinIn size={24} className="text-amber-50" />
+            </Link>
+            <Link
+              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+              to="/"
+            >
+              <icon.FaInstagram size={24}  className="text-amber-50" />
+            </Link>
+            <Link
+              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+              to="/"
+            >
+              <icon.FaWhatsapp size={24}  className="text-amber-50" />
+            </Link>
+            <Link
+              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+              to="/"
+            >
+              <icon.FaFacebookF size={24} className="text-amber-50" />
+            </Link>
+          </div>
           </div>
 
           {/* Contact Form */}
           <div className="lg:w-1/2">
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
+            <div className="bg-white dark:bg-dark-secondary rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                   {t('getInTouch', isRTL ? 'تواصل معنا' : 'Get In Touch')}
@@ -145,7 +161,7 @@ const ContactSection: React.FC = () => {
                     {...register('name', { required: t('nameRequired', 'Name is required') })}
                     type="text"
                     placeholder={isRTL ? 'أدخل اسمك' : 'Enter your name'}
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50  border dark:bg-dark-secondary border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
                   />
                   {errors.name && (
                     <p className="mt-1 text-sm text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
@@ -169,7 +185,7 @@ const ContactSection: React.FC = () => {
                     })}
                     type="email"
                     placeholder={isRTL ? 'أدخل بريدك الإلكتروني' : 'Enter your Email'}
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-secondary 0 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
@@ -187,7 +203,7 @@ const ContactSection: React.FC = () => {
                     {...register('phone', { required: t('phoneRequired', 'Phone number is required') })}
                     type="tel"
                     placeholder={isRTL ? 'أدخل رقم هاتفك' : 'Enter your Number phone'}
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-secondary border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors"
                   />
                   {errors.phone && (
                     <p className="mt-1 text-sm text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
@@ -205,7 +221,7 @@ const ContactSection: React.FC = () => {
                     {...register('message', { required: t('messageRequired', 'Message is required') })}
                     rows={4}
                     placeholder={isRTL ? 'أدخل رسالتك' : 'Enter you message'}
-                    className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-gray-50 dark:bg-dark-secondary border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:border-[var(--color-primary)] dark:focus:border-[var(--color-dark-primary)] text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors resize-none"
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-[var(--color-secondary)] dark:text-[var(--color-dark-secondary)]">
@@ -217,7 +233,7 @@ const ContactSection: React.FC = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-2 w-full bg-[var(--color-primary)] dark:bg-[var(--color-dark-primary)] text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
+                  className="flex items-center justify-center gap-2 w-full bg-primary cursor-pointer text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
                 >
                   {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
                   {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}

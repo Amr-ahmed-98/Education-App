@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import GetX from '../../animation/GetX';
 interface Question {
   id: string;
   question: string;
@@ -124,7 +124,7 @@ const QuestionItem = React.memo<{
     return (
       <div className='border-b border-gray-100 dark:border-gray-700 last:border-b-0'>
         <button
-          className='w-full p-3 md:p-4 text-left flex justify-between items-start bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-[var(--color-dark-secondary)] transition-colors'
+          className='w-full p-3 md:p-4 text-left flex justify-between items-start bg-white dark:bg-dark-secondary hover:bg-gray-50 dark:hover:bg-[var(--color-dark-secondary)] transition-colors'
           onClick={() => onToggle(question.id)}
           aria-expanded={isExpanded}
         >
@@ -262,9 +262,10 @@ const SectionItem = React.memo<{
     const translationKey = useMemo(() => section.id, [section.id]);
 
     return (
-      <div className='bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden'>
+      <div className='bg-white dark:bg-dark-primary rounded-lg shadow-md overflow-hidden'>
+        <GetX>
         <button
-          className='w-full p-4 md:p-5 text-left flex justify-between items-center bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors'
+          className='w-full p-4 md:p-5 text-left flex justify-between items-center bg-gray-100 dark:bg-dark-secondary hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors cursor-pointer'
           onClick={() => onToggle(section.id)}
           aria-expanded={isExpanded}
         >
@@ -273,7 +274,7 @@ const SectionItem = React.memo<{
           </h2>
           <ChevronIcon isExpanded={isExpanded} />
         </button>
-
+</GetX>
         {isExpanded && (
           <div className='p-4 md:p-5 space-y-4'>
             {section.categories.map((category) => (
@@ -675,12 +676,12 @@ const FAQsSection: React.FC = () => {
 
   return (
     <div
-      className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 lg:p-8 ${
+      className={`min-h-screen bg-light dark:bg-dark-primary p-4 md:p-6 lg:p-8 ${
         isRTL ? 'rtl' : 'ltr'
       }`}
     >
       <div className='max-w-4xl mx-auto'>
-        <h1 className='text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-6'>
+        <h1 className='text-2xl md:text-3xl font-bold text-dark-secondary dark:text-white mb-6'>
           {t('faqTitle', 'Frequently Asked Questions')}
         </h1>
 
