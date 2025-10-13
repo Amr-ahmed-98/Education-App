@@ -21,7 +21,7 @@ export function ResetPasswordForm({ onSuccess }: Props) {
     e.preventDefault();
 
     const email = localStorage.getItem("resetEmail");
-    const otp = localStorage.getItem("resetOtp");
+    const otp = Number(localStorage.getItem("resetOtp"));
 
      if (!email || !otp) {
     alert("Missing email or OTP. Please go back and verify again.");
@@ -31,9 +31,20 @@ export function ResetPasswordForm({ onSuccess }: Props) {
     alert("Passwords do not match!");
     return;
   }
-  console.log("Form submitted ✅", { newPassword, confirmPassword });
-console.log("🚀 Sending payload:", { email, otp_code : otp, password : newPassword });
-    mutate({ email, otp_code : otp, password :newPassword }as any);
+  console.log("🚀 FINAL PAYLOAD SENT TO API:", {
+    email,
+    otp_code: otp,
+    typeOfOtp: typeof otp,
+    password: newPassword
+  });
+
+  mutate({
+    email: email.trim(),
+    otp_code: Number(otp),
+    password: newPassword
+  } as any);
+
+    
   };
   return (
     <div className='flex flex-col justify-center items-center w-[35%] py-[20px]'>
