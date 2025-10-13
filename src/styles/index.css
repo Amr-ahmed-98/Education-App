@@ -55,3 +55,10 @@ html.light {
 .event-scroll::-webkit-scrollbar {
   width: 0; /* عرض شريط التمرير */
 }
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.45s ease forwards;
+}

@@ -5,12 +5,14 @@ import HeroText from "../molecules/HeroText";
 import CertificateSection from "../organisms/Home/CertificateSection";
 import AboutHero from "../../assets/images/about.jpg";
 import * as img from "./../../assets/images/images";
+import SlideUpSplitTextMotion from "@/animation/SlideUpSplitTextMotion";
+import SplitTextMotion from "@/animation/SplitTextMotion";
 function About() {
   const { t } = useTranslation();
   const message: string = "Hello TypeScript 🚀";
   console.log(message); 
   return (
-    <div >
+    <div>
           <div className="relative h-screen mb-10">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -19,19 +21,22 @@ function About() {
         <div className="absolute inset-0 bg-[linear-gradient(0deg,#3972FF_0%,#3C65A7_50%,#2D64BB_100%)] opacity-86" />
         <div className="container relative z-10 h-full flex flex-col justify-center items-center text-white"> 
          <div className="text-center max-w-4xl">
-  <h1 className="text-4xl font-bold mb-6">``
-    {t("about.hero.titleStart")} <span className="text-red-400">{t("about.hero.highlight")}</span>
+ <h1 className="text-4xl font-bold mb-6 flex ">
+  <SlideUpSplitTextMotion>
+ {t("about.hero.titleStart")}</SlideUpSplitTextMotion><span className="text-red-400"><SlideUpSplitTextMotion>{t("about.hero.highlight")}</SlideUpSplitTextMotion></span>
   </h1>
+  
   <p className="text-xl max-w-2xl mx-auto leading-relaxed">
-    {t("about.hero.description")}
+<SplitTextMotion >
+{t("about.hero.description")}
+</SplitTextMotion>
+
   </p>
 </div>
         </div>
-         
-       
           </div>
       
-      
+
       <div className="container">
     <HeroText
         title={t("HeroTextAbout.title")}
@@ -152,51 +157,7 @@ function About() {
     />
           </div>
       </div>
-
-
-
-      {/* <div >
-      <h1 className="text-4xl font-bold text-center pt-16 mb-20">
-      {t("about.offers.title")}
-      <span className="text-red-500 px-2">
-        {t("about.offers.offersText")}
-      </span>
-      </h1>
-      <div className="container">
-      <IconDetails
-      icon={icon.FaBookOpen}
-      title={t("about.offers.feature1.title")}
-      description={t("about.offers.feature1.description")}
-      isCircle={false}
-      iconColor="text-blue-500"
-      bgColor="bg-blue-100"
-      size="lg"
-    />
-    <IconDetails
-      icon={icon.IoCheckmarkCircleOutline}
-       title={t("about.offers.feature2.title")}
-      description={t("about.offers.feature2.description")}
-      isCircle={false}
-      iconColor="text-yellow-500"
-      bgColor="bg-yellow-100"
-      size="lg"
-    />
-    <IconDetails
-      icon={icon.FaChartLine}
-      title={t("about.offers.feature3.title")}
-      description={t("about.offers.feature3.description")}
-    isCircle={false}
-      iconColor="text-red-500"
-      bgColor="bg-red-100"
-      size="lg"
-    />
- 
-          </div>
-      </div> */}
-
         <CertificateSection/>
-
-
        <div>
       <h1 className="text-4xl font-bold text-center pt-16 mb-20">
       {t("about.offers.title")}
