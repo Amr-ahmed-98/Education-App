@@ -13,5 +13,5 @@ export interface LoginResponse {
   };
 }
 export function loginUser(payload : LoginPayload) : Promise<LoginResponse>{
-  return ApiClient.post<LoginResponse>("/login",payload);
+  return ApiClient.post<LoginResponse>("/auth/login",payload);
 }
