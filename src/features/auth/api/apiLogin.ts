@@ -6,10 +6,15 @@ export interface LoginPayload {
   password: string;
 }
 export interface LoginResponse {
-  accessToken: string;
-  user: {
-    email: string;
-    id: number;
+  message: string;
+  data: {
+    accessToken: string;
+    user: {
+      email: string;
+      id: number;
+      name?: string;
+      role?: string;
+    };
   };
 }
 export function loginUser(payload : LoginPayload) : Promise<LoginResponse>{

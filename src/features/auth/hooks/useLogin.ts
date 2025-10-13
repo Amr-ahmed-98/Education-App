@@ -11,8 +11,18 @@ export function useLogin(onSuccess?: () => void) {
     mutationFn: loginUser,
     onSuccess: (data) => {
       console.log("Login Response:", data);
+
+      const token = data?.data?.accessToken;
+      const user = data?.data?.user;
+
+        if (!token) {
+        console.error(" Token not found in response!", data);
+        errorAlert("خطأ!", "لم يتم استلام التوكن من السيرفر");
+        return;
+      }
+      
       // خزن التوكن في الكوكيز
-      Cookies.set(ENV.ACCESS_TOKEN_KEY, data.accessToken, {
+      Cookies.set(ENV.ACCESS_TOKEN_KEY, token, {
         expires: 7,       // أسبوع
         secure: true,     
         sameSite: "strict",
@@ -20,9 +30,9 @@ export function useLogin(onSuccess?: () => void) {
       });
       
  successAlert("تم بنجاح!", "تم تسجيل الدخول بنجاح"); 
-      console.log("Saved token:", data.accessToken);
-console.log("Login Response:", data);
+      console.log("Saved token:", token);
       if (onSuccess) onSuccess();
+      console.log("Login Response:", data);
     },
     onError: (error) => {
       console.error("Login error:", error);
