@@ -1,65 +1,45 @@
-
-// components/SlideUpSplitTextMotion.tsx
+import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import type { Variants  } from "framer-motion";
 
-interface SlideUpSplitTextMotionProps {
+interface SplitTextMotionProps {
   children: ReactNode;
-  delayPerItem?: number; // default 0.05
-  className?: string;
-  splitBy?: "word" | "char"; // default word
 }
+const slideUpLine: Variants = {
+  hidden: { opacity: 0, y: 70 },
+  visible: (i :number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.5,
+      duration: 0.8,
+      ease: [0.25, 0.1, 0.25, 1],
+    },
+  }),
+};
 
-export default function SlideUpSplitTextMotion({
-  children,
-  delayPerItem = 0.05,
-  className,
-  splitBy = "word",
-}: SlideUpSplitTextMotionProps) {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { margin: "0px 0px -30% 0px", once: false });
+export default function SlideUpSplitTextMotion({ children }: SplitTextMotionProps) {
+  if (typeof children !== "string") return null;
 
-  const processText = (node: ReactNode): ReactNode => {
-    if (typeof node === "string") {
-      const parts = splitBy === "word" ? node.split(" ") : node.split("");
-      return parts.map((part, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0, y: "1.2em" }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{
-            duration: 0.5,
-            ease: "easeOut",
-            delay: index * delayPerItem,
-          }}
-  className="inline-block leading-tight"
-    >
-          {part}
-         {splitBy === "word" && "\u00A0"}
-        </motion.span>
-      ));
-    }
-
-    if (Array.isArray(node)) {
-      return node.map((child, index) => <span key={index}>{processText(child)}</span>);
-    }
-
-    if (typeof node === "object" && "props" in (node as any)) {
-      const element = node as any;
-      return (
-        <element.type {...element.props}>
-          {processText(element.props.children)}
-        </element.type>
-      );
-    }
-
-    return node;
-  };
+  const lines = children.split("\n");
 
   return (
-    <div ref={ref} className={className}>
-      {processText(children)}
-    </div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      className="flex flex-col gap-10"
+    >
+      {lines.map((line, i) => (
+        <motion.p
+          key={i}
+          variants={slideUpLine}
+          custom={i}
+          className="leading-relaxed"
+        >
+          {line}
+        </motion.p>
+      ))}
+    </motion.div>
   );
 }

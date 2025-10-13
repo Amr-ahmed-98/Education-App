@@ -1,5 +1,9 @@
 
 import Button from "../atoms/Button";
+import SlideUpSplitTextMotion from "@/animation/SlideUpSplitTextMotion";
+import SplitTextMotion from "@/animation/SplitTextMotion";
+import { fadeIn } from "@/animation/FadeIn";
+import GetX from '@/animation/GetX';
 interface HeroTextProps{
     title?: string,
     subtitle1?: string ,
@@ -27,13 +31,21 @@ const HeroText : React.FC<HeroTextProps> = ({
         <section className="grid py-[100px] grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* الصورة */}
       <div>
+
+        <GetX direction="left">
         <img src={image} alt={title} className="rounded-lg shadow-2xl w-[100%] sm:w-[100%] lg:w-[85%]" />
+        </GetX>
       </div>
       {/* النص */}
       <div >
+       
         <Button variant="outline1" size="lg">{title}</Button>
+      
+    
         <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]"><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3} </span></h1>
+         <GetX>
         <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
+        </GetX>
        {/* icons variant */}
         {variant === "icons" && icons && (
           <div className="flex gap-3  flex-col">
