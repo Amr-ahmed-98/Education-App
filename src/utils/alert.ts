@@ -7,6 +7,11 @@ export const successAlert = (title = "تم بنجاح!", text = "تمت العم
     text,
     icon: "success",
     confirmButtonText: "اوك",
+      customClass: {
+    popup: "my-popup",
+    title: "my-title",
+    confirmButton: "my-button",
+  }
   });
 };
 
@@ -16,6 +21,11 @@ export const errorAlert = (title = "خطأ!", text = "حدث خطأ ما") => {
     text,
     icon: "error",
     confirmButtonText: "اوك",
+        customClass: {
+    popup: "my-popup",
+    title: "my-title",
+    confirmButton: "my-button",
+  }
   });
 };
 

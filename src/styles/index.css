@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
 :root{
   --gradient-hero: linear-gradient(
@@ -13,10 +12,10 @@
 @theme {
   --color-primary: #3972FF;
   --color-secondary:#EE4A62;
-  --color-light-primary: #ffffff;   /* أبيض خالص */
-  --color-light-secondary: #F0F4F5; /* رمادي فاتح */
-  --color-dark-primary: #111827;    /* خلفية داكنة أساسية */
-  --color-dark-secondary: #1f2937;  /* خلفية داكنة أفتح شوي */
+  --color-light-primary: #ffffff;  
+  --color-light-secondary: #F0F4F5;
+  --color-dark-primary: #111827;    
+  --color-dark-secondary: #1f2937;  
   --color-text-grayDark:#606060;     
   --color-text-grayLight:#BBBBBB;     
   --color-hero-blue:#4775C1;
@@ -28,18 +27,16 @@
     #AECDFD 70%, 
     #5184D5 100%
   );
- 
 }
 @layer base {
   .dark {
-    --color-dark-primary: #111822; /* نفس الأساسي */
-    --color-dark-secondary: #1c242f; /* نفس الثانوي */
+    --color-dark-primary: #111822; 
+    --color-dark-secondary: #1c242f; 
   }
 }
 html, body {
   overflow-x: hidden;
 }
-
 html.dark {
   background-color: var(--color-dark-primary);
   color: var(--color-light-primary);
@@ -48,15 +45,12 @@ html.light {
   background-color: var(--color-light-secondary);
   color: var(--color-dark-primary);
 }
- 
 .container{
   width:90%;
   margin: 0 auto;
 }
- 
-
 .event-scroll::-webkit-scrollbar {
-  width: 0; /* عرض شريط التمرير */
+  width: 0;
 }
 @keyframes slide-up {
   from { opacity: 0; transform: translateY(10px); }
@@ -64,4 +58,24 @@ html.light {
 }
 .animate-slide-up {
   animation: slide-up 0.45s ease forwards;
+}
+.my-popup {
+  background: var(--color-light-primary) !important; 
+  color: var(--color-dark-secondary) !important; 
+  border-radius: 12px;
+}
+.dark .my-popup {
+  background: var(--color-dark-primary) !important; 
+  color: var(--color-light-secondary) !important;
+}
+.my-title {
+  color: var(--color-dark-secondary); 
+}
+.dark .my-title {
+  color: var(--color-light-secondary) !important;
+}
+.my-button {
+  background: #22c55e !important;
+  color: white !important;
+  border-radius: 6px !important;
 }

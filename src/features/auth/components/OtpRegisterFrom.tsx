@@ -9,7 +9,7 @@ export function VerifyOtpForm({ onSuccess }: Props){
     const { t } = useTranslation();
    const [otp, setOtp] = useState<string[]>(["", "", "", "", "" , ""]);
    const inputsRef  = useRef<HTMLInputElement[]>([]);
-   const [timer, setTimer] = useState(5);
+   const [timer, setTimer] = useState(30);
 
 const { mutate: resendOtp, isPending } = useResendOtp()
  const email = localStorage.getItem("resetEmail") || "";   
@@ -47,7 +47,7 @@ const { mutate: resendOtp, isPending } = useResendOtp()
         console.log("Resend Clicked ✅", email); 
         setOtp(["", "" ,"" ,"" ,"" ,""]);
         inputsRef.current[0].focus();
-        setTimer(5);
+        setTimer(30);
             // هنا ممكن تضيف دالة send OTP من api resend
              if(!email) return alert("No email found!");
 
@@ -60,7 +60,7 @@ console.log("Resending OTP for email:", email);
        <div className='flex flex-col justify-center text-center items-center w-full lg:w-[35%] py-[100px]'>
         <h2 className='text-3xl font-semibold mb-[20px] text-primary'>{t("otp.title")}</h2>
         <form onSubmit={handleSubmit} >
-        <p className="text-gray-400 text-lg">{t("otp.subtitle")}</p>
+        <p className="text-gray-400 text-lg mb-[20px]">{t("otp.subtitle")}</p>
         <div className="flex gap-4 mb-4">
             {otp.map((value, idx) => (
                 <input 
@@ -77,7 +77,7 @@ console.log("Resending OTP for email:", email);
             ))}
              </div>
             <div className="mb-4">
-                <span>اعاده ارسال: {timer}s </span>
+                 <span>{t("otp.message")}{timer}s</span>
 
             </div>
             <div className="flex flex-col gap-4">
@@ -91,7 +91,7 @@ console.log("Resending OTP for email:", email);
             type="button"
             disabled={timer > 0 || isPending} //  منع الضغط أثناء الإرسال
             onClick={handleResend}
-            className="bg-gray-300 w-full text-gray-700 py-2 px-4 rounded-lg"
+            className="bg-transparent border-primary border-2 text-primary cursor-pointer py-2 px-4 rounded-lg"
           >
            {isPending ? "Sending..." : t("otp.btn2")}
           </button>
