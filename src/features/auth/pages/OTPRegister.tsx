@@ -1,4 +1,4 @@
-import { VerifyOtpForm } from "../components/VerifyOtpForm"
+import { VerifyOtpForm } from "../components/OtpRegisterFrom"
 import { useNavigate } from "react-router-dom";
 function OtpRegister() {
   const navigate = useNavigate();
