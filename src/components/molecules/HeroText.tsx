@@ -4,6 +4,8 @@ import SlideUpSplitTextMotion from "@/animation/SlideUpSplitTextMotion";
 import SplitTextMotion from "@/animation/SplitTextMotion";
 import { fadeIn } from "@/animation/FadeIn";
 import GetX from '@/animation/GetX';
+import {motion} from "framer-motion";
+
 interface HeroTextProps{
     title?: string,
     subtitle1?: string ,
@@ -38,11 +40,17 @@ const HeroText : React.FC<HeroTextProps> = ({
       </div>
       {/* النص */}
       <div >
-       
+       <GetX>
         <Button variant="outline1" size="lg">{title}</Button>
-      
+      </GetX>
     
-        <h1 className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]"><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3} </span></h1>
+        <motion.h1 
+         variants={fadeIn({ direction: "down", delay: 0.2 })}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="mb-6 mt-[10px] text-b text-[40px] font-bold leading-[70px]"
+        ><span className="text-primary">{subtitle1}</span> {subtitle2} <span className="text-secondary">{subtitle3} </span></motion.h1>
          <GetX>
         <p className="text-text-grayDark dark:text-text-grayLight mb-[20px]">{description}</p>
         </GetX>
@@ -50,17 +58,25 @@ const HeroText : React.FC<HeroTextProps> = ({
         {variant === "icons" && icons && (
           <div className="flex gap-3  flex-col">
             {icons.map((icon, i) => (
-              <div key={i} className="flex flex-row  gap-2">
+              <motion.div 
+              key={i}
+               className="flex flex-row  gap-2"
+                        variants={fadeIn({ direction: "left", delay: 0.2 })}
+                       initial="hidden"
+                       whileInView="show"
+                       viewport={{ once: false, amount: 0.7 }}
+               >
               <>
                   {typeof icon.src === "string" ? (
                    
                  <img src={icon.src} alt={icon.label} className="w-10 h-10 bg-white" />
                 ) : (
+                 
                icon.src
                 )}
                 <span>{icon.label}</span>
               </>
-              </div>
+              </motion.div>
             ))}
           </div>
         )}

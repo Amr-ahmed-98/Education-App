@@ -11,12 +11,12 @@ export const fadeIn = ({
   direction = "up",
   type = "tween",
   delay = 0,
-  duration = 0.6,
+  duration = 0.4,
 }: FadeInOptions) => {
   return {
     hidden: {
-      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
+      y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
+      x: direction === "left" ? 80 : direction === "right" ? -80 : 0,
       opacity: 0,
     },
     show: {

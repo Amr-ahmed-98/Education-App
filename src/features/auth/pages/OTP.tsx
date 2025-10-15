@@ -18,6 +18,7 @@
 // }
 
 // export default OTP
+
 import { VerifyOtpForm } from "../components/VerifyOtpForm"
 import { useNavigate } from "react-router-dom";
 function OTP() {
@@ -26,7 +27,7 @@ function OTP() {
   return (
     <div className="flex justify-center items-center">
       <VerifyOtpForm onSuccess={()=> navigate("/reset-password")} />
-    </div>
+    </div> 
   )
 }
 
