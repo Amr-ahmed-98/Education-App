@@ -867,6 +867,15 @@
     "subtitle":"We’ve sent a 6-digit code to your email, Please enter it below to verify your account",
     "text":"This code will expire 60 seconds",
     "btn1":"Verify",
-    "btn2":"Send again"
+    "btn2":"Send again",
+    "message":"Resend: "
+  },
+  "messageAlert":{
+    "login":{
+      "successfulText":"You have Successfully Logged In",
+      "successfulTitle":"Successfully Completed",
+      "failText":"Login Failed!",
+      "failTitle":"Error!"
+    }
   }
 }

@@ -52,7 +52,7 @@ export function VerifyOtpForm({ onSuccess }: Props){
        <div className='flex flex-col justify-center text-center items-center w-full lg:w-[35%] py-[100px]'>
         <h2 className='text-3xl font-semibold mb-[20px] text-primary'>{t("otp.title")}</h2>
         <form onSubmit={handleSubmit} >
-        <p className="text-gray-400 text-lg">{t("otp.subtitle")}</p>
+        <p className="text-gray-400 text-lg mb-[20px]">{t("otp.subtitle")}</p>
         <div className="flex gap-4 mb-4">
             {otp.map((value, idx) => (
                 <input 
@@ -69,13 +69,13 @@ export function VerifyOtpForm({ onSuccess }: Props){
             ))}
              </div>
             <div className="mb-4">
-                <span>اعاده ارسال: {timer}s </span>
+                 <span>{t("otp.message")}{timer}s</span>
 
             </div>
             <div className="flex flex-col gap-4">
           <button
             type="submit"
-            className="bg-primary w-full text-white py-2 px-4 rounded-lg"
+            className="bg-primary w-full text-white py-2 px-4 cursor-pointer rounded-lg"
           >
             {t("otp.btn1")}
           </button>
@@ -83,7 +83,7 @@ export function VerifyOtpForm({ onSuccess }: Props){
             type="button"
             disabled={timer > 0}
             onClick={handleResend}
-            className="bg-gray-300 w-full text-gray-700 py-2 px-4 rounded-lg"
+            className="bg-transparent border-primary border-2 text-primary cursor-pointer py-2 px-4 rounded-lg"
           >
           {t("otp.btn2")}
           </button>
