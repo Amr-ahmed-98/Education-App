@@ -1,6 +1,6 @@
 // src/hooks/useRegister.ts
 import { useMutation } from "@tanstack/react-query";
-import { registerUser } from "../api/authApi";
+import { registerUser } from "../api/apiRegister";
 import { successAlert , errorAlert } from "../../../utils/alert";
 export function useRegister(onSuccess?: () => void) {
   return useMutation({

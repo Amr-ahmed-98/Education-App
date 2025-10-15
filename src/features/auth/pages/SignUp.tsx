@@ -4,7 +4,7 @@ function SignUp() {
   const navigate = useNavigate();
   return (
         <div className="flex justify-center">
-      <RegisterForm onSuccess={() => navigate("/sign-in")} />
+      <RegisterForm onSuccess={() => navigate("/otp-register")} />
     </div>
   )
 }
