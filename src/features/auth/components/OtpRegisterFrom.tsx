@@ -1,6 +1,6 @@
 import React, {useEffect , useRef, useState} from 'react';
 import { useTranslation } from 'react-i18next';
-
+import { useResendOtp } from '../hooks/useResendOtp';
 interface Props{
     onSuccess: () => void;
 }
@@ -9,7 +9,10 @@ export function VerifyOtpForm({ onSuccess }: Props){
     const { t } = useTranslation();
    const [otp, setOtp] = useState<string[]>(["", "", "", "", "" , ""]);
    const inputsRef  = useRef<HTMLInputElement[]>([]);
-   const [timer, setTimer] = useState(30);
+   const [timer, setTimer] = useState(5);
+
+const { mutate: resendOtp, isPending } = useResendOtp()
+ const email = localStorage.getItem("resetEmail") || "";   
 
    useEffect(()=>{
     if(timer <= 0) return;
@@ -41,11 +44,16 @@ export function VerifyOtpForm({ onSuccess }: Props){
         onSuccess();
     }
     const handleResend = ()=>{
+        console.log("Resend Clicked ✅", email); 
         setOtp(["", "" ,"" ,"" ,"" ,""]);
         inputsRef.current[0].focus();
-        setTimer(30);
+        setTimer(5);
             // هنا ممكن تضيف دالة send OTP من api resend
+             if(!email) return alert("No email found!");
 
+        //  هنا استدعاء الـ API فعلياً
+        resendOtp({ email }); 
+console.log("Resending OTP for email:", email);
     }
    
     return(
@@ -81,11 +89,11 @@ export function VerifyOtpForm({ onSuccess }: Props){
           </button>
           <button
             type="button"
-            disabled={timer > 0}
+            disabled={timer > 0 || isPending} //  منع الضغط أثناء الإرسال
             onClick={handleResend}
             className="bg-gray-300 w-full text-gray-700 py-2 px-4 rounded-lg"
           >
-          {t("otp.btn2")}
+           {isPending ? "Sending..." : t("otp.btn2")}
           </button>
        
         </div>

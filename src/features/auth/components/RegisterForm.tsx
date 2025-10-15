@@ -25,6 +25,7 @@ export default function RegisterForm({ onSuccess }: Props) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     mutate(form); // استدعاء API
+     localStorage.setItem("resetEmail", form.email);
   };
 
   return (
