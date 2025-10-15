@@ -87,25 +87,25 @@ export const ItemCard = [
     id: 1,
     value: 350,
     labelKey: "ItemCard.courses",
-    icon: <icon.Laptop size={32} />
+    icon: <icon.Laptop size={22} />
   },
   {
     id: 2,
     value: "",
     labelKey: "ItemCard.instructors",
-    icon: <icon.FaUser size={32} />
+    icon: <icon.FaUser size={22} />
   },
   {
     id: 3,
     value: "",
     labelKey: "ItemCard.freeCourses",
-    icon: <icon.PiCertificateBold size={32} />
+    icon: <icon.PiCertificateBold size={22} />
   },
   {
     id: 4,
     value: 500,
     labelKey: "ItemCard.members",
-    icon: <icon.Users size={32} />
+    icon: <icon.Users size={22} />
   }
 ];
 

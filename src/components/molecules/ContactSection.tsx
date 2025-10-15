@@ -4,8 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
 import * as icon from '../../assets/icons/icons';
 import { Link } from "react-router-dom";
-import { fadeIn } from "./../../animation/FadeIn";
-import { GetX } from "./../../animation/GetX";
 
 interface FormData {
   name: string;
@@ -44,8 +42,8 @@ const ContactSection: React.FC = () => {
                 {isRTL ? (
                   <>
                     نحن دائماً
-                    <span className="text-[var(--color-secondary)] pl-5"> 
-                      متحمسون للتواصل 
+                    <span className="text-[var(--color-secondary)] pl-5">
+                      متحمسون للتواصل
                     </span>
                     <span className="text-[var(--color-primary)] ">
                       معك!
