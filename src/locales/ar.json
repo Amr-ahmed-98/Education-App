@@ -850,6 +850,14 @@
     "btn1":"التحقق",
     "btn2":"اعاده ارسال",
     "message":"Resend: "
-  }
-
+  },
+  "messageAlert":{
+  "login":{
+      "successfultext":"تم تسجيل الدخول بنجاح",
+      "successfultitle":"تم بنجاح",
+      "failtext":"!فشل تسجيل الدخول ",
+      "failtitle":"!خطأ"
+    }
 }
+}
+

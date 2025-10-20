@@ -10,14 +10,13 @@ export function useVerifyOtp(onSuccess?: ()=> void){
         return verifyOtp({ 
           email, otp_code: payload.otp_code,
           password: "TEMP1234"
-}); // يحتوي: otp_code + password
+}); 
     },
       onSuccess:(data)=>{
         successAlert("نجاح", data.message);
         if(onSuccess) onSuccess();
       },
       onError:(error: any)=>{
-        console.error("OTP Verify error:", error.response?.data || error.message);
         errorAlert("خطا", error.response?.data?.message || "رمز OTP غير صحيح");
       },
     });

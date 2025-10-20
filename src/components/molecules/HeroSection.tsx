@@ -59,7 +59,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
            <GetX>
 
             <p
-            className="text-lg text-gray mb-8 leading-relaxed">
+            className="text-lg  text-gray mb-8 leading-relaxed">
               {description}
             </p>
             </GetX>

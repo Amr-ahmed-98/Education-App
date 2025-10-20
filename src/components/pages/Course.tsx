@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import SectionTitle from "../molecules/SectionTitle";
 import CourseList from "../molecules/CourseList";
 import type { ICourse } from "../molecules/CourseList";
-
 function Course() {
   const { t } = useTranslation();
 

@@ -1,7 +1,5 @@
 
 import Button from "../atoms/Button";
-import SlideUpSplitTextMotion from "@/animation/SlideUpSplitTextMotion";
-import SplitTextMotion from "@/animation/SplitTextMotion";
 import { fadeIn } from "@/animation/FadeIn";
 import GetX from '@/animation/GetX';
 import {motion} from "framer-motion";

@@ -8,7 +8,6 @@ export function useVerify(onSuccess?: ()=>void){
         mutationFn:verifyRegister,
         onSuccess:(data)=>{
             const token = data.data.accessToken;
-            console.log("OTP Verified. Token " , token );
             if(token){
                 Cookies.set("token",token, {expires:7});
             }

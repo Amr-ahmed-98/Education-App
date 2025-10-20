@@ -9,6 +9,6 @@ export interface ResetPayload{
 }
 
 export function resendOtp(payload: ResetPayload): Promise<ResendResponse> {
-    console.log("📤 resendOtp called with payload:", payload);
+    
     return ApiClient.post<ResendResponse>("/auth/resend-otp", payload);
 }

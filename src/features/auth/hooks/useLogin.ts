@@ -4,22 +4,17 @@ import { loginUser } from "../api/apiLogin";
 import Cookies from "js-cookie";
 import { ENV } from "@/config/env";
 import { successAlert , errorAlert } from "../../../utils/alert";
+import { useTranslation } from "react-i18next";
 
 export function useLogin(onSuccess?: () => void) {
+  const { t } = useTranslation();
   return useMutation({
     mutationFn: loginUser,
     onSuccess: (data) => {
-      console.log("Login Response:", data);
-
       const token = data?.data?.accessToken;
-      const user = data?.data?.user;
-
         if (!token) {
-        console.error(" Token not found in response!", data);
         errorAlert("خطأ!", "لم يتم استلام التوكن من السيرفر");
-        return;
-      }
-      
+        return; }
       // خزن التوكن في الكوكيز
       Cookies.set(ENV.ACCESS_TOKEN_KEY, token, {
         expires: 7,       // أسبوع
@@ -27,15 +22,11 @@ export function useLogin(onSuccess?: () => void) {
         sameSite: "strict",
         path: "/",        // متاح لكل الصفحات
       });
-      
- successAlert("تم بنجاح!", "تم تسجيل الدخول بنجاح"); 
-      console.log("Saved token:", token);
+ successAlert(t("messageAlert.login.successfulTitle"),t("messageAlert.login.successfulText")); 
       if (onSuccess) onSuccess();
-      console.log("Login Response:", data);
     },
-    onError: (error) => {
-      console.error("Login error:", error);
-           errorAlert("خطأ!", "فشل تسجيل الدخول  "); 
+    onError: () => {
+           errorAlert(t("messageAlert.login.failTitle"),t("messageAlert.login.failText")); 
     },
   });
 }
