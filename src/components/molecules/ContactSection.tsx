@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
 import * as icon from '../../assets/icons/icons';
 import { Link } from "react-router-dom";
-
+import HoverScaleEffect from '@/animation/HoverScaleEffect';
+import SlideUpSplitTextMotion from '@/animation/SlideUpSplitTextMotion';
 interface FormData {
   name: string;
   email: string;
@@ -48,6 +49,7 @@ const ContactSection: React.FC = () => {
                     <span className="text-[var(--color-primary)] ">
                       معك!
                     </span>
+                   
                   </>
                 ) : (
                   <>
@@ -229,6 +231,7 @@ const ContactSection: React.FC = () => {
                 </div>
 
                 {/* Submit Button */}
+                <HoverScaleEffect scale={1.05}>
                 <button
                   type="submit"
                   className="flex items-center justify-center gap-2 w-full bg-primary cursor-pointer text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
@@ -236,6 +239,7 @@ const ContactSection: React.FC = () => {
                   {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
                   {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}
                 </button>
+                </HoverScaleEffect>
               </form>
             </div>
           </div>

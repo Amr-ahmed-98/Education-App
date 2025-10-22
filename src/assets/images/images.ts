@@ -12,7 +12,7 @@ import EventDetailsSpeaker3 from "./event-details-speaker(3).png";
 import EventDetailsSpeaker4 from "./event-details-speaker(4).png";
 import EventGridCard from "./events-grid-card.png";
 import Ellipse from "./Ellipse.png";
-import laptop from "./blog-laptop.png";
+import laptop from "./blog-laptop.jpg";
 import tablet from "./blog-tablet.png";
 import student from "./blog-student.png";
 import ideas from "./blog-ideas.png";
