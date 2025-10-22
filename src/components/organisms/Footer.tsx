@@ -1,15 +1,19 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import * as icon from "../../assets/icons/icons";
+import SlideInOnScroll from '@/animation/GetX';
+
 function Footer() {
   const { t } = useTranslation();
   return (
     <section className="bg-[linear-gradient(90deg,#052861_0%,#0F377B_30%,#001B4B_70%)]">
       <div className="container py-[80px]  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         <div>
+          <SlideInOnScroll direction="left">
           <Link to="/" className="text-primary text-[30px]">
             Skill<span className="text-secondary">Base</span>
           </Link>
+          </SlideInOnScroll>
           <p className=" text-light-primary mt-[20px] text-[18px]">
             {t("footer.description")}
           </p>

@@ -6,6 +6,8 @@ import * as images from "@/assets/images/images";
 import { themes } from "@/contexts/Theme";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useContext } from "react";
+import GetX from '@/animation/GetX';
+import SplitTextMotion from "@/animation/SplitTextMotion";
 
 function Blogs() {
   const { t } = useTranslation();
@@ -37,26 +39,33 @@ function Blogs() {
   ];
 
   return (
-    <div className="container flex flex-col gap-30 pt-0 mb-10">
+    <div className=" flex flex-col gap-30 pt-0 mb-10">
       {/* Section 1 */}
       <div className="flex flex-col justify-center items-center text-center gap-10 pt-0 mt-10">
+        <GetX direction="top">
         <h1 className="font-bold text-6xl leading-[75px] tracking-[-1.5px] text-center">
           {t("Blogs.Section1.title1")}{" "}
           <span className={`${theme === themes.dark && "text-[#EE4A62]"}`}>
             {t("Blogs.Section1.title2")}
           </span>
         </h1>
-
+        </GetX>
+  <GetX direction="left">
         <p className="text-center text-[#45556C]">
           {t("Blogs.Section1.Description")}
         </p>
+</GetX>
+  <GetX direction="bottom">
+        <Button size="lg">{t("Blogs.Section1.Btn")}</Button>
+        </GetX>
+          <GetX direction="bottom">
 
-        <Button>{t("Blogs.Section1.Btn")}</Button>
         <img
           src={images.laptop}
           alt="blog laptop"
-          className="rounded-lg max-w-[80%]"
+          className="rounded-lg max-w-[80%] mx-auto" 
         />
+            </GetX>
       </div>
 
       {/* Section 2 */}
@@ -67,13 +76,18 @@ function Blogs() {
       >
         {/* text */}
         <div className="flex flex-col items-center justify-center text-center gap-4">
+
           <h1 className="text-3xl font-bold flex text-center">
             {" "}
+             <SplitTextMotion >
             {t("Blogs.Section2.Title")}
+            </SplitTextMotion>
           </h1>
+            <GetX direction="left">
           <p className="text-center text-[#45556C]">
             {t("Blogs.Section2.Description")}
           </p>
+          </GetX>
         </div>
         {/* 3 cards */}
         <div
@@ -100,17 +114,22 @@ function Blogs() {
       {/*  Section 3 */}
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
+           <GetX direction="top">
           <h1 className="text-3xl font-bold flex text-center">
             {t("Blogs.Section3.Title")}
           </h1>
+          </GetX>
+            <GetX direction="left">
           <p className="flex flex-col text-center text-[#45556C]">
             {t("Blogs.Section3.Description")}
           </p>
+           </GetX>
         </div>
 
         {/* Cards */}
         <div className="flex gap-6 max-lg:flex-wrap max-lg:justify-center max-lg:items-center max-lg:gap-8">
           {/* CARD 1 */}
+          <GetX direction="right">
           <div
             className={`w-[280px] h-[368px] rounded-2xl shadow-lg overflow-hidden 
             ${isDark && `bg-[#1C242F] text-white`}`}
@@ -143,7 +162,8 @@ function Blogs() {
               </div>
             </div>
           </div>
-
+</GetX>
+  <GetX direction="bottom">
           {/* CARD 2 */}
           <div
             className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
@@ -177,7 +197,9 @@ function Blogs() {
               </div>
             </div>
           </div>
-
+</GetX>
+  <GetX direction="top">
+ 
           {/* CARD 3 */}
           <div
             className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
@@ -212,9 +234,13 @@ function Blogs() {
               </div>
             </div>
           </div>
+</GetX>
+
 
           {/* CARD 4 */}
+            <GetX direction="left">
           <div
+
             className={`w-[280px] h-[368px]  rounded-2xl shadow-lg overflow-hidden 
             ${isDark && `bg-[#1C242F] text-white`}`}
           >
@@ -246,13 +272,16 @@ function Blogs() {
               </div>
             </div>
           </div>
+          </GetX>
         </div>
 
         <div className="flex gap-2 items-center justify-center font-bold text-[#2B7FFF]">
-          <a href="#">Browse All Courses</a>
+          <Button path="/course">
+         Browse All Courses
           <span className="relative top-.5">
             <icons.ArrowRight />
           </span>
+          </Button>
         </div>
       </div>
     </div>

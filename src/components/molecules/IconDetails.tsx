@@ -1,5 +1,5 @@
 import React from 'react';
-
+import GetX from '../../animation/GetX';
 interface iconDetailsProps {
   icon: React.ComponentType<{ className?: string }>;
   title?: string;
@@ -28,13 +28,15 @@ const IconDetails: React.FC<iconDetailsProps> = ({
   const shapeClass = isCircle ? 'rounded-full' : 'rounded-lg';
 
   return (
-    <div className={`bg-white dark:bg-[var(--color-dark-secondary)] rounded-xl shadow-md ${sizeClasses} flex flex-col items-center text-center`}>
+    <GetX direction='left'>
+    <div className={`bg-white dark:bg-dark-primary rounded-xl shadow-md ${sizeClasses} flex flex-col items-center text-center`}>
       <div className={`${bgColor} ${shapeClass} p-4 mb-4 flex items-center justify-center`}>
         <Icon className={`h-8 w-8 ${iconColor}`} />
       </div>
       {title && <h3 className="font-bold text-lg text-gray-800 dark:text-gray-200 mb-2">{title}</h3>}
       <p className="text-gray-600 dark:text-gray-400">{description}</p>
     </div>
+    </GetX>
   );
 };
 
