@@ -9,8 +9,9 @@ export interface RegisterPayload{
 
 export interface RegisterResponse{
     message:string;
-    token?:string;
+   
 }
+
 export function registerUser( payload: RegisterPayload): Promise<RegisterResponse>{
       return ApiClient.post<RegisterResponse>("auth/register",payload)
 }

@@ -12,7 +12,6 @@ export function useReset(onSuccess?: () => void){
               console.log("done")
         },
         onError: (error: any) => {
-          console.error("❌ Register error:", error.response?.data || error.message);
   errorAlert("خطأ!", error.response?.data?.message || "فشل تغيير كلمة المرور");
         },
   });

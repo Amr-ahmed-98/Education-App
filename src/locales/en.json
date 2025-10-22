@@ -876,6 +876,12 @@
       "successfulTitle":"Successfully Completed",
       "failText":"Login Failed!",
       "failTitle":"Error!"
+    },
+    "register":{
+      "successfulText":"The account has been created successfully.",
+      "successfulTitle":"Successfully Completed",
+      "failText":"Failed to create a new account",
+      "failTitle":"Error!"
     }
   }
 }

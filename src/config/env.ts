@@ -9,3 +9,4 @@ APP_NAME: import.meta.env.VITE_APP_NAME || "SkillBase",
   ACCESS_TOKEN_KEY: import.meta.env.VITE_ACCESS_TOKEN_KEY || "accessToken",
   REFRESH_TOKEN_KEY: import.meta.env.VITE_REFRESH_TOKEN_KEY || "refreshToken",
 }
+

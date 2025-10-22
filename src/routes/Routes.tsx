@@ -40,7 +40,6 @@ const Routes = [
     key: "nav.contact",
     path: "/contact",
       subRoutes: [
-      { id: 9, key: "nav.contact-me", path: "/contact-me" },
       { id: 10, key: "nav.contact-us", path: "/contact-us" },
     ],
    },

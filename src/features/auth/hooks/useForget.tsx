@@ -10,7 +10,6 @@ export function useForget(onSuccess?: () => void){
           if (onSuccess) onSuccess();
         },
         onError: (error: any) => {
-          console.error("Register error:", error.response?.data || error.message);
   errorAlert("خطأ", error.response?.data?.message || "من فضلك داخل الايميل");
         },
     })

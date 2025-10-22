@@ -14,7 +14,6 @@ import Button from "../atoms/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "./../../animation/FadeIn";
 import GetX from '../../animation/GetX';
-import SlideUpSplitTextMotion from "@/animation/SlideUpSplitTextMotion";
 function Home() {
   const { t } = useTranslation();
   return (

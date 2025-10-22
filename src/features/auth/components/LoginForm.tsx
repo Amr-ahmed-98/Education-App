@@ -26,11 +26,11 @@ export default function LoginForm({ onSuccess }: Props) {
 
   return (
     <div className="flex flex-col md:flex-row  w-full gap-10 my-[30px] ">
-  <div className="text-center relative min-h-[55vh]  md:min-h-[90vh] basis-1/2 rounded-[20px] p-[50px] bg-[linear-gradient(90deg,#4775C1_20%,#4775C1_20%,#859CBF_100%,#AECDFD_100%,#5184D5_100%)] dark:bg-[linear-gradient(90deg,#1C242F_20%,#1C242F_20%,#1C242F_100%,#1C242F_100%,#1C242F_100%)]">
+  <div className="text-center relative min-h-[70vh] md:min-h-[90vh] basis-1/2 rounded-[20px] p-[50px] bg-[linear-gradient(90deg,#4775C1_20%,#4775C1_20%,#859CBF_100%,#AECDFD_100%,#5184D5_100%)] dark:bg-[linear-gradient(90deg,#1C242F_20%,#1C242F_20%,#1C242F_100%,#1C242F_100%,#1C242F_100%)]">
     <h2 className="text-3xl text-white mb-[20px]">{t("Login.left.title1")} <span className="text-primary">{t("Login.left.title2")}</span></h2>
     <p className="text-[1.2rem] text-white mb-[30px] ">{t("Login.left.subtitle")}</p>
-    <Button variant="outline2" size="lg" path="/sign-up">{t("Login.left.btn")} </Button>
-   <div className="absolute bottom-0 left-[0%] ">
+    <Button className="" variant="outline2" size="lg" path="/sign-up">{t("Login.left.btn")} </Button>
+   <div className="absolute mt-[50px] bottom-0 left-[0%] ">
      <div className="bg-[#A1BFE9] dark:bg-dark-primary w-[50%] mx-auto h-[60%] aspect-square relative overflow-hidden rounded-[50%]  ">
      <img className="w-[100%] top-0 left-0  h-full object-cover" src={img.signin} alt="error "/>
     </div>
