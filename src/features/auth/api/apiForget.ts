@@ -10,3 +10,4 @@ export interface ForgetPasswordResponse{
 export function forgetPassword(payload:ForgetPasswordPayload): Promise<ForgetPasswordResponse>{
   return ApiClient.post<ForgetPasswordResponse>("/auth/forgetPassword", payload);
 }
+
