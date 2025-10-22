@@ -4,7 +4,7 @@ function OtpRegister() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="">
       <VerifyOtpForm onSuccess={()=> navigate("/sign-in")} />
     </div>
   )

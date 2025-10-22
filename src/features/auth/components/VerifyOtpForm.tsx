@@ -63,7 +63,7 @@ export function VerifyOtpForm({ onSuccess }: Props){
                 ref={(el) => { inputsRef.current[idx] = el!;}}
                 onChange={(e) => handleChange(idx, e.target.value)}
                 onKeyDown={(e)=>handleBackspace(idx, e)}
-                className="w-[80px] h-[80px] text-center text-4xl bg-white dark:bg-dark-secondary  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-[45px] h-[45px]  md:w-[80px] md:h-[80px] text-center text-4xl bg-white dark:bg-dark-secondary  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
             ))}

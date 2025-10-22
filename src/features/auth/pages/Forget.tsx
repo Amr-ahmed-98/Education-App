@@ -9,8 +9,6 @@ function Forget() {
    <UserCard id="5" /> */}
    <ForgetPasswordForm onSuccess={()=> navigate('/otp')}/>
       </div>
-
-
   )
 }
 
