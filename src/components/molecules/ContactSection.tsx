@@ -4,7 +4,12 @@ import { useTranslation } from 'react-i18next';
 import { FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
 import * as icon from '../../assets/icons/icons';
 import { Link } from "react-router-dom";
+
+import HoverScaleEffect from '@/animation/HoverScaleEffect';
+import SlideUpSplitTextMotion from '@/animation/SlideUpSplitTextMotion';
+=======
 import SlideInOnScroll from '../../animation/GetX'; 
+
 
 interface FormData {
   name: string;
@@ -37,6 +42,49 @@ const ContactSection: React.FC = () => {
           
           {/* Contact Details */}
           <div className="lg:w-1/2 space-y-8 flex flex-col justify-center ">
+
+            {/* Main Title */}
+            <div className="space-y-2 ">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white leading-tight">
+                {isRTL ? (
+                  <>
+                    نحن دائماً
+                    <span className="text-[var(--color-secondary)] pl-5">
+                      متحمسون للتواصل
+                    </span>
+                    <span className="text-[var(--color-primary)] ">
+                      معك!
+                    </span>
+                   
+                  </>
+                ) : (
+                  <>
+                    We're Always
+                    <span className="text-[var(--color-secondary)] px-2">
+                      Eager to
+                    </span>
+                    <span className="text-[var(--color-primary)] ">
+                      Hear From You!
+                    </span>
+                  </>
+                )}
+              </h2>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-6">
+              {/* Address */}
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
+                  {t('address', 'Address')}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {isRTL 
+                    ? 'ستوديو 76د، رايلي فورد، شمال مايكل تشيستر، CF99 6QQ'
+                    : 'Studio 76d, Riley Ford, North Michael chester, CF99 6QQ'
+                  }
+                </p>
+
             <SlideInOnScroll direction="left" delay={0}>
               {/* Main Title */}
               <div className="space-y-2 ">
@@ -63,6 +111,7 @@ const ContactSection: React.FC = () => {
                     </>
                   )}
                 </h2>
+
               </div>
             </SlideInOnScroll>
 
@@ -218,6 +267,20 @@ const ContactSection: React.FC = () => {
                     )}
                   </div>
 
+
+                {/* Submit Button */}
+                <HoverScaleEffect scale={1.05}>
+                <button
+                  type="submit"
+                  className="flex items-center justify-center gap-2 w-full bg-primary cursor-pointer text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
+                >
+                  {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
+                  {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}
+                </button>
+                </HoverScaleEffect>
+              </form>
+            </div>
+
                   {/* Message Field */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -247,6 +310,7 @@ const ContactSection: React.FC = () => {
                 </form>
               </div>
             </SlideInOnScroll>
+
           </div>
         </div>
       </div>
