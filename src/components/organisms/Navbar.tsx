@@ -119,7 +119,7 @@ function Navbar() {
             {Routes.map((item) => (
               <li
                 key={item.id}
-                className="relative group cursor-pointer text-dark-primary dark:text-light-primary"
+                className="relative group cursor-pointer text-dark-primary text-2xl mb-[15px] md:text-sm dark:text-light-primary"
               >
                 {/* لو فيه subRoutes يطلع Dropdown */}
                 {item.subRoutes ? (
@@ -208,22 +208,25 @@ function Navbar() {
                     >
                       Dashboard
                     </Link>
-                    <button
+                  
+                    <Button
+                    variant="outline2"
                       onClick={logout}
-                      className="w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100 dark:hover:bg-gray-700"
-                    >
-                      Logout
-                    </button>
+                      className="w-full"
+                      >
+ Logout
+                    </Button>
                   </div>
+                  
                 )}
               </div>
             ) : (
-              // 🔸 لو مافيش توكن
+              //  لو مافيش توكن
               <>
-                <Button variant="outline1" path="/sign-in">
+                <Button variant="outline1" size="md" path="/sign-in">
                   {t("nav.login")}
                 </Button>
-                <Button variant="outline1" path="/sign-up">
+                <Button variant="outline1" size="md" path="/sign-up">
                   {t("nav.sign-up")}
                 </Button>
               </>

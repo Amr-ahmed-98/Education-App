@@ -57,7 +57,7 @@ console.log("Resending OTP for email:", email);
     }
    
     return(
-       <div className='flex flex-col justify-center text-center items-center w-full lg:w-[35%] py-[100px]'>
+       <div className='container flex flex-col justify-center text-center items-center w-full lg:w-[35%] py-[100px]'>
         <h2 className='text-3xl font-semibold mb-[20px] text-primary'>{t("otp.title")}</h2>
         <form onSubmit={handleSubmit} >
         <p className="text-gray-400 text-lg mb-[20px]">{t("otp.subtitle")}</p>
@@ -71,7 +71,7 @@ console.log("Resending OTP for email:", email);
                 ref={(el) => { inputsRef.current[idx] = el!;}}
                 onChange={(e) => handleChange(idx, e.target.value)}
                 onKeyDown={(e)=>handleBackspace(idx, e)}
-                className="w-[80px] h-[80px] text-center text-4xl bg-white dark:bg-dark-secondary  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-[45px] h-[45px] md:w-[100px] md:h-[100px] text-center text-4xl bg-white dark:bg-dark-secondary  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
             ))}

@@ -29,7 +29,7 @@ const IconDetails: React.FC<iconDetailsProps> = ({
 
   return (
     <GetX direction='left'>
-    <div className={`bg-white dark:bg-dark-primary rounded-xl shadow-md ${sizeClasses} flex flex-col items-center text-center`}>
+    <div className={`bg-white dark:bg-dark-secondary rounded-xl shadow-md ${sizeClasses} flex flex-col items-center text-center`}>
       <div className={`${bgColor} ${shapeClass} p-4 mb-4 flex items-center justify-center`}>
         <Icon className={`h-8 w-8 ${iconColor}`} />
       </div>

@@ -23,7 +23,8 @@ function About() {
          <div className="text-center max-w-4xl">
  <h1 className="text-4xl font-bold mb-6 flex ">
   <SplitTextMotion>
- {t("about.hero.titleStart")}</SplitTextMotion><span className="text-red-400"><SplitTextMotion>{t("about.hero.highlight")}</SplitTextMotion></span>
+ {t("about.hero.titleStart")}<span className="text-red-400">{t("about.hero.highlight")}</span>
+ </SplitTextMotion>
   </h1>
   
   <p className="text-xl max-w-2xl mx-auto leading-relaxed">
@@ -100,7 +101,7 @@ function About() {
         {t("about.coreValues.valuesText")}
       </span>
       </h1>
-      <div className="container grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-items-center">
+      <div className="container grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-6 justify-items-center">
       <IconDetails
       icon={icon.IoPeople}
       title=""
