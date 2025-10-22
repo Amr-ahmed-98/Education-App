@@ -19,7 +19,7 @@ export function ForgetPasswordForm({onSuccess } : Props){
         mutate({email}as any);
     }
   return(
-    <div className="flex flex-col justify-center items-center w-[35%] py-[20px]">
+    <div className="flex flex-col justify-center items-center w-full md:w-[35%] py-[20px]">
       <h2 className="text-primary text-4xl font-bold mb-[20px]">{t("forgetpassword.title")}</h2>
       <p className="text-2xl mb-[30px] text-gray-700 dark:text-gray-500">{t("forgetpassword.subtitle")}</p>
         <form onSubmit={handleSubmit} className='flex flex-col w-[100%] '>

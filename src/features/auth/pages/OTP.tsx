@@ -6,7 +6,7 @@ function OTP() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center min-h-screen px-4">
       <VerifyOtpForm onSuccess={()=> navigate("/reset-password")} />
     </div> 
   )

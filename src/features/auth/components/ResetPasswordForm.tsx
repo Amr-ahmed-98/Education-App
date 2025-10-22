@@ -41,7 +41,7 @@ console.log("🚀 Sending payload:", { email, otp_code : otp, password : newPass
     
   };
   return (
-    <div className='flex flex-col justify-center items-center w-[35%] py-[20px]'>
+    <div className='flex flex-col justify-center items-center w-full md:w-[35%]  py-[20px]'>
       <h2 className="text-primary text-3xl mb-[20px]">{t("resetPassword.title")}</h2>
       <p className="text-1xl mb-[30px] text-gray-700 dark:text-gray-500">{t("resetPassword.subtitle")}</p>
 
