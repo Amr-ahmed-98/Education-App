@@ -37,10 +37,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section
       className={`  bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#112238_0%,#18304E_0%,#1D3B60_40%,#0D234E_70%)] `}
     >
-      <div className="">
+      <div >
        
        <div
-        className="flex justify-center items-center flex-wrap sm:flex-col md:flex-col lg:flex-row">
+        className="container grid grid-cols-1 md:grid-cols-2 justify-center items-center md:min-h-[90vh] gap-6">
           {/* Content */}
           <div className="mb-[50px] pt-[30px] text-center sm:text-center lg:text-left">
 
@@ -67,8 +67,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex flex-col sm:flex-row gap-4">
               {primaryButton && (
                 <GetX>
-                <Button 
-                variant="primary" size="lg">
+                <Button onClick={()=>{
+                  document.getElementById("courses")?.scrollIntoView({behavior : "smooth"});
+                }}
+                variant="primary" size="lg" >
                   {primaryButton.text}
                 </Button>
                 </GetX>
@@ -82,7 +84,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <div className="relative ">
                  <GetX>
                 <img
-                  className="w-[75%]  absolute left-[10%] sm:top-[-40px] lg:top-[30px]  "
+                  className="w-[78%]  md:w-[82%]  absolute left-[10%] sm:top-[-40px] lg:top-[30px]  "
                   src={img.Ellipse}
                   alt="error1"
                 />
@@ -90,7 +92,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <img
                   src={image}
                   alt={title1}
-                  className="w-full h-auto rounded-lg relative top-[0px]"
+                  className="w-[full] h-auto rounded-lg relative top-0 md:top-[50px]"
                 />
                 </GetX>
                 {/* Optional decorative elements */}

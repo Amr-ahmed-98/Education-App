@@ -11,14 +11,14 @@ const BannerCard: React.FC<BannerCardProbs> = ({
     icon,
 }) => {
   return (
-    <div className=" py-[20px] ">
-      <div className="flex ">
+    <div className=" py-[20px]">
+      <div className="flex  ">
         <motion.div 
          variants={fadeIn({ direction: "right", delay: 0.2 })}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className="w-[60px] h-[60px] text-white bg-primary rounded-[50%] flex justify-center items-center"
+        className="w-[45px] md:w-[60px] h-[45px] md:h-[60px] text-white bg-primary rounded-[50%] flex justify-center items-center"
         >{icon} </motion.div>
         <motion.p
          variants={fadeIn({ direction: "left", delay: 0.2 })}

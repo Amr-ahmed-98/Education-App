@@ -18,7 +18,6 @@ function Home() {
   const { t } = useTranslation();
   return (
     <>
-
       <div>
         <HeroSection
           title1={t("HeroHome.title1")}
@@ -81,7 +80,7 @@ function Home() {
           ]}
         />
       </div>
-      <div className="bg-[#C4DBFF]  dark:bg-[#020B17] py-[70px]">
+      <div id="courses" className="bg-[#C4DBFF]  dark:bg-[#020B17] py-[70px]">
         <motion.div className="container"
          variants={fadeIn({ direction: "down", delay: 0.4 })}
         initial="hidden"

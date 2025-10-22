@@ -6,7 +6,7 @@ import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import Button from "../atoms/Button";
-
+import SlideInOnScroll from '../../animation/GetX';
 // interface TitlePart {
 //   text: string;
 //   color?: string;
@@ -121,6 +121,7 @@ function SectionTitle({
 
       {/* Title */}
       {(heading1 || heading2 || heading3 || heading4) && (
+        
         <h2 className="text-[25px] z-10 sm:text-[20px] md:text-[30px] lg:text-[40px] text-center mx-auto max-w-4xl">
           {heading1} <span className="text-secondary">{heading2}</span>
           {(heading3 || heading4) && <br />}
@@ -270,6 +271,7 @@ function SectionTitle({
        {/* Button */}
        <div className=" w-full mx-auto">
          {button && (
+           <SlideInOnScroll direction="bottom" >
           <Button
             variant="primary"
             className={`w-fit px-8 my-[20px] ${isCourseDetailsUsage ? "" : "mx-auto"}`}
@@ -278,6 +280,7 @@ function SectionTitle({
           >
             {button}
           </Button>
+          </SlideInOnScroll>
         )}
        </div>
 

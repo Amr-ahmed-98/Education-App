@@ -7,23 +7,25 @@ interface SlideInOnScrollProps {
   children: ReactNode;
   direction?: Direction;
   delay?: number;
+  distance?: number;
 }
 
 export default function SlideInOnScroll({
   children,
   direction = "left",
   delay = 0,
+  distance = 180,
 }: SlideInOnScrollProps) {
   const getOffset = () => {
     switch (direction) {
       case "left":
-        return { x: -200, y: 0 };
+        return { x: -distance, y: 0 };
       case "right":
-        return { x: 200, y: 0 };
+        return { x: distance, y: 0 };
       case "top":
-        return { x: 0, y: -200 };
+        return { x: 0, y: -distance };
       case "bottom":
-        return { x: 0, y: 200 };
+        return { x: 0, y: distance };
       default:
         return { x: 0, y: 0 };
     }
