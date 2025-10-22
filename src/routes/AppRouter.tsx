@@ -1,13 +1,11 @@
 import {createBrowserRouter } from 'react-router-dom';
 import Home from '../components/pages/Home';
 import Course from '../components/pages/Course';
-import Pages from '../components/pages/Pages';
 import About from '../components/pages/About';
 import AddCourse from '../features/Dashboard/pages/AddCourse';
 import Cart from '../features/myAccount/pages/Cart';
 import BlogDetails from '../components/pages/BlogDetails';
 import Blogs from '../components/pages/Blogs';
-import ContactMe from '../components/pages/ContactMe';
 import ContactUs from '../components/pages/ContactUs';
 import CourseDetails from '../components/pages/CourseDetails';
 import Dashboard from '../features/Dashboard/pages/Dashboard';
@@ -44,7 +42,6 @@ const AppRouter = createBrowserRouter([
     element: <PublicTemplate />,
     children:[
       {index:true, element: <Home />},
-      {path:"/pages", element: <Pages />},
       {path:"/course", element: <Course />},
       {path:"/blogs", element: <Blogs />},
       {path:"/about", element: <About />},
