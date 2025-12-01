@@ -883,5 +883,13 @@
       "failText":"Failed to create a new account",
       "failTitle":"Error!"
     }
+  },
+  "sidebar": {
+    "myCourses": "My Courses",
+    "myOrders": "My Orders",
+    "wishlist": "Wishlist",
+    "notifications": "Notifications",
+    "profileSettings": "Profile Settings",
+    "logOut": "Log Out"
   }
 }

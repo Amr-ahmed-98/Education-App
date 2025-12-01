@@ -126,4 +126,56 @@ export const Students = [
     name: "students.student2.name",
     track: "students.student2.track"
   },
-]
+];
+
+export const SidebarMenuItems = [
+  {
+    id: 1,
+    labelKey: "sidebar.myCourses",
+    icon: icon.BookCopy,
+    path: "/my-courses",
+    isActive: true,
+    section: "top"
+  },
+  {
+    id: 2,
+    labelKey: "sidebar.myOrders",
+    icon: icon.ShoppingCart,
+    path: "/my-orders",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 3,
+    labelKey: "sidebar.wishlist",
+    icon: icon.Heart,
+    path: "/wishlist",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 4,
+    labelKey: "sidebar.notifications",
+    icon: icon.Bell,
+    path: "/notifications",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 5,
+    labelKey: "sidebar.profileSettings",
+    icon: icon.User,
+    path: "/profile-settings",
+    isActive: false,
+    section: "bottom"
+  },
+  {
+    id: 6,
+    labelKey: "sidebar.logOut",
+    icon: icon.ArrowRight,
+    path: "/logout",
+    isActive: false,
+    section: "bottom",
+    isLogout: true
+  }
+];

@@ -858,6 +858,14 @@
       "failtext":"!فشل تسجيل الدخول ",
       "failtitle":"!خطأ"
     }
-}
+},
+  "sidebar": {
+    "myCourses": "كورساتي",
+    "myOrders": "طلباتي",
+    "wishlist": "المفضلة",
+    "notifications": "الإشعارات",
+    "profileSettings": "إعدادات الملف الشخصي",
+    "logOut": "تسجيل الخروج"
+  }
 }
 
