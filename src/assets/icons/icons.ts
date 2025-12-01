@@ -63,7 +63,9 @@ import {
   EyeOff ,
   Eye  ,
   Mail ,
-  ArrowLeft 
+  ArrowLeft,
+  BookCopy,
+  Bell,   
 } from 'lucide-react';
 
 export {
@@ -128,5 +130,7 @@ export {
   Mail,
   ArrowLeft ,
   FaGoogle,
-  FaXTwitter 
+  FaXTwitter,
+  BookCopy , 
+  Bell,   
 };
