@@ -955,5 +955,37 @@
       "title": "Data Science with Python",
       "instructor": "By Michael Brown"
     }
+  },
+  "notification": {
+    "title": "Notifications",
+    "subtitle": "You have 3 unread notifications.",
+    "allNotifications": "All Notifications",
+    "markAllAsRead": "Mark all as read",
+    "item1": {
+      "content": "Olivia Rhye just enrolled in your course",
+      "boldText": "Modern JavaScript Masterclass.",
+      "timestamp": "2 hours ago"
+    },
+    "item2": {
+      "content": "Your payout of",
+      "boldText": "$1,250.00",
+      "content2": "has been successfully processed and is on its way to your bank account.",
+      "timestamp": "1 day ago"
+    },
+    "item3": {
+      "content": "You have a new 5-star review from Phoenix Baker for your",
+      "boldText": "UI/UX Design Principles course.",
+      "timestamp": "3 days ago",
+      "actionButton": "View Review"
+    },
+    "item4": {
+      "content": "Account Security Update: Please update your password to keep your account secure. Your current password will expire in 7 days.",
+      "timestamp": "5 days ago"
+    },
+    "item5": {
+      "content": "Lana Steiner just enrolled in your course",
+      "boldText": "Data Science with Python.",
+      "timestamp": "1 week ago"
+    }
   }
 }

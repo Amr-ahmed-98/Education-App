@@ -158,7 +158,7 @@ export const SidebarMenuItems = [
     id: 4,
     labelKey: "sidebar.notifications",
     icon: icon.Bell,
-    path: "/notifications",
+    path: "/notification",
     isActive: false,
     section: "top"
   },
@@ -348,5 +348,70 @@ export const wishlistItems: WishlistItem[] = [
     reviewCount: 980,
     price: 120.00,
     image: courseProfile,
+  },
+];
+
+export interface NotificationItem {
+  id: number;
+  type: "enrollment" | "payout" | "review" | "security" | "enrollment";
+  isRead: boolean;
+  iconType: "avatar" | "dollar" | "alert" | "user";
+  iconColor: string;
+  content: string;
+  boldText?: string;
+  timestamp: string;
+  actionButton?: string;
+}
+
+export const notificationItems: NotificationItem[] = [
+  {
+    id: 1,
+    type: "enrollment",
+    isRead: false,
+    iconType: "avatar",
+    iconColor: "bg-pink-200",
+    content: "notification.item1.content",
+    boldText: "notification.item1.boldText",
+    timestamp: "notification.item1.timestamp",
+  },
+  {
+    id: 2,
+    type: "payout",
+    isRead: false,
+    iconType: "dollar",
+    iconColor: "bg-green-200",
+    content: "notification.item2.content",
+    boldText: "notification.item2.boldText",
+    timestamp: "notification.item2.timestamp",
+  },
+  {
+    id: 3,
+    type: "review",
+    isRead: false,
+    iconType: "avatar",
+    iconColor: "bg-gray-200",
+    content: "notification.item3.content",
+    boldText: "notification.item3.boldText",
+    timestamp: "notification.item3.timestamp",
+    actionButton: "notification.item3.actionButton",
+  },
+  {
+    id: 4,
+    type: "security",
+    isRead: true,
+    iconType: "alert",
+    iconColor: "bg-yellow-200",
+    content: "notification.item4.content",
+    timestamp: "notification.item4.timestamp",
+  },
+  {
+    id: 5,
+    type: "enrollment",
+    isRead: true,
+    iconType: "avatar",
+    iconColor: "bg-blue-200",
+    content: "notification.item5.content",
+    boldText: "notification.item5.boldText",
+    timestamp: "notification.item5.timestamp",
   },
 ];
