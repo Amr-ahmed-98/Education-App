@@ -1,5 +1,6 @@
 import * as img from "../assets/images/images";
 import * as icon from '../assets/icons/icons';
+import { courseProfile } from "@/assets/images/images";
 export const NavbarList = [
   {
     list: "Home",
@@ -179,3 +180,83 @@ export const SidebarMenuItems = [
     isLogout: true
   }
 ];
+
+interface CourseCard {
+  id: number;
+  category: string;
+  title: string;
+  instructor: string;
+  progress: number;
+  status: "notStarted" | "inProgress" | "completed";
+  image: string;
+}
+
+export const courses: CourseCard[] = [
+  {
+    id: 1,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+  {
+    id: 2,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+  {
+    id: 3,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+  {
+    id: 4,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+  {
+    id: 5,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+  {
+    id: 6,
+    category:"myCourses.category",
+    title:"myCourses.courseTitle",
+    instructor:"myCourses.instructor",
+    progress: 30,
+    status: "notStarted",
+    image: courseProfile,
+  },
+];
+
+export const getStatusColor = (status: string) => {
+  switch (status) {
+    case "notStarted":
+      return "bg-green-500";
+    case "inProgress":
+      return "bg-blue-500";
+    case "completed":
+      return "bg-gray-500";
+    default:
+      return "bg-green-500";
+  }
+};

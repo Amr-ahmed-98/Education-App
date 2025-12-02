@@ -32,6 +32,7 @@ import course3 from "./course-3.png";
 import Aboutpic from "./about2.jpg";
 import AboutHero from './about.jpg';
 import signin from './sign-in.png';
+import courseProfile from './course-profile.png';
 export {
   HomeHero,
   HomeAbout,
@@ -66,5 +67,6 @@ export {
   course3,
   Aboutpic,
   AboutHero,
-  signin
+  signin,
+  courseProfile
 };

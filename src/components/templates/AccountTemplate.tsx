@@ -8,8 +8,12 @@ export default function AccountTemplate() {
       
       <Navbar />
       <main className="md:px-16 sm:px-10 px-4 pt-20">
+        <div className="flex gap-6">
           <Sidebar />
-        <Outlet /> {/* هنا بيتغير المحتوي: Login , Signup , Otp */}
+          <div className="flex-1 min-w-0">
+            <Outlet /> {/* هنا بيتغير المحتوي: Login , Signup , Otp */}
+          </div>
+        </div>
       </main>
     </div>
   );

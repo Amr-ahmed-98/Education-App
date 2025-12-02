@@ -866,6 +866,20 @@
     "notifications": "الإشعارات",
     "profileSettings": "إعدادات الملف الشخصي",
     "logOut": "تسجيل الخروج"
+  },
+  "myCourses": {
+    "title": "كورساتي",
+    "subtitle": "لديك 6 كورسات في قائمة المفضلة.",
+    "status": {
+      "notStarted": "لم يبدأ",
+      "inProgress": "قيد التنفيذ",
+      "completed": "مكتمل"
+    },
+    "category": "تطوير الويب",
+    "courseTitle": "مطور واجهة أمامية",
+    "instructor": "بواسطة الدكتورة أنجيلا يو",
+    "continue": "متابعة",
+    "viewDetails": "عرض التفاصيل"
   }
 }
 

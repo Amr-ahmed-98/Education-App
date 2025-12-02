@@ -891,5 +891,19 @@
     "notifications": "Notifications",
     "profileSettings": "Profile Settings",
     "logOut": "Log Out"
+  },
+  "myCourses": {
+    "title": "My Courses",
+    "subtitle": "You have 6 courses in your wishlist.",
+    "status": {
+      "notStarted": "Not Started",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "category": "Web Development",
+    "courseTitle": "Front-End Developer",
+    "instructor": "By Dr. Angela Yu",
+    "continue": "Continue",
+    "viewDetails": "View Details"
   }
 }
