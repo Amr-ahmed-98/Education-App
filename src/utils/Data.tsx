@@ -142,7 +142,7 @@ export const SidebarMenuItems = [
     id: 2,
     labelKey: "sidebar.myOrders",
     icon: icon.ShoppingCart,
-    path: "/my-orders",
+    path: "/cart",
     isActive: false,
     section: "top"
   },
@@ -197,7 +197,7 @@ export const courses: CourseCard[] = [
     category:"myCourses.category",
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
-    progress: 30,
+    progress: 0,
     status: "notStarted",
     image: courseProfile,
   },
@@ -207,7 +207,7 @@ export const courses: CourseCard[] = [
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
     progress: 30,
-    status: "notStarted",
+    status: "inProgress",
     image: courseProfile,
   },
   {
@@ -215,8 +215,8 @@ export const courses: CourseCard[] = [
     category:"myCourses.category",
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
-    progress: 30,
-    status: "notStarted",
+    progress: 60,
+    status: "inProgress",
     image: courseProfile,
   },
   {
@@ -224,8 +224,8 @@ export const courses: CourseCard[] = [
     category:"myCourses.category",
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
-    progress: 30,
-    status: "notStarted",
+    progress: 100,
+    status: "completed",
     image: courseProfile,
   },
   {
@@ -233,8 +233,8 @@ export const courses: CourseCard[] = [
     category:"myCourses.category",
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
-    progress: 30,
-    status: "notStarted",
+    progress: 20,
+    status: "inProgress",
     image: courseProfile,
   },
   {
@@ -243,7 +243,7 @@ export const courses: CourseCard[] = [
     title:"myCourses.courseTitle",
     instructor:"myCourses.instructor",
     progress: 30,
-    status: "notStarted",
+    status: "inProgress",
     image: courseProfile,
   },
 ];
@@ -260,3 +260,39 @@ export const getStatusColor = (status: string) => {
       return "bg-green-500";
   }
 };
+
+export interface CartItem {
+  id: number;
+  title: string;
+  instructor: string;
+  instructorTitle: string;
+  price: number;
+  image: string;
+}
+
+export const cartItems: CartItem[] = [
+  {
+    id: 1,
+    title: "cart.course1.title",
+    instructor: "cart.course1.instructor",
+    instructorTitle: "cart.course1.instructorTitle",
+    price: 200,
+    image: courseProfile,
+  },
+  {
+    id: 2,
+    title: "cart.course2.title",
+    instructor: "cart.course2.instructor",
+    instructorTitle: "cart.course2.instructorTitle",
+    price: 200,
+    image: courseProfile,
+  },
+  {
+    id: 3,
+    title: "cart.course3.title",
+    instructor: "cart.course3.instructor",
+    instructorTitle: "cart.course3.instructorTitle",
+    price: 300,
+    image: courseProfile,
+  },
+];

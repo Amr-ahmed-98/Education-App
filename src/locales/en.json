@@ -905,5 +905,30 @@
     "instructor": "By Dr. Angela Yu",
     "continue": "Continue",
     "viewDetails": "View Details"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "orderSummary": "Order",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping",
+    "course1": {
+      "title": "Complete Web Development Course",
+      "instructor": "Alex Thompson",
+      "instructorTitle": "Senior Web Developer"
+    },
+    "course2": {
+      "title": "Digital Marketing Fundamentals",
+      "instructor": "Sarah Anderson",
+      "instructorTitle": "Digital Marketing Expert"
+    },
+    "course3": {
+      "title": "Data Analysis with Python",
+      "instructor": "Michael Smith",
+      "instructorTitle": "Data Analytics Expert"
+    }
   }
 }

@@ -880,6 +880,31 @@
     "instructor": "بواسطة الدكتورة أنجيلا يو",
     "continue": "متابعة",
     "viewDetails": "عرض التفاصيل"
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "orderSummary": "ملخص",
+    "summary": "الطلب",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "total": "الإجمالي",
+    "checkout": "الدفع",
+    "continueShopping": "متابعة التسوق",
+    "course1": {
+      "title": "دورة تطوير الويب الكاملة",
+      "instructor": "أليكس تومبسون",
+      "instructorTitle": "مطور ويب أول"
+    },
+    "course2": {
+      "title": "أساسيات التسويق الرقمي",
+      "instructor": "سارة أندرسون",
+      "instructorTitle": "خبيرة التسويق الرقمي"
+    },
+    "course3": {
+      "title": "تحليل البيانات باستخدام Python",
+      "instructor": "مايكل سميث",
+      "instructorTitle": "خبير تحليل البيانات"
+    }
   }
 }
 

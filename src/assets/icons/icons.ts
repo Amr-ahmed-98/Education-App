@@ -65,7 +65,8 @@ import {
   Mail ,
   ArrowLeft,
   BookCopy,
-  Bell,   
+  Bell,
+  Trash2,
 } from 'lucide-react';
 
 export {
@@ -132,5 +133,6 @@ export {
   FaGoogle,
   FaXTwitter,
   BookCopy , 
-  Bell,   
+  Bell,
+  Trash2,
 };
