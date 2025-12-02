@@ -1,6 +1,6 @@
 import * as img from "../assets/images/images";
 import * as icon from '../assets/icons/icons';
-import { courseProfile } from "@/assets/images/images";
+import { courseProfile, course1, course2, course3 } from "@/assets/images/images";
 export const NavbarList = [
   {
     list: "Home",
@@ -293,6 +293,60 @@ export const cartItems: CartItem[] = [
     instructor: "cart.course3.instructor",
     instructorTitle: "cart.course3.instructorTitle",
     price: 300,
+    image: courseProfile,
+  },
+];
+
+export interface WishlistItem {
+  id: number;
+  category: string;
+  title: string;
+  instructor: string;
+  rating: number;
+  reviewCount: number;
+  price: number;
+  image: string;
+}
+
+export const wishlistItems: WishlistItem[] = [
+  {
+    id: 1,
+    category: "wishlist.course1.category",
+    title: "wishlist.course1.title",
+    instructor: "wishlist.course1.instructor",
+    rating: 4.8,
+    reviewCount: 189,
+    price: 79.00,
+    image: course1,
+  },
+  {
+    id: 2,
+    category: "wishlist.course2.category",
+    title: "wishlist.course2.title",
+    instructor: "wishlist.course2.instructor",
+    rating: 4.9,
+    reviewCount: 1204,
+    price: 49.99,
+    image: course2,
+  },
+  {
+    id: 3,
+    category: "wishlist.course3.category",
+    title: "wishlist.course3.title",
+    instructor: "wishlist.course3.instructor",
+    rating: 4.7,
+    reviewCount: 756,
+    price: 99.99,
+    image: course3,
+  },
+  {
+    id: 4,
+    category: "wishlist.course4.category",
+    title: "wishlist.course4.title",
+    instructor: "wishlist.course4.instructor",
+    rating: 4.8,
+    reviewCount: 980,
+    price: 120.00,
     image: courseProfile,
   },
 ];

@@ -930,5 +930,30 @@
       "instructor": "Michael Smith",
       "instructorTitle": "Data Analytics Expert"
     }
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "subtitle": "You have 4 courses in your wishlist.",
+    "addToCart": "Add to Cart",
+    "course1": {
+      "category": "Design",
+      "title": "UI/UX Design Principles",
+      "instructor": "By Jessica Miller"
+    },
+    "course2": {
+      "category": "Development",
+      "title": "Modern JavaScript Masterclass",
+      "instructor": "By David Lee"
+    },
+    "course3": {
+      "category": "Marketing",
+      "title": "The Complete Digital Marketing Guide",
+      "instructor": "By Sarah Chen"
+    },
+    "course4": {
+      "category": "Data Science",
+      "title": "Data Science with Python",
+      "instructor": "By Michael Brown"
+    }
   }
 }
