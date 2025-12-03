@@ -67,6 +67,8 @@ import {
   BookCopy,
   Bell,
   Trash2,
+  Phone,
+  Camera,
 } from 'lucide-react';
 
 export {
@@ -135,4 +137,6 @@ export {
   BookCopy , 
   Bell,
   Trash2,
+  Phone,
+  Camera,
 };

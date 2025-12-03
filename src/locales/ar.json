@@ -962,6 +962,26 @@
       "boldText": "علوم البيانات باستخدام Python.",
       "timestamp": "منذ أسبوع"
     }
+  },
+  "editProfile": {
+    "title": "معلومات الحساب",
+    "subtitle": "قم بتحديث معلوماتك الشخصية للحفاظ على حسابك محدثًا.",
+    "profile": {
+      "uploadNew": "رفع صورة جديدة",
+      "remove": "إزالة"
+    },
+    "form": {
+      "fullName": "الاسم الكامل",
+      "emailAddress": "عنوان البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "phoneNumber": "رقم الهاتف",
+      "country": "الدولة",
+      "passwordHelper": "اتركه فارغًا للاحتفاظ بكلمة المرور الحالية."
+    },
+    "actions": {
+      "cancel": "إلغاء",
+      "saveChanges": "حفظ التغييرات"
+    }
   }
 }
 

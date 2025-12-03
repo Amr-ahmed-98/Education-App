@@ -166,7 +166,7 @@ export const SidebarMenuItems = [
     id: 5,
     labelKey: "sidebar.profileSettings",
     icon: icon.User,
-    path: "/profile-settings",
+    path: "/edit-profile-student",
     isActive: false,
     section: "bottom"
   },
@@ -415,3 +415,18 @@ export const notificationItems: NotificationItem[] = [
     timestamp: "notification.item5.timestamp",
   },
 ];
+
+export interface UserProfile {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  country: string;
+  profilePhoto?: string;
+}
+
+export const defaultUserProfile: UserProfile = {
+  fullName: "Frederick Hane",
+  email: "frederick.hane@example.com",
+  phoneNumber: "+1 (555) 234-5678",
+  country: "United States",
+};
