@@ -987,5 +987,25 @@
       "boldText": "Data Science with Python.",
       "timestamp": "1 week ago"
     }
+  },
+  "editProfile": {
+    "title": "Account Information",
+    "subtitle": "Update your personal information to keep your account up to date.",
+    "profile": {
+      "uploadNew": "Upload New",
+      "remove": "Remove"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "password": "Password",
+      "phoneNumber": "Phone Number",
+      "country": "Country",
+      "passwordHelper": "Leave blank to keep your current password."
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes"
+    }
   }
 }
