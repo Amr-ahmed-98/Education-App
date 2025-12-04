@@ -33,6 +33,11 @@ import Aboutpic from "./about2.jpg";
 import AboutHero from './about.jpg';
 import signin from './sign-in.png';
 import courseProfile from './course-profile.png';
+import ManageCourse0 from './ManageCourse0.png';
+import ManageCourse1 from './ManageCourse1.png';
+import ManageCourse2 from './ManageCourse2.png';
+import ManageCourse3 from './ManageCourse3.png';
+
 export {
   HomeHero,
   HomeAbout,
@@ -68,5 +73,9 @@ export {
   Aboutpic,
   AboutHero,
   signin,
-  courseProfile
+  courseProfile,
+  ManageCourse0,
+  ManageCourse1,
+  ManageCourse2,
+  ManageCourse3,
 };

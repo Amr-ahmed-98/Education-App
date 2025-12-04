@@ -867,6 +867,50 @@
     "profileSettings": "إعدادات الملف الشخصي",
     "logOut": "تسجيل الخروج"
   },
+  "sidebarInstructor": {
+    "addCourse": "إضافة كورس",
+    "manageCourse": "إدارة الكورس",
+    "studentsEnrolled": "الطلاب المسجلين",
+    "personalInfo": "المعلومات الشخصية",
+    "earningsReports": "تقارير الأرباح",
+    "logOut": "تسجيل الخروج"
+  },
+  "manageCourse": {
+    "title": "إدارة كورساتك",
+    "subtitle": "قم بتعديل وتحديث ومشاهدة الأداء لجميع كورساتك.",
+    "addNewCourse": "إضافة كورس جديد",
+    "searchPlaceholder": "ابحث عن كورساتك...",
+    "status": {
+      "all": "أي حالة",
+      "published": "منشور",
+      "draft": "مسودة",
+      "pending": "قيد المراجعة"
+    },
+    "sort": {
+      "newest": "ترتيب حسب: الأحدث",
+      "oldest": "ترتيب حسب: الأقدم",
+      "title": "ترتيب حسب: العنوان",
+      "enrollments": "ترتيب حسب: التسجيلات"
+    },
+    "category1": "التصميم",
+    "category2": "التطوير",
+    "category3": "علوم البيانات",
+    "course1": {
+      "title": "دورة Figma الشاملة"
+    },
+    "course2": {
+      "title": "مفاهيم JavaScript المتقدمة"
+    },
+    "course3": {
+      "title": "Python لعلوم البيانات والتعلم الآلي"
+    },
+    "course4": {
+      "title": "أساسيات تصميم واجهة المستخدم وتجربة المستخدم"
+    },
+    "editCourse": "تعديل الكورس",
+    "continueEditing": "متابعة التعديل",
+    "noCourses": "لم يتم العثور على كورسات تطابق الفلاتر الخاصة بك."
+  },
   "myCourses": {
     "title": "كورساتي",
     "subtitle": "لديك 6 كورسات في قائمة المفضلة.",

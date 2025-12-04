@@ -29,8 +29,7 @@ import {
   FaStar,
   FaBookOpen,
   FaGoogle,
-  
-} from 'react-icons/fa';
+  } from 'react-icons/fa';
 
 import {
   AlignLeft,
@@ -69,6 +68,12 @@ import {
   Trash2,
   Phone,
   Camera,
+  CirclePlus ,
+  Video ,
+  CircleUser,
+  ChartNoAxesColumn,
+  ChevronDown,
+  
 } from 'lucide-react';
 
 export {
@@ -139,4 +144,9 @@ export {
   Trash2,
   Phone,
   Camera,
+  CirclePlus,
+  Video,
+  CircleUser,
+  ChartNoAxesColumn,
+  ChevronDown
 };

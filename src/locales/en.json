@@ -892,6 +892,50 @@
     "profileSettings": "Profile Settings",
     "logOut": "Log Out"
   },
+  "sidebarInstructor": {
+    "addCourse": "Add Course",
+    "manageCourse": "Manage Course",
+    "studentsEnrolled": "Students Enrolled",
+    "personalInfo": "Personal Info",
+    "earningsReports": "Earnings Reports",
+    "logOut": "Log Out"
+  },
+  "manageCourse": {
+    "title": "Manage Your Courses",
+    "subtitle": "Edit, update, and see performance for all your courses.",
+    "addNewCourse": "Add New Course",
+    "searchPlaceholder": "Search your courses...",
+    "status": {
+      "all": "Any Status",
+      "published": "Published",
+      "draft": "Draft",
+      "pending": "Pending Review"
+    },
+    "sort": {
+      "newest": "Sort by: Newest",
+      "oldest": "Sort by: Oldest",
+      "title": "Sort by: Title",
+      "enrollments": "Sort by: Enrollments"
+    },
+    "category1": "Design",
+    "category2": "Development",
+    "category3": "Data Science",
+    "course1": {
+      "title": "The Complete Figma Masterclass"
+    },
+    "course2": {
+      "title": "Advanced JavaScript Concepts"
+    },
+    "course3": {
+      "title": "Python for Data Science & ML"
+    },
+    "course4": {
+      "title": "UI/UX Design Fundamentals"
+    },
+    "editCourse": "Edit Course",
+    "continueEditing": "Continue Editing",
+    "noCourses": "No courses found matching your filters."
+  },
   "myCourses": {
     "title": "My Courses",
     "subtitle": "You have 6 courses in your wishlist.",
