@@ -181,6 +181,58 @@ export const SidebarMenuItems = [
   }
 ];
 
+export const SidebarMenuItemsInstructor = [
+  {
+    id: 1,
+    labelKey: "sidebarInstructor.addCourse",
+    icon: icon.CirclePlus,
+    path: "/add-course",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 2,
+    labelKey: "sidebarInstructor.manageCourse",
+    icon: icon.Video,
+    path: "/manage-courses",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 3,
+    labelKey: "sidebarInstructor.studentsEnrolled",
+    icon: icon.Users,
+    path: "/students-enrolled",
+    isActive: false,
+    section: "top"
+  },
+  {
+    id: 4,
+    labelKey: "sidebarInstructor.personalInfo",
+    icon: icon.CircleUser,
+    path: "/edit-profile-instructor",
+    isActive: false,
+    section: "bottom"
+  },
+  {
+    id: 5,
+    labelKey: "sidebarInstructor.earningsReports",
+    icon: icon.ChartNoAxesColumn,
+    path: "/earnings-reports",
+    isActive: false,
+    section: "bottom"
+  },
+  {
+    id: 6,
+    labelKey: "sidebarInstructor.logOut",
+    icon: icon.ArrowRight,
+    path: "/logout",
+    isActive: false,
+    section: "bottom",
+    isLogout: true
+  }
+];
+
 interface CourseCard {
   id: number;
   category: string;
@@ -430,3 +482,62 @@ export const defaultUserProfile: UserProfile = {
   phoneNumber: "+1 (555) 234-5678",
   country: "United States",
 };
+
+export interface InstructorCourse {
+  id: number;
+  image: string;
+  status: "published" | "draft" | "pending";
+  category: string;
+  title: string;
+  enrollments: number;
+  rating: number | null;
+  price: number;
+  actionButton: string;
+}
+
+export const instructorCourses: InstructorCourse[] = [
+  {
+    id: 1,
+    image: img.ManageCourse0,
+    status: "published",
+    category: "manageCourse.category1",
+    title: "manageCourse.course1.title",
+    enrollments: 1204,
+    rating: 4.9,
+    price: 49.99,
+    actionButton: "manageCourse.editCourse"
+  },
+  {
+    id: 2,
+    image: img.ManageCourse1,
+    status: "published",
+    category: "manageCourse.category2",
+    title: "manageCourse.course2.title",
+    enrollments: 876,
+    rating: 4.8,
+    price: 79.99,
+    actionButton: "manageCourse.editCourse"
+  },
+  {
+    id: 3,
+    image: img.ManageCourse2,
+    status: "draft",
+    category: "manageCourse.category3",
+    title: "manageCourse.course3.title",
+    enrollments: 0,
+    rating: null,
+    price: 99.99,
+    actionButton: "manageCourse.continueEditing"
+  },
+  {
+    id: 4,
+    image: img.ManageCourse3,
+    status: "pending",
+    category: "manageCourse.category1",
+    title: "manageCourse.course4.title",
+    enrollments: 0,
+    rating: null,
+    price: 89.99,
+    actionButton: "manageCourse.editCourse"
+  }
+];
