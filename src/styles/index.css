@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 :root {
   --gradient-hero: linear-gradient(
@@ -90,6 +91,6 @@ html.light {
 
 @layer utilities {
   .text-black {
-    background-color: var(--color-black);
+    text-color: var(--color-black);
   }
 }
