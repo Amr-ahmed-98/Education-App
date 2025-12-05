@@ -541,3 +541,28 @@ export const instructorCourses: InstructorCourse[] = [
     actionButton: "manageCourse.editCourse"
   }
 ];
+
+// add course data
+
+export const levelOptions = [
+  { value: 'beginner', labelKey: 'addCourse.level.beginner' },
+  { value: 'intermediate', labelKey: 'addCourse.level.intermediate' },
+  { value: 'advanced', labelKey: 'addCourse.level.advanced' },
+];
+
+export const categoryOptions = [
+  { value: 'development', labelKey: 'addCourse.category.development' },
+  { value: 'design', labelKey: 'addCourse.category.design' },
+  { value: 'business', labelKey: 'addCourse.category.business' },
+];
+
+export const languageOptions = [
+  { value: 'en', labelKey: 'addCourse.language.english' },
+  { value: 'ar', labelKey: 'addCourse.language.arabic' },
+];
+
+export const pricingOptions = [
+  { value: 'free', labelKey: 'addCourse.pricingOptions.free' },
+  { value: 'fixed', labelKey: 'addCourse.pricingOptions.fixed' },
+  { value: 'subscription', labelKey: 'addCourse.pricingOptions.subscription' },
+];
