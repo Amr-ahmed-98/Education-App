@@ -1,8 +1,10 @@
-
+import HeaderDashboard from "@/components/molecules/HeaderDashboard";
 function EditProfileInstructor() {
   return (
-    <div>EditProfileInstructor</div>
-  )
+    <div className="p-5">
+      <HeaderDashboard />
+    </div>
+  );
 }
 
-export default EditProfileInstructor
+export default EditProfileInstructor;

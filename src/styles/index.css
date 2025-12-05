@@ -1,40 +1,42 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-:root{
+:root {
   --gradient-hero: linear-gradient(
     90deg,
-    #4775C1 0%,
-    #5184D5 30%,
-    #AECDFD 70%,
-    #5184D5 100%
+    #4775c1 0%,
+    #5184d5 30%,
+    #aecdfd 70%,
+    #5184d5 100%
   );
 }
 @theme {
-  --color-primary: #3972FF;
-  --color-secondary:#EE4A62;
-  --color-light-primary: #ffffff;  
-  --color-light-secondary: #F0F4F5;
-  --color-dark-primary: #111827;    
-  --color-dark-secondary: #1f2937;  
-  --color-text-grayDark:#606060;     
-  --color-text-grayLight:#BBBBBB;     
-  --color-hero-blue:#4775C1;
-  --color-social-icons:#1C4281;
-   --gradient-hero: linear-gradient(
-    90deg, 
-    #4775C1 0%, 
-    #5184D5 30%, 
-    #AECDFD 70%, 
-    #5184D5 100%
+  --color-primary: #3972ff;
+  --color-secondary: #ee4a62;
+  --color-light-primary: #ffffff;
+  --color-light-secondary: #f0f4f5;
+  --color-dark-primary: #111827;
+  --color-dark-secondary: #1f2937;
+  --color-text-grayDark: #606060;
+  --color-text-grayLight: #bbbbbb;
+  --color-hero-blue: #4775c1;
+  --color-social-icons: #1c4281;
+  --color-black: #0f172a;
+  --gradient-hero: linear-gradient(
+    90deg,
+    #4775c1 0%,
+    #5184d5 30%,
+    #aecdfd 70%,
+    #5184d5 100%
   );
 }
 @layer base {
   .dark {
-    --color-dark-primary: #111822; 
-    --color-dark-secondary: #1c242f; 
+    --color-dark-primary: #111822;
+    --color-dark-secondary: #1c242f;
   }
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 html.dark {
@@ -45,31 +47,37 @@ html.light {
   background-color: var(--color-light-secondary);
   color: var(--color-dark-primary);
 }
-.container{
-  width:90%;
+.container {
+  width: 90%;
   margin: 0 auto;
 }
 .event-scroll::-webkit-scrollbar {
   width: 0;
 }
 @keyframes slide-up {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .animate-slide-up {
   animation: slide-up 0.45s ease forwards;
 }
 .my-popup {
-  background: var(--color-light-primary) !important; 
-  color: var(--color-dark-secondary) !important; 
+  background: var(--color-light-primary) !important;
+  color: var(--color-dark-secondary) !important;
   border-radius: 12px;
 }
 .dark .my-popup {
-  background: var(--color-dark-primary) !important; 
+  background: var(--color-dark-primary) !important;
   color: var(--color-light-secondary) !important;
 }
 .my-title {
-  color: var(--color-dark-secondary); 
+  color: var(--color-dark-secondary);
 }
 .dark .my-title {
   color: var(--color-light-secondary) !important;
@@ -78,4 +86,10 @@ html.light {
   background: #22c55e !important;
   color: white !important;
   border-radius: 6px !important;
+}
+
+@layer utilities {
+  .text-black {
+    background-color: var(--color-black);
+  }
 }
