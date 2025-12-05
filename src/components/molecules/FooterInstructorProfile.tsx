@@ -1,9 +1,9 @@
 import Text from "../atoms/Text";
 import Title from "../atoms/Title";
 import Input from "../atoms/Input";
-export default function BodyInstructorProfile() {
+export default function FooterInstructorProfile() {
   return (
-    <div className="grid grid-cols-3 gap-6 bg-bg p-6 rounded-lg">
+    <div className="grid grid-cols-3 gap-6 bg-bg p-6 rounded-lg my-10">
       <div className="col-span-1">
         <Title size="md" variant="primary">
           Instructor Profile

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Import Design Tokens */
+@import "./variables.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
 :root {
   --gradient-hero: linear-gradient(
@@ -92,5 +95,295 @@ html.light {
 @layer utilities {
   .text-black {
     text-color: var(--color-black);
+  }
+}
+/* -------------------------------------------------- */
+/*  Global Components / Utilities                     */
+/* -------------------------------------------------- */
+@layer utilities {
+  /* Brand Backgrounds */
+  .bg-bg {
+    background-color: var(--color-bg);
+  }
+  .bg-bg-alt {
+    background-color: var(--color-bg-alt);
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  /* Text Colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .text-text {
+    color: var(--color-text-primary);
+  }
+  .text-text-alt {
+    color: var(--color-text-secondary);
+  }
+  .border-primary {
+    border-color: var(--border-primary);
+  }
+  .border-secondary {
+    border-color: var(--border-secondary);
+  }
+
+  /* Radius Utilities */
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+
+  /* Typography Utilities */
+  .text-sm {
+    font-size: var(--text-sm);
+  }
+  .text-base {
+    font-size: var(--text-base);
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+  }
+  .font-regular {
+    font-weight: var(--font-regular);
+  }
+  .font-bold {
+    font-weight: var(--font-bold);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* Padding Utilities */
+  .p-xm {
+    padding: var(--spacing-xs);
+  }
+  .p-sm {
+    padding: var(--spacing-sm);
+  }
+  .p-md {
+    padding: var(--spacing-md);
+  }
+  .p-lg {
+    padding: var(--spacing-lg);
+  }
+  .p-xl {
+    padding: var(--spacing-xl);
+  }
+  .p-2xl {
+    padding: var(--spacing-2xl);
+  }
+  .p-3xl {
+    padding: var(--spacing-3xl);
+  }
+  .p-4xl {
+    padding: var(--spacing-4xl);
+  }
+  /* Padding x */
+  .px-xs {
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+  }
+  .px-sm {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  .px-md {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .px-lg {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+  .px-xl {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+  .px-2xl {
+    padding-left: var(--space-2xl);
+    padding-right: var(--space-2xl);
+  }
+  .px-3xl {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+  .px-4xl {
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+  }
+  /* Padding y */
+  .py-xs {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+  }
+  .py-sm {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
+  .py-md {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+  .py-lg {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+  .py-xl {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+  .py-2xl {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+  .py-3xl {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+  }
+  .py-4xl {
+    padding-top: var(--space-4xl);
+    padding-bottom: var(--space-4xl);
+  }
+  /* Margin Utilities */
+  .m-xm {
+    padding: var(--spacing-xs);
+  }
+  .m-sm {
+    padding: var(--spacing-sm);
+  }
+  .m-md {
+    padding: var(--spacing-md);
+  }
+  .m-lg {
+    padding: var(--spacing-lg);
+  }
+  .m-xl {
+    padding: var(--spacing-xl);
+  }
+  .m-2xl {
+    padding: var(--spacing-2xl);
+  }
+  .m-3xl {
+    padding: var(--spacing-3xl);
+  }
+  .m-4xl {
+    padding: var(--spacing-4xl);
+  }
+  /* Margin x */
+  .mx-xs {
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+  }
+  .mx-sm {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+  .mx-md {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .mx-lg {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+  .mx-xl {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+  .mx-2xl {
+    padding-left: var(--space-2xl);
+    padding-right: var(--space-2xl);
+  }
+  .mx-3xl {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+  .mx-4xl {
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+  }
+
+  /* Margin Y */
+  .my-xs {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+  }
+  .my-sm {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
+  .my-md {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+  .my-lg {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+  .my-xl {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+  .my-2xl {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+  .my-3xl {
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+  }
+  .my-4xl {
+    padding-top: var(--space-4xl);
+    padding-bottom: var(--space-4xl);
+  }
+
+  /* Container —  */
+  .container {
+    width: 100%; /* default for mobile */
+    margin-inline: auto;
+    padding-inline: 16px;
+    max-width: 1320px;
+  }
+
+  @media (min-width: 1024px) {
+    /* tailwind lg breakpoint */
+    .container {
+      width: 92%;
+    }
+  }
+  /* Typography Helpers */
+  .heading {
+    font-family: var(--font-heading);
+    font-weight: var(--font-bold);
   }
 }

@@ -2,7 +2,7 @@ interface TitleProps {
   children: React.ReactNode;
   size: "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl";
   center?: boolean;
-  variant?: "black" | "primary";
+  variant?: "primary" | "secondary";
   className?: string;
 }
 
@@ -22,8 +22,8 @@ export default function Title({
     xxxl: "text-[60px]",
   };
   const variants = {
-    black: "text-black",
-    primary: "text-primary",
+    primary: "text-text",
+    secondary: "text-text-alt",
   };
   const classesHeading = `${sizes[size]}  ${variants[variant]}  ${className}`;
   return (

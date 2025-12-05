@@ -14,12 +14,12 @@ export default function Input({
   return (
     <div className="w-full space-y-1">
       {label && (
-        <label className="text-gray-700 font-medium text-md">{label}</label>
+        <label className="text-text-alt font-medium text-md">{label}</label>
       )}
 
-      <div className="flex items-center gap-3 w-full border rounded-xl px-4 py-3 my-2 bg-light shadow-sm focus-within:border-primary transition">
+      <div className="flex items-center gap-3 w-full border border-primary rounded-xl px-4 py-3 my-2 bg-light shadow-sm  transition">
         {/* Icon inside the input */}
-        {icon && <span className="text-gray-500 text-xl">{icon}</span>}
+        {icon && <span className="text-text-alt text-xl">{icon}</span>}
 
         {/* The actual input */}
         <input
