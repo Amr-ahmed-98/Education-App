@@ -5,82 +5,31 @@
 @layer theme {
   :root {
     /* Brand Colors */
-    --color-primary: #7112ff;
-    --color-primary-200: #290065;
-    --color-secondary: #e500ff;
-    --color-accent-yellow: #f6ce58;
-    --color-accent-orange: #f9865f;
-    --color-accent-green: #23db7f;
-    --color-accent-pink: #ff5c92;
-
-    /* UI Backgrounds */
-    --color-bg: #020019;
-    --color-bg-resume: #191530;
-    --color-bg-navbar: #0a0e21;
-    --color-bg-primary-20: rgba(113, 18, 255, 0.2);
-    --color-bg-card-link: rgba(235, 235, 235, 0.79);
-    --color-bg-copyright: rgba(255, 255, 255, 0.09);
-
-    --color-border-skill: #7112ff;
-    --color-bg-card-services: #190b3e;
-    --color-footer-copyright: rgba(255, 255, 255, 0.06);
-    --color-bg-footer: linear-gradient(135deg, #5015a4, #400e5f, #651368);
-    --color-border-services: linear-gradient(
-      90deg,
-      rgba(113, 18, 255, 1) 0%,
-      rgba(229, 0, 255, 0.5) 48%,
-      rgba(161, 49, 134, 1) 100%
-    );
-
-    /* UI Backgrounds Card About */
-    --color-about-card1: linear-gradient(
-      90deg,
-      #0d0b24 0%,
-      #361a60 38%,
-      #100620 100%
-    );
-    --color-about-card2: linear-gradient(
-      90deg,
-      #110703 0%,
-      #2e0e2b 48%,
-      #110703 100%
-    );
-    --color-about-card3: linear-gradient(
-      90deg,
-      #08160a 0%,
-      #122b16 48%,
-      #08160a 100%
-    );
-    --color-about-card4: linear-gradient(
-      90deg,
-      #1a122d 0%,
-      #2d260f 48%,
-      #1a122d 100%
-    );
-    --color-about-card5: linear-gradient(
-      90deg,
-      #08160a 0%,
-      #122b16 48%,
-      #08160a 100%
-    );
-    --color-about-card6: linear-gradient(
-      90deg,
-      #0c071a 0%,
-      #3a2863 48%,
-      #0c071a 100%
-    );
-
-    /* UI Backgrounds Card About */
-    --color-bg-card-skills: linear-gradient(
-      90deg,
-      #0e0c25 0%,
-      #1c1d34 48%,
-      #14182d 100%
-    );
+    --color-primary: #3972ff;
+    --color-secondary: #ee4a62;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f0f4f5;
 
     /* Text Colors */
-    --color-text-primary: #ffffff;
-    --color-text-Gray: #bbb5b5;
+    --color-text-primary: #272626;
+    --color-text-secondary: #6b7280;
+
+    /* borders */
+    --border-primary: #e5e7eb;
+    --border-secondary: #64748b;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(233, 227, 227, 0.31);
+    --shadow-md: 0 4px 6px rgba(175, 169, 169, 0.722);
+    --shadow-lg: 0 10px 20px rgba(188, 179, 179, 0.84);
+
+    /*Dark Mode*/
+    --color-text-primary-dark: #f1f1f3;
+    --color-text-secondary-dark: #d2d2d2;
+    --border-primary-dark: #7c94c4;
+    --border-secondary-dark: #eeeef0;
+    --color-bg-dark: #1c242f;
+    --color-bg-alt-dark: #1f2937;
 
     /* Border Radius */
     --radius-sm: 4px;
@@ -90,11 +39,6 @@
     --radius-2xl: 24px;
     --radius-3xl: 28px;
     --radius-4xl: 32px;
-
-    /* Shadows */
-    /* --shadow-sm: 0 1px 3px rgba(233, 227, 227, 0.31);
-    --shadow-md: 0 4px 6px rgba(175, 169, 169, 0.722);
-    --shadow-lg: 0 10px 20px rgba(188, 179, 179, 0.84); */
 
     /* Typography */
     --font-sans: "Inter", sans-serif;
@@ -115,5 +59,15 @@
     --space-2xl: 28px;
     --space-3xl: 32px;
     --space-4xl: 32px;
+  }
+
+  /* Dark Variant */
+  :root.dark {
+    --color-bg: var(--color-bg-dark);
+    --color-bg-alt: var(--color-bg-alt-dark);
+    --color-text-primary: var(--color-text-primary-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
+    --border-primary: var(--border-primary-dark);
+    --border-secondary: var(--border-secondary-dark);
   }
 }

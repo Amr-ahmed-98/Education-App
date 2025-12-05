@@ -2,7 +2,7 @@ interface TextProps {
   children?: React.ReactNode;
   size: "sm" | "md" | "lg";
   center?: boolean;
-  variant?: "primary" | "secondary" | "gray" | "light";
+  variant?: "primary" | "secondary";
   className?: string;
 }
 
@@ -11,7 +11,7 @@ export default function Text({
   size = "md",
   center = false,
   variant = "primary",
-  className = "pt-2.5 capitalize leading-relaxed font-semibold",
+  className = "pt-2.5 capitalize leading-relaxed font-normal",
   ...props
 }: TextProps) {
   const sizes = {
@@ -20,10 +20,8 @@ export default function Text({
     lg: "text-[18px]",
   };
   const variants = {
-    primary: "text-bg",
-    secondary: "text-dark",
-    gray: "text-gray-500",
-    light: "text-gray",
+    primary: "text-text",
+    secondary: "text-text-alt",
   };
   const centerClass = center ? "text-center" : "";
   const classesHeading = `${sizes[size]}  ${variants[variant]} ${centerClass} ${className}`;
