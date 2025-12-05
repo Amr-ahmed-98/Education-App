@@ -1045,6 +1045,7 @@
       "saveChanges": "Save Changes"
     }
   },
+
   "addCourse": {
     "basicInfo": "Basic Information",
     "content": "Content",
@@ -1096,5 +1097,8 @@
       "fixed": "Fixed",
       "subscription": "Subscription"
     }
+  "instructorProfile":{
+    "title":"Instructor Profile",
+    "text":"Share your background and expertise so learners can get to know you better."
   }
 }
