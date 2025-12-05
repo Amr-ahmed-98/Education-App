@@ -9,7 +9,7 @@ interface TitleProps {
 export default function Title({
   children,
   size = "md",
-  variant = "black",
+  variant = "primary",
   className = "p-0 capitalize font-bold",
   ...props
 }: TitleProps) {
@@ -22,7 +22,7 @@ export default function Title({
     xxxl: "text-[60px]",
   };
   const variants = {
-    white: "text-black",
+    black: "text-black",
     primary: "text-primary",
   };
   const classesHeading = `${sizes[size]}  ${variants[variant]}  ${className}`;
