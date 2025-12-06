@@ -566,3 +566,85 @@ export const pricingOptions = [
   { value: 'fixed', labelKey: 'addCourse.pricingOptions.fixed' },
   { value: 'subscription', labelKey: 'addCourse.pricingOptions.subscription' },
 ];
+
+// Add this to your Data.tsx file
+
+export interface EarningsCard {
+  id: number;
+  labelKey: string;
+  amount: number;
+  icon: any;
+  iconBg: string;
+}
+
+export interface PayoutHistory {
+  id: number;
+  date: string;
+  transactionId: string;
+  amount: number;
+  status: "paid" | "pending" | "processing";
+}
+
+export const earningsCards: EarningsCard[] = [
+  {
+    id: 1,
+    labelKey: "earningsReports.lifetimeEarnings",
+    amount: 12480.50,
+    icon: icon.DollarSign,
+    iconBg: "bg-blue-100 dark:bg-blue-900/30"
+  },
+  {
+    id: 2,
+    labelKey: "earningsReports.thisMonth",
+    amount: 1820.00,
+    icon: icon.Calendar,
+    iconBg: "bg-green-100 dark:bg-green-900/30"
+  },
+  {
+    id: 3,
+    labelKey: "earningsReports.nextPayout",
+    amount: 950.00,
+    icon: icon.Wallet,
+    iconBg: "bg-yellow-100 dark:bg-yellow-900/30"
+  },
+  {
+    id: 4,
+    labelKey: "earningsReports.available",
+    amount: 430.25,
+    icon: icon.CheckCircle,
+    iconBg: "bg-purple-100 dark:bg-purple-900/30"
+  }
+];
+
+export const payoutHistory: PayoutHistory[] = [
+  {
+    id: 1,
+    date: "Mar 15, 2024",
+    transactionId: "PAY-20240315A8B",
+    amount: 950.00,
+    status: "paid"
+  },
+  {
+    id: 2,
+    date: "Feb 15, 2024",
+    transactionId: "PAY-20240215C4D",
+    amount: 1230.75,
+    status: "paid"
+  },
+  {
+    id: 3,
+    date: "Jan 15, 2024",
+    transactionId: "PAY-20240115E9F",
+    amount: 880.25,
+    status: "paid"
+  }
+];
+
+export const last6MonthsEarnings = [
+  { month: "Month 1", amount: 1250 },
+  { month: "Month 2", amount: 1650 },
+  { month: "Month 3", amount: 980 },
+  { month: "Month 4", amount: 1420 },
+  { month: "Month 5", amount: 1820 },
+  { month: "Month 6", amount: 1180 }
+];

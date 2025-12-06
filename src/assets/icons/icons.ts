@@ -73,6 +73,9 @@ import {
   CircleUser,
   ChartNoAxesColumn,
   ChevronDown,
+  DollarSign,
+  Wallet,
+  CheckCircle
   
 } from 'lucide-react';
 
@@ -148,5 +151,8 @@ export {
   Video,
   CircleUser,
   ChartNoAxesColumn,
-  ChevronDown
+  ChevronDown,
+  DollarSign,
+  Wallet,
+  CheckCircle
 };

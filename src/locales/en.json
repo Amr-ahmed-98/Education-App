@@ -1045,7 +1045,6 @@
       "saveChanges": "Save Changes"
     }
   },
-
   "addCourse": {
     "basicInfo": "Basic Information",
     "content": "Content",
@@ -1096,9 +1095,30 @@
       "free": "Free",
       "fixed": "Fixed",
       "subscription": "Subscription"
+    },
+    "instructorProfile": {
+      "title": "Instructor Profile",
+      "text": "Share your background and expertise so learners can get to know you better."
     }
-  "instructorProfile":{
-    "title":"Instructor Profile",
-    "text":"Share your background and expertise so learners can get to know you better."
-  }
+  },
+  "earningsReports": {
+  "title": "Earnings Reports",
+  "subtitle": "Track your sales, revenue, and payouts.",
+  "downloadStatement": "Download Statement",
+  "lifetimeEarnings": "Lifetime Earnings",
+  "thisMonth": "This Month",
+  "nextPayout": "Next Payout",
+  "available": "Available",
+  "earningsOverview": "Earnings Overview",
+  "last6Months": "Last 6 Months",
+  "payoutHistory": "Payout History",
+  "date": "Date",
+  "transactionId": "Transaction ID",
+  "amount": "Amount",
+  "status": "Status",
+  "invoice": "Invoice",
+  "paid": "Paid",
+  "pending": "Pending",
+  "processing": "Processing"
+}
 }
