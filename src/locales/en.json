@@ -798,90 +798,90 @@
     },
     "viewBtn": "View Details"
   },
-  "resetPassword":{
-     "title":"Create New Password",
-     "subtitle":"Please enter your new password below. Make sure it’s strong and secure",
-     "input1":"Enter your password",
-     "input2":"Confirm Password",
-     "text":"password must be least 8 characters, include an uppercase letter and a number ",
-     "btn":"Reset Password"
+  "resetPassword": {
+    "title": "Create New Password",
+    "subtitle": "Please enter your new password below. Make sure it’s strong and secure",
+    "input1": "Enter your password",
+    "input2": "Confirm Password",
+    "text": "password must be least 8 characters, include an uppercase letter and a number ",
+    "btn": "Reset Password"
   },
-  "donePage":{
-    "title":"DONE",
-    "subTitle":"Password reset complete! Use the button below to log in",
-    "btn":"Return to Login"
+  "donePage": {
+    "title": "DONE",
+    "subTitle": "Password reset complete! Use the button below to log in",
+    "btn": "Return to Login"
   },
-  "forgetpassword":{
-    "title":"Forget  Password?",
-    "subtitle":"Don't worry, we'll help you reset it.",
-    "placeholder":"Enter your email",
-    "btn":"Send",
-    "backforward":"Back to Sign In"
+  "forgetpassword": {
+    "title": "Forget  Password?",
+    "subtitle": "Don't worry, we'll help you reset it.",
+    "placeholder": "Enter your email",
+    "btn": "Send",
+    "backforward": "Back to Sign In"
   },
-  "Login":{
-    "left":{
-      "title1":"Hello,",
-      "title2":" Friend!",
-      "subtitle":"Enter Your Personal Details and start journey with Us",
-      "btn":"Sign up"
+  "Login": {
+    "left": {
+      "title1": "Hello,",
+      "title2": " Friend!",
+      "subtitle": "Enter Your Personal Details and start journey with Us",
+      "btn": "Sign up"
     },
-    "right":{
-      "title":"Sign In",
-      "input1":"Enter your email",
-      "input2":"Enter your password",
-      "checkbox":"Remember Me",
-      "forget":"Forget Password?",
-      "btn":"Login",
-      "or":"OR",
-      "method1":"Log in with google",
-      "method2":"Log in with X",
-      "link1":"Don’t have an account ?",
-      "link2":"Sign up"
+    "right": {
+      "title": "Sign In",
+      "input1": "Enter your email",
+      "input2": "Enter your password",
+      "checkbox": "Remember Me",
+      "forget": "Forget Password?",
+      "btn": "Login",
+      "or": "OR",
+      "method1": "Log in with google",
+      "method2": "Log in with X",
+      "link1": "Don’t have an account ?",
+      "link2": "Sign up"
     }
   },
-  "register":{
-    "left":{
-      "title1":"Hello,",
-      "title2":" Friend!",
-      "subtitle":"Enter Your Personal Details and start journey with Us",
-      "btn":"Sign In"
+  "register": {
+    "left": {
+      "title1": "Hello,",
+      "title2": " Friend!",
+      "subtitle": "Enter Your Personal Details and start journey with Us",
+      "btn": "Sign In"
     },
-    "right":{
-      "title1":"Sign up",
-      "btn1":"Student",
-      "btn2":" Instructor!",
-      "input1":"Enter your Name",
-      "input2":"Enter your  email",
-      "input3":"Enter your  password",
-      "agree":"I agree to the processing of Personal data",
-      "submit":"sign up",
-      "text":"sign up with",
-      "method1":"sign up with google",
-      "method2":"sign up with X",
-      "span1":"Already have an account?",
-      "span2":" Sign in"
+    "right": {
+      "title1": "Sign up",
+      "btn1": "Student",
+      "btn2": " Instructor!",
+      "input1": "Enter your Name",
+      "input2": "Enter your  email",
+      "input3": "Enter your  password",
+      "agree": "I agree to the processing of Personal data",
+      "submit": "sign up",
+      "text": "sign up with",
+      "method1": "sign up with google",
+      "method2": "sign up with X",
+      "span1": "Already have an account?",
+      "span2": " Sign in"
     }
   },
-  "otp":{
-    "title":"Verify Your Identity",
-    "subtitle":"We’ve sent a 6-digit code to your email, Please enter it below to verify your account",
-    "text":"This code will expire 60 seconds",
-    "btn1":"Verify",
-    "btn2":"Send again",
-    "message":"Resend: "
+  "otp": {
+    "title": "Verify Your Identity",
+    "subtitle": "We’ve sent a 6-digit code to your email, Please enter it below to verify your account",
+    "text": "This code will expire 60 seconds",
+    "btn1": "Verify",
+    "btn2": "Send again",
+    "message": "Resend: "
   },
-  "messageAlert":{
-    "login":{
-      "successfulText":"You have Successfully Logged In",
-      "successfulTitle":"Successfully Completed",
-      "failText":"Login Failed!",
-      "failTitle":"Error!"
+  "messageAlert": {
+    "login": {
+      "successfulText": "You have Successfully Logged In",
+      "successfulTitle": "Successfully Completed",
+      "failText": "Login Failed!",
+      "failTitle": "Error!"
     },
-    "register":{
-      "successfulText":"The account has been created successfully.",
-      "successfulTitle":"Successfully Completed",
-      "failText":"Failed to create a new account",
-      "failTitle":"Error!"
+    "register": {
+      "successfulText": "The account has been created successfully.",
+      "successfulTitle": "Successfully Completed",
+      "failText": "Failed to create a new account",
+      "failTitle": "Error!"
     }
   },
   "sidebar": {
@@ -1052,8 +1052,42 @@
       "saveChanges": "Save Changes"
     }
   },
-  "instructorProfile":{
-    "title":"Instructor Profile",
-    "text":"Share your background and expertise so learners can get to know you better."
+  "ProfileAdmin": {
+    "heading": {
+      "title": "Instructor Profile",
+      "text": "Share your background and expertise so learners can get to know you better."
+    },
+    "headerProfile": {
+      "title": "Personal Details",
+      "text": "Your name and profile picture.",
+      "label1": "First Name",
+      "label2": "Last Name",
+      "input1": "Frederick",
+      "input2": "Hane"
+    },
+    "bodyProfile": {
+      "title": "Professional Details",
+      "text": "Your headline, expertise, and bio.",
+      "label1": "Professional Headline",
+      "label2": "Specialization / Expertise ",
+      "label3": "Years of Experience",
+      "label4": "Detailed Bio",
+      "input1": "e.g., Senior Web Developer & Mentor",
+      "input": "Web Development",
+      "input3": "e.g., 5",
+      "input4": "Describe your professional background, teaching style, and what learners can expect from your courses..."
+    },
+    "footerProfile": {
+      "title": "Links",
+      "text": "Links to your portfolio and social profiles.",
+      "input1": "https://your-portfolio.com",
+      "input2": "https://linkedin.com/in/username",
+      "input3": "https://twitter.com/username",
+      "label1": "Portfolio URL",
+      "label2": "LinkedIn URL",
+      "label3": "Twitter URL",
+      "btn1": "الغاء",
+      "btn2": "حفظ التغييرات"
+    }
   }
 }

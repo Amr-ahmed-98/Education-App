@@ -8,7 +8,7 @@ function EditProfileStudent() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const fileInputRef = useRef<HTMLInputElement>(null);
-  
+
   const [formData, setFormData] = useState<UserProfile>(defaultUserProfile);
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -18,7 +18,7 @@ function EditProfileStudent() {
   useEffect(() => {
     const savedProfile = localStorage.getItem("userProfile");
     const savedPhoto = localStorage.getItem("userProfilePhoto");
-    
+
     if (savedProfile) {
       try {
         const parsed = JSON.parse(savedProfile);
@@ -27,13 +27,15 @@ function EditProfileStudent() {
         console.error("Error parsing saved profile:", error);
       }
     }
-    
+
     if (savedPhoto) {
       setProfilePhoto(savedPhoto);
     }
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -69,14 +71,18 @@ function EditProfileStudent() {
   const handleSave = () => {
     // Save profile data
     localStorage.setItem("userProfile", JSON.stringify(formData));
-    
+
     // Save password if provided
     if (password.trim()) {
       localStorage.setItem("userPassword", password);
     }
-    
+
     // Show success message (you can use a toast library here)
-    alert(t("editProfile.actions.saveChanges") + " - " + t("editProfile.actions.saveChanges"));
+    alert(
+      t("editProfile.actions.saveChanges") +
+        " - " +
+        t("editProfile.actions.saveChanges")
+    );
   };
 
   const handleCancel = () => {
@@ -96,7 +102,11 @@ function EditProfileStudent() {
   };
 
   return (
-    <div className={`min-h-screen bg-light-secondary dark:bg-dark-primary py-8 px-4 ${isRTL ? 'rtl' : 'ltr'}`}>
+    <div
+      className={`min-h-screen bg-light-secondary dark:bg-dark-primary py-8 px-4 ${
+        isRTL ? "rtl" : "ltr"
+      }`}
+    >
       <div className="container mx-auto max-w-4xl">
         {/* Card Container */}
         <div className="bg-light-primary dark:bg-dark-secondary rounded-2xl shadow-lg p-6 md:p-8 lg:p-10">
@@ -143,7 +153,7 @@ function EditProfileStudent() {
               <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
                 {formData.email}
               </p>
-              
+
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 mt-4 justify-center md:justify-start">
                 <label

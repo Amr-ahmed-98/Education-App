@@ -56,7 +56,6 @@ const AppRouter = createBrowserRouter([
       {path:"/faqs", element: <FAQ />},
       {path:"/instructor", element: <Instructor />},
       {path:"/blogs", element: <Blogs />},
-
     ],
   },
     // Account Template
