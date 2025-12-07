@@ -46,7 +46,6 @@
     },
     "copyright": "Copyright © 2025 Team 1. All rights reserved."
   },
-
   "students": {
     "student1": {
       "text": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ",
@@ -59,7 +58,6 @@
       "track": "Back-End"
     }
   },
-
   "Blogs": {
     "Section1": {
       "title1": "Unlock Your Full",
@@ -67,17 +65,14 @@
       "Description": "Discover hundreds of expert-led courses on development, design, business,and more. Start your learning journey today.",
       "Btn": "Get Started For Free"
     },
-
     "Section2": {
       "Title": "Why Choose Learnify?",
       "Description": "We provide a complete learning environment to help you achieve your goals efficiently."
     },
-
     "Section3": {
       "Title": "Explore Our Most Popular Courses",
       "Description": "Join thousands of students who have started their journey with these featured courses."
     },
-
     "IconDetails": {
       "expertInstructors": {
         "title": "Expert Instructors",
@@ -93,7 +88,6 @@
       }
     }
   },
-
   "BlogDetails": {
     "breadcrumbs": {
       "home": "Home",
@@ -125,7 +119,12 @@
       "date": "Nov 10, 2023",
       "readTime": "8 min read",
       "tags": "TAGS",
-      "tagsList": ["Technology", "Planning", "SEO", "Marketing"]
+      "tagsList": [
+        "Technology",
+        "Planning",
+        "SEO",
+        "Marketing"
+      ]
     },
     "content": {
       "intro": "In the sprawling universe of the internet, content is king. But without a strategic plan, even the most brilliant ideas can get lost in the noise. This guide will walk you through the art and science of content planning, helping you create a roadmap to consistent, high-quality, and engaging blog posts that resonate with your audience.",
@@ -167,7 +166,6 @@
       }
     }
   },
-
   "SectionTitle": {
     "Home": {
       "title1": "Earn Your Quality Skills",
@@ -208,7 +206,6 @@
       "students": "students",
       "instructors": "Created by Dr. Angela Yu"
     },
-
     "CourseDetailsContent": {
       "tabs": {
         "overview": "Overview",
@@ -332,7 +329,6 @@
         }
       }
     },
-
     "ContactMe": {
       "title1": "Contact",
       "title2": "Me",
@@ -356,7 +352,6 @@
       "breadcrumbs3": "Frequently Asked Questions"
     }
   },
-
   "EventDetailsDesc": {
     "date": "Thursday, July 25, 2025",
     "time": "7:00 AM - 10:00 AM",
@@ -386,7 +381,6 @@
     "AddToCart": "Add to Cart",
     "Wishlist": "Add to Wishlist"
   },
-
   "HeroText": {
     "title": "Contact Us",
     "subTitle1": "Learn",
@@ -639,7 +633,6 @@
     "freeCourses": "Free Courses",
     "members": "Members"
   },
-
   "about": {
     "hero": {
       "titleStart": "Unlock Your Potential",
@@ -1052,6 +1045,7 @@
       "saveChanges": "Save Changes"
     }
   },
+
   "ProfileAdmin": {
     "heading": {
       "title": "Instructor Profile",
@@ -1090,4 +1084,82 @@
       "btn2": "حفظ التغييرات"
     }
   }
+
+  "addCourse": {
+    "basicInfo": "Basic Information",
+    "content": "Content",
+    "pricing": "Pricing",
+    "additionalSettings": "Additional Settings",
+    "coverImage": "Cover Image",
+    "dragDrop": "Drag & Drop or upload image here",
+    "imageRecommendation": "Recommended: 1280 x 720, (JPG or PNG only), less than 2 MB",
+    "courseTitle": "Course Title",
+    "courseTitlePlaceholder": "Enter course title here",
+    "shortSummary": "Short Summary",
+    "shortSummaryPlaceholder": "Write a short summary (max 140 characters)",
+    "fullDescription": "Full Description",
+    "fullDescriptionPlaceholder": "Write a full description, including all important details",
+    "categoryLabel": "Category",
+    "selectCategory": "Choose a category",
+    "levelLabel": "Level",
+    "uploadVideos": "Upload Course Videos",
+    "addMaterials": "Add Course Materials",
+    "priceLabel": "Price",
+    "pricePlaceholder": "Enter price (EGP)",
+    "promoCode": "Discount / Promo codes (Optional)",
+    "promoCodePlaceholder": "Enter discount code",
+    "languageLabel": "Language",
+    "selectLanguage": "Language",
+    "subtitles": "Subtitles",
+    "courseDuration": "Course Duration",
+    "courseDurationPlaceholder": "Enter course duration",
+    "schedule": "Schedule",
+    "selectDate": "Choose a date",
+    "saveAsDraft": "Save as Draft",
+    "publishCourse": "Publish Course",
+    "level": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "category": {
+      "development": "Development",
+      "design": "Design",
+      "business": "Business"
+    },
+    "language": {
+      "english": "English",
+      "arabic": "Arabic"
+    },
+    "pricingOptions": {
+      "free": "Free",
+      "fixed": "Fixed",
+      "subscription": "Subscription"
+    },
+    "instructorProfile": {
+      "title": "Instructor Profile",
+      "text": "Share your background and expertise so learners can get to know you better."
+    }
+  },
+  "earningsReports": {
+  "title": "Earnings Reports",
+  "subtitle": "Track your sales, revenue, and payouts.",
+  "downloadStatement": "Download Statement",
+  "lifetimeEarnings": "Lifetime Earnings",
+  "thisMonth": "This Month",
+  "nextPayout": "Next Payout",
+  "available": "Available",
+  "earningsOverview": "Earnings Overview",
+  "last6Months": "Last 6 Months",
+  "payoutHistory": "Payout History",
+  "date": "Date",
+  "transactionId": "Transaction ID",
+  "amount": "Amount",
+  "status": "Status",
+  "invoice": "Invoice",
+  "paid": "Paid",
+  "pending": "Pending",
+  "processing": "Processing"
+
+}
 }
