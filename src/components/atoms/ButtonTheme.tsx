@@ -28,7 +28,7 @@ export default function ButtonTheme() {
           className={`
             w-12 h-12 rounded-full flex items-center justify-center shadow-md
             transition-all duration-500
-            absolute
+            absolute 
             ${isDark ? "translate-y-10" : "-translate-y-10"}
             ${isDark ? "bg-primary-200" : "bg-secondary"}
           `}
