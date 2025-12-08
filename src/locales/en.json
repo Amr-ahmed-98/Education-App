@@ -1128,11 +1128,11 @@
       "free": "Free",
       "fixed": "Fixed",
       "subscription": "Subscription"
-    },
-    "instructorProfile": {
-      "title": "Instructor Profile",
-      "text": "Share your background and expertise so learners can get to know you better."
     }
+  },
+  "instructorProfile": {
+    "title": "Instructor Profile",
+    "text": "Share your background and expertise so learners can get to know you better."
   },
   "earningsReports": {
     "title": "Earnings Reports",
