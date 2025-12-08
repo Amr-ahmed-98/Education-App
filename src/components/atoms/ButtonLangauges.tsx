@@ -1,4 +1,3 @@
-import * as Icons from "./../../assets/icons/icons";
 import { useLanguage } from "../../hooks/useLanguage";
 import { useTranslation } from "react-i18next";
 import type { JSX } from "react";
@@ -14,9 +13,8 @@ function ButtonLanguages(): JSX.Element {
   return (
     <button
       onClick={toggleLang}
-      className="flex items-center text-primary gap-1 px-3 py-2 rounded-lg bg-light-secondary border-1 border-primary dark:bg-dark-primary text-light cursor-pointer text-sm"
+      className="bg-[#3972FF] text-white fixed right-6 bottom-6 h-14 w-14 cursor-pointer justify-center rounded-full text-sm font-medium shadow-md transition-all duration-200 hover:shadow-lg"
     >
-      <Icons.GlobeAltIcon className="w-5 h-5" />
       {i18n.language === "en" ? "Ar" : "En"}
     </button>
   );

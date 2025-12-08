@@ -1,15 +1,13 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Routes } from "./../../routes/Routes";
 import { useTranslation } from "react-i18next";
-import ButtonTheme from "../atoms/ButtonTheme";
 import * as Icons from "./../../assets/icons/icons";
-import ButtonLanguages from "../atoms/ButtonLangauges";
 import Button from "../atoms/Button";
 import { useProfile } from "@/features/auth/hooks/useProfile";
 import { useLotout } from "@/features/auth/hooks/useLogout";
 import { ENV } from "@/config/env";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 function Navbar() {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -40,11 +38,13 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   });
-  const firstLetter = profile?.email ? profile.email.charAt(0).toUpperCase() : "?";
+  const firstLetter = profile?.email
+    ? profile.email.charAt(0).toUpperCase()
+    : "?";
   return (
     <div
       id="navbar"
-      className={`w-full h-[80px] bg-light-primary dark:bg-dark-primary
+      className={`w-full h-20 bg-light-primary dark:bg-dark-primary
     flex items-center justify-between bg-light  md:px-16 sm:px-10 px-4 fixed top-0 
     transition-all ease-in-out duration-300 z-50 border-b border-neutral-200 dark:border-dark-secondary
     ${
@@ -109,7 +109,7 @@ function Navbar() {
         {/*Divider */}
         <div className="border-b border-neutral-300  dark:border-b-cyan-950 md:hidden"></div>
         {/*Navbar Items and button */}
-        <div className="flex-1 flex items-center  flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-0">
+        <div className="flex-1 flex items-center  flex-col md:flex-row  justify-between gap-6 p-6 md:p-0">
           {/* Navbar Items */}
           <ul
             className="flex flex-col md:flex-row items-center mx-auto 
@@ -141,10 +141,8 @@ function Navbar() {
                           key={sub.id}
                           className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
-                          <Link 
-                          to={sub.path}
-                          onClick={closeNavbar} 
-                          >{t(sub.key)}
+                          <Link to={sub.path} onClick={closeNavbar}>
+                            {t(sub.key)}
                           </Link>
                         </li>
                       ))}
@@ -153,7 +151,7 @@ function Navbar() {
                 ) : (
                   <Link
                     to={item.path}
-                      onClick={closeNavbar}
+                    onClick={closeNavbar}
                     className={`hover:text-primary duration-300 ${
                       location.pathname === item.path ? "text-primary" : ""
                     }`}
@@ -164,21 +162,19 @@ function Navbar() {
               </li>
             ))}
           </ul>
-        
+
           {/*Right side buttons*/}
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <ButtonTheme />
-            <ButtonLanguages />
-            <Link 
-            to="cart"
-            >  <Icons.ShoppingCart />
+            <Link to="cart">
+              {" "}
+              <Icons.ShoppingCart />
             </Link>
-                    <Link 
-            to="wishlist"
-            >  <Icons.Heart />
+            <Link to="wishlist">
+              {" "}
+              <Icons.Heart />
             </Link>
-        
-  {/* ✅ لو فيه توكن */}
+
+            {/* ✅ لو فيه توكن */}
             {token && !isLoading && profile ? (
               <div className="relative">
                 <div
@@ -208,16 +204,15 @@ function Navbar() {
                     >
                       Dashboard
                     </Link>
-                  
+
                     <Button
-                    variant="outline2"
+                      variant="outline2"
                       onClick={logout}
                       className="w-full"
-                      >
- Logout
+                    >
+                      Logout
                     </Button>
                   </div>
-                  
                 )}
               </div>
             ) : (

@@ -111,6 +111,9 @@ html.light {
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-primary-200 {
+    background-color: var(--color-primary-200);
+  }
   .bg-secondary {
     background-color: var(--color-secondary);
   }
