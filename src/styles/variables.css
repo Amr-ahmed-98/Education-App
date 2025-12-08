@@ -5,7 +5,7 @@
 @layer theme {
   :root {
     /* Brand Colors */
-    --color-primary: #3972ff;
+    --color-primary: #252e74;
     --color-secondary: #ee4a62;
     --color-bg: #ffffff;
     --color-bg-alt: #f0f4f5;
@@ -13,6 +13,7 @@
     /* Text Colors   */
     --color-text-primary: #272626;
     --color-text-secondary: #6b7280;
+    --color-text-gary: #d1d5dc;
 
     /* borders */
     --border-primary: #e5e7eb;
@@ -30,6 +31,7 @@
     --border-secondary-dark: #eeeef0;
     --color-bg-dark: #1c242f;
     --color-bg-alt-dark: #1f2937;
+    --color-text-gary-dark: #1f2937;
 
     /* Border Radius */
     --radius-sm: 4px;
@@ -69,5 +71,6 @@
     --color-text-secondary: var(--color-text-secondary-dark);
     --border-primary: var(--border-primary-dark);
     --border-secondary: var(--border-secondary-dark);
+    --color-text-gary: var(--color-text-gary-dark);
   }
 }

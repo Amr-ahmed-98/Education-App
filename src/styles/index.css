@@ -133,6 +133,9 @@ html.light {
   .border-secondary {
     border-color: var(--border-secondary);
   }
+  .text-gray {
+    color: var(--color-text-gary);
+  }
 
   /* Radius Utilities */
   .rounded-sm {
