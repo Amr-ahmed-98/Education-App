@@ -17,7 +17,7 @@ export default function Input({
         <label className="text-text-alt font-medium text-md">{label}</label>
       )}
 
-      <div className="flex items-center gap-3 w-full border border-primary rounded-xl px-4 py-3 my-2 bg-light shadow-sm  transition">
+      <div className="flex items-center gap-3 w-full border border-primary rounded-md px-4 py-3 my-2 bg-light shadow-sm  transition">
         {/* Icon inside the input */}
         {icon && <span className="text-text-alt text-xl">{icon}</span>}
 

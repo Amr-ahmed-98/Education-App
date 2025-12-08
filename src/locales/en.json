@@ -119,12 +119,7 @@
       "date": "Nov 10, 2023",
       "readTime": "8 min read",
       "tags": "TAGS",
-      "tagsList": [
-        "Technology",
-        "Planning",
-        "SEO",
-        "Marketing"
-      ]
+      "tagsList": ["Technology", "Planning", "SEO", "Marketing"]
     },
     "content": {
       "intro": "In the sprawling universe of the internet, content is king. But without a strategic plan, even the most brilliant ideas can get lost in the noise. This guide will walk you through the art and science of content planning, helping you create a roadmap to consistent, high-quality, and engaging blog posts that resonate with your audience.",
@@ -1045,6 +1040,44 @@
       "saveChanges": "Save Changes"
     }
   },
+  "ProfileAdmin": {
+    "heading": {
+      "title": "Instructor Profile",
+      "text": "Share your background and expertise so learners can get to know you better."
+    },
+    "headerProfile": {
+      "title": "Personal Details",
+      "text": "Your name and profile picture.",
+      "label1": "First Name",
+      "label2": "Last Name",
+      "input1": "Frederick",
+      "input2": "Hane"
+    },
+    "bodyProfile": {
+      "title": "Professional Details",
+      "text": "Your headline, expertise, and bio.",
+      "label1": "Professional Headline",
+      "label2": "Specialization / Expertise ",
+      "label3": "Years of Experience",
+      "label4": "Detailed Bio",
+      "input1": "e.g., Senior Web Developer & Mentor",
+      "input": "Web Development",
+      "input3": "e.g., 5",
+      "input4": "Describe your professional background, teaching style, and what learners can expect from your courses..."
+    },
+    "footerProfile": {
+      "title": "Links",
+      "text": "Links to your portfolio and social profiles.",
+      "input1": "https://your-portfolio.com",
+      "input2": "https://linkedin.com/in/username",
+      "input3": "https://twitter.com/username",
+      "label1": "Portfolio URL",
+      "label2": "LinkedIn URL",
+      "label3": "Twitter URL",
+      "btn1": "الغاء",
+      "btn2": "حفظ التغييرات"
+    }
+  },
   "addCourse": {
     "basicInfo": "Basic Information",
     "content": "Content",
@@ -1095,30 +1128,30 @@
       "free": "Free",
       "fixed": "Fixed",
       "subscription": "Subscription"
-    },
-    "instructorProfile": {
-      "title": "Instructor Profile",
-      "text": "Share your background and expertise so learners can get to know you better."
     }
   },
+  "instructorProfile": {
+    "title": "Instructor Profile",
+    "text": "Share your background and expertise so learners can get to know you better."
+  },
   "earningsReports": {
-  "title": "Earnings Reports",
-  "subtitle": "Track your sales, revenue, and payouts.",
-  "downloadStatement": "Download Statement",
-  "lifetimeEarnings": "Lifetime Earnings",
-  "thisMonth": "This Month",
-  "nextPayout": "Next Payout",
-  "available": "Available",
-  "earningsOverview": "Earnings Overview",
-  "last6Months": "Last 6 Months",
-  "payoutHistory": "Payout History",
-  "date": "Date",
-  "transactionId": "Transaction ID",
-  "amount": "Amount",
-  "status": "Status",
-  "invoice": "Invoice",
-  "paid": "Paid",
-  "pending": "Pending",
-  "processing": "Processing"
-}
+    "title": "Earnings Reports",
+    "subtitle": "Track your sales, revenue, and payouts.",
+    "downloadStatement": "Download Statement",
+    "lifetimeEarnings": "Lifetime Earnings",
+    "thisMonth": "This Month",
+    "nextPayout": "Next Payout",
+    "available": "Available",
+    "earningsOverview": "Earnings Overview",
+    "last6Months": "Last 6 Months",
+    "payoutHistory": "Payout History",
+    "date": "Date",
+    "transactionId": "Transaction ID",
+    "amount": "Amount",
+    "status": "Status",
+    "invoice": "Invoice",
+    "paid": "Paid",
+    "pending": "Pending",
+    "processing": "Processing"
+  }
 }

@@ -573,7 +573,7 @@ export interface EarningsCard {
   id: number;
   labelKey: string;
   amount: number;
-  icon: any;
+  icon: unknown;
   iconBg: string;
 }
 

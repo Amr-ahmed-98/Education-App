@@ -84,7 +84,7 @@ const EarningsReports: React.FC = () => {
             size: 12
           },
           color: '#9ca3af',
-          callback: (value: any) => `$${value}`
+          callback: (value: unknown) => `$${value}`
         },
         beginAtZero: true
       }

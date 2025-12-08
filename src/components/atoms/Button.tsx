@@ -2,13 +2,18 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { Link } from "react-router-dom";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
-  variant?: "primary" | "secondary" | "outline1" | "outline2" | "ghost";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "outline1"
+    | "outline2"
+    | "ghost"
+    | "white";
   size?: "sm" | "md" | "lg" | "xl";
   loading?: boolean;
   fullWidth?: boolean;
   path?: string;
   center?: boolean;
-  
 }
 
 const Button = ({
@@ -39,6 +44,8 @@ const Button = ({
       "border-2 border-[#EE4A62] text-[#EE4A62]  capitalize focus:ring-blue-500 cursor-pointer",
     ghost:
       "text-[#00B7C1] hover:bg-blue-50 focus:ring-blue-500 capitalize cursor-pointer",
+    white:
+      "bg-white text-bg dark:text-black  capitalize focus:white cursor-pointer",
   };
   const sizes = {
     sm: "px-3 py-1.5 text-sm",
@@ -58,15 +65,14 @@ const Button = ({
       disabled={disabled || loading}
       onClick={onClick}
       {...props}
-      >
-        {children}
+    >
+      {children}
     </button>
   );
 
-
   return (
-     <div className={center ? "flex justify-center" : ""}>
-     {path ? <Link to={path}>{content}</Link> : content }
+    <div className={center ? "flex justify-center" : ""}>
+      {path ? <Link to={path}>{content}</Link> : content}
     </div>
   );
 };
