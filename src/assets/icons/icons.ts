@@ -1,19 +1,19 @@
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { PiCertificateBold } from 'react-icons/pi';
-import { MdGroups, MdLightbulbOutline } from 'react-icons/md';
-import { CiCalendarDate, CiLocationOn } from 'react-icons/ci';
-import { TbClockHour4 } from 'react-icons/tb';
-import { BsGrid3X3 } from 'react-icons/bs';
-import { FaBars, FaChartLine ,FaXTwitter } from 'react-icons/fa6';
+import { GlobeAltIcon } from "@heroicons/react/24/outline";
+import { PiCertificateBold } from "react-icons/pi";
+import { MdGroups, MdLightbulbOutline } from "react-icons/md";
+import { CiCalendarDate, CiLocationOn } from "react-icons/ci";
+import { TbClockHour4 } from "react-icons/tb";
+import { BsGrid3X3 } from "react-icons/bs";
+import { FaBars, FaChartLine, FaXTwitter } from "react-icons/fa6";
 import {
   IoPeople,
   IoShieldCheckmarkSharp,
   IoCheckmarkCircleOutline,
   IoLogoFacebook,
-} from 'react-icons/io5';
-import { BiSmile } from 'react-icons/bi';
-import { IoMdTrendingUp } from 'react-icons/io';
-import { SiNextra } from 'react-icons/si';
+} from "react-icons/io5";
+import { BiSmile } from "react-icons/bi";
+import { IoMdTrendingUp } from "react-icons/io";
+import { SiNextra } from "react-icons/si";
 
 import {
   FaInstagramSquare,
@@ -29,7 +29,7 @@ import {
   FaStar,
   FaBookOpen,
   FaGoogle,
-  } from 'react-icons/fa';
+} from "react-icons/fa";
 
 import {
   AlignLeft,
@@ -59,25 +59,25 @@ import {
   CreditCard,
   FileVideoCamera,
   LockKeyhole,
-  EyeOff ,
-  Eye  ,
-  Mail ,
+  EyeOff,
+  Eye,
+  Mail,
   ArrowLeft,
   BookCopy,
   Bell,
   Trash2,
   Phone,
   Camera,
-  CirclePlus ,
-  Video ,
+  CirclePlus,
+  Video,
   CircleUser,
   ChartNoAxesColumn,
   ChevronDown,
   DollarSign,
   Wallet,
-  CheckCircle
-  
-} from 'lucide-react';
+  CheckCircle,
+  Sun,
+} from "lucide-react";
 
 export {
   LucideInfinity,
@@ -86,6 +86,7 @@ export {
   X,
   SunMedium,
   Moon,
+  Sun,
   Facebook,
   Angry,
   LockKeyhole,
@@ -136,13 +137,13 @@ export {
   ShoppingCart,
   Heart,
   CreditCard,
-  EyeOff ,
-  Eye  ,
+  EyeOff,
+  Eye,
   Mail,
-  ArrowLeft ,
+  ArrowLeft,
   FaGoogle,
   FaXTwitter,
-  BookCopy , 
+  BookCopy,
   Bell,
   Trash2,
   Phone,
@@ -154,5 +155,5 @@ export {
   ChevronDown,
   DollarSign,
   Wallet,
-  CheckCircle
+  CheckCircle,
 };
