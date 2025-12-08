@@ -119,12 +119,7 @@
       "date": "Nov 10, 2023",
       "readTime": "8 min read",
       "tags": "TAGS",
-      "tagsList": [
-        "Technology",
-        "Planning",
-        "SEO",
-        "Marketing"
-      ]
+      "tagsList": ["Technology", "Planning", "SEO", "Marketing"]
     },
     "content": {
       "intro": "In the sprawling universe of the internet, content is king. But without a strategic plan, even the most brilliant ideas can get lost in the noise. This guide will walk you through the art and science of content planning, helping you create a roadmap to consistent, high-quality, and engaging blog posts that resonate with your audience.",
@@ -1045,7 +1040,6 @@
       "saveChanges": "Save Changes"
     }
   },
-<<<<<<< HEAD
   "ProfileAdmin": {
     "heading": {
       "title": "Instructor Profile",
@@ -1083,8 +1077,7 @@
       "btn1": "الغاء",
       "btn2": "حفظ التغييرات"
     }
-  }
-=======
+  },
   "addCourse": {
     "basicInfo": "Basic Information",
     "content": "Content",
@@ -1142,24 +1135,23 @@
     }
   },
   "earningsReports": {
-  "title": "Earnings Reports",
-  "subtitle": "Track your sales, revenue, and payouts.",
-  "downloadStatement": "Download Statement",
-  "lifetimeEarnings": "Lifetime Earnings",
-  "thisMonth": "This Month",
-  "nextPayout": "Next Payout",
-  "available": "Available",
-  "earningsOverview": "Earnings Overview",
-  "last6Months": "Last 6 Months",
-  "payoutHistory": "Payout History",
-  "date": "Date",
-  "transactionId": "Transaction ID",
-  "amount": "Amount",
-  "status": "Status",
-  "invoice": "Invoice",
-  "paid": "Paid",
-  "pending": "Pending",
-  "processing": "Processing"
->>>>>>> 8a94404d44e1dfec90da0ef7caa18fe0263e29db
-}
+    "title": "Earnings Reports",
+    "subtitle": "Track your sales, revenue, and payouts.",
+    "downloadStatement": "Download Statement",
+    "lifetimeEarnings": "Lifetime Earnings",
+    "thisMonth": "This Month",
+    "nextPayout": "Next Payout",
+    "available": "Available",
+    "earningsOverview": "Earnings Overview",
+    "last6Months": "Last 6 Months",
+    "payoutHistory": "Payout History",
+    "date": "Date",
+    "transactionId": "Transaction ID",
+    "amount": "Amount",
+    "status": "Status",
+    "invoice": "Invoice",
+    "paid": "Paid",
+    "pending": "Pending",
+    "processing": "Processing"
+  }
 }
