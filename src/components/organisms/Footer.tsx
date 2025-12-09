@@ -59,7 +59,7 @@ function Footer() {
 
         <div className="text-white text-2xl ">
           <h2 className="mb-5">{t("footer.linksTitle")}</h2>
-          <ul className="text-gray text-base flex gap-1 flex-col">
+          <ul className="text-gray  text-base flex gap-1 flex-col">
             <Link to="/">{t("footer.links.pages")}</Link>
             <Link to="/">{t("footer.links.blogs")}</Link>
             <Link to="/">{t("footer.links.events")}</Link>
