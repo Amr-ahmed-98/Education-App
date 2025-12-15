@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeContextDefinition";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import SlideInOnScroll from '../../animation/GetX';
 // interface TitlePart {
 //   text: string;

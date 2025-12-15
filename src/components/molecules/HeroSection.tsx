@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import * as img from "../../assets/images/images";
 import {motion} from "framer-motion";
 import { fadeIn } from "./../../animation/FadeIn";

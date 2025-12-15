@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import * as icon from "@/assets/icons/icons";
 import { defaultUserProfile, type UserProfile } from "@/utils/Data";
-import Button from "@/components/atoms/Button";
+import {Button} from "@/components/atoms/Button";
 
 function EditProfileStudent() {
   const { t, i18n } = useTranslation();

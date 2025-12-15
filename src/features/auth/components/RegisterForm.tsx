@@ -1,7 +1,7 @@
 // src/components/auth/RegisterForm.tsx
 import React, { useState } from "react";
 import { useRegister } from "../hooks/useRegister";
-import Button from "@/components/atoms/Button";
+import {Button} from "@/components/atoms/Button";
 import { useTranslation } from "react-i18next";
 import * as img from '../../../assets/images/images';
 import * as icon from '../../../assets/icons/icons';

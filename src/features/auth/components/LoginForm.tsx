@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
 import { useTranslation } from "react-i18next";
-import Button from "@/components/atoms/Button";
+import {Button} from "@/components/atoms/Button";
 import * as img from '../../../assets/images/images';
 import * as icon from '../../../assets/icons/icons';
 import { Link } from "react-router-dom";
