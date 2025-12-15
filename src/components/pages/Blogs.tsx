@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import IconDetails from "../molecules/IconDetails";
 import * as icons from "@/assets/icons/icons";
 import * as images from "@/assets/images/images";

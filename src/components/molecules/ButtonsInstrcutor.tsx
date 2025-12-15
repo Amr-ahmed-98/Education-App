@@ -1,4 +1,4 @@
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 
 interface ButtonsInstructorProps {
   btn1: string;

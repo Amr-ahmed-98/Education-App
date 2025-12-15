@@ -1,5 +1,5 @@
 
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import { fadeIn } from "@/animation/FadeIn";
 import GetX from '@/animation/GetX';
 import {motion} from "framer-motion";

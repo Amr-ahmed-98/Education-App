@@ -1,4 +1,4 @@
-import Button from "../atoms/Button"
+import {Button} from "../atoms/Button"
 import * as Icons from "../../assets/icons/icons"
 import { eventsListEn } from "@/utils/Data"
 import { useEffect, useState } from "react"

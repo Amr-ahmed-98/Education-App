@@ -1,7 +1,6 @@
 
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import GetX from '@/animation/GetX';
-import SlideInOnScroll from '@/animation/GetX';
 interface SideTextProps{
     title?: string,
     subtitle1?: string ,

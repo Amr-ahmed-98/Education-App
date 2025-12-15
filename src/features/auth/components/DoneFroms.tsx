@@ -1,7 +1,7 @@
 
 import * as icon from '../../../assets/icons/icons';
 import { useTranslation } from 'react-i18next';
-import Button from '@/components/atoms/Button';
+import {Button} from '@/components/atoms/Button';
 export function DoneForm() {
     const { t } = useTranslation();
   return (

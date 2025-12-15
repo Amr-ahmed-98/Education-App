@@ -240,7 +240,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ListMinus, X, ChevronDown } from "lucide-react";
 import { Routes } from "../../routes/Routes";
-import Button from "../atoms/Button";
+import {Button}  from "../atoms/Button";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

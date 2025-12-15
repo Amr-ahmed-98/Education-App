@@ -1,4 +1,4 @@
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import * as Icons from "../../assets/icons/icons";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
