@@ -31,22 +31,26 @@ function Home() {
           imageRight={true} // لو خليتها true هتبدل مكان النص مع الصورة
         
         />
-        <div className=" bg-[linear-gradient(210deg,#4775C1_0%,#5184D5_0%,#9BBdF5_40%,#AECDFD_70%,#5184D5_100%)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
-          <div 
-          className="
-          container flex overflow-x-auto space-x-2 px-4 py-2 
-    lg:grid lg:grid-cols-4 lg:space-x-0 lg:overflow-visible"
-   
-    >
-            {ItemCard.map((item) => (
-              <BannerCard
-                key={item.id}
-                icon={item.icon}
-                label={t(item.labelKey)}
-              />
-            ))}
-          </div>
-        </div>
+       <div className="bg-[var(--gradient-hero)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
+  <div
+    className="
+      container
+      flex gap-3 overflow-x-auto py-3
+      scrollbar-thin
+      lg:grid lg:grid-cols-4 lg:overflow-visible
+    "
+  >
+    {ItemCard.map((item) => (
+      <BannerCard
+        key={item.id}
+        icon={item.icon}
+        value={item.value} 
+        label={t(item.labelKey)}
+      />
+    ))}
+  </div>
+</div>
+
       </div>
       <div 
       className="container"
