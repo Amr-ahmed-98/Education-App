@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/FadeIn";
 
 interface BannerCardProps {
-  value?: string;          
-  label?: string;            
+  value?: string | number;
+  label?: string;
   icon?: React.ReactNode;
 }
 
