@@ -5,7 +5,8 @@
 @layer theme {
   :root {
     /* Brand Colors */
-    --color-primary: #252e74;
+    --color-primary: #4a69e2;
+    --color-footer: #252e74;
     --color-primary-200: #6673d5;
     --color-secondary: #ee4a62;
     --color-bg: #ffffff;
@@ -15,6 +16,7 @@
     --color-text-primary: #272626;
     --color-text-secondary: #6b7280;
     --color-text-gary: #d1d5dc;
+    --color-text-gary-footer: #d1d5dc;
 
     /* borders */
     --border-primary: #e5e7eb;
@@ -35,7 +37,7 @@
     --color-text-gary-dark: #1f2937;
 
     /* Border Radius */
-    --radius-sm: 4px;
+    --radius-sm: 7px;
     --radius-md: 10px;
     --radius-lg: 16px;
     --radius-xlg: 20px;
