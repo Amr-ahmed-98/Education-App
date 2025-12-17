@@ -17,7 +17,6 @@ const BannerCard: React.FC<BannerCardProps> = ({ value, label, icon }) => {
       viewport={{ once: false, amount: 0.7 }}
       className="
         flex items-center gap-3
-        whitespace-nowrap
         rounded-full
         bg-white/55 dark:bg-white/10
         px-4 py-3
@@ -28,6 +27,7 @@ const BannerCard: React.FC<BannerCardProps> = ({ value, label, icon }) => {
         className="
           grid place-items-center
           size-10 md:size-12
+          flex-shrink-0
           rounded-full
           bg-primary/10 dark:bg-white/10
           text-primary dark:text-white
@@ -43,5 +43,6 @@ const BannerCard: React.FC<BannerCardProps> = ({ value, label, icon }) => {
     </motion.div>
   );
 };
+
 
 export default BannerCard;

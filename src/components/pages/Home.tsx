@@ -31,13 +31,13 @@ function Home() {
           imageRight={true} // لو خليتها true هتبدل مكان النص مع الصورة
         
         />
-       <div className="bg-[var(--gradient-hero)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
+      <div className="bg-[var(--gradient-hero)] dark:bg-[linear-gradient(210deg,#002766_0%,#3C5B8C_0%,#002766_40%)]">
   <div
     className="
       container
-      flex gap-3 overflow-x-auto py-3
-      scrollbar-thin
-      lg:grid lg:grid-cols-4 lg:overflow-visible
+      flex flex-col gap-3 py-3
+      md:grid md:grid-cols-2
+      lg:grid-cols-4
     "
   >
     {ItemCard.map((item) => (
@@ -50,6 +50,7 @@ function Home() {
     ))}
   </div>
 </div>
+
 
       </div>
       <div 
