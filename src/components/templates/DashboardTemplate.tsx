@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../organisms/Navbar";
 import SidebarInstructor from "../organisms/SidebarInstructor";
-import ButtonLanguages from "../atoms/ButtonLangauges";
 
 export default function DashboardTemplate() {
   return (
@@ -11,7 +10,6 @@ export default function DashboardTemplate() {
         <div className="flex gap-6">
           <SidebarInstructor />
           <div className="flex-1 min-w-0">
-            <ButtonLanguages />
             <Outlet />
           </div>
         </div>
