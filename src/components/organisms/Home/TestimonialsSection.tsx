@@ -1,5 +1,5 @@
 
-import Button from "../../atoms/Button";
+import {Button} from "../../atoms/Button";
 import CardSec from './CardSec';
 import { useTranslation } from "react-i18next";
 import { Students } from "../../../utils/Data";

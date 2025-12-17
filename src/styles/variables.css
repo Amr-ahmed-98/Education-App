@@ -5,7 +5,7 @@
 @layer theme {
   :root {
     /* Brand Colors */
-    --color-primary: #3972ff;
+    --color-primary: #4a69e2;
     --color-footer: #252e74;
     --color-primary-200: #6673d5;
     --color-secondary: #ee4a62;
@@ -37,7 +37,7 @@
     --color-text-gary-dark: #1f2937;
 
     /* Border Radius */
-    --radius-sm: 4px;
+    --radius-sm: 7px;
     --radius-md: 10px;
     --radius-lg: 16px;
     --radius-xlg: 20px;

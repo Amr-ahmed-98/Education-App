@@ -134,7 +134,7 @@ const EarningsReports: React.FC = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className={`${card.iconBg} p-3 md:p-4 rounded-xl md:rounded-2xl`}>
-                    <Icon className="w-6 h-6 md:w-8 md:h-8 text-primary" />
+                    {React.createElement(Icon as React.ElementType, { className: "w-6 h-6 md:w-8 md:h-8 text-primary" })}
                   </div>
                   <div className="flex-1">
                     <p className="text-text-grayDark dark:text-text-grayLight text-xs md:text-sm mb-1">

@@ -10,10 +10,11 @@ import BannerCard from "../organisms/Home/BannerCard";
 import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
 import TitleCourse from "./../molecules/TitleCourse";
-import Button from "../atoms/Button";
+import {Button} from "../atoms/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "./../../animation/FadeIn";
 import GetX from '../../animation/GetX';
+import { redirect } from "react-router-dom";
 function Home() {
   const { t } = useTranslation();
   return (
@@ -25,7 +26,7 @@ function Home() {
           title3={t("HeroHome.title3")}
           title4={t("HeroHome.title4")}
           description={t("HeroHome.description")}
-          primaryButton={{ text: t("HeroHome.btn"), href: "/register" }}
+          primaryButton={{ text: t("HeroHome.btn"), onClick : ()=>{redirect('/register')} }}
           image={img.HomeHero}
           imageRight={true} // لو خليتها true هتبدل مكان النص مع الصورة
         
