@@ -26,6 +26,7 @@ export interface Course {
   category?: string;
   reviewCount?: number;
   totalRatings?: number;
+  students?: string;
 }
 
 export interface CourseCardProps {

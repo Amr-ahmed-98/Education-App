@@ -86,78 +86,135 @@ function Home() {
           ]}
         />
       </div>
-      <div id="courses" className="bg-[#C4DBFF]  dark:bg-[#020B17] py-[70px]">
-        <motion.div className="container"
-         variants={fadeIn({ direction: "down", delay: 0.4 })}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.5 }}
-        >
-         <TitleCourse
-        title1={t("titleCard.title1")} 
-        title2={t("titleCard.title2")} 
-        title3={t("titleCard.title3")} 
-        title4={t("titleCard.title4")} 
-        />
-        </motion.div>
-      <div className="flex flex-col sm:flex-col lg:flex-row container gap-5"
-      
-      >
-     <GetX>
-        <Cart className="dark:bg-[#1C242F]"
+      <div id="courses" className="bg-[#C4DBFF] dark:bg-[#020B17] py-[70px]">
+  <div className="container">
+    {/* Top Categories Label */}
+    <motion.div
+      className="text-center mb-4"
+      variants={fadeIn({ direction: "down", delay: 0.2 })}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <p className="text-secondary text-sm md:text-base font-medium uppercase tracking-wide">
+        {t("titleCard.title1")} {t("titleCard.title2")}
+      </p>
+    </motion.div>
+
+    {/* Main Heading */}
+    <motion.div
+      className="mb-8"
+      variants={fadeIn({ direction: "down", delay: 0.4 })}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#272626] dark:text-[#f1f1f3] mb-6">
+        {t("titleCard.title3")} <br className="hidden sm:block" />
+        {t("titleCard.title4")}
+      </h2>
+    </motion.div>
+
+    {/* Category Pills */}
+    <motion.div
+      className="flex flex-wrap justify-center items-center gap-3 mb-12"
+      variants={fadeIn({ direction: "up", delay: 0.3 })}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+    >
+      <button className="px-5 py-2.5 bg-white dark:bg-[#1C242F] text-[#272626] dark:text-[#f1f1f3] rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-[#252e3a] transition-all duration-300 shadow-sm">
+        Data Science
+      </button>
+      <button className="px-5 py-2.5 bg-white dark:bg-[#1C242F] text-[#272626] dark:text-[#f1f1f3] rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-[#252e3a] transition-all duration-300 shadow-sm">
+        Leadership
+      </button>
+      <button className="px-5 py-2.5 bg-white dark:bg-[#1C242F] text-[#272626] dark:text-[#f1f1f3] rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-[#252e3a] transition-all duration-300 shadow-sm">
+        Web Development
+      </button>
+      <button className="px-5 py-2.5 bg-white dark:bg-[#1C242F] text-[#272626] dark:text-[#f1f1f3] rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-[#252e3a] transition-all duration-300 shadow-sm">
+        Communication
+      </button>
+      <button className="px-5 py-2.5 bg-[#4a69e2] text-white rounded-full text-sm font-medium hover:bg-[#3958d1] transition-all duration-300 shadow-sm">
+        Marketing
+      </button>
+      <button className="px-5 py-2.5 bg-white dark:bg-[#1C242F] text-[#272626] dark:text-[#f1f1f3] rounded-full text-sm font-medium hover:bg-gray-100 dark:hover:bg-[#252e3a] transition-all duration-300 shadow-sm">
+        Intelligence
+      </button>
+      <button className="w-10 h-10 flex items-center justify-center bg-[#4a69e2] text-white rounded-full hover:bg-[#3958d1] transition-all duration-300 shadow-sm">
+        →
+      </button>
+    </motion.div>
+
+    {/* Course Cards Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <GetX>
+        <Cart
+          className="bg-white dark:bg-[#1C242F] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
           course={{
             id: "1",
-            title: "Python Course",
-            level: "Advanced",
-            duration: "6 Weeks",
+            title: "Introduction To Artificial Intelligence and Machine Learning",
+            level: "Beginner",
+            duration: "5 Hours",
             image: img.course1,
             rating: 4,
-            totalRatings: 21,
-            price: 120,
-            lessons: 48,
+            totalRatings: 1234,
+            price: 49.99,
+            lessons: 29,
+            students: "1k Students",
           }}
         />
       </GetX>
-        <GetX>
-        <Cart className="dark:bg-[#1C242F]"
+
+      <GetX>
+        <Cart
+          className="bg-white dark:bg-[#1C242F] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
           course={{
-            id: "1",
-            title: "Python Course",
-            level: "Advanced",
-            duration: "6 Weeks",
+            id: "2",
+            title: "Introduction To Artificial Intelligence and Machine Learning",
+            level: "Intermediate",
+            duration: "4 Hours",
             image: img.course2,
             rating: 4,
-            totalRatings: 21,
-            price: 120,
-            lessons: 48,
-          }}
-        
-        />
-        </GetX>
-        <GetX>
-        <Cart className="dark:bg-[#1C242F]"
-          course={{
-            id: "1",
-            title: "Python Course",
-            level: "Advanced",
-            duration: "6 Weeks",
-            image: img.course3,
-            rating: 4,
-            totalRatings: 21,
-            price: 120,
-            lessons: 48,
+            totalRatings: 2456,
+            price: 54.99,
+            lessons: 35,
+            students: "2.5k Students",
           }}
         />
       </GetX>
-      </div>
-        <Button className="my-[50px]"    
-            path="/course"
-            size="lg"
-            center={true}
-        >
-          {t("titleCard.btn")}
-        </Button>
+
+      <GetX>
+        <Cart
+          className="bg-white dark:bg-[#1C242F] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+          course={{
+            id: "3",
+            title: "Introduction To Artificial Intelligence and Machine Learning",
+            level: "Advanced",
+            duration: "5 Hours",
+            image: img.course3,
+            rating: 4,
+            totalRatings: 948,
+            price: 79.99,
+            lessons: 42,
+            students: "400 Students",
+          }}
+        />
+      </GetX>
+    </div>
+
+    {/* Browse More Button */}
+    <Button
+      className="bg-[#4a69e2] hover:bg-[#3958d1] text-white px-8 py-3 rounded-full font-medium shadow-md hover:shadow-lg transition-all duration-300"
+      path="/course"
+      size="lg"
+      center={true}
+    >
+      {t("titleCard.btn")}
+    </Button>
+  </div>
 </div>
+
       <Instructor />
       <CertificateSection />
       <TestimonialsSec
