@@ -9,7 +9,6 @@ import CertificateSection from "../../components/organisms/Home/CertificateSecti
 import BannerCard from "../organisms/Home/BannerCard";
 import { ItemCard } from "../../utils/Data";
 import TestimonialsSec from "../organisms/Home/TestimonialsSection";
-import TitleCourse from "./../molecules/TitleCourse";
 import {Button} from "../atoms/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "./../../animation/FadeIn";

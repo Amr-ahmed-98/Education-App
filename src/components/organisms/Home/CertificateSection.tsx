@@ -3,18 +3,18 @@ import { useTranslation } from "react-i18next";
 
 function CertificateSection() {
   const { t } = useTranslation();
+  
   return (
-    <div 
-    className="flex justify-center items-center ">
-      <SectionTitle 
-        className="text-4xl text-center"
-        heading1={t("about.certificates.title1")}
-        heading2={t("about.certificates.title2")}
-        heading4={t("about.certificates.title3")}
-        description={t("about.certificates.description")}
-        button={t("about.certificates.btn")}
+    <section className="w-full">
+      <SectionTitle
+        heading1={t("certificate.title1")}
+        heading2={t("certificate.title2")}
+        heading3={t("certificate.title3")}
+        heading4={t("certificate.title4")}
+        button={t("certificate.btn1")}
+        buttonPath="/sign-in"
       />
-    </div>
+    </section>
   );
 }
 
