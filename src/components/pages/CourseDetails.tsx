@@ -23,9 +23,8 @@ function CourseDetails() {
 
   return (
     <div
-      className={`${
-        theme === themes.dark ? 'bg-dark-900' : 'bg-gray-50'
-      } min-h-screen`}
+      className={`${theme === themes.dark ? 'bg-dark-900' : 'bg-gray-50'
+        } min-h-screen`}
     >
       <SectionTitle
         breadcrumbs1={t('SectionTitle.CourseDetails.breadcrumbs1')}
@@ -34,8 +33,8 @@ function CourseDetails() {
         breadcrumbs1Path="/"
         breadcrumbs2Path="/course"
         breadcrumbs3Path="/course-details"
-        detailsHeader={t('SectionTitle.CourseDetails.title1')}
-        detailsDescription={t('SectionTitle.CourseDetails.description')}
+        heading1={t('SectionTitle.CourseDetails.title1')}
+        description={t('SectionTitle.CourseDetails.description')}
         button={t('SectionTitle.CourseDetails.button')}
         rating={4.5}
         ratingCount={350123}
@@ -46,9 +45,8 @@ function CourseDetails() {
       />
 
       <div
-        className={`${
-          theme === themes.dark ? 'bg-dark-900' : 'bg-gray-50'
-        } py-10`}
+        className={`${theme === themes.dark ? 'bg-dark-900' : 'bg-gray-50'
+          } py-10`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">

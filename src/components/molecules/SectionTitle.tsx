@@ -21,6 +21,11 @@ interface SectionTitleProps {
   breadcrumbs1Path?: string;
   breadcrumbs2Path?: string;
   breadcrumbs3Path?: string;
+  rating?: number;
+  ratingCount?: number;
+  studentCount?: number;
+  ratingsText?: string;
+  studentsText?: string;
 }
 
 function SectionTitle({
@@ -38,6 +43,7 @@ function SectionTitle({
   breadcrumbs1Path,
   breadcrumbs2Path,
   breadcrumbs3Path,
+
 }: SectionTitleProps) {
   const { theme } = useContext(ThemeContext)!;
   const { i18n } = useTranslation();
@@ -84,21 +90,19 @@ function SectionTitle({
       {/* Breadcrumbs */}
       {breadcrumbs1 && breadcrumbs2 && breadcrumbs3 && (
         <div
-          className={`flex text-base md:text-lg z-10 gap-2 md:gap-3 items-center ${
-            isCourseDetailsUsage
-              ? isArabic
-                ? "md:justify-end justify-center flex-row-reverse w-full"
-                : "md:justify-start justify-center w-full"
-              : "justify-center"
-          }`}
+          className={`flex text-base md:text-lg z-10 gap-2 md:gap-3 items-center ${isCourseDetailsUsage
+            ? isArabic
+              ? "md:justify-end justify-center flex-row-reverse w-full"
+              : "md:justify-start justify-center w-full"
+            : "justify-center"
+            }`}
           style={{ color: "var(--color-text-secondary)" }}
         >
           {isArabic && isCourseDetailsUsage ? (
             <>
               <span
-                className={`${
-                  breadcrumbs3Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs3Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 style={{ color: theme === "dark" ? "var(--color-primary)" : "var(--color-primary)" }}
                 onClick={() => breadcrumbs3Path && handleBreadcrumbClick(breadcrumbs3Path)}
               >
@@ -106,18 +110,16 @@ function SectionTitle({
               </span>
               <ChevronLeft size={18} className="mt-0.5" />
               <span
-                className={`${
-                  breadcrumbs2Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs2Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 onClick={() => breadcrumbs2Path && handleBreadcrumbClick(breadcrumbs2Path)}
               >
                 {breadcrumbs2}
               </span>
               <ChevronLeft size={18} className="mt-0.5" />
               <span
-                className={`${
-                  breadcrumbs1Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs1Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 onClick={() => breadcrumbs1Path && handleBreadcrumbClick(breadcrumbs1Path)}
               >
                 {breadcrumbs1}
@@ -126,27 +128,24 @@ function SectionTitle({
           ) : (
             <>
               <span
-                className={`${
-                  breadcrumbs1Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs1Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 onClick={() => breadcrumbs1Path && handleBreadcrumbClick(breadcrumbs1Path)}
               >
                 {breadcrumbs1}
               </span>
               <ChevronRight size={18} className="mt-0.5" />
               <span
-                className={`${
-                  breadcrumbs2Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs2Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 onClick={() => breadcrumbs2Path && handleBreadcrumbClick(breadcrumbs2Path)}
               >
                 {breadcrumbs2}
               </span>
               <ChevronRight size={18} className="mt-0.5" />
               <span
-                className={`${
-                  breadcrumbs3Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
-                }`}
+                className={`${breadcrumbs3Path ? "cursor-pointer hover:underline hover:opacity-80 transition-opacity" : ""
+                  }`}
                 style={{ color: theme === "dark" ? "var(--color-primary)" : "var(--color-primary)" }}
                 onClick={() => breadcrumbs3Path && handleBreadcrumbClick(breadcrumbs3Path)}
               >

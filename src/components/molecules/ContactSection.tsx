@@ -1,22 +1,21 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { FaLongArrowAltLeft, FaLongArrowAltRight} from '../../assets/icons/icons';
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from '../../assets/icons/icons';
 import * as icon from '../../assets/icons/icons';
 import { Link } from "react-router-dom";
 import HoverScaleEffect from '@/animation/HoverScaleEffect';
-import SlideUpSplitTextMotion from '@/animation/SlideUpSplitTextMotion';
 interface FormData {
   name: string;
   email: string;
   phone: string;
   message: string;
 }
-   
+
 const ContactSection: React.FC = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
-  
+
   const {
     register,
     handleSubmit,
@@ -34,7 +33,7 @@ const ContactSection: React.FC = () => {
     <div className={`min-h-screen bg-gray-50 dark:bg-dark-primary py-12 px-4 ${isRTL ? 'rtl' : 'ltr'}`}>
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-          
+
           {/* Contact Details */}
           <div className="lg:w-1/2 space-y-8 flex flex-col justify-center ">
             {/* Main Title */}
@@ -49,7 +48,7 @@ const ContactSection: React.FC = () => {
                     <span className="text-[var(--color-primary)] ">
                       معك!
                     </span>
-                   
+
                   </>
                 ) : (
                   <>
@@ -73,7 +72,7 @@ const ContactSection: React.FC = () => {
                   {t('address', 'Address')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                  {isRTL 
+                  {isRTL
                     ? 'ستوديو 76د، رايلي فورد، شمال مايكل تشيستر، CF99 6QQ'
                     : 'Studio 76d, Riley Ford, North Michael chester, CF99 6QQ'
                   }
@@ -85,7 +84,7 @@ const ContactSection: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
                   {t('email', 'Email')}
                 </h3>
-                <a 
+                <a
                   href="mailto:edublink@example.com"
                   className=" underline dark:text-white hover:underline transition-colors"
                 >
@@ -98,7 +97,7 @@ const ContactSection: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
                   {t('phone', 'Phone')}
                 </h3>
-                <a 
+                <a
                   href="tel:+0914135548598"
                   className=" underline dark:text-white hover:underline transition-colors"
                 >
@@ -108,32 +107,32 @@ const ContactSection: React.FC = () => {
             </div>
 
             {/* Social Icons */}
-                  <div className="flex flex-row mt-[20px]">
-            <Link
-              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
-              to="/"
-            >
-              <icon.FaLinkedinIn size={24} className="text-amber-50" />
-            </Link>
-            <Link
-              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
-              to="/"
-            >
-              <icon.FaInstagram size={24}  className="text-amber-50" />
-            </Link>
-            <Link
-              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
-              to="/"
-            >
-              <icon.FaWhatsapp size={24}  className="text-amber-50" />
-            </Link>
-            <Link
-              className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
-              to="/"
-            >
-              <icon.FaFacebookF size={24} className="text-amber-50" />
-            </Link>
-          </div>
+            <div className="flex flex-row mt-[20px]">
+              <Link
+                className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+                to="/"
+              >
+                <icon.FaLinkedinIn size={24} className="text-amber-50" />
+              </Link>
+              <Link
+                className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+                to="/"
+              >
+                <icon.FaInstagram size={24} className="text-amber-50" />
+              </Link>
+              <Link
+                className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+                to="/"
+              >
+                <icon.FaWhatsapp size={24} className="text-amber-50" />
+              </Link>
+              <Link
+                className="w-[50px] h-[50px] mr-[7px]  flex items-center justify-center rounded-[50%] bg-[#1C4281]"
+                to="/"
+              >
+                <icon.FaFacebookF size={24} className="text-amber-50" />
+              </Link>
+            </div>
           </div>
 
           {/* Contact Form */}
@@ -144,7 +143,7 @@ const ContactSection: React.FC = () => {
                   {t('getInTouch', isRTL ? 'تواصل معنا' : 'Get In Touch')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                  {isRTL 
+                  {isRTL
                     ? 'املأ هذا النموذج لحجز جلسة استشارية.'
                     : 'Fill out this form for booking a consultant advising session.'
                   }
@@ -176,7 +175,7 @@ const ContactSection: React.FC = () => {
                     {t('email', isRTL ? 'البريد الإلكتروني' : 'Email')}
                   </label>
                   <input
-                    {...register('email', { 
+                    {...register('email', {
                       required: t('emailRequired', 'Email is required'),
                       pattern: {
                         value: /^\S+@\S+$/i,
@@ -232,13 +231,13 @@ const ContactSection: React.FC = () => {
 
                 {/* Submit Button */}
                 <HoverScaleEffect scale={1.05}>
-                <button
-                  type="submit"
-                  className="flex items-center justify-center gap-2 w-full bg-primary cursor-pointer text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
-                >
-                  {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
-                  {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}
-                </button>
+                  <button
+                    type="submit"
+                    className="flex items-center justify-center gap-2 w-full bg-primary cursor-pointer text-white py-3 px-6 rounded-lg font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] dark:focus:ring-[var(--color-dark-primary)] focus:ring-opacity-50"
+                  >
+                    {isRTL ? <FaLongArrowAltRight size={15} /> : <FaLongArrowAltLeft size={15} />}
+                    {t('submitMessage', isRTL ? `أرسل الرسالة ` : `Submit Message `)}
+                  </button>
                 </HoverScaleEffect>
               </form>
             </div>

@@ -108,8 +108,7 @@ const Test = () => {
         breadcrumbs1={t("SectionTitle.FAQS.breadcrumbs1")}
         breadcrumbs2={t("SectionTitle.FAQS.breadcrumbs2")}
         breadcrumbs3={t("SectionTitle.FAQS.breadcrumbs3")}
-        description1={t("SectionTitle.FAQS.description1")}
-        description2={t("SectionTitle.FAQS.description2")}
+        description={t("SectionTitle.FAQS.description")}
         className="" // Change Style if Needed
       ></SectionTitle>
     </div>
